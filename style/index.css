@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oregon LDO Regular';
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: hidden;
+    background-color: #44040B;
+}
+
+.text-wrapper {
+    color: #EFE9E1;
+    font-size: 130px;
+    position: relative;
+}
+
+.text {
+    margin-right: -20px;
+    margin-left: -20px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 10px;
+    animation: wave 1.5s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes wave {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-70px);
+    }
+}
