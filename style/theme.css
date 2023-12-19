@@ -6,3 +6,18 @@
     background-color: #17273D;
     color: white;
 }
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+}
+
+@keyframes wave {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-70px);
+    }
+}
