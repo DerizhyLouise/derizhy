@@ -24,3 +24,16 @@ body {
     animation: wave 1.5s infinite;
     animation-delay: calc(.1s * var(--i));
 }
+
+@media only screen and (max-width: 700px) {
+    .text-wrapper {
+        font-size: 80px;
+        letter-spacing: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .text-wrapper {
+        font-size: 50px;
+    }
+}
