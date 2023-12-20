@@ -11,6 +11,10 @@ header {
     z-index: 99;
 }
 
+.navbar-space {
+    height: 89px;
+}
+
 .navigation {
     display: flex;
     justify-content: space-around;
@@ -134,6 +138,10 @@ header {
 
     header {
         justify-content: center;   
+    }
+
+    .navbar-space {
+        height: 80px;
     }
 }
 
