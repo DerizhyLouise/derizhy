@@ -24,7 +24,7 @@
     right: 0;
 }
 
-.main {
+.main, header {
     padding-left: 250px;
     padding-right: 250px;
 }
@@ -48,11 +48,21 @@
     .side-bar {
         width: 200px;
     }
+
+    .main, header {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
     .side-bar {
         width: 150px;
+    }
+
+    .main, header {
+        padding-left: 150px;
+        padding-right: 150px;
     }
 }
 
@@ -60,11 +70,21 @@
     .side-bar {
         width: 120px;
     }
+
+    .main, header {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
     .side-bar {
         width: 100px;
+    }
+
+    .main, header {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 
@@ -72,16 +92,31 @@
     .side-bar {
         width: 80px;
     }
+
+    .main, header {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .side-bar {
         width: 60px;
     }
+
+    .main, header {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
 
 @media only screen and (max-width: 380px) {
     .side-bar {
         width: 40px;
+    }
+
+    .main, header {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }

@@ -3,7 +3,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: 0;
     display: flex;
     justify-content: space-between;
@@ -121,7 +122,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1320px) {
     .logo {
         display: none;
     }
