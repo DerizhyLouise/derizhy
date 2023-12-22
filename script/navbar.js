@@ -5,19 +5,19 @@ function showNavbar() {
         <h2 class="logo"><img class="logo-img" src="/assets/image/logo.png"> Louise Derizhy</h2>
         <h2 class="logo-small"><img class="logo-img" src="/assets/image/logo.png">LD</h2>
         <nav class="navigation">
-            <a href="#" class='nav-button'>
+            <a href="#home" class='nav-button'>
                 <span class="nav-name">Home</span>
                 <svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
             </a>
-            <a href="#" class='nav-button'>
+            <a href="#profile" class='nav-button'>
                 <span class="nav-name">Profile</span>
                 <svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
             </a>
-            <a href="#" class='nav-button'>
+            <a href="#project" class='nav-button'>
                 <span class="nav-name">Project</span>
                 <svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
             </a>
-            <a href="#" class='nav-button'>
+            <a href="#about" class='nav-button'>
                 <span class="nav-name">About</span>
                 <svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
             </a>
@@ -28,7 +28,7 @@ function showNavbar() {
     navbarSpace.innerHTML = `<div class="navbar-space"></div>`
 
     body.appendChild(navbar);
-    body.appendChild(navbarSpace);
+    // body.appendChild(navbarSpace);
 }
 
 showNavbar();

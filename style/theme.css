@@ -7,6 +7,10 @@
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .side-bar {
     height: 100%;
     width: 250px;

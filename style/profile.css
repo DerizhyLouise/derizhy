@@ -1,63 +1,60 @@
 .profile {
-    height: 100vh - 100px;
+    height: 100vh;
     padding: 200px 70px;
+}
+
+.profile-title {
+    margin-top: -100px;
+    width: auto;
+}
+
+.profile-title h1 {
+    font-size: 70px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.profile-container {
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.profile-text h1 {
-    font-size: 100px;
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+    width: 410px;
+    position: relative;
+    border-radius: 5px;
 }
 
-.profile-text h2 {
-    font-size: 60px;
+.profile-pic::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * 3px);
+    left: calc(-1 * 8px);
+    width: calc(100% + 8px * 2);
+    height: calc(100% + 3px * 2);
+    background: linear-gradient(60deg, #029791, #17273D, #3D5872, #B7ADA1);
+    /* background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0); */
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * 3px);
+    animation: moveGradient 4s alternate infinite;
 }
 
 .profile-pic img {
-    width: auto;
-    height: auto;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    z-index: 1;
 }
 
-@media only screen and (max-height: 920px) {
-    .profile {
-        
-    }
-}
-
-@media only screen and (max-width: 1440px) {
-    .profile {
-        flex-direction: column;
-        padding: 100px 70px;
-        text-align: center;
-    }
-
-    .profile-text h1{
-        font-size: 70px;
-    }
-
-    .profile-text h2{
-        font-size: 40px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .profile {
-        flex-direction: column;
-        padding: 100px 70px;
-        text-align: center;
-    }
-
-    .profile-text h1{
-        font-size: 50px;
-    }
-
-    .profile-text h2{
-        font-size: 30px;
-    }
-
-    .profile-pic img {
-        width: 100%;
-        height: 100%;
+@keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
     }
 }
