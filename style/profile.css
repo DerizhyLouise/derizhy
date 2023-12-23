@@ -1,6 +1,6 @@
 .profile {
     height: 100vh;
-    padding: 200px 70px;
+    padding: 200px 40px;
 }
 
 .profile-title {
@@ -15,46 +15,248 @@
 }
 
 .profile-container {
-    padding-top: 100px;
+    padding-top: 120px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .profile-pic {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 410px;
+    height: 100% - 25vh;
     width: 410px;
     position: relative;
     border-radius: 5px;
-}
-
-.profile-pic::after {
-    position: absolute;
-    content: "";
-    top: calc(-1 * 3px);
-    left: calc(-1 * 8px);
-    width: calc(100% + 8px * 2);
-    height: calc(100% + 3px * 2);
-    background: linear-gradient(60deg, #029791, #17273D, #3D5872, #B7ADA1);
-    /* background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0); */
-    background-size: 300% 300%;
-    background-position: 0 50%;
-    border-radius: calc(2 * 3px);
-    animation: moveGradient 4s alternate infinite;
+    border: 1px solid #FF8473;
 }
 
 .profile-pic img {
-    height: 400px;
+    height: 100%;
     width: 400px;
+    border-radius: 10px;
     object-fit: cover;
-    z-index: 1;
+}
+
+.profile-data {
+    padding-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.profile-data h2 {
+    padding-bottom: 5px;
+    font-size: 48px;
+}
+
+.profile-data h3 {
+    padding-bottom: 5px;
+    font-size: 28px;
+    color: #FEEEAB;
+}
+
+.profile-data p {
+    color: #FED0BB;
+    padding-bottom: 5px;
+    font-size: 24;
+    line-height: 25px;
+}
+
+.profile-data table {
+    font-size: 24;
+    padding-bottom: 10px;
+}
+
+.profile-data table td {
+    color: #FED0BB;
+}
+
+.profile-data table tr {
+    height: 25px;
+}
+
+.profile-table-title {
+    width: 100px;
+}
+
+.profile-cv {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    --b: 5px;
+    --h: 1.8em;
+}
+
+.profile-cv button {
+    --_c: #FF8473;
+    flex: calc(1 + var(--_s, 0));
+    min-width: 0;
+    font-size: 28px;
+    font-weight: bold;
+    height: var(--h);
+    cursor: pointer;
+    color: var(--_c);
+    border: var(--b) solid var(--_c);
+    background:
+        conic-gradient(at calc(100% - 1.3*var(--b)) 0, var(--_c) 209deg, #0000 211deg) border-box;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 0.577*var(--h)) 100%, 0 100%);
+    padding: 0 calc(0.288*var(--h)) 0 0;
+    margin: 0 calc(-0.288*var(--h)) 0 0;
+    box-sizing: border-box;
+    transition: flex .4s;
+}
+
+.profile-cv button+button {
+    --_c: #FFF9D2;
+    flex: calc(1 + var(--_s, 0));
+    background:
+        conic-gradient(from -90deg at calc(1.3*var(--b)) 100%, var(--_c) 119deg, #0000 121deg) border-box;
+    clip-path: polygon(calc(0.577*var(--h)) 0, 100% 0, 100% 100%, 0 100%);
+    margin: 0 0 0 calc(-0.288*var(--h));
+    padding: 0 0 0 calc(0.288*var(--h));
+}
+
+.profile-cv button:focus-visible {
+    outline-offset: calc(-2*var(--b));
+    outline: calc(var(--b)/2) solid #000;
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-cv button:focus-visible+button {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-cv button:has(+ button:focus-visible) {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+}
+
+button:hover, button:active:not(:focus-visible) {
+    --_s: .75;
+}
+
+#ats:active {
+    box-shadow: inset 0 0 0 100vmax var(--_c);
+    color: #fff;
+}
+
+#cre:active {
+    box-shadow: inset 0 0 0 100vmax var(--_c);
+    color: #17273D;
 }
 
 @keyframes moveGradient {
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-title {
+        padding-bottom: 0px;
+    }
+
+    .profile-pic {
+        align-self: center;
+    }
+
+    .profile-data {
+        padding-left: 0px;
+    }
+
+    .profile-data h2 {
+        align-self: center;
+    }
+
+    .profile-data h3 {
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .profile-cv button {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .profile-cv button {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .profile-pic {
+        width: 310px;
+    }
+
+    .profile-pic img {
+        width: 300px;
+    }
+
+    .profile-data h2 {
+        font-size: 36px;
+    }
+
+    .profile-data h3 {
+        font-size: 18px;
+    }
+
+    .profile-data p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .profile-title h1 {
+        font-size: 48px;
+    }
+
+    .profile-pic {
+        width: 210px;
+    }
+
+    .profile-pic img {
+        width: 200px;
+    }
+
+    .profile-data h2 {
+        font-size: 22px;
+    }
+
+    .profile-data h3 {
+        font-size: 14px;
+    }
+
+    .profile-data p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    
+    .profile-data table {
+        font-size: 10px;
+    }
+
+    .profile-data table tr {
+        height: 10px;
+    }
+}
+
+@media only screen and (max-height: 780px) {
+    .profile-container {
+        padding-top: 50px;
     }
 }

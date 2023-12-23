@@ -12,6 +12,7 @@
 </head>
 <body>
     <script src="../script/navbar.js"></script>
+    <script src="../script/main.js"></script>
     <div class="side-bar side-left"></div>
     <div class="main">
         <div id="home" class="home">
@@ -32,12 +33,42 @@
                     <img src="../assets/image/profilePic.png">
                 </div>
                 <div class="profile-data">
-                    <h2>BLABLABLA</h2>
-                    <p>I'm Louise Derizhy, a software engineer driven by a love for problem-solving and crafting innovative solutions. With 
+                    <h2>Louise Derizhy</h2>
+                    <h3>Software Engineer</h3>
+                    <p>
+                        I'm Louise Derizhy, a software engineer driven by a love for problem-solving and crafting innovative solutions. With 
                         expertise in JavaScript and Java, I specialize in building robust client-server applications. I'm adept in SQL, 
                         particularly in PostgreSQL and Oracle environments, and proficient in web development (HTML, CSS, JavaScript) as 
-                        well as Python. My passion for software engineering is underscored by a year of hands-on experience and a 
-                        commitment to excellence. I'm excited to contribute my skills to your team and help shape the digital future.</p>
+                        well as Python.
+                    </p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="profile-table-title">Birthday</td>
+                                <td>:</td>
+                                <td>27th April 2002</td>
+                            </tr>
+                            <tr>
+                                <td class="profile-table-title">Phone</td>
+                                <td>:</td>
+                                <td>+62 823-6731-9569</td>
+                            </tr>
+                            <tr>
+                                <td class="profile-table-title">Email</td>
+                                <td>:</td>
+                                <td>louise.derizhy@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td class="profile-table-title">Location</td>
+                                <td>:</td>
+                                <td>Medan, Indonesia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="profile-cv">
+                        <button id="ats" onClick="downloadCv('ats')">Download ATS CV</button>
+                        <button id="cre" onClick="downloadCv('cre')">Download Creative CV</button>
+                    </div>
                 </div>
             </div>
         </div>
