@@ -1,9 +1,13 @@
 .home {
     height: 100vh;
-    padding: 200px 70px;
+    padding: 200px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.home-text {
+    z-index: 2;
 }
 
 .home-text h1 {
@@ -14,15 +18,15 @@
     font-size: 60px;
 }
 
+.home-pic {
+    position: absolute;
+    z-index: 1;
+    right: 200px;
+}
+
 .home-pic img {
     width: auto;
     height: auto;
-}
-
-@media only screen and (max-height: 920px) {
-    .home {
-        
-    }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -38,6 +42,10 @@
 
     .home-text h2{
         font-size: 40px;
+    }
+
+    .home-pic {
+        position: static;
     }
 }
 

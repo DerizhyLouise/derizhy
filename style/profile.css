@@ -27,7 +27,7 @@
     height: 100% - 25vh;
     width: 410px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #FF8473;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .profile-data p {
-    color: #FED0BB;
+    /* color: #FED0BB; */
     padding-bottom: 5px;
     font-size: 24;
     line-height: 25px;
@@ -69,7 +69,7 @@
 }
 
 .profile-data table td {
-    color: #FED0BB;
+    /* color: #FED0BB; */
 }
 
 .profile-data table tr {
@@ -84,8 +84,8 @@
     display: flex;
     width: 100%;
     gap: 10px;
-    --b: 5px;
-    --h: 1.8em;
+    --b: 2px;
+    --h: 1.5em;
 }
 
 .profile-cv button {

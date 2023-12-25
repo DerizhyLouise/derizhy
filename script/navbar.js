@@ -2,8 +2,8 @@ function showNavbar() {
     const body = document.getElementsByTagName('body')[0];
     const navbar = document.createElement('header');
     navbar.innerHTML = `
-        <h2 class="logo"><img class="logo-img" src="/assets/image/logo.png"> Louise Derizhy</h2>
-        <h2 class="logo-small"><img class="logo-img" src="/assets/image/logo.png">LD</h2>
+        <h2 class="logo"><img class="logo-img" src="../assets/image/logo.png"> Louise Derizhy</h2>
+        <h2 class="logo-small"><img class="logo-img" src="../assets/image/logo.png">LD</h2>
         <nav class="navigation">
             <a href="#home" class='nav-button'>
                 <span class="nav-name">Home</span>
