@@ -10,7 +10,7 @@ function showNavbar() {
                 <svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
             </a>
             <a href="#profile" class='nav-button'>
-                <span class="nav-name">Profile</span>
+                <span class="nav-name">About</span>
                 <svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
             </a>
             <a href="#project" class='nav-button'>
@@ -23,12 +23,8 @@ function showNavbar() {
             </a>
         </nav>
     `
-    
-    const navbarSpace = document.createElement('div');
-    navbarSpace.innerHTML = `<div class="navbar-space"></div>`
 
     body.appendChild(navbar);
-    // body.appendChild(navbarSpace);
 }
 
 showNavbar();

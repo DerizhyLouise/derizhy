@@ -16,3 +16,5 @@ function downloadCv(type) {
     link.click();
     document.body.removeChild(link);
 }
+
+AOS.init();

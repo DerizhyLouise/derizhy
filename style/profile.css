@@ -25,10 +25,8 @@
     justify-content: center;
     align-items: center;
     height: 100% - 25vh;
-    width: 410px;
+    width: 400px;
     position: relative;
-    border-radius: 10px;
-    border: 1px solid #FF8473;
 }
 
 .profile-pic img {
@@ -66,10 +64,6 @@
 .profile-data table {
     font-size: 24;
     padding-bottom: 10px;
-}
-
-.profile-data table td {
-    /* color: #FED0BB; */
 }
 
 .profile-data table tr {
