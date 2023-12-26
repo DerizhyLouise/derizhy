@@ -26,19 +26,6 @@ header {
 .logo {
     font-size: 2.5em;
     user-select: none;
-    background-image: linear-gradient(
-        -225deg,
-        #FF8473 0%,
-        #FFF9D2 50%,
-        #FF8473 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
     display: flex;
 }
 
@@ -52,19 +39,6 @@ header {
     display: none;
     font-size: 2.5em;
     user-select: none;
-    background-image: linear-gradient(
-        -225deg,
-        #FF8473 0%,
-        #FFF9D2 50%,
-        #FF8473 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
     letter-spacing: 0.5rem;
 }
 
@@ -90,8 +64,8 @@ header {
     display: flex;
     justify-content: center;
     transition: all 1s ease-in;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .nav-button:hover {
@@ -124,13 +98,7 @@ header {
     );
 }
 
-@keyframes textclip {
-    to {
-      background-position: 200% center;
-    }
-}
-
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 1550px) {
     .logo {
         display: none;
     }
@@ -154,13 +122,13 @@ header {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
     .nav-button {
         margin: 0px;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .nav-button {
         font-size: 0.7rem;
         width: 80px;

@@ -3,17 +3,6 @@
     padding: 200px 40px;
 }
 
-.profile-title {
-    margin-top: -100px;
-    width: auto;
-}
-
-.profile-title h1 {
-    font-size: 70px;
-    text-decoration: underline;
-    text-align: center;
-}
-
 .profile-container {
     padding-top: 120px;
     display: flex;
@@ -211,6 +200,12 @@ button:hover, button:active:not(:focus-visible) {
 
     .profile-data p {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .profile-table-title {
+        width: 50px;
     }
 }
 

@@ -33,65 +33,132 @@ html {
     padding-right: 250px;
 }
 
+.sub-title {
+    margin-top: -100px;
+    width: auto;
+}
+
+.sub-title h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.title-underline {
+    position: relative;
+    white-space: nowrap;
+
+    &:after {
+        --deco-height: 0.3125em;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: calc(var(--deco-height) * -0.625);
+        height: var(--deco-height);
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%23FEEEAB' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        background-size: auto 100%;
+        background-repeat: round;
+        background-position: 0em;
+    }
+}
+
+.gradient-text {
+    background-image: linear-gradient(
+        -225deg,
+        #FF8473 0%,
+        #FFF9D2 50%,
+        #FF8473 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+
 @keyframes textclip {
     to {
-      background-position: 200% center;
+        background-position: 200% center;
     }
 }
 
 @keyframes wave {
-    0%, 40%, 100% {
+
+    0%,
+    40%,
+    100% {
         transform: translateY(0);
     }
+
     20% {
         transform: translateY(-70px);
     }
 }
 
 @media only screen and (max-width: 1480px) {
-    .main, header {
+
+    .main,
+    header {
         padding-left: 200px;
         padding-right: 200px;
     }
 }
 
 @media only screen and (max-width: 1200px) {
-    .main, header {
+
+    .main,
+    header {
         padding-left: 150px;
         padding-right: 150px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .main, header {
+
+    .main,
+    header {
         padding-left: 120px;
         padding-right: 120px;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .main, header {
+
+    .main,
+    header {
         padding-left: 100px;
         padding-right: 100px;
     }
 }
 
 @media only screen and (max-width: 650px) {
-    .main, header {
+
+    .main,
+    header {
         padding-left: 80px;
         padding-right: 80px;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .main, header {
+
+    .main,
+    header {
         padding-left: 60px;
         padding-right: 60px;
+    }
+
+    .side-bar {
+        width: 5%;
     }
 }
 
 @media only screen and (max-width: 380px) {
-    .main, header {
+
+    .main,
+    header {
         padding-left: 40px;
         padding-right: 40px;
     }

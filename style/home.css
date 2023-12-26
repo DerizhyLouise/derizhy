@@ -51,13 +51,11 @@
 
 @media only screen and (max-width: 800px) {
     .home {
-        flex-direction: column;
-        padding: 100px 70px;
-        text-align: center;
+        justify-content: center;
     }
 
     .home-text h1{
-        font-size: 50px;
+        font-size: 64px;
     }
 
     .home-text h2{
@@ -65,7 +63,34 @@
     }
 
     .home-pic img {
-        width: 100%;
-        height: 100%;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .home {
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .home-text {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1560px) {
+    .home-pic {
+        right: 280px;
+    }
+}
+
+@media only screen and (min-width: 1730px) {
+    .home-pic {
+        right: 350px;
+    }
+
+    .home {
+        padding-right: 100px;
+        padding-left: 100px;
     }
 }
