@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../assets/oregon/style.css">
     <link rel="stylesheet" href="../style/theme.css">
     <link rel="stylesheet" href="../style/navbar.css">
-    <link rel="stylesheet" href="../assets/oregon/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="../style/profile.css">
+    <link rel="stylesheet" href="../style/resume.css">
     <title>Louise Derizhy</title>
 </head>
 <body>
@@ -16,9 +18,9 @@
     <div class="main">
         <div id="home" class="home">
             <div class="home-text" data-aos="fade-right" data-aos-duration="1500">
-                <h2>Hi! I'm</h2>
-                <h1>Louise Derizhy</h1>
-                <h2>a Software Engineer</h2>
+                <h2 class="gradient-text">Hi! I'm</h2>
+                <h1 class="gradient-text">Louise Derizhy</h1>
+                <h2 class="gradient-text">a Software Engineer</h2>
             </div>
             <div class="home-pic" data-aos="fade-left" data-aos-duration="1500">
                 <img src="../assets/image/profilePic.png">
@@ -67,6 +69,119 @@
                         <button id="ats" onClick="downloadCv('ats')">ATS CV</button>
                         <button id="cre" onClick="downloadCv('cre')">Creative CV</button>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="resume" class="resume">
+            <div class="sub-title" data-aos="flip-left" data-aos-duration="1500"><h1><span class="title-underline gradient-text">RESUME</span></h1></div>
+            <div class="resume-container" data-aos="fade-right">
+                <div class="resume-skill">
+                    <div class="resume-sub-title"><h2>Skills</h2></div>
+                    <div class="resume-skill-content">
+                        <div class="skill-soft">
+                            <h3>Soft Skills</h3>
+                            <p>Problem Solving | Analytics | Critical Thinking | Leadership | Public Speaking</p>
+                        </div>
+                        <div class="skill-tech">
+                            <h3>Technical Skills</h3>
+                            <ol>
+                                <li style="--accent-color:#0D6EFD">
+                                    <div class="icon"><i class="fa-brands fa-python"></i></div>
+                                    <div class="tech-skill-list-title">Python</div>
+                                    <div class="descr"><br/><br/></div>
+                                </li>
+                                <li style="--accent-color:#6710F5">
+                                    <div class="icon"><i class="fa-brands fa-html5"></i></div>
+                                    <div class="tech-skill-list-title">HTML 5</div>
+                                    <div class="descr"><br/><br/></div>
+                                </li>
+                                <li style="--accent-color:#6F42C1">
+                                    <div class="icon"><i class="fa-brands fa-css3"></i></div>
+                                    <div class="tech-skill-list-title">CSS 3</div>
+                                    <div class="descr"><br/><br/></div>
+                                </li>
+                                <li style="--accent-color:#D63384">
+                                    <div class="icon"><i class="fa-brands fa-js"></i></div>
+                                    <div class="tech-skill-list-title">Javascript</div>
+                                    <div class="descr"><br/><br/></div>
+                                </li>
+                                <li style="--accent-color:#DC3545">
+                                    <div class="icon"><i class="fa-brands fa-github"></i></div>
+                                    <div class="tech-skill-list-title">Github</div>
+                                    <div class="descr"><br/><br/></div>
+                                </li>
+                            </ol>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="resume-skill-table-title">Python</td>
+                                        <td class="resume-skill-table-child">
+                                            <div class="w3-border">
+                                                <div class="w3-white" style="height:24px;width:80%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="resume-skill-table-title">Java</td>
+                                        <td class="resume-skill-table-child">
+                                            <div class="w3-border">
+                                                <div class="w3-white" style="height:24px;width:70%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="resume-skill-table-title">SQL</td>
+                                        <td class="resume-skill-table-child">
+                                            <div class="w3-border">
+                                                <div class="w3-white" style="height:24px;width:90%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="resume-skill-table-title">HTML</td>
+                                        <td class="resume-skill-table-child">
+                                            <div class="w3-border">
+                                                <div class="w3-white" style="height:24px;width:90%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="resume-skill-table-title">CSS</td>
+                                        <td class="resume-skill-table-child">
+                                            <div class="w3-border">
+                                                <div class="w3-white" style="height:24px;width:70%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="resume-skill-table-title">JavaScript</td>
+                                        <td class="resume-skill-table-child">
+                                            <div class="w3-border">
+                                                <div class="w3-white" style="height:24px;width:80%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="resume-skill-table-title">Databases</td>
+                                        <td class="resume-skill-table-child">
+                                            <div class="w3-border">
+                                                <div class="w3-white" style="height:24px;width:90%"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-experience" data-aos="fade-right">
+                    <div class="resume-sub-title"><h2>Experiences</h2></div>
+                </div>
+                <div class="resume-education" data-aos="fade-right">
+                    <div class="resume-sub-title"><h2>Educations</h2></div>
+                </div>
+                <div class="resume-organization" data-aos="fade-right">
+                    <div class="resume-sub-title"><h2>Organizations</h2></div>
                 </div>
             </div>
         </div>

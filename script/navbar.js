@@ -21,8 +21,8 @@ function showNavbar() {
                 <span class="nav-name">Project</span>
                 <svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
             </a>
-            <a href="#certification" class='nav-button'>
-                <span class="nav-name">Certification</span>
+            <a href="#review" class='nav-button'>
+                <span class="nav-name">Review</span>
                 <svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
             </a>
         </nav>

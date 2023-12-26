@@ -43,6 +43,10 @@ html {
     text-align: center;
 }
 
+h1, h2, h3, p, table {
+    user-select: none;
+}
+
 .title-underline {
     position: relative;
     white-space: nowrap;
@@ -65,9 +69,11 @@ html {
 .gradient-text {
     background-image: linear-gradient(
         -225deg,
-        #FF8473 0%,
-        #FFF9D2 50%,
-        #FF8473 100%
+        #FFFFFF 0%,
+        #E7E7E7 35%,
+        #FEEEAB 50%,
+        #E7E7E7 65%,
+        #FFFFFF 100%
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -75,7 +81,7 @@ html {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
+    animation: textclip 3s linear infinite;
 }
 
 @keyframes textclip {
