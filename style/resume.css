@@ -27,6 +27,7 @@
     display: grid;
     align-content: center;
     color: var(--color);
+    user-select: none;
 }
 
 .resume-skill-content ul {
@@ -124,4 +125,122 @@
 
 .skill-tech {
     padding-top: 50px;
+}
+
+.resume-listing-content {
+    --h: 212deg;
+	--l: 43%;
+	--brandColor: hsl(var(--h), 71%, var(--l));
+}
+
+.resume-listing-content p {
+	line-height: 1.6;
+    background: #3D5872;
+}
+
+.resume-listing-content ol {
+	list-style: none;
+	counter-reset: list;
+	padding: 0 1rem;
+}
+
+.resume-listing-content li {
+	--stop: calc(100% / var(--length) * var(--i));
+
+	--col-h: hsl(var(--h), 71%, var(--l));
+    --col-l: 88%;
+    --c1: var(--col);
+    --c2: hsl(var(--h), 71%, var(--col-l));
+
+	position: relative;
+	counter-increment: list;
+	max-width: 50rem;
+	margin: 2rem 0px;
+	padding: 2rem 1rem 1rem;
+	box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+	border-radius: 0.5rem;
+	overflow: hidden;
+	background-color: #3D5872;
+}
+
+.resume-listing-content li::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+}
+
+.resume-listing-content h3 {
+    background: #3D5872;
+	display: flex;
+	align-items: center;
+	margin: 0 0 1rem;
+}
+
+.resume-listing-content h3::before {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 auto;
+	margin-right: 1rem;
+	padding: 1rem;
+	border-radius: 50%;
+	background-color: var(--c1);
+	color: white;
+}
+
+.resume-experience .resume-listing-content h3::before {
+	content: "";
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.resume-education .resume-listing-content h3::before {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.resume-education-list {
+    display: flex;
+    align-items: center;
+    background-color: #3D5872;
+}
+
+.resume-education-list h3 {
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+
+.resume-education img {
+    width: 3rem;
+	height: 3rem;
+    border-radius: 50%;
+}
+
+@media (min-width: 40em) {
+	.resume-listing-content li {
+		margin: 3rem 0px;
+		padding: 3rem 2rem 2rem;
+	}
+	
+	.resume-listing-content h3 {
+		font-size: 1.5rem;
+		margin: 0 0 2rem;
+	}
+
+    .resume-education-list h3 {
+        margin: 0;
+    }
+	
+    .resume-education-list {
+        margin: 0 0 2rem;
+    }
+
+	.resume-listing-content h3::before {
+		margin-right: 1.5rem;
+	}
 }
