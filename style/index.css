@@ -34,6 +34,6 @@ body {
 
 @media only screen and (max-width: 500px) {
     .text-wrapper {
-        font-size: 50px;
+        font-size: 40px;
     }
 }
