@@ -13,11 +13,6 @@
     grid-row-gap: 0px;
 }
 
-.resume-sub-title h2 {
-    font-size: 48px;
-    text-decoration: underline;
-}
-
 .resume-skill-content {
     padding-bottom: 100px;
 }
@@ -131,6 +126,8 @@
     --h: 212deg;
 	--l: 43%;
 	--brandColor: hsl(var(--h), 71%, var(--l));
+    display: flex;
+    justify-content: center;
 }
 
 .resume-listing-content p {

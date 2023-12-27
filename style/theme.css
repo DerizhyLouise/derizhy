@@ -33,18 +33,13 @@ html {
     padding-right: 250px;
 }
 
-.sub-title {
-    margin-top: -100px;
-    width: auto;
+h1, h2, h3, p, table {
+    user-select: none;
 }
 
 .sub-title h1 {
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
-}
-
-h1, h2, h3, p, table {
-    user-select: none;
 }
 
 .title-underline {
