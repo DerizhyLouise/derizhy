@@ -144,6 +144,10 @@ button:hover, button:active:not(:focus-visible) {
 }
 
 @media only screen and (max-width: 1280px) {
+    .profile {
+        height: auto;
+    }
+
     .profile-container {
         flex-direction: column;
     }

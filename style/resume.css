@@ -6,7 +6,6 @@
 }
 
 .resume-container {
-    padding-top: 120px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -19,152 +18,110 @@
     text-decoration: underline;
 }
 
-.resume-skill-content table {
-    font-size: 24;
-    padding-bottom: 10px;
+.resume-skill-content {
+    padding-bottom: 100px;
 }
 
-.resume-skill-table-child {
-    width: 500px;
-}
-
-.resume-skill-content table tr {
-    height: 25px;
-}
-
-.resume-skill-table-title {
-    width: 100px;
-}
-
-.skill-tech {
+.sub-skill {
     --color: rgba(30, 30, 30);
     display: grid;
     align-content: center;
-    gap: 2rem;
-    padding: 2rem;
     color: var(--color);
 }
 
-ol {
-    width: min(60rem, 90%);
-    margin-inline: auto;
+.resume-skill-content ul {
+    --col-gap: 2rem;
+    --barH: 1rem;
+    --roleH: 2rem;
+    --flapH: 2rem;
 
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
 
-    list-style: none;
-    counter-reset: cardnr;
+    gap: var(--col-gap);
+    padding-inline: calc(var(--col-gap) / 2);
+
     justify-content: center;
+    align-items: flex-start;
+    list-style: none;
 }
 
-li {
-    --frontColor: white;
-    --width: 10em;
-    --inlineP: 0.5rem;
-    --borderR: 4rem;
-    --arrowW: 2rem;
-    --arrowH: 1.5rem;
-
-    counter-increment: cardnr;
-    width: calc(var(--width) - var(--inlineP) * 2);
+.resume-skill-content ul li {
+    width: 10em;
     display: grid;
     grid-template:
-        "icon" var(--borderR) "title"
-        "descr" 1fr;
-    margin-inline: var(--inlineP);
-    margin-bottom: calc(var(--borderR));
-    position: relative;
-}
-
-li .icon,
-li .tech-skill-list-title,
-li .descr {
-    background: var(--frontColor);
-    padding-inline: 1rem;
-    padding-bottom: 1rem;
-    z-index: 2;
-}
-
-li .icon,
-li .tech-skill-list-title {
-    color: var(--accent-color);
+        "role"
+        "icon"
+        "skill-list-title";
+    align-items: flex-start;
+    gap: 1rem;
+    padding-block-end: calc(var(--flapH) + 1rem);
     text-align: center;
-    padding-bottom: 0.5rem;
-}
-
-li .tech-skill-list-title,
-li .descr {
-    filter: drop-shadow(0.125rem 0.125rem 0.075rem rgba(0, 0, 0, 0.25));
-}
-
-li .icon {
-    grid-area: icon;
-    font-size: 2rem;
-    display: grid;
-    place-items: center;
-    border-radius: var(--borderR) 0 0 0;
-    position: relative;
-}
-
-li .tech-skill-list-title {
-    grid-area: title;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-li .descr {
-    grid-area: descr;
-    font-size: 0.85rem;
-    text-align: center;
-}
-
-li .descr::before {
-    content: "";
-    width: var(--arrowW);
-    height: var(--arrowH);
-    position: absolute;
-    right: 1.5rem;
-    top: 100%;
-    background: inherit;
-    clip-path: polygon(0 0, 100% 0, 50% 100%);
-}
-
-li::after {
-    content: counter(cardnr, decimal-leading-zero);
-    position: absolute;
-    z-index: 0;
-
-    left: calc(var(--inlineP) * -1);
-    right: calc(var(--inlineP) * -1);
-    top: var(--borderR);
-    bottom: calc(var(--borderR) * -1);
-
-    display: flex;
-    align-items: flex-end;
     background: var(--accent-color);
-    background-image: linear-gradient(160deg,
-            rgba(255, 255, 255, 0.25),
-            transparent 25% 75%,
-            rgba(0, 0, 0, 0.25));
-    border-radius: 0 0 var(--borderR) 0;
-
-    --pad: 1rem;
-    padding: var(--pad);
-    font-size: calc(var(--borderR) - var(--pad) * 2);
-    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) var(--roleH),
+            rgba(0, 0, 0, 0.4) calc(var(--roleH) + 0.5rem),
+            rgba(0, 0, 0, 0) calc(var(--roleH) + 0.5rem + 5rem));
+    clip-path: polygon(calc(var(--col-gap) / -2 - 5px) 0,
+            calc(100% + var(--col-gap) / 2 + 5px) 0,
+            calc(100% + var(--col-gap) / 2 + 5px) calc(100% - var(--flapH)),
+            50% 100%,
+            calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH)));
 }
 
-li::before {
+.resume-skill-content ul li::before {
     content: "";
-    position: absolute;
-    height: var(--borderR);
-    top: calc(100% + var(--borderR) - 2px);
-    left: calc(var(--inlineP) * -1);
-    right: calc(var(--inlineP) * -1);
-    border-radius: 0 var(--borderR) 0 0;
+    grid-area: role;
+    height: var(--barH);
+    width: calc(100% + var(--col-gap));
+    margin-left: calc(var(--col-gap) / -2);
+    margin-top: calc(var(--roleH) / 2 - var(--barH) / 2);
+    background: grey;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.2) 30%,
+            rgba(255, 255, 255, 0.1) 40%,
+            rgba(0, 0, 0, 0.1) 60%,
+            rgba(0, 0, 0, 0.2) 70%,
+            rgba(0, 0, 0, 0.4));
+}
 
-    background-image: linear-gradient(var(--accent-color), transparent 60%);
-    opacity: 0.5;
-    filter: blur(2px);
+.resume-skill-content ul li::after {
+    content: "";
+    grid-area: role;
+    background: var(--accent-color);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.2) 30%,
+            rgba(255, 255, 255, 0.1) 40%,
+            rgba(0, 0, 0, 0.1) 60%,
+            rgba(0, 0, 0, 0.2) 70%,
+            rgba(0, 0, 0, 0.4));
+    height: var(--roleH);
+    z-index: 1;
+}
+
+.resume-skill-content ul li .icon, .resume-skill-content ul li .skill-list-title {
+    padding-inline: 1rem;
+    color: white;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    background: var(--accent-color);
+}
+
+.resume-skill-content ul li .icon {
+    font-size: 3rem;
+}
+
+.resume-skill-content ul li .skill-list-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.resume-skill-content i {
+    background-color: var(--accent-color);
+}
+
+.resume-skill-content h3 {
+    text-align: center;
+}
+
+.skill-tech {
+    padding-top: 50px;
 }
