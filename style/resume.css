@@ -186,32 +186,27 @@
 	color: white;
 }
 
-.resume-experience .resume-listing-content h3::before {
-	content: "";
+.resume-listing-content h3::before {
 	width: 1.5rem;
 	height: 1.5rem;
 }
 
-.resume-education .resume-listing-content h3::before {
-	width: 1.5rem;
-	height: 1.5rem;
-}
-
-.resume-education-list {
+.resume-list-title {
     display: flex;
     align-items: center;
     background-color: #3D5872;
 }
 
-.resume-education-list h3 {
+.resume-list-title h3 {
     padding-left: 15px;
     margin-bottom: 0px;
 }
 
-.resume-education img {
+.resume-list-title img {
     width: 3rem;
 	height: 3rem;
     border-radius: 50%;
+    background-color: white;
 }
 
 @media (min-width: 40em) {
@@ -225,11 +220,11 @@
 		margin: 0 0 2rem;
 	}
 
-    .resume-education-list h3 {
+    .resume-list-title h3 {
         margin: 0;
     }
 	
-    .resume-education-list {
+    .resume-list-title {
         margin: 0 0 2rem;
     }
 
