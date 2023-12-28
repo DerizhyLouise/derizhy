@@ -1,12 +1,8 @@
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 
 .resume {
-    height: 100vh;
-    padding: 200px 40px;
-}
-
-.resume-container {
-    
+    height: auto;
+    padding: 200px 40px 100px 40px;
 }
 
 .resume-skill-content {

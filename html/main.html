@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="../style/profile.css">
     <link rel="stylesheet" href="../style/resume.css">
+    <link rel="stylesheet" href="../style/project.css">
     <title>Louise Derizhy</title>
 </head>
 <body>
     <div class="side-bar side-left"></div>
     <div class="main">
+        <!-- Navbar by JS injection -->
         <div id="home" class="home">
             <div class="home-text" data-aos="fade-right" data-aos-duration="1500">
                 <h2 class="gradient-text">Hi! I'm</h2>
@@ -157,7 +159,7 @@
                                     - Providing data for reports and dashboards, as well as data integration from multiple databases.
                                 </p>
                             </li>
-                            <li style="--i: 2; --col:#C22617" data-aos="fade-up-right" data-aos-duration="1500">
+                            <li style="--i: 2; --col:#C22617" data-aos="fade-up-left" data-aos-duration="1500">
                                 <div class="resume-list-title">
                                     <img src="../assets/image/generali.jpg">
                                     <h3>Financial Consultant - PT AJ Generali Indonesia (2022)</h3>
@@ -182,7 +184,7 @@
                     </div>
                     <div class="resume-listing-content">
                         <ol style="--length: 3" role="list">
-                            <li style="--i: 1; --col:#034EA2" data-aos="fade-up-right" data-aos-duration="1500">
+                            <li style="--i: 1; --col:#034EA2" data-aos="fade-up-left" data-aos-duration="1500">
                                 <div class="resume-list-title">
                                     <img src="../assets/image/mikroskil.jpg">
                                     <h3>Universitas Mikroskil - Informatics Engineering (2020-2024)</h3>
@@ -196,7 +198,7 @@
                                 </div>
                                 <p>Part of Studi Independen - Kampus Merdeka program by Ministry of Education. Learnt about data analytics and software engineering.</p>
                             </li>
-                            <li style="--i: 3; --col:#D61F23" data-aos="fade-up-right" data-aos-duration="1500">
+                            <li style="--i: 3; --col:#D61F23" data-aos="fade-up-left" data-aos-duration="1500">
                                 <div class="resume-list-title">
                                     <img src="../assets/image/smraja.jpg">
                                     <h3>SMA Sisingamangaraja - Science (2017-2020)</h3>
@@ -219,9 +221,9 @@
                                     <img src="../assets/image/sekber.png">
                                     <h3>Sekber PMVBI (Pemuda Buddhayana) Provinsi Sumatra Utara</h3>
                                 </div>
-                                <p>- Staf IV of Secretarial Division (2021-Present)</p>
+                                <p>- Staff IV of Secretarial Division (2021-Present)</p>
                             </li>
-                            <li style="--i: 2; --col:#FE0002" data-aos="fade-up-right" data-aos-duration="1500">
+                            <li style="--i: 2; --col:#FE0002" data-aos="fade-up-left" data-aos-duration="1500">
                                 <div class="resume-list-title">
                                     <img src="../assets/image/bits.png">
                                     <h3>Big Family of Informatics Students Mikroskil (BITSMIKRO)</h3>
@@ -243,7 +245,7 @@
                                     - Member (2017-2018)
                                 </p>
                             </li>
-                            <li style="--i: 4; --col:#0095DE" data-aos="fade-up-right" data-aos-duration="1500">
+                            <li style="--i: 4; --col:#0095DE" data-aos="fade-up-left" data-aos-duration="1500">
                                 <div class="resume-list-title">
                                     <img src="../assets/image/pmvtr.png">
                                     <h3>Persaudaraan Muda-Mudi Vihara Tri Ratna, Tanjungbalai</h3>
@@ -259,8 +261,12 @@
                 </div>
             </div>
         </div>
+        <div id="project" class="project">
+        </div>
+        <div id="review" class="review"></div>
     </div>
     <div class="side-bar side-right"></div>
+    <footer></footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../script/navbar.js"></script>
     <script src="../script/main.js"></script>
