@@ -1,0 +1,26 @@
+[
+    {
+        "position": "Software Developer",
+        "company": "PT Murni Sadar Tbk",
+        "time": "2022-Present",
+        "theme": "#117BA9",
+        "logo": "../assets/image/mt.jpg",
+        "description": "- Experience in designing, developing, maintaining, and deploying healthcare software solutions.<br/>- Proficient in SQL, I excel in data retrieval and query optimization, enhancing system performance and efficiency.<br/>- Migrating systems from monolithic to microservices architecture, improving scalability and efficiency.<br/>- Successfully achieved more than 50% improvement in software speed through strategic optimization efforts.<br/>- Providing data for reports and dashboards, as well as data integration from multiple databases."
+    },
+    {
+        "position": "Financial Consultant",
+        "company": "PT AJ Generali Indonesia",
+        "time": "2022",
+        "theme": "#C22617",
+        "logo": "../assets/image/generali.jpg",
+        "description": "Educating and giving consultation about financial problems."
+    },
+    {
+        "position": "Administrative Clerk",
+        "company": "PT DTAA",
+        "time": "2022",
+        "theme": "#6F42C1",
+        "logo": "../assets/image/random.jpg",
+        "description": "Making transaction records and bookkeeping."
+    }
+]

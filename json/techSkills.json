@@ -1,0 +1,32 @@
+[
+    {
+        "skill": "Python",
+        "icon": "fa-brands fa-python",
+        "theme": "#244D70"
+    },
+    {
+        "skill": "SQL",
+        "icon": "fa-solid fa-database",
+        "theme": "#DB7533"
+    },
+    {
+        "skill": "HTML",
+        "icon": "fa-brands fa-html5",
+        "theme": "#E44D26"
+    },
+    {
+        "skill": "CSS",
+        "icon": "fa-brands fa-css3",
+        "theme": "#264DE4"
+    },
+    {
+        "skill": "Javascript",
+        "icon": "fa-brands fa-js",
+        "theme": "#F7E018"
+    },
+    {
+        "skill": "Java",
+        "icon": "fa-brands fa-java",
+        "theme": "#5382A1"
+    }
+]

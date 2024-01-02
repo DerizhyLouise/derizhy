@@ -5,6 +5,7 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow-y: hidden;
+    user-select: none;
 }
 
 .text-wrapper {
