@@ -187,5 +187,4 @@ fetch('../json/organizations.json').then(response => response.json()).then(data 
     console.error('Error fetching or processing JSON data:', error);
 });
 
-
 AOS.init();
