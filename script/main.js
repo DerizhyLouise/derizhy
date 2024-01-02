@@ -34,21 +34,21 @@ fetch('../json/softSkills.json').then(response => response.json()).then(data => 
     const softSkillsContainer = document.querySelector('.soft ul');
 
     data.forEach(skill => {
-      const listItem = document.createElement('li');
-      listItem.style.setProperty('--accent-color', skill.theme);
+        const listItem = document.createElement('li');
+        listItem.style.setProperty('--accent-color', skill.theme);
 
-      const skillIcon = document.createElement('div');
-      skillIcon.classList.add('icon');
-      skillIcon.innerHTML = `<i class="${skill.icon}"></i>`;
+        const skillIcon = document.createElement('div');
+        skillIcon.classList.add('icon');
+        skillIcon.innerHTML = `<i class="${skill.icon}"></i>`;
 
-      const skillTitle = document.createElement('div');
-      skillTitle.classList.add('skill-list-title');
-      skillTitle.textContent = skill.skill;
+        const skillTitle = document.createElement('div');
+        skillTitle.classList.add('skill-list-title');
+        skillTitle.textContent = skill.skill;
 
-      listItem.appendChild(skillIcon);
-      listItem.appendChild(skillTitle);
+        listItem.appendChild(skillIcon);
+        listItem.appendChild(skillTitle);
 
-      softSkillsContainer.appendChild(listItem);
+        softSkillsContainer.appendChild(listItem);
     });
 }).catch(error => {
     console.error('Error fetching or processing JSON data:', error);
@@ -59,21 +59,21 @@ fetch('../json/techSkills.json').then(response => response.json()).then(data => 
     const technicalSkillsContainer = document.querySelector('.tech ul');
 
     data.forEach(skill => {
-      const listItem = document.createElement('li');
-      listItem.style.setProperty('--accent-color', skill.theme);
+        const listItem = document.createElement('li');
+        listItem.style.setProperty('--accent-color', skill.theme);
 
-      const skillIcon = document.createElement('div');
-      skillIcon.classList.add('icon');
-      skillIcon.innerHTML = `<i class="${skill.icon}"></i>`;
+        const skillIcon = document.createElement('div');
+        skillIcon.classList.add('icon');
+        skillIcon.innerHTML = `<i class="${skill.icon}"></i>`;
 
-      const skillTitle = document.createElement('div');
-      skillTitle.classList.add('skill-list-title');
-      skillTitle.textContent = skill.skill;
+        const skillTitle = document.createElement('div');
+        skillTitle.classList.add('skill-list-title');
+        skillTitle.textContent = skill.skill;
 
-      listItem.appendChild(skillIcon);
-      listItem.appendChild(skillTitle);
+        listItem.appendChild(skillIcon);
+        listItem.appendChild(skillTitle);
 
-      technicalSkillsContainer.appendChild(listItem);
+        technicalSkillsContainer.appendChild(listItem);
     });
 }).catch(error => {
     console.error('Error fetching or processing JSON data:', error);
