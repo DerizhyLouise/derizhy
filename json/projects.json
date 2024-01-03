@@ -1,0 +1,145 @@
+[
+    {
+        "title": "Data Analytics of Shopping Cart Database",
+        "img": "../assets/image/revouDa.png",
+        "media": [
+            {
+                "title": "Presentation",
+                "url": ""
+            },
+            {
+                "title": "Dashboard",
+                "url": ""
+            },
+            {
+                "title": "Data Cleaning and Analysis",
+                "url": "https://github.com/DerizhyLouise/RevoU-Data-Analytics-Capstone-Project"
+            }
+        ],
+        "time": "Oct 2023 - Dec 2023",
+        "description": [
+            "This is Kampus Merdeka Batch 5 - RevoU's Data Analytics Capstone Project.<br/><br/>",
+            "This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the best group in Shopping Cart's category.<br/><br/>",
+            "Background : From August to December, there was a 24% decrease in revenue.<br/><br/>",
+            "Potential analytics direction : How can we increase revenue by 10-15% in two months?<br/><br/>",
+            "RCA : https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa<br/><br/>",
+            "Business Question :<br/>",
+            "1. What is the percentage of customers who have become inactive over the last three months?<br/>",
+            "2. What is the average delivery time for customers to receive their orders or products from past 3 months?<br/>",
+            "3. Which product category generates the most revenue?<br/><br/>",
+            "Scope :<br/>",
+            "- Australia territory<br/>",
+            "- Time range Jan 2021 - Dec 2021<br/>",
+            "- Sample size from 1000 to 5000 data<br/><br/>",
+            "Hypothesis : The effect of price, more promotion, fast and charge of delivery can affected to customer for purchase more items.<br/><br/>",
+            "Metrics :<br/>",
+            "- Monthly revenue<br/>",
+            "- Total sold product<br/>",
+            "- Product price<br/>",
+            "- Time range<br/><br/>",
+            "Data Source : https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv"
+        ]
+    },
+    {
+        "title": "Clo - E-Commerce Website",
+        "img": "../assets/image/clo.png",
+        "media": [
+            {
+                "title": "Presentation",
+                "url": ""
+            },
+            {
+                "title": "Clo - Prototype",
+                "url": "https://www.figma.com/file/hpcYi1s67YbdTRZomSKrgV/RevoU-Group6-team-library?type=design&node-id=0-1&mode=design&t=rZgGG7FrgtWLBMtF-0"
+            },
+            {
+                "title": "Clo - Front-End",
+                "url": "https://github.com/Kampus-Merdeka-Software-Engineering/FE-Balikpapan-6"
+            },
+            {
+                "title": "Clo - Back-End",
+                "url": "https://github.com/Kampus-Merdeka-Software-Engineering/BE-Balikpapan-6"
+            }
+        ],
+        "time": "Aug 2023 - Oct 2023",
+        "description": [
+            "This is Kampus Merdeka Batch 5 - RevoU's Software Engineering Capstone Project.<br/><br/>",
+            "In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Our primary objective is the development of an e-commerce website called 'Clo', with a specific focus on clothing retail. The project workflow began with the design and creation of a prototype using Figma, followed by the implementation of the front-end using HTML, CSS, and JavaScript. Subsequently, we constructed the back-end, utilizing Node.js with Express and Prisma. We also designed a relational database named 'clo_db' for efficient data storage, employing PostgreSQL. We are using Github Page for Front-End deployment, Railway for Back-End deployment, and Supabase for database deployment."
+        ]
+    },
+    {
+        "title": "Bike Rental - Data Analytics",
+        "img": "../assets/image/da.jpg",
+        "media": [
+            {
+                "title": "Data Analysis - Bike Rental",
+                "url": "https://github.com/DerizhyLouise/Bike-Rental-Data-Analysis-Project"
+            }
+        ],
+        "time": "Sep 2023 - Sep 2023",
+        "description": [
+            "Dicoding - Belajar Analisis Data dengan Python Project.<br/><br/>",
+            "This project is submission for Last Project in Dicoding's Python Data Analytics Course. I use Bike Sharing Dataset to deal with this project. This project include of Data Wrangling, Exploratory Data Analysis, Data Visualization, and Making Dashboard with Streamlit."
+        ]
+    },
+    {
+        "title": "Cryptography",
+        "img": "../assets/image/crypto.jpg",
+        "media": [
+            {
+                "title": "Cryptography Project",
+                "url": "https://github.com/DerizhyLouise/Cryptography-Project"
+            }
+        ],
+        "time": "Apr 2023 - Jul 2023",
+        "description": [
+            "Mikroskil University - Cryptography Project.<br/><br/>",
+            "This project is an assignment from lecturer in my Cryptography Lecture.<br/><br/>",
+            "This project contain some cryptographic algorithms such as:<br/>",
+            "- Digital Signature Algorithm (DSA)<br/>",
+            "- Elgamal<br/>",
+            "- Steganography with Least Significant Bit (LSB)<br/>",
+            "- RSA<br/>",
+            "- SHA-256<br/>",
+            "- Schnorr"
+        ]
+    },
+    {
+        "title": "Image Processing",
+        "img": "../assets/image/imageProcessing.jpg",
+        "media": [
+            {
+                "title": "Image Processing - Computer Vision Project",
+                "url": "https://github.com/DerizhyLouise/Image-Processing-PythonProject"
+            }
+        ],
+        "time": "Apr 2023 - Jul 2023",
+        "description": [
+            "Mikroskil University - Computer Vision Project.<br/><br/>",
+            "This project is an assignment from lecturer in my Computer Vision Lecture.<br/><br/>",
+            "This project contain some methods / algorithms such as:<br/>",
+            "- Harris Corner Detection<br/>",
+            "- K-Means<br/>",
+            "- Oriented Fast and Rotated BRIEF (ORB)<br/>",
+            "- Prewitt Sobel<br/>",
+            "- Scale Invariant Feature Transform (SIFT)<br/>",
+            "- Convolutional Neural Network (CNN)<br/>",
+            "- Histogram of Oriented Gradients (HOG)"
+        ]
+    },
+    {
+        "title": "Help Me",
+        "img": "../assets/image/helpMe.jpg",
+        "media": [
+            {
+                "title": "Image Processing - Computer Vision Project",
+                "url": "https://www.figma.com/proto/mEWc3Po2FCXFfyuSgQGrwR/Help-Me?type=design&node-id=1-418&t=mXhQibhWYwIFbFPJ-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A418"
+            }
+        ],
+        "time": "Apr 2023 - Jul 2023",
+        "description": [
+            "Mikroskil University - Digital Start Up Project.<br/><br/>",
+            "This is a project from Digital Start Up Lecture where I built a prototype of an application called 'Help Me'. The concept of this application is to provide services to connect peoples who called 'Requester' whom requesting for helps and create tasks and peoples who called 'Helper' whom will take the tasks and solve them to get rewards."
+        ]
+    }
+]
