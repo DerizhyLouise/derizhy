@@ -141,6 +141,10 @@ h1, h2, h3, p, table {
         padding-left: 80px;
         padding-right: 80px;
     }
+
+    .sub-title h1 {
+        font-size: 48px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -153,6 +157,10 @@ h1, h2, h3, p, table {
 
     .side-bar {
         width: 5%;
+    }
+
+    .sub-title h1 {
+        font-size: 36px;
     }
 }
 

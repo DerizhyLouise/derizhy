@@ -114,6 +114,10 @@
     padding-top: 50px;
 }
 
+.resume-list-title h3 {
+    font-weight: 600;
+}
+
 .resume-listing-content {
     --h: 212deg;
 	--l: 43%;
@@ -212,7 +216,6 @@
 	}
 	
 	.resume-listing-content h3 {
-		font-size: 1.5rem;
 		margin: 0 0 2rem;
 	}
 
@@ -227,4 +230,11 @@
 	.resume-listing-content h3::before {
 		margin-right: 1.5rem;
 	}
+}
+
+@media only screen and (max-width: 700px) {
+
+    .resume-list-title h3 {
+        font-size: 18px;
+    }
 }

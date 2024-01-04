@@ -5,13 +5,13 @@
 
 .project-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding-top: 50px;
 }
 
 .article-wrapper {
     width: 250px;
+    height: 400px;
     -webkit-transition: 0.15s all ease-in-out;
     transition: 0.15s all ease-in-out;
     border-radius: 10px;
@@ -19,39 +19,7 @@
     border: 4px solid transparent;
     cursor: pointer;
     background-color: #3D5872;
-    margin: 25px;
-}
-
-.article-wrapper:hover {
-    -webkit-box-shadow: 10px 10px 0 #4e84ff, 20px 20px 0 #4444bd;
-    box-shadow: 10px 10px 0 #4e84ff, 20px 20px 0 #4444bd;
-    border-color: #0578c5;
-    -webkit-transform: translate(-20px, -20px);
-    -ms-transform: translate(-20px, -20px);
-    transform: translate(-20px, -20px);
-    background-color: #3D5872;
-}
-
-.article-wrapper:active {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-}
-
-.types {
-    gap: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    place-content: flex-start;
-    background-color: #3D5872;
-}
-
-.rounded-lg {
-    /* class tailwind */
-    border-radius: 10px;
+    margin: 20px 10px;
 }
 
 .article-wrapper:hover .project-hover {
@@ -62,16 +30,17 @@
 }
 
 .project-info {
+    height: 210px;
     padding-top: 20px;
     padding: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 20px;
     background-color: #3D5872;
 }
 
@@ -112,6 +81,7 @@
 .container-project {
     width: 100%;
     height: 170px;
+    border-radius: 5px;
 }
 
 .container-project img {
@@ -119,4 +89,166 @@
     height: 170px;
     border-radius: 5px;
     object-fit: cover;
+}
+
+.project-button:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+}
+
+.project-modal-info h1, .project-modal-info p {
+    background-color: #3D5872;
+}
+
+.project-button {
+    align-self: center;
+    text-align: center;
+    border-radius: 15px;
+    background: #17273D;
+    height: 66px;
+    width: 172px;
+    -webkit-transition: opacity 100ms linear;
+    -moz-transition: opacity 100ms linear;
+    -ms-transition: opacity 100ms linear;
+    -o-transition: opacity 100ms linear;
+    transition: opacity 100ms linear;
+}
+
+a.project-button {
+    letter-spacing: 2px;
+    line-height: 66px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.project-button:hover {
+    background: #3E465A;
+}
+
+a.project-button.load {
+    opacity: 0;
+}
+
+.modal {
+    opacity: 0;
+    padding: 50px;
+    position: absolute;
+    z-index: 1100;
+    -webkit-transition: opacity 600ms linear 600ms;
+    -moz-transition: opacity 600ms linear 600ms;
+    -ms-transition: opacity 600ms linear 600ms;
+    -o-transition: opacity 600ms linear 600ms;
+    transition: opacity 600ms linear 600ms;
+    overflow: auto;
+}
+
+.project-modal-info {
+    background: #3D5872;
+    padding: 50px 100px;
+}
+
+.display {
+    opacity: 1;
+    visibility: visible;
+    background-color: white;
+}
+
+.conceal {
+    visibility: visible;
+}
+
+button.project-modal-close {
+    background: #363D4E;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    -webkit-transition: -webkit-transform 600ms;
+    -moz-transition: -moz-transform 600ms;
+    -ms-transition: -ms-transform 600ms;
+    -o-transition: -o-transform 600ms;
+    transition: transform 600ms;
+}
+
+.project-modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 900;
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -ms-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+}
+
+button.project-modal-close:hover {
+    background: #3E465A;
+    -webkit-transform: rotate(360deg) scale(1.10);
+    -moz-transform: rotate(360deg) scale(1.10);
+    -ms-transform: rotate(360deg) scale(1.10);
+    -o-transform: rotate(360deg) scale(1.10);
+    transform: rotate(360deg) scale(1.10);
+    -webkit-transition: -webkit-transform 600ms;
+    -moz-transition: -moz-transform 600ms;
+    -ms-transition: -ms-transform 600ms;
+    -o-transition: -o-transform 600ms;
+    transition: transform 600ms;
+}
+.modal button.project-modal-close span,
+.modal span:before,
+.modal span:after {
+    background: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    height: 2px;
+    position: absolute;
+    width: 20px;
+}
+
+.modal button.project-modal-close span:first-child {
+    background: white;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal button.project-modal-close span:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.modal button.project-modal-close span:after {
+    -webkit-transform: translateY(-2px) rotate(-45deg);
+    -moz-transform: translateY(-2px) rotate(-45deg);
+    -ms-transform: translateY(-2px) rotate(-45deg);
+    -o-transform: translateY(-2px) rotate(-45deg);
+    transform: translateY(-2px) rotate(-45deg);
+    top: 2px;
 }
