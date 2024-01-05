@@ -237,4 +237,19 @@
     .resume-list-title h3 {
         font-size: 18px;
     }
+
+    .resume-listing-content p {
+        padding-top: 8px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+
+    .resume-list-title h3 {
+        font-size: 14px;
+    }
+
+    .resume-listing-content p {
+        font-size: 10px;
+    }
 }

@@ -231,9 +231,9 @@ fetch('../json/projects.json').then(response => response.json()).then(data => {
         projectIdInput.type = 'hidden';
         projectIdInput.value = project.id;
 
-        const projectButton = document.createElement('a');
+        const projectButton = document.createElement('button');
         projectButton.classList.add('project-button');
-        projectButton.textContent = 'More';
+        projectButton.innerHTML = '<div class="project-button-left"></div>More<div class="project-button-right"></div>';
 
         projectInfo.appendChild(projectTitle);
         projectInfo.appendChild(projectIdInput);
@@ -270,7 +270,7 @@ fetch('../json/projects.json').then(response => response.json()).then(data => {
                     height: '100vh',
                 });
     
-                $content.addClass('modal_content');
+                $content.addClass('project-modal-content');
                 $('.modal, .project-modal-overlay').addClass('display');
                 $('.project-button').addClass('load');
             }).catch(error => {
@@ -281,7 +281,7 @@ fetch('../json/projects.json').then(response => response.json()).then(data => {
       
     var modal = (function(){
         var $close = $('<button role="button" class="project-modal-close" title="Close"><span></span></button>');
-        var $content = $('<div class="modal_content"/>');
+        var $content = $('<div class="project-modal-content"/>');
         var $modal = $('<div class="modal"/>');
         var $window = $(window);
       
