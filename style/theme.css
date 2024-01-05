@@ -86,10 +86,7 @@ h1, h2, h3, p, table {
 }
 
 @keyframes wave {
-
-    0%,
-    40%,
-    100% {
+    0%, 40%, 100% {
         transform: translateY(0);
     }
 
@@ -100,8 +97,7 @@ h1, h2, h3, p, table {
 
 @media only screen and (max-width: 1480px) {
 
-    .main,
-    header {
+    .main, header {
         padding-left: 200px;
         padding-right: 200px;
     }
@@ -109,8 +105,7 @@ h1, h2, h3, p, table {
 
 @media only screen and (max-width: 1200px) {
 
-    .main,
-    header {
+    .main, header {
         padding-left: 150px;
         padding-right: 150px;
     }
@@ -118,8 +113,7 @@ h1, h2, h3, p, table {
 
 @media only screen and (max-width: 1000px) {
 
-    .main,
-    header {
+    .main, header {
         padding-left: 120px;
         padding-right: 120px;
     }
@@ -127,8 +121,7 @@ h1, h2, h3, p, table {
 
 @media only screen and (max-width: 800px) {
 
-    .main,
-    header {
+    .main, header {
         padding-left: 100px;
         padding-right: 100px;
     }
@@ -136,8 +129,7 @@ h1, h2, h3, p, table {
 
 @media only screen and (max-width: 650px) {
 
-    .main,
-    header {
+    .main, header {
         padding-left: 80px;
         padding-right: 80px;
     }
@@ -149,8 +141,7 @@ h1, h2, h3, p, table {
 
 @media only screen and (max-width: 500px) {
 
-    .main,
-    header {
+    .main, header {
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -166,8 +157,7 @@ h1, h2, h3, p, table {
 
 @media only screen and (max-width: 380px) {
 
-    .main,
-    header {
+    .main, header {
         padding-left: 40px;
         padding-right: 40px;
     }

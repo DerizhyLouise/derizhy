@@ -36,17 +36,14 @@ fetch('../json/softSkills.json').then(response => response.json()).then(data => 
     data.forEach(skill => {
         const listItem = document.createElement('li');
         listItem.style.setProperty('--accent-color', skill.theme);
-
-        const skillIcon = document.createElement('div');
-        skillIcon.classList.add('icon');
-        skillIcon.innerHTML = `<i class="${skill.icon}"></i>`;
-
-        const skillTitle = document.createElement('div');
-        skillTitle.classList.add('skill-list-title');
-        skillTitle.textContent = skill.skill;
-
-        listItem.appendChild(skillIcon);
-        listItem.appendChild(skillTitle);
+        listItem.innerHTML = `
+            <div class="icon">
+                <i class="${skill.icon}"></i>
+            </div>
+            <div class="skill-list-title">
+                ${skill.skill}
+            </div>
+        `
 
         softSkillsContainer.appendChild(listItem);
     });
@@ -61,17 +58,14 @@ fetch('../json/techSkills.json').then(response => response.json()).then(data => 
     data.forEach(skill => {
         const listItem = document.createElement('li');
         listItem.style.setProperty('--accent-color', skill.theme);
-
-        const skillIcon = document.createElement('div');
-        skillIcon.classList.add('icon');
-        skillIcon.innerHTML = `<i class="${skill.icon}"></i>`;
-
-        const skillTitle = document.createElement('div');
-        skillTitle.classList.add('skill-list-title');
-        skillTitle.textContent = skill.skill;
-
-        listItem.appendChild(skillIcon);
-        listItem.appendChild(skillTitle);
+        listItem.innerHTML = `
+            <div class="icon">
+                <i class="${skill.icon}"></i>
+            </div>
+            <div class="skill-list-title">
+                ${skill.skill}
+            </div>
+        `
 
         technicalSkillsContainer.appendChild(listItem);
     });
@@ -86,32 +80,18 @@ fetch('../json/experiences.json').then(response => response.json()).then(data =>
 
     data.forEach((experience, index) => {
         const listItem = document.createElement('li');
+        const aosEffect = index % 2 === 0 ? 'fade-up-right' : 'fade-up-left';
         listItem.style.setProperty('--i', index + 1);
         listItem.style.setProperty('--col', experience.theme);
-
-        const aosEffect = index % 2 === 0 ? 'fade-up-right' : 'fade-up-left';
         listItem.setAttribute('data-aos', aosEffect);
         listItem.setAttribute('data-aos-duration', '1500');
-
-        const experienceTitle = document.createElement('div');
-        experienceTitle.classList.add('resume-list-title');
-
-        const logoImage = document.createElement('img');
-        logoImage.src = experience.logo;
-
-        const experienceHeader = document.createElement('h3');
-        experienceHeader.textContent = `${experience.position} - ${experience.company} (${experience.time})`;
-
-        experienceTitle.appendChild(logoImage);
-        experienceTitle.appendChild(experienceHeader);
-
-        const experienceDetails = document.createElement('p');
-        if (experience.description) {
-            experienceDetails.innerHTML = experience.description.replace(/\n/g, '<br/>');
-        }
-
-        listItem.appendChild(experienceTitle);
-        listItem.appendChild(experienceDetails);
+        listItem.innerHTML = `
+            <div class="resume-list-title">
+                <img src="${experience.logo}">
+                <h3>${experience.position} - ${experience.company} (${experience.time})</h3>
+            </div>
+            <p>${experience.description.replace(/\n/g, '<br/>')}</p>
+        `
 
         experienceContainer.appendChild(listItem);
     });
@@ -126,32 +106,19 @@ fetch('../json/educations.json').then(response => response.json()).then(data => 
 
     data.forEach((education, index) => {
         const listItem = document.createElement('li');
+        const aosEffect = index % 2 === 0 ? 'fade-up-left' : 'fade-up-right';
         listItem.style.setProperty('--i', index + 1);
         listItem.style.setProperty('--col', education.theme);
-
-        const aosEffect = index % 2 === 0 ? 'fade-up-left' : 'fade-up-right';
         listItem.setAttribute('data-aos', aosEffect);
         listItem.setAttribute('data-aos-duration', '1500');
 
-        const educationTitle = document.createElement('div');
-        educationTitle.classList.add('resume-list-title');
-
-        const logoImage = document.createElement('img');
-        logoImage.src = education.logo;
-
-        const educationHeader = document.createElement('h3');
-        educationHeader.textContent = `${education.institute} - ${education.major} (${education.time})`;
-
-        educationTitle.appendChild(logoImage);
-        educationTitle.appendChild(educationHeader);
-
-        const educationDetails = document.createElement('p');
-        if (education.description) {
-            educationDetails.innerHTML = education.description;
-        }
-
-        listItem.appendChild(educationTitle);
-        listItem.appendChild(educationDetails);
+        listItem.innerHTML = `
+            <div class="resume-list-title">
+                <img src="${education.logo}">
+                <h3>${education.institute} - ${education.major} (${education.time})</h3>
+            </div>
+            <p>${education.description.replace(/\n/g, '<br/>')}</p>
+        `
 
         educationContainer.appendChild(listItem);
     });
@@ -166,32 +133,18 @@ fetch('../json/organizations.json').then(response => response.json()).then(data 
 
     data.forEach((organization, index) => {
         const listItem = document.createElement('li');
+        const aosEffect = index % 2 === 0 ? 'fade-up-right' : 'fade-up-left';
         listItem.style.setProperty('--i', index + 1);
         listItem.style.setProperty('--col', organization.theme);
-
-        const aosEffect = index % 2 === 0 ? 'fade-up-right' : 'fade-up-left';
         listItem.setAttribute('data-aos', aosEffect);
         listItem.setAttribute('data-aos-duration', '1500');
-
-        const organizationTitle = document.createElement('div');
-        organizationTitle.classList.add('resume-list-title');
-
-        const logoImage = document.createElement('img');
-        logoImage.src = organization.logo;
-
-        const organizationHeader = document.createElement('h3');
-        organizationHeader.textContent = organization.organization;
-
-        organizationTitle.appendChild(logoImage);
-        organizationTitle.appendChild(organizationHeader);
-
-        const organizationDetails = document.createElement('p');
-        if (organization.detail) {
-            organizationDetails.innerHTML = organization.detail;
-        }
-
-        listItem.appendChild(organizationTitle);
-        listItem.appendChild(organizationDetails);
+        listItem.innerHTML = `
+            <div class="resume-list-title">
+                <img src="${organization.logo}">
+                <h3>${organization.organization}</h3>
+            </div>
+            <p>${organization.detail}</p>
+        `
 
         organizationContainer.appendChild(listItem);
     });
@@ -207,40 +160,22 @@ fetch('../json/projects.json').then(response => response.json()).then(data => {
         const articleWrapper = document.createElement('article');
         articleWrapper.classList.add('article-wrapper');
 
-        const containerProject = document.createElement('div');
-        containerProject.classList.add('rounded-lg', 'container-project');
-
-        const projectImage = document.createElement('img');
-        projectImage.src = project.img;
-
-        containerProject.appendChild(projectImage);
-
-        const projectInfo = document.createElement('div');
-        projectInfo.classList.add('project-info');
-
-        const projectTitle = document.createElement('div');
-        projectTitle.classList.add('project-title');
-
-        const titleHeading = document.createElement('h3');
-        titleHeading.textContent = project.title;
-
-        projectTitle.appendChild(titleHeading);
-
-        const projectIdInput = document.createElement('input');
-        projectIdInput.classList.add('projectId');
-        projectIdInput.type = 'hidden';
-        projectIdInput.value = project.id;
-
-        const projectButton = document.createElement('button');
-        projectButton.classList.add('project-button');
-        projectButton.innerHTML = '<div class="project-button-left"></div>More<div class="project-button-right"></div>';
-
-        projectInfo.appendChild(projectTitle);
-        projectInfo.appendChild(projectIdInput);
-        projectInfo.appendChild(projectButton);
-
-        articleWrapper.appendChild(containerProject);
-        articleWrapper.appendChild(projectInfo);
+        articleWrapper.innerHTML = `
+            <div class="rounded-lg container-project">
+                <img src="${project.img}">
+            </div>
+            <div class="project-info">
+                <div class="project-title">
+                    <h3>${project.title}</h3>
+                </div>
+                <input type="hidden" class="projectId" value="${project.id}">
+                <button class="project-button">
+                    <div class="project-button-left"></div>
+                    More
+                    <div class="project-button-right"></div>
+                </button>
+            </div>
+        `
 
         projectsContainer.appendChild(articleWrapper);
     });

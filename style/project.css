@@ -100,8 +100,7 @@
     height: 100vh;
 }
 
-.project-modal-info h1,
-.project-modal-info p {
+.project-modal-info h1, .project-modal-info p {
     background-color: #3D5872;
 }
 
@@ -191,9 +190,7 @@ button.project-modal-close:hover {
     transition: transform 600ms;
 }
 
-.modal button.project-modal-close span,
-.modal span:before,
-.modal span:after {
+.modal button.project-modal-close span, .modal span:before, .modal span:after {
     background: #FFFFFF;
     cursor: pointer;
     display: block;
@@ -253,8 +250,7 @@ button.project-modal-close:hover {
     box-shadow: hsl(210, 80%, 42%) 2px 2px 22px;
 }
 
-.project-button-right::after,
-.project-button::after {
+.project-button-right::after, .project-button::after {
     content: 'More';
     display: block;
     position: absolute;
@@ -269,8 +265,7 @@ button.project-modal-close:hover {
     left: 30px;
 }
 
-.project-button-right,
-.project-button-left {
+.project-button-right, .project-button-left {
     position: absolute;
     width: 100%;
     height: 100%;
