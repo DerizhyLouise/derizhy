@@ -23,7 +23,7 @@
             "This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the best group in Shopping Cart's category.<br/><br/>",
             "Background : From August to December, there was a 24% decrease in revenue.<br/><br/>",
             "Potential analytics direction : How can we increase revenue by 10-15% in two months?<br/><br/>",
-            "RCA : https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa<br/><br/>",
+            "RCA : <a href='https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa'>https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa</a><br/><br/>",
             "Business Question :<br/>",
             "1. What is the percentage of customers who have become inactive over the last three months?<br/>",
             "2. What is the average delivery time for customers to receive their orders or products from past 3 months?<br/>",
@@ -38,7 +38,7 @@
             "- Total sold product<br/>",
             "- Product price<br/>",
             "- Time range<br/><br/>",
-            "Data Source : https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv"
+            "Data Source : <a href='https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv'>https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv</a>"
         ]
     },
     {

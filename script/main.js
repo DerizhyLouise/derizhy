@@ -156,9 +156,12 @@ fetch('../json/organizations.json').then(response => response.json()).then(data 
 fetch('../json/projects.json').then(response => response.json()).then(data => {
     const projectsContainer = document.querySelector('.project-container');
 
-    data.forEach(project => {
+    data.forEach((project, index) => {
         const articleWrapper = document.createElement('article');
+        const aosEffect = index % 2 === 0 ? 'flip-up' : 'flip-down';
         articleWrapper.classList.add('article-wrapper');
+        articleWrapper.setAttribute('data-aos', aosEffect);
+        articleWrapper.setAttribute('data-aos-duration', '2000');
 
         articleWrapper.innerHTML = `
             <div class="rounded-lg container-project">
@@ -190,13 +193,15 @@ fetch('../json/projects.json').then(response => response.json()).then(data => {
                 var project = data.find(item => item.id === parseInt(projectId));
                 if (project) {
                     const h1 = document.createElement('h1');
+                    const h4 = document.createElement('h4');
                     const p = document.createElement('p');
     
                     h1.textContent = project.title;
+                    h4.textContent = project.time;
                     p.innerHTML = project.description.join('');
     
                     $content.empty();
-                    $content.append(h1, p);
+                    $content.append(h1, h4, p);
                 }
     
                 modal.open({

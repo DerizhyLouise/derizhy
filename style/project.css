@@ -100,7 +100,7 @@
     height: 100vh;
 }
 
-.project-modal-info h1, .project-modal-info p {
+.project-modal-info h1, .project-modal-info p, .project-modal-info h4 {
     background-color: #3D5872;
 }
 
@@ -130,10 +130,6 @@
 
 .conceal {
     visibility: visible;
-}
-
-.project-modal-content {
-    height: 100svh;
 }
 
 button.project-modal-close {
