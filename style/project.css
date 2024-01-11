@@ -96,10 +96,6 @@
     object-fit: cover;
 }
 
-.project-modal {
-    height: 100vh;
-}
-
 .project-modal-info h1, .project-modal-info p, .project-modal-info h4 {
     background-color: hsl(216, 50%, 24%);
 }

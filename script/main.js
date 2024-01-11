@@ -316,20 +316,22 @@ fetch('../json/projects.json').then(response => response.json()).then(data => {
 
 // Fetch Reviews
 fetch('../json/reviews.json').then(response => response.json()).then(data => {
-    const reviewContainer = document.querySelector('.review-content-list');
+    const reviewContainer = document.querySelector('.review-content');
 
     data.forEach((review, index) => {
-        const listItem = document.createElement('li');
+        const listItem = document.createElement('a');
         const aosEffect = index % 2 === 0 ? 'fade-up-left' : 'fade-up-right';
         listItem.classList.add("review-child")
         listItem.setAttribute('data-aos', aosEffect);
         listItem.setAttribute('data-aos-duration', '1500');
+        listItem.href = review.url;
+        listItem.target = "_blank";
 
         listItem.innerHTML = `
-            <div class="thumb"><img src="${review.img}"></div>
+            <div class="review-img"><img src="${review.img}"></div>
             <div class="review-desc">
-                <h3>${review.name}</h3>
-                <p>${review.desc}<br><a href='${review.url}'>@${review.username}</a></p>
+                <h3 class="gradient-text">${review.name}</h3>
+                <p>${review.desc}</p>
             </div>
         `
 
