@@ -6,15 +6,18 @@
         "media": [
             {
                 "title": "Presentation",
-                "url": ""
+                "url": "https://drive.google.com/file/d/1IApQxj4iHTQDTRybVrOtbfcbCe0bmvoc/view?usp=drive_link",
+                "type": "PDF"
             },
             {
                 "title": "Dashboard",
-                "url": ""
+                "url": "https://lookerstudio.google.com/reporting/948d021d-22ff-4e25-948d-c1b320b163ef",
+                "type": "Looker Studio"
             },
             {
-                "title": "Data Cleaning and Analysis",
-                "url": "https://github.com/DerizhyLouise/RevoU-Data-Analytics-Capstone-Project"
+                "title": "Data Cleaning and Analytic",
+                "url": "https://github.com/DerizhyLouise/RevoU-Data-Analytics-Capstone-Project",
+                "type": "Github"
             }
         ],
         "time": "Oct 2023 - Dec 2023",
@@ -48,19 +51,23 @@
         "media": [
             {
                 "title": "Presentation",
-                "url": ""
+                "url": "https://drive.google.com/file/d/169NUNmykmGugSSSLY031DE7DgjflnXar/view?usp=drive_link",
+                "type": "PDF"
             },
             {
                 "title": "Clo - Prototype",
-                "url": "https://www.figma.com/file/hpcYi1s67YbdTRZomSKrgV/RevoU-Group6-team-library?type=design&node-id=0-1&mode=design&t=rZgGG7FrgtWLBMtF-0"
+                "url": "https://www.figma.com/file/hpcYi1s67YbdTRZomSKrgV/RevoU-Group6-team-library?type=design&node-id=0-1&mode=design&t=rZgGG7FrgtWLBMtF-0",
+                "type": "Figma"
             },
             {
                 "title": "Clo - Front-End",
-                "url": "https://github.com/Kampus-Merdeka-Software-Engineering/FE-Balikpapan-6"
+                "url": "https://github.com/Kampus-Merdeka-Software-Engineering/FE-Balikpapan-6",
+                "type": "Github"
             },
             {
                 "title": "Clo - Back-End",
-                "url": "https://github.com/Kampus-Merdeka-Software-Engineering/BE-Balikpapan-6"
+                "url": "https://github.com/Kampus-Merdeka-Software-Engineering/BE-Balikpapan-6",
+                "type": "Github"
             }
         ],
         "time": "Aug 2023 - Oct 2023",
@@ -76,7 +83,8 @@
         "media": [
             {
                 "title": "Data Analysis - Bike Rental",
-                "url": "https://github.com/DerizhyLouise/Bike-Rental-Data-Analysis-Project"
+                "url": "https://github.com/DerizhyLouise/Bike-Rental-Data-Analysis-Project",
+                "type": "Github"
             }
         ],
         "time": "Sep 2023 - Sep 2023",
@@ -92,7 +100,8 @@
         "media": [
             {
                 "title": "Cryptography Project",
-                "url": "https://github.com/DerizhyLouise/Cryptography-Project"
+                "url": "https://github.com/DerizhyLouise/Cryptography-Project",
+                "type": "Github"
             }
         ],
         "time": "Apr 2023 - Jul 2023",
@@ -115,7 +124,8 @@
         "media": [
             {
                 "title": "Image Processing - Computer Vision Project",
-                "url": "https://github.com/DerizhyLouise/Image-Processing-PythonProject"
+                "url": "https://github.com/DerizhyLouise/Image-Processing-PythonProject",
+                "type": "Github"
             }
         ],
         "time": "Apr 2023 - Jul 2023",
@@ -138,8 +148,9 @@
         "img": "../assets/image/helpMe.png",
         "media": [
             {
-                "title": "Image Processing - Computer Vision Project",
-                "url": "https://www.figma.com/proto/mEWc3Po2FCXFfyuSgQGrwR/Help-Me?type=design&node-id=1-418&t=mXhQibhWYwIFbFPJ-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A418"
+                "title": "Help Me - Digital Start Up Project",
+                "url": "https://www.figma.com/proto/mEWc3Po2FCXFfyuSgQGrwR/Help-Me?type=design&node-id=1-418&t=mXhQibhWYwIFbFPJ-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A418",
+                "type": "Figma"
             }
         ],
         "time": "Apr 2023 - Jul 2023",

@@ -316,12 +316,102 @@ button.project-modal-close:hover {
     animation: bubbles 5s linear infinite both;
 }
 
-.project-modal-info h4 {
-    margin-top: 0px;
-}
-
 .project-modal-info h1 {
     margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+.project-modal-info h4 {
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+.project-modal-info p {
+    font-size: 16px;
+    margin-bottom: 20px
+}
+
+.project-media {
+    background-color: hsl(216, 50%, 24%);
+}
+
+.project-media-child {
+	border-radius: 10px;
+	display: flex;
+	max-width: 100%;
+	margin: 20px 20px 20px 0px;
+	overflow: hidden;
+	width: 600px;
+    height: 170px;
+}
+
+.project-media-child h6 {
+    font-size: 12px;
+    background-color: hsl(217, 54%, 11%);
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.project-media-child h2 {
+    font-size: 24px;
+    background-color: hsl(217, 54%, 11%);
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.project-media-preview {
+	background-color: hsl(217, 54%, 11%);
+	color: #fff;
+	padding: 30px;
+	width: 250px;
+}
+
+.project-media-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.project-media-info {
+    background-color: #7175DA;
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.project-media-info h2, .project-media-info h6 {
+    background-color: #7175DA;
+    color: hsl(217, 54%, 11%);
+}
+
+.project-media-btn {
+	background-color: #2A265F;
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 25px;
+	position: absolute;
+    bottom: 15px;
+	right: 30px;
+	letter-spacing: 1px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.project-media-btn:hover {
+    transform: scale(1.1);
+    background-color: hsl(244, 58%, 47%);
+}
+
+.project-media-btn:active {
+    transform: scale(0.9);
+    background-color: hsl(244, 58%, 30%);
 }
 
 @keyframes bubbles {

@@ -195,13 +195,36 @@ fetch('../json/projects.json').then(response => response.json()).then(data => {
                     const h1 = document.createElement('h1');
                     const h4 = document.createElement('h4');
                     const p = document.createElement('p');
+                    const div = document.createElement('div');
+                    div.classList.add('project-media');
+                    const h1a = document.createElement('h1');
     
                     h1.textContent = project.title;
                     h4.textContent = project.time;
                     p.innerHTML = project.description.join('');
+                    h1a.textContent = "Project's Media";
+
+                    project.media.forEach(media => {
+                        const list = document.createElement('div');
+                        list.classList.add('project-media-child');
+                        list.innerHTML = `
+                            <div class="project-media-preview">
+                                <h6>MEDIA TYPE :</h6>
+                                <h2>${media.type}</h2>
+                                <a href="#"></a>
+                            </div>
+                            <div class="project-media-info">
+                                <h6>TITLE</h6>
+                                <h2>${media.title}</h2>
+                                <button class="project-media-btn" onClick="directToMedia('${media.url}')">View</button>
+                            </div>
+                        `
+
+                        div.append(list);
+                    })
     
                     $content.empty();
-                    $content.append(h1, h4, p);
+                    $content.append(h1, h4, p, h1a, div);
                 }
     
                 modal.open({
@@ -286,5 +309,14 @@ fetch('../json/projects.json').then(response => response.json()).then(data => {
 }).catch(error => {
     console.error('Error fetching or processing JSON data:', error);
 });
+
+function directToMedia (url) {
+    var link = document.createElement('a');
+    link.href = url;
+    link.target = "_blank";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 
 AOS.init();
