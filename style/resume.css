@@ -128,7 +128,7 @@
 
 .resume-listing-content p {
 	line-height: 1.6;
-    background: #3D5872;
+    background: hsl(216, 50%, 24%);
 }
 
 .resume-listing-content ol {
@@ -153,7 +153,7 @@
 	box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
 	border-radius: 0.5rem;
 	overflow: hidden;
-	background-color: #3D5872;
+	background-color: hsl(216, 50%, 24%);
 }
 
 .resume-listing-content li::before {
@@ -168,7 +168,7 @@
 }
 
 .resume-listing-content h3 {
-    background: #3D5872;
+    background: hsl(216, 50%, 24%);
 	display: flex;
 	align-items: center;
 	margin: 0 0 1rem;
@@ -194,7 +194,7 @@
 .resume-list-title {
     display: flex;
     align-items: center;
-    background-color: #3D5872;
+    background-color: hsl(216, 50%, 24%);
 }
 
 .resume-list-title h3 {
