@@ -199,10 +199,14 @@ fetch('../json/projects.json').then(response => response.json()).then(data => {
                     div.classList.add('project-media');
                     const h1a = document.createElement('h1');
     
-                    h1.textContent = project.title;
+                    h1.innerHTML = `
+                        <span class="gradient-text">${project.title}</span>
+                    `;
                     h4.textContent = project.time;
                     p.innerHTML = project.description.join('');
-                    h1a.textContent = "Project's Media";
+                    h1a.innerHTML = `
+                        <span class="gradient-text">Project's Media</span>
+                    `;
 
                     project.media.forEach(media => {
                         const list = document.createElement('div');

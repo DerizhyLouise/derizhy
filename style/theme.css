@@ -33,7 +33,7 @@ html {
     padding-right: 250px;
 }
 
-h1, h2, h3, p, table {
+h1, h2, h3, h4, h5, h6, p, table {
     user-select: none;
 }
 
