@@ -320,9 +320,8 @@ fetch('../json/reviews.json').then(response => response.json()).then(data => {
 
     data.forEach((review, index) => {
         const listItem = document.createElement('a');
-        const aosEffect = index % 2 === 0 ? 'fade-up-left' : 'fade-up-right';
         listItem.classList.add("review-child")
-        listItem.setAttribute('data-aos', aosEffect);
+        listItem.setAttribute('data-aos', 'fade-up');
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.href = review.url;
         listItem.target = "_blank";
