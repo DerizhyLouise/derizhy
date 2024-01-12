@@ -23,13 +23,14 @@
     place-items: center;
     text-align: center;
     border-radius: 20px;
+    transition: transform 0.5s ease;
 }
 
 .review-img {
     margin-top: 15px;
 }
 
-.review-img, .review-img img{
+.review-img, .review-img img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -47,4 +48,4 @@
 
 .review-desc h3, .review-desc p {
     background-color: hsl(216, 50%, 24%);
-} 
+}

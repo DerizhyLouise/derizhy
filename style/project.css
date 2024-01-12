@@ -14,24 +14,11 @@
 .article-wrapper {
     width: 250px;
     height: 400px;
-    -webkit-transition: 0.15s all ease-in-out;
-    transition: 0.15s all ease-in-out;
     border-radius: 20px;
     padding: 5px;
     border: 4px solid transparent;
     background-color: hsl(216, 50%, 24%);
     margin: 20px 10px;
-}
-
-.article-wrapper:hover {
-    transform: scale(1.05);
-}
-
-.article-wrapper:hover .project-hover {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    background-color: #a6c2f0;
 }
 
 .project-info {
