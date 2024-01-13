@@ -16,10 +16,10 @@ function downloadCv (type) {
     var downloadLink = "";
     
     if (type == "ats") {
-        pdfPath = '../assets/pdf/atsCV.pdf';
+        pdfPath = './assets/pdf/atsCV.pdf';
         downloadLink = "atsCV.pdf";
     } else {
-        pdfPath = '../assets/pdf/creCV.pdf';
+        pdfPath = './assets/pdf/creCV.pdf';
         downloadLink = "creCV.pdf";
     }
     link.href = pdfPath;
@@ -30,7 +30,7 @@ function downloadCv (type) {
 }
 
 // Fetch Soft Skills
-fetch('../json/softSkills.json').then(response => response.json()).then(data => {
+fetch('./json/softSkills.json').then(response => response.json()).then(data => {
     const softSkillsContainer = document.querySelector('.soft ul');
 
     data.forEach(skill => {
@@ -52,7 +52,7 @@ fetch('../json/softSkills.json').then(response => response.json()).then(data => 
 });
 
 // Fetch Technical Skills
-fetch('../json/techSkills.json').then(response => response.json()).then(data => {
+fetch('./json/techSkills.json').then(response => response.json()).then(data => {
     const technicalSkillsContainer = document.querySelector('.tech ul');
 
     data.forEach(skill => {
@@ -74,7 +74,7 @@ fetch('../json/techSkills.json').then(response => response.json()).then(data => 
 });
 
 // Fetch Experiences
-fetch('../json/experiences.json').then(response => response.json()).then(data => {
+fetch('./json/experiences.json').then(response => response.json()).then(data => {
     const experienceContainer = document.querySelector('.resume-listing-content ol');
     experienceContainer.style.setProperty('--length', data.length);
 
@@ -100,7 +100,7 @@ fetch('../json/experiences.json').then(response => response.json()).then(data =>
 });
 
 // Fetch Educations
-fetch('../json/educations.json').then(response => response.json()).then(data => {
+fetch('./json/educations.json').then(response => response.json()).then(data => {
     const educationContainer = document.querySelector('.resume-education .resume-listing-content ol');
     educationContainer.style.setProperty('--length', data.length);
 
@@ -127,7 +127,7 @@ fetch('../json/educations.json').then(response => response.json()).then(data => 
 });
 
 // Fetch Organizations
-fetch('../json/organizations.json').then(response => response.json()).then(data => {
+fetch('./json/organizations.json').then(response => response.json()).then(data => {
     const organizationContainer = document.querySelector('.resume-organization .resume-listing-content ol');
     organizationContainer.style.setProperty('--length', data.length);
 
@@ -153,7 +153,7 @@ fetch('../json/organizations.json').then(response => response.json()).then(data 
 });
 
 // Fetch Projects
-fetch('../json/projects.json').then(response => response.json()).then(data => {
+fetch('./json/projects.json').then(response => response.json()).then(data => {
     const projectsContainer = document.querySelector('.project-container');
 
     data.forEach((project, index) => {
@@ -189,7 +189,7 @@ fetch('../json/projects.json').then(response => response.json()).then(data => {
         $('.project-button').on('click', function(e){
             var projectId = $(this).prev('.projectId').val();
             
-            fetch('../json/projects.json').then(response => response.json()).then(data => {
+            fetch('./json/projects.json').then(response => response.json()).then(data => {
                 var project = data.find(item => item.id === parseInt(projectId));
                 if (project) {
                     const h1 = document.createElement('h1');
@@ -315,7 +315,7 @@ fetch('../json/projects.json').then(response => response.json()).then(data => {
 });
 
 // Fetch Reviews
-fetch('../json/reviews.json').then(response => response.json()).then(data => {
+fetch('./json/reviews.json').then(response => response.json()).then(data => {
     const reviewContainer = document.querySelector('.review-content');
 
     data.forEach((review, index) => {

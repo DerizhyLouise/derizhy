@@ -4,7 +4,7 @@
         "major": "Informatics Engineering",
         "time": "2020-2024",
         "description": "One of the top technology campus in Medan, Indonesia.",
-        "logo": "../assets/image/mikroskil.jpg",
+        "logo": "./assets/image/mikroskil.jpg",
         "theme": "#034EA2"
     },
     {
@@ -12,7 +12,7 @@
         "major": "Data & Software Engineering",
         "time": "2024",
         "description": "Part of Studi Independen - Kampus Merdeka program by Ministry of Education. Learnt about data analytics and software engineering.",
-        "logo": "../assets/image/revou.png",
+        "logo": "./assets/image/revou.png",
         "theme": "#FEDE3E"
     },
     {
@@ -20,7 +20,7 @@
         "major": "Science",
         "time": "2017-2020",
         "description": "High school at SMA Sisingamangaraja, Tanjungbalai with science major.",
-        "logo": "../assets/image/smraja.jpg",
+        "logo": "./assets/image/smraja.jpg",
         "theme": "#D61F23"
     }
 ]

@@ -5,11 +5,12 @@ footer {
     position:relative;
     z-index: 2;
     user-select: none;
+    border-top: 2px solid #E91E63;
 }
 
 .footer-container {
     max-width: 1170px;
-    margin: auto;
+    margin: 50px auto;
 }
 
 .footer-row {
@@ -17,7 +18,7 @@ footer {
     flex-wrap: wrap;
 }
 
-ul {
+.footer-container ul {
     list-style: none;
 }
 
@@ -45,7 +46,7 @@ ul {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: #E91E63;
     height: 2px;
     box-sizing: border-box;
     width: 50px;

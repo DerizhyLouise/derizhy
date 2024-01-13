@@ -72,7 +72,7 @@
 }
 
 .profile-cv button {
-    --_c: #FF8473;
+    --_c: #E91E63;
     flex: calc(1 + var(--_s, 0));
     min-width: 0;
     font-size: 28px;

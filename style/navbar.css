@@ -70,7 +70,7 @@ header {
 }
 
 .nav-button:hover {
-    color: #FF8473;
+    color: #E91E63;
 }
 
 .nav-button svg {
@@ -93,7 +93,7 @@ header {
     stroke-width: 5;
     stroke-dasharray: 20, 239;
     stroke-dashoffset: 48;
-    stroke: #FF8473;
+    stroke: #E91E63;
     transition: all 2s cubic-bezier(
         0.22, 1, 0.25, 1
     );

@@ -2,7 +2,7 @@
     {
         "id": 6,
         "title": "Data Analytics of Shopping Cart Database",
-        "img": "../assets/image/revouDa.png",
+        "img": "./assets/image/revouDa.png",
         "media": [
             {
                 "title": "Presentation",
@@ -47,7 +47,7 @@
     {
         "id": 5,
         "title": "Clo - E-Commerce Website",
-        "img": "../assets/image/clo.png",
+        "img": "./assets/image/clo.png",
         "media": [
             {
                 "title": "Presentation",
@@ -79,7 +79,7 @@
     {
         "id": 4,
         "title": "Bike Rental - Data Analytics",
-        "img": "../assets/image/da.jpg",
+        "img": "./assets/image/da.jpg",
         "media": [
             {
                 "title": "Analysis Process",
@@ -96,7 +96,7 @@
     {
         "id": 3,
         "title": "Cryptography",
-        "img": "../assets/image/crypto.jpg",
+        "img": "./assets/image/crypto.jpg",
         "media": [
             {
                 "title": "Source Code",
@@ -120,7 +120,7 @@
     {
         "id": 2,
         "title": "Image Processing",
-        "img": "../assets/image/imageProcessing.jpg",
+        "img": "./assets/image/imageProcessing.jpg",
         "media": [
             {
                 "title": "Source Code",
@@ -145,7 +145,7 @@
     {
         "id": 1,
         "title": "Help Me",
-        "img": "../assets/image/helpMe.png",
+        "img": "./assets/image/helpMe.png",
         "media": [
             {
                 "title": "Prototype",
