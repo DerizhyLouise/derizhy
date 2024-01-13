@@ -1,9 +1,5 @@
-#029791
-hsl(217, 54%, 11%)
-hsl(216, 50%, 24%)
-#2A265F
-#B7ADA1
-
-#FEEEAB
-#FF8473
-#FFF9D2
+Main        : hsl(217, 54%, 11%)
+Secondary   : hsl(216, 50%, 24%)
+Other       : #2A265F
+              #FFF9D2
+              #E91E63
