@@ -50,3 +50,15 @@
 .review-desc h3, .review-desc p {
     background-color: hsl(216, 50%, 24%);
 }
+
+@media only screen and (max-width: 580px) {
+    .review-child {
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .review-child {
+        height: 700px;
+    }
+}
