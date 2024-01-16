@@ -47,6 +47,10 @@
     font-weight: 600;
 }
 
+.review-desc p {
+    font-size: 14px;
+}
+
 .review-desc h3, .review-desc p {
     background-color: hsl(216, 50%, 24%);
 }
