@@ -28,5 +28,30 @@
         "skill": "Java",
         "icon": "fa-brands fa-java",
         "theme": "#5382A1"
+    },
+    {
+        "skill": "Microservices",
+        "icon": "fa-light fa-chart-network",
+        "theme": "#0192FF"
+    },
+    {
+        "skill": "PostgreSQL",
+        "icon": "./assets/image/postgreSQL.png",
+        "theme": "#305D8D"
+    },
+    {
+        "skill": "Pandas",
+        "icon": "./assets/svg/pandas.svg",
+        "theme": "#150458"
+    },
+    {
+        "skill": "Figma",
+        "icon": "fa-brands fa-figma",
+        "theme": "#2D3038"
+    },
+    {
+        "skill": "Git",
+        "icon": "fa-brands fa-git-alt",
+        "theme": "#F15233"
     }
 ]

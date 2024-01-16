@@ -58,14 +58,28 @@ fetch('./json/techSkills.json').then(response => response.json()).then(data => {
     data.forEach(skill => {
         const listItem = document.createElement('li');
         listItem.style.setProperty('--accent-color', skill.theme);
+
+        let iconElement;
+        if (skill.icon.startsWith('fa-')) {
+            iconElement = document.createElement('i');
+            iconElement.className = skill.icon;
+        } else {
+            iconElement = document.createElement('img');
+            iconElement.src = skill.icon;
+            iconElement.alt = skill.skill;
+            iconElement.style.width = '3rem';
+            iconElement.style.height = '3rem';
+            iconElement.style.backgroundColor = skill.theme;
+        }
+
         listItem.innerHTML = `
             <div class="icon">
-                <i class="${skill.icon}"></i>
+                ${iconElement.outerHTML}
             </div>
             <div class="skill-list-title">
                 ${skill.skill}
             </div>
-        `
+        `;
 
         technicalSkillsContainer.appendChild(listItem);
     });
