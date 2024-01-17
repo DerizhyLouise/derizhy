@@ -346,15 +346,6 @@ button.project-modal-close:hover {
 	width: 250px;
 }
 
-.project-media-preview a {
-	color: #fff;
-	display: inline-block;
-	font-size: 12px;
-	opacity: 0.6;
-	margin-top: 30px;
-	text-decoration: none;
-}
-
 .project-media-info {
     background-color: #7175DA;
 	padding: 30px;
@@ -448,12 +439,30 @@ button.project-modal-close:hover {
         left: 22px;
     }
 
+    .modal {
+        padding: 25px;
+    }
+
     .project-modal-info h1 {
         font-size: 24px;
     }
 
     .project-modal-info p {
         font-size: 14px;
+    }
+
+    .project-media-preview {
+        padding: 30px 10px;
+    }
+
+    .project-media-info {
+        padding: 30px 10px;
+    }
+
+    .project-media-btn {
+        right: 15px;
+        font-size: 12px;
+
     }
 }
 
