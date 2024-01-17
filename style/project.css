@@ -94,6 +94,7 @@
     z-index: 1100;
     transition: opacity 600ms linear 600ms;
     overflow: auto;
+    width: 60vw;
 }
 
 .project-modal-info {
@@ -111,7 +112,7 @@
 }
 
 button.project-modal-close {
-    background: #363D4E;
+    background: #9DB0CE;
     border: none;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -151,7 +152,7 @@ button.project-modal-close {
 }
 
 button.project-modal-close:hover {
-    background: #3E465A;
+    background: #B8D8E3;
     -webkit-transform: rotate(360deg) scale(1.10);
     -moz-transform: rotate(360deg) scale(1.10);
     -ms-transform: rotate(360deg) scale(1.10);
@@ -396,6 +397,10 @@ button.project-modal-close:hover {
 @media only screen and (max-width: 870px) {
     .project-modal-info {
         padding: 50px 30px;
+    }
+
+    .modal {
+        width: 100vw;
     }
 }
 
