@@ -92,10 +92,6 @@
     padding: 50px;
     position: absolute;
     z-index: 1100;
-    -webkit-transition: opacity 600ms linear 600ms;
-    -moz-transition: opacity 600ms linear 600ms;
-    -ms-transition: opacity 600ms linear 600ms;
-    -o-transition: opacity 600ms linear 600ms;
     transition: opacity 600ms linear 600ms;
     overflow: auto;
 }
@@ -406,6 +402,22 @@ button.project-modal-close:hover {
     }
 }
 
+@media only screen and (max-width: 870px) {
+    .project-modal-info {
+        padding: 50px 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .project-media-child h2 {
+        font-size: 16px;
+    }
+
+    .project-media-child h6 {
+        font-size: 10px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .article-wrapper {
         width: 200px;
@@ -434,6 +446,14 @@ button.project-modal-close:hover {
 
     .project-button::after {
         left: 22px;
+    }
+
+    .project-modal-info h1 {
+        font-size: 24px;
+    }
+
+    .project-modal-info p {
+        font-size: 14px;
     }
 }
 

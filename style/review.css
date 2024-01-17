@@ -13,18 +13,17 @@
 
 .review-child {
     width: 320px;
-    height: 500px;
+    height: 100%;
     background-color: hsl(216, 50%, 24%);
     text-decoration: none;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 0.3fr 1fr;
+    grid-template-rows: 0.1fr 0.3fr 0.1fr;
     grid-column-gap: 0px;
     grid-row-gap: 20px;
     place-items: center;
     text-align: center;
     border-radius: 20px;
-    transition: transform 0.5s ease;
 }
 
 .review-img {
@@ -49,16 +48,4 @@
 
 .review-desc h3, .review-desc p {
     background-color: hsl(216, 50%, 24%);
-}
-
-@media only screen and (max-width: 580px) {
-    .review-child {
-        height: 600px;
-    }
-}
-
-@media only screen and (max-width: 440px) {
-    .review-child {
-        height: 700px;
-    }
 }

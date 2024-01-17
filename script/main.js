@@ -247,7 +247,7 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
     
                 modal.open({
                     content: $content,
-                    width: '100vh',
+                    width: '100%',
                     height: '100vh',
                 });
     
@@ -300,7 +300,7 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
                 $content.empty().append(settings.content);
         
                 $modal.css({
-                    width: settings.width || '100vh',
+                    width: settings.width || '100%',
                     height: settings.height || '100vh'
                 }).appendTo('body');
       
