@@ -112,7 +112,7 @@
 }
 
 button.project-modal-close {
-    background: #9DB0CE;
+    background: #2A265F;
     border: none;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -152,7 +152,7 @@ button.project-modal-close {
 }
 
 button.project-modal-close:hover {
-    background: #B8D8E3;
+    background: hsl(244, 58%, 47%);
     -webkit-transform: rotate(360deg) scale(1.10);
     -moz-transform: rotate(360deg) scale(1.10);
     -ms-transform: rotate(360deg) scale(1.10);

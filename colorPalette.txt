@@ -1,4 +1,4 @@
-Main        : hsl(217, 54%, 11%)
+Primary     : hsl(217, 54%, 11%)
 Secondary   : hsl(216, 50%, 24%)
 Other       : #2A265F
               #FFF9D2
