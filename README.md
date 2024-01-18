@@ -8,7 +8,7 @@
 | Animated on Scroll     | [AOS](https://michalsnik.github.io/aos) |
 | JQuery                 | [JQuery](https://jquery.com/)           |
 
-#### Animation
+#### Inspiration
 
 | Author            | Link                                                |
 |-------------------|-----------------------------------------------------|
