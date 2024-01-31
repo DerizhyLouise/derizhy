@@ -5,27 +5,27 @@
         "item": [
             {
                 "name": "Home",
-                "path": "/#home",
+                "path": "/profile#home",
                 "target": ""
             },
             {
                 "name": "Profile",
-                "path": "/#profile",
+                "path": "/profile#profile",
                 "target": ""
             },
             {
                 "name": "Resume",
-                "path": "/#resume",
+                "path": "/profile#resume",
                 "target": ""
             },
             {
                 "name": "Project",
-                "path": "/#project",
+                "path": "/profile#project",
                 "target": ""
             },
             {
                 "name": "Review",
-                "path": "/#review",
+                "path": "/profile#review",
                 "target": ""
             }
         ]
