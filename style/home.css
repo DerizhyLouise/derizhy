@@ -70,7 +70,7 @@
 @media only screen and (max-width: 730px) {
     .home {
         justify-content: center;
-        padding: 0px;
+        padding: 0 25px;
     }
 
     .home-text {
