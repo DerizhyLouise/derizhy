@@ -1,0 +1,115 @@
+[
+    {
+        "name": "Personal",
+        "type": "normal",
+        "item": [
+            {
+                "name": "Home",
+                "path": "/#home",
+                "target": ""
+            },
+            {
+                "name": "Profile",
+                "path": "/#profile",
+                "target": ""
+            },
+            {
+                "name": "Resume",
+                "path": "/#resume",
+                "target": ""
+            },
+            {
+                "name": "Project",
+                "path": "/#project",
+                "target": ""
+            },
+            {
+                "name": "Review",
+                "path": "/#review",
+                "target": ""
+            }
+        ]
+    },
+    {
+        "name": "More About Me",
+        "type": "normal",
+        "item": [
+            {
+                "name": "Certification",
+                "path": "/certification",
+                "target": ""
+            },
+            {
+                "name": "Speedcubing",
+                "path": "https://www.worldcubeassociation.org/persons/2018DERI01",
+                "target": "_blank"
+            }
+        ]
+    },
+    {
+        "name": "Contact Me",
+        "type": "normal",
+        "item": [
+            {
+                "name": "Whatsapp",
+                "path": "https://wa.me/6282367319569",
+                "target": "_blank",
+                "icon": "fa-brands fa-whatsapp"
+            },
+            {
+                "name": "Email",
+                "path": "mailto:louise.derizhy@gmail.com",
+                "target": "_blank",
+                "icon": "fa-light fa-envelope"
+            },
+            {
+                "name": "Telegram",
+                "path": "https://t.me/derizhylouise",
+                "target": "_blank",
+                "icon": "fa-brands fa-telegram"
+            },
+            {
+                "name": "LINE",
+                "path": "https://line.me/R/ti/p/eo96yTt8Ix",
+                "target": "_blank",
+                "icon": "fa-brands fa-line"
+            }
+        ]
+    },
+    {
+        "name": "Find Me",
+        "type": "social",
+        "item": [
+            {
+                "path": "https://www.instagram.com/derizheese",
+                "target": "_blank",
+                "icon": "fab fa-instagram"
+            },
+            {
+                "path": "https://www.facebook.com/derizhylouise",
+                "target": "_blank",
+                "icon": "fab fa-facebook-f"
+            },
+            {
+                "path": "https://www.linkedin.com/in/louisederizhy/",
+                "target": "_blank",
+                "icon": "fab fa-linkedin-in"
+            },
+            {
+                "path": "https://github.com/DerizhyLouise",
+                "target": "_blank",
+                "icon": "fa-brands fa-github"
+            },
+            {
+                "path": "https://www.tiktok.com/@derizheese",
+                "target": "_blank",
+                "icon": "fa-brands fa-tiktok"
+            },
+            {
+                "path": "https://discordapp.com/users/668451566277099521",
+                "target": "_blank",
+                "icon": "fa-brands fa-discord"
+            }
+        ]
+    }
+]
