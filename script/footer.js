@@ -1,4 +1,4 @@
-fetch('/json/footer.json').then(response => response.json()).then(data => {
+fetch('./json/footer.json').then(response => response.json()).then(data => {
     const footer = document.querySelector('footer');
     const footerContainer = document.createElement('div');
     const footerRow = document.createElement('div');
