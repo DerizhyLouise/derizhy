@@ -21,7 +21,7 @@
 .profile-pic img {
     height: 100%;
     width: 400px;
-    border-radius: 10px;
+    border-radius: 5px;
     object-fit: cover;
 }
 
