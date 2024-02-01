@@ -23,7 +23,7 @@
     grid-row-gap: 20px;
     place-items: center;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 
 .review-img {
