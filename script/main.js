@@ -69,6 +69,7 @@ fetch('./json/techSkills.json').then(response => response.json()).then(data => {
             iconElement.alt = skill.skill;
             iconElement.style.width = '3rem';
             iconElement.style.height = '3rem';
+            iconElement.style.margin = 'auto';
             iconElement.style.backgroundColor = skill.theme;
         }
 
