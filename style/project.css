@@ -7,7 +7,7 @@
 
 .project-container {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     flex-wrap: wrap;
 }
 
@@ -112,7 +112,7 @@
 }
 
 button.project-modal-close {
-    background: #2A265F;
+    background: #E91E63;
     border: none;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -152,7 +152,7 @@ button.project-modal-close {
 }
 
 button.project-modal-close:hover {
-    background: hsl(244, 58%, 47%);
+    background: #e91ea5;
     -webkit-transform: rotate(360deg) scale(1.10);
     -moz-transform: rotate(360deg) scale(1.10);
     -ms-transform: rotate(360deg) scale(1.10);
@@ -298,6 +298,7 @@ button.project-modal-close:hover {
 .project-modal-info h1 {
     text-decoration: underline;
     text-decoration-color: #E91E63;
+    font-size: 36px;
 }
 
 .project-modal-info h4 {
@@ -394,7 +395,7 @@ button.project-modal-close:hover {
     }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 1240px) {
     .project-modal-info {
         padding: 50px 30px;
     }

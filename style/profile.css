@@ -16,6 +16,7 @@
     height: 100% - 25vh;
     width: 400px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .profile-pic img {
@@ -33,6 +34,7 @@
 }
 
 .profile-data h2 {
+    margin-top: 0px;
     margin-bottom: 0px;
     font-size: 48px;
 }
@@ -51,7 +53,7 @@
 }
 
 .profile-data table {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .profile-data table tr {
