@@ -94,9 +94,7 @@ header {
     stroke-dasharray: 20, 239;
     stroke-dashoffset: 48;
     stroke: #E91E63;
-    transition: all 2s cubic-bezier(
-        0.22, 1, 0.25, 1
-    );
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
 
 @media only screen and (max-width: 1550px) {

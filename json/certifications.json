@@ -1,346 +1,389 @@
 [
     {
-        "Certificate Name": "Command Line Course",
-        "Issuing Organization": "Progate",
-        "Issue Date": "06 January 2021",
-        "Expiration Date": "-",
-        "Credential ID": "",
-        "Credential URL": "https://progate.com/course_certificate/aa5bd43fqmh0xb"
+        "certificateName": "Command Line Course",
+        "issuer": "Progate",
+        "issueDate": "06 January 2021",
+        "expirationDate": "-",
+        "credentialId": "",
+        "url": "https://progate.com/course_certificate/aa5bd43fqmh0xb",
+        "logo": "./assets/image/logo/progate.jpeg"
     },
     {
-        "Certificate Name": "SQL Course",
-        "Issuing Organization": "Progate",
-        "Issue Date": "08 January 2021",
-        "Expiration Date": "-",
-        "Credential ID": "",
-        "Credential URL": "https://progate.com/course_certificate/7e174d59qmlwt9"
+        "certificateName": "SQL Course",
+        "issuer": "Progate",
+        "issueDate": "08 January 2021",
+        "expirationDate": "-",
+        "credentialId": "",
+        "url": "https://progate.com/course_certificate/7e174d59qmlwt9",
+        "logo": "./assets/image/logo/progate.jpeg"
     },
     {
-        "Certificate Name": "Git Course",
-        "Issuing Organization": "Progate",
-        "Issue Date": "08 January 2021",
-        "Expiration Date": "-",
-        "Credential ID": "",
-        "Credential URL": "https://progate.com/course_certificate/42cc5892qmm1z4"
+        "certificateName": "Git Course",
+        "issuer": "Progate",
+        "issueDate": "08 January 2021",
+        "expirationDate": "-",
+        "credentialId": "",
+        "url": "https://progate.com/course_certificate/42cc5892qmm1z4",
+        "logo": "./assets/image/logo/progate.jpeg"
     },
     {
-        "Certificate Name": "Python Course",
-        "Issuing Organization": "Progate",
-        "Issue Date": "10 January 2021",
-        "Expiration Date": "-",
-        "Credential ID": "",
-        "Credential URL": "https://progate.com/course_certificate/6e16b040qmq2uo"
+        "certificateName": "Python Course",
+        "issuer": "Progate",
+        "issueDate": "10 January 2021",
+        "expirationDate": "-",
+        "credentialId": "",
+        "url": "https://progate.com/course_certificate/6e16b040qmq2uo",
+        "logo": "./assets/image/logo/progate.jpeg"
     },
     {
-        "Certificate Name": "Ruby Course",
-        "Issuing Organization": "Progate",
-        "Issue Date": "14 January 2021",
-        "Expiration Date": "-",
-        "Credential ID": "",
-        "Credential URL": "https://progate.com/course_certificate/61bc4aaeqmxa1s"
+        "certificateName": "Ruby Course",
+        "issuer": "Progate",
+        "issueDate": "14 January 2021",
+        "expirationDate": "-",
+        "credentialId": "",
+        "url": "https://progate.com/course_certificate/61bc4aaeqmxa1s",
+        "logo": "./assets/image/logo/progate.jpeg"
     },
     {
-        "Certificate Name": "HTML & CSS Course",
-        "Issuing Organization": "Progate",
-        "Issue Date": "28 February 2021",
-        "Expiration Date": "-",
-        "Credential ID": "",
-        "Credential URL": "https://progate.com/course_certificate/c9218025qp8gz2"
+        "certificateName": "HTML & CSS Course",
+        "issuer": "Progate",
+        "issueDate": "28 February 2021",
+        "expirationDate": "-",
+        "credentialId": "",
+        "url": "https://progate.com/course_certificate/c9218025qp8gz2",
+        "logo": "./assets/image/logo/progate.jpeg"
     },
     {
-        "Certificate Name": "Belajar Dasar Structured Query Language (SQL)",
-        "Issuing Organization": "Dicoding",
-        "Issue Date": "13 September 2023",
-        "Expiration Date": "13 September 2026",
-        "Credential ID": "N9ZO57240PG5",
-        "Credential URL": "https://dicoding.com/certificates/N9ZO57240PG5"
+        "certificateName": "Belajar Dasar Structured Query Language (SQL)",
+        "issuer": "Dicoding",
+        "issueDate": "13 September 2023",
+        "expirationDate": "13 September 2026",
+        "credentialId": "N9ZO57240PG5",
+        "url": "https://dicoding.com/certificates/N9ZO57240PG5",
+        "logo": "./assets/image/logo/dicoding.jpeg"
     },
     {
-        "Certificate Name": "Belajar Dasar Data Science",
-        "Issuing Organization": "Dicoding",
-        "Issue Date": "14 September 2023",
-        "Expiration Date": "14 September 2026",
-        "Credential ID": "98XWVRQ60PM3",
-        "Credential URL": "https://dicoding.com/certificates/98XWVRQ60PM3"
+        "certificateName": "Belajar Dasar Data Science",
+        "issuer": "Dicoding",
+        "issueDate": "14 September 2023",
+        "expirationDate": "14 September 2026",
+        "credentialId": "98XWVRQ60PM3",
+        "url": "https://dicoding.com/certificates/98XWVRQ60PM3",
+        "logo": "./assets/image/logo/dicoding.jpeg"
     },
     {
-        "Certificate Name": "Memulai Pemrograman dengan Python",
-        "Issuing Organization": "Dicoding",
-        "Issue Date": "14 September 2023",
-        "Expiration Date": "14 September 2026",
-        "Credential ID": "1RXY0MVEKZVM",
-        "Credential URL": "https://dicoding.com/certificates/1RXY0MVEKZVM"
+        "certificateName": "Memulai Pemrograman dengan Python",
+        "issuer": "Dicoding",
+        "issueDate": "14 September 2023",
+        "expirationDate": "14 September 2026",
+        "credentialId": "1RXY0MVEKZVM",
+        "url": "https://dicoding.com/certificates/1RXY0MVEKZVM",
+        "logo": "./assets/image/logo/dicoding.jpeg"
     },
     {
-        "Certificate Name": "Pengenalan Data pada Pemrograman (Data 101)",
-        "Issuing Organization": "Dicoding",
-        "Issue Date": "20 September 2023",
-        "Expiration Date": "20 September 2026",
-        "Credential ID": "JMZV1975RXN9",
-        "Credential URL": "https://dicoding.com/certificates/JMZV1975RXN9"
+        "certificateName": "Pengenalan Data pada Pemrograman (Data 101)",
+        "issuer": "Dicoding",
+        "issueDate": "20 September 2023",
+        "expirationDate": "20 September 2026",
+        "credentialId": "JMZV1975RXN9",
+        "url": "https://dicoding.com/certificates/JMZV1975RXN9",
+        "logo": "./assets/image/logo/dicoding.jpeg"
     },
     {
-        "Certificate Name": "Pengenalan ke Logika Pemrograman (Programming Logic 101)",
-        "Issuing Organization": "Dicoding",
-        "Issue Date": "20 September 2023",
-        "Expiration Date": "20 September 2026",
-        "Credential ID": "MRZMLQ1WNXYQ",
-        "Credential URL": "https://dicoding.com/certificates/MRZMLQ1WNXYQ"
+        "certificateName": "Pengenalan ke Logika Pemrograman (Programming Logic 101)",
+        "issuer": "Dicoding",
+        "issueDate": "20 September 2023",
+        "expirationDate": "20 September 2026",
+        "credentialId": "MRZMLQ1WNXYQ",
+        "url": "https://dicoding.com/certificates/MRZMLQ1WNXYQ",
+        "logo": "./assets/image/logo/dicoding.jpeg"
     },
     {
-        "Certificate Name": "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
-        "Issuing Organization": "Dicoding",
-        "Issue Date": "20 September 2023",
-        "Expiration Date": "20 September 2026",
-        "Credential ID": "EYX4Y6DK6ZDL",
-        "Credential URL": "https://dicoding.com/certificates/EYX4Y6DK6ZDL"
+        "certificateName": "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
+        "issuer": "Dicoding",
+        "issueDate": "20 September 2023",
+        "expirationDate": "20 September 2026",
+        "credentialId": "EYX4Y6DK6ZDL",
+        "url": "https://dicoding.com/certificates/EYX4Y6DK6ZDL",
+        "logo": "./assets/image/logo/dicoding.jpeg"
     },
     {
-        "Certificate Name": "Meniti Karier sebagai Software Developer",
-        "Issuing Organization": "Dicoding",
-        "Issue Date": "20 September 2023",
-        "Expiration Date": "20 September 2026",
-        "Credential ID": "KEXLL061RXG2",
-        "Credential URL": "https://dicoding.com/certificates/KEXLL061RXG2"
+        "certificateName": "Meniti Karier sebagai Software Developer",
+        "issuer": "Dicoding",
+        "issueDate": "20 September 2023",
+        "expirationDate": "20 September 2026",
+        "credentialId": "KEXLL061RXG2",
+        "url": "https://dicoding.com/certificates/KEXLL061RXG2",
+        "logo": "./assets/image/logo/dicoding.jpeg"
     },
     {
-        "Certificate Name": "Python Dasar",
-        "Issuing Organization": "Skilvul",
-        "Issue Date": "21 September 2023",
-        "Expiration Date": "21 September 2025",
-        "Credential ID": "9ipEP6NRTVu8EqP_A2TO3Q",
-        "Credential URL": "https://skilvul.com/courses/python-dasar/student/clmskbj5800nv01ld604t8cd6"
+        "certificateName": "Python Dasar",
+        "issuer": "Skilvul",
+        "issueDate": "21 September 2023",
+        "expirationDate": "21 September 2025",
+        "credentialId": "9ipEP6NRTVu8EqP_A2TO3Q",
+        "url": "https://skilvul.com/courses/python-dasar/student/clmskbj5800nv01ld604t8cd6",
+        "logo": "./assets/image/logo/skilvul.jpeg"
     },
     {
-        "Certificate Name": "Algorithm & Data Structures with Python",
-        "Issuing Organization": "Skilvul",
-        "Issue Date": "21 September 2023",
-        "Expiration Date": "21 September 2025",
-        "Credential ID": "PmLtQtprQQCj6P-BIzKPTA",
-        "Credential URL": "https://skilvul.com/courses/algorithm-and-data-structures-with-python/student/clmskbj5800nv01ld604t8cd6"
+        "certificateName": "Algorithm & Data Structures with Python",
+        "issuer": "Skilvul",
+        "issueDate": "21 September 2023",
+        "expirationDate": "21 September 2025",
+        "credentialId": "PmLtQtprQQCj6P-BIzKPTA",
+        "url": "https://skilvul.com/courses/algorithm-and-data-structures-with-python/student/clmskbj5800nv01ld604t8cd6",
+        "logo": "./assets/image/logo/skilvul.jpeg"
     },
     {
-        "Certificate Name": "Python Lanjutan",
-        "Issuing Organization": "Skilvul",
-        "Issue Date": "21 September 2023",
-        "Expiration Date": "21 September 2025",
-        "Credential ID": "M0VHIQWrQzuNTPaJ2c6ZIQ",
-        "Credential URL": "https://skilvul.com/courses/python-lanjutan/student/clmskbj5800nv01ld604t8cd6"
+        "certificateName": "Python Lanjutan",
+        "issuer": "Skilvul",
+        "issueDate": "21 September 2023",
+        "expirationDate": "21 September 2025",
+        "credentialId": "M0VHIQWrQzuNTPaJ2c6ZIQ",
+        "url": "https://skilvul.com/courses/python-lanjutan/student/clmskbj5800nv01ld604t8cd6",
+        "logo": "./assets/image/logo/skilvul.jpeg"
     },
     {
-        "Certificate Name": "Coding di Skilvul Playground",
-        "Issuing Organization": "Skilvul",
-        "Issue Date": "21 September 2023",
-        "Expiration Date": "21 September 2025",
-        "Credential ID": "EsF9WtoeQ_q4OWjmyxh4KA",
-        "Credential URL": "https://skilvul.com/paths/coding-di-skilvul-playground/student/clmskbj5800nv01ld604t8cd6"
+        "certificateName": "Coding di Skilvul Playground",
+        "issuer": "Skilvul",
+        "issueDate": "21 September 2023",
+        "expirationDate": "21 September 2025",
+        "credentialId": "EsF9WtoeQ_q4OWjmyxh4KA",
+        "url": "https://skilvul.com/paths/coding-di-skilvul-playground/student/clmskbj5800nv01ld604t8cd6",
+        "logo": "./assets/image/logo/skilvul.jpeg"
     },
     {
-        "Certificate Name": "SQL - The Fundamental SQL Bootcamp",
-        "Issuing Organization": "Educba",
-        "Issue Date": "22 September 2023",
-        "Expiration Date": "-",
-        "Credential ID": "D1S7TCL0C",
-        "Credential URL": "https://www.educba.com/certificate/?c=D1S7TCL0C"
+        "certificateName": "SQL - The Fundamental SQL Bootcamp",
+        "issuer": "Educba",
+        "issueDate": "22 September 2023",
+        "expirationDate": "-",
+        "credentialId": "D1S7TCL0C",
+        "url": "https://www.educba.com/certificate/?c=D1S7TCL0C",
+        "logo": "./assets/image/logo/educba.jpeg"
     },
     {
-        "Certificate Name": "Belajar Dasar Visualisasi Data",
-        "Issuing Organization": "Dicoding",
-        "Issue Date": "25 September 2023",
-        "Expiration Date": "25 September 2026",
-        "Credential ID": "1OP81NRYQZQK",
-        "Credential URL": "https://dicoding.com/certificates/1OP81NRYQZQK"
+        "certificateName": "Belajar Dasar Visualisasi Data",
+        "issuer": "Dicoding",
+        "issueDate": "25 September 2023",
+        "expirationDate": "25 September 2026",
+        "credentialId": "1OP81NRYQZQK",
+        "url": "https://dicoding.com/certificates/1OP81NRYQZQK",
+        "logo": "./assets/image/logo/dicoding.jpeg"
     },
     {
-        "Certificate Name": "Belajar Dasar-Dasar DevOps",
-        "Issuing Organization": "Dicoding",
-        "Issue Date": "25 September 2023",
-        "Expiration Date": "25 September 2026",
-        "Credential ID": "NVP78731VXR0",
-        "Credential URL": "https://dicoding.com/certificates/NVP78731VXR0"
+        "certificateName": "Belajar Dasar-Dasar DevOps",
+        "issuer": "Dicoding",
+        "issueDate": "25 September 2023",
+        "expirationDate": "25 September 2026",
+        "credentialId": "NVP78731VXR0",
+        "url": "https://dicoding.com/certificates/NVP78731VXR0",
+        "logo": "./assets/image/logo/dicoding.jpeg"
     },
     {
-        "Certificate Name": "Belajar Dasar Git dengan Github",
-        "Issuing Organization": "Dicoding",
-        "Issue Date": "26 September 2023",
-        "Expiration Date": "26 September 2026",
-        "Credential ID": "2VX36OD2QXYQ",
-        "Credential URL": "https://dicoding.com/certificates/2VX36OD2QXYQ"
+        "certificateName": "Belajar Dasar Git dengan Github",
+        "issuer": "Dicoding",
+        "issueDate": "26 September 2023",
+        "expirationDate": "26 September 2026",
+        "credentialId": "2VX36OD2QXYQ",
+        "url": "https://dicoding.com/certificates/2VX36OD2QXYQ",
+        "logo": "./assets/image/logo/dicoding.jpeg"
     },
     {
-        "Certificate Name": "Belajar Dasar Manajemen Proyek",
-        "Issuing Organization": "Dicoding",
-        "Issue Date": "27 September 2023",
-        "Expiration Date": "27 September 2026",
-        "Credential ID": "6RPN41DJ5X2M",
-        "Credential URL": "https://dicoding.com/certificates/6RPN41DJ5X2M"
+        "certificateName": "Belajar Dasar Manajemen Proyek",
+        "issuer": "Dicoding",
+        "issueDate": "27 September 2023",
+        "expirationDate": "27 September 2026",
+        "credentialId": "6RPN41DJ5X2M",
+        "url": "https://dicoding.com/certificates/6RPN41DJ5X2M",
+        "logo": "./assets/image/logo/dicoding.jpeg"
     },
     {
-        "Certificate Name": "Problem Solving (Basic)",
-        "Issuing Organization": "HackerRank",
-        "Issue Date": "28 September 2023",
-        "Expiration Date": "-",
-        "Credential ID": "28B363F0ABBC",
-        "Credential URL": "https://www.hackerrank.com/certificates/28b363f0abbc"
+        "certificateName": "Problem Solving (Basic)",
+        "issuer": "HackerRank",
+        "issueDate": "28 September 2023",
+        "expirationDate": "-",
+        "credentialId": "28B363F0ABBC",
+        "url": "https://www.hackerrank.com/certificates/28b363f0abbc",
+        "logo": "./assets/image/logo/hackerrank.jpeg"
     },
     {
-        "Certificate Name": "Python (Basic)",
-        "Issuing Organization": "HackerRank",
-        "Issue Date": "10 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "71434BD953F8",
-        "Credential URL": "https://www.hackerrank.com/certificates/71434bd953f8"
+        "certificateName": "Python (Basic)",
+        "issuer": "HackerRank",
+        "issueDate": "10 October 2023",
+        "expirationDate": "-",
+        "credentialId": "71434BD953F8",
+        "url": "https://www.hackerrank.com/certificates/71434bd953f8",
+        "logo": "./assets/image/logo/hackerrank.jpeg"
     },
     {
-        "Certificate Name": "SQL (Basic)",
-        "Issuing Organization": "HackerRank",
-        "Issue Date": "15 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "7B542DF5E1E2",
-        "Credential URL": "https://www.hackerrank.com/certificates/7b542df5e1e2"
+        "certificateName": "SQL (Basic)",
+        "issuer": "HackerRank",
+        "issueDate": "15 October 2023",
+        "expirationDate": "-",
+        "credentialId": "7B542DF5E1E2",
+        "url": "https://www.hackerrank.com/certificates/7b542df5e1e2",
+        "logo": "./assets/image/logo/hackerrank.jpeg"
     },
     {
-        "Certificate Name": "SQL (Intermediate)",
-        "Issuing Organization": "HackerRank",
-        "Issue Date": "15 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "AF3FE3D8C80F",
-        "Credential URL": "https://www.hackerrank.com/certificates/af3fe3d8c80f"
+        "certificateName": "SQL (Intermediate)",
+        "issuer": "HackerRank",
+        "issueDate": "15 October 2023",
+        "expirationDate": "-",
+        "credentialId": "AF3FE3D8C80F",
+        "url": "https://www.hackerrank.com/certificates/af3fe3d8c80f",
+        "logo": "./assets/image/logo/hackerrank.jpeg"
     },
     {
-        "Certificate Name": "SQL (Advanced)",
-        "Issuing Organization": "HackerRank",
-        "Issue Date": "15 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "1002E7e4853B",
-        "Credential URL": "https://www.hackerrank.com/certificates/1002e7e4853b"
+        "certificateName": "SQL (Advanced)",
+        "issuer": "HackerRank",
+        "issueDate": "15 October 2023",
+        "expirationDate": "-",
+        "credentialId": "1002E7e4853B",
+        "url": "https://www.hackerrank.com/certificates/1002e7e4853b",
+        "logo": "./assets/image/logo/hackerrank.jpeg"
     },
     {
-        "Certificate Name": "Learn SQL",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "25 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "653892EBA5",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/042a4e5884e3eb6ea1f2a12be6abb851"
+        "certificateName": "Learn SQL",
+        "issuer": "Codecademy",
+        "issueDate": "25 October 2023",
+        "expirationDate": "-",
+        "credentialId": "653892EBA5",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "Analyze Data with SQL",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "25 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "6538F13A4B",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/5cafb2d937090210d7df3652"
+        "certificateName": "Analyze Data with SQL",
+        "issuer": "Codecademy",
+        "issueDate": "25 October 2023",
+        "expirationDate": "-",
+        "credentialId": "6538F13A4B",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/5cafb2d937090210d7df3652",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "Full-Stack Engineer",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "31 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "653FE8BFEF",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/ffd0f42cce1a44e9a0108b365047a0a6"
+        "certificateName": "Full-Stack Engineer",
+        "issuer": "Codecademy",
+        "issueDate": "31 October 2023",
+        "expirationDate": "-",
+        "credentialId": "653FE8BFEF",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/ffd0f42cce1a44e9a0108b365047a0a6",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "Design Databases with PostgreSQL",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "31 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "653FED15E8",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/5f64e3b492de0000131ecbe0"
+        "certificateName": "Design Databases with PostgreSQL",
+        "issuer": "Codecademy",
+        "issueDate": "31 October 2023",
+        "expirationDate": "-",
+        "credentialId": "653FED15E8",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/5f64e3b492de0000131ecbe0",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "How to Deploy a Website",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "31 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "65409F1A8B",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/358e250fca144526a6b2934ff44fbc01"
+        "certificateName": "How to Deploy a Website",
+        "issuer": "Codecademy",
+        "issueDate": "31 October 2023",
+        "expirationDate": "-",
+        "credentialId": "65409F1A8B",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/358e250fca144526a6b2934ff44fbc01",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "Build a Website with HTML, CSS, and Github Pages",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "31 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "65407E3DEF",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/5cadfefe5f1de806e9704577"
+        "certificateName": "Build a Website with HTML, CSS, and Github Pages",
+        "issuer": "Codecademy",
+        "issueDate": "31 October 2023",
+        "expirationDate": "-",
+        "credentialId": "65407E3DEF",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/5cadfefe5f1de806e9704577",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "Create a Back-End App with JavaScript",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "31 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "6540BD77C8",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/5cb678013709022f5b908913"
+        "certificateName": "Create a Back-End App with JavaScript",
+        "issuer": "Codecademy",
+        "issueDate": "31 October 2023",
+        "expirationDate": "-",
+        "credentialId": "6540BD77C8",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/5cb678013709022f5b908913",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "Learn CSS-in-JS",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "31 October 2023",
-        "Expiration Date": "-",
-        "Credential ID": "6540BF4FEF",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/ea3393a7494383023c17a96830b95be8"
+        "certificateName": "Learn CSS-in-JS",
+        "issuer": "Codecademy",
+        "issueDate": "31 October 2023",
+        "expirationDate": "-",
+        "credentialId": "6540BF4FEF",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/ea3393a7494383023c17a96830b95be8",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "Learn Color Design",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "03 November 2023",
-        "Expiration Date": "-",
-        "Credential ID": "65447DA748",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/0a6884fad1dbf4afe5df084d2ec1e7c3"
+        "certificateName": "Learn Color Design",
+        "issuer": "Codecademy",
+        "issueDate": "03 November 2023",
+        "expirationDate": "-",
+        "credentialId": "65447DA748",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/0a6884fad1dbf4afe5df084d2ec1e7c3",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "How to Analyze Business Metrics with SQL",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "03 November 2023",
-        "Expiration Date": "-",
-        "Credential ID": "654481B048",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/df5cd23425d43d23a967efebf18f5a8e"
+        "certificateName": "How to Analyze Business Metrics with SQL",
+        "issuer": "Codecademy",
+        "issueDate": "03 November 2023",
+        "expirationDate": "-",
+        "credentialId": "654481B048",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/df5cd23425d43d23a967efebf18f5a8e",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "Back-End Engineer",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "04 November 2023",
-        "Expiration Date": "-",
-        "Credential ID": "6545A67C79",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/810f53d14de24b938cc13c7c2af1e686"
+        "certificateName": "Back-End Engineer",
+        "issuer": "Codecademy",
+        "issueDate": "04 November 2023",
+        "expirationDate": "-",
+        "credentialId": "6545A67C79",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/810f53d14de24b938cc13c7c2af1e686",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "Learn Intermediate JavaScript",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "04 November 2023",
-        "Expiration Date": "-",
-        "Credential ID": "6545CF1A29",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/512386fdc7f6c934f98b01e6afa8285a"
+        "certificateName": "Learn Intermediate JavaScript",
+        "issuer": "Codecademy",
+        "issueDate": "04 November 2023",
+        "expirationDate": "-",
+        "credentialId": "6545CF1A29",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/512386fdc7f6c934f98b01e6afa8285a",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "Learn jQuery",
-        "Issuing Organization": "Codecademy",
-        "Issue Date": "04 November 2023",
-        "Expiration Date": "-",
-        "Credential ID": "6545D11AF2",
-        "Credential URL": "https://www.codecademy.com/profiles/derizheese/certificates/0becf7c1cd2bd715f24331dddd23425a"
+        "certificateName": "Learn jQuery",
+        "issuer": "Codecademy",
+        "issueDate": "04 November 2023",
+        "expirationDate": "-",
+        "credentialId": "6545D11AF2",
+        "url": "https://www.codecademy.com/profiles/derizheese/certificates/0becf7c1cd2bd715f24331dddd23425a",
+        "logo": "./assets/image/logo/codecademy.jpeg"
     },
     {
-        "Certificate Name": "Responsive Web Design",
-        "Issuing Organization": "FreeCodeCamp",
-        "Issue Date": "10 November 2023",
-        "Expiration Date": "-",
-        "Credential ID": "",
-        "Credential URL": "https://www.freecodecamp.org/certification/derizheese/responsive-web-design"
+        "certificateName": "Responsive Web Design",
+        "issuer": "FreeCodeCamp",
+        "issueDate": "10 November 2023",
+        "expirationDate": "-",
+        "credentialId": "",
+        "url": "https://www.freecodecamp.org/certification/derizheese/responsive-web-design",
+        "logo": "./assets/image/logo/freecodecamp.jpeg"
     },
     {
-        "Certificate Name": "JavaScript Algorithms and Data Structures",
-        "Issuing Organization": "FreeCodeCamp",
-        "Issue Date": "10 November 2023",
-        "Expiration Date": "-",
-        "Credential ID": "",
-        "Credential URL": "https://www.freecodecamp.org/certification/derizheese/javascript-algorithms-and-data-structures"
+        "certificateName": "JavaScript Algorithms and Data Structures",
+        "issuer": "FreeCodeCamp",
+        "issueDate": "10 November 2023",
+        "expirationDate": "-",
+        "credentialId": "",
+        "url": "https://www.freecodecamp.org/certification/derizheese/javascript-algorithms-and-data-structures",
+        "logo": "./assets/image/logo/freecodecamp.jpeg"
     },
     {
-        "Certificate Name": "RevoU - Data & Software Engineering",
-        "Issuing Organization": "RevoU",
-        "Issue Date": "19 December 2023",
-        "Expiration Date": "-",
-        "Credential ID": "CMP/12-23/6476273",
-        "Credential URL": "https://certificates.revou.co/louise-derizhy-certificate-completion-kmb4.pdf"
+        "certificateName": "RevoU - Data & Software Engineering",
+        "issuer": "RevoU",
+        "issueDate": "19 December 2023",
+        "expirationDate": "-",
+        "credentialId": "CMP/12-23/6476273",
+        "url": "https://certificates.revou.co/louise-derizhy-certificate-completion-kmb4.pdf",
+        "logo": "./assets/image/logo/revou.png"
     }
 ]
