@@ -14,17 +14,32 @@
                 "target": ""
             },
             {
-                "name": "Resume",
-                "path": "#resume",
+                "name": "Skills",
+                "path": "#skill",
                 "target": ""
             },
             {
-                "name": "Project",
+                "name": "Experiences",
+                "path": "#experience",
+                "target": ""
+            },
+            {
+                "name": "Educations",
+                "path": "#education",
+                "target": ""
+            },
+            {
+                "name": "Organizations",
+                "path": "#organization",
+                "target": ""
+            },
+            {
+                "name": "Projects",
                 "path": "#project",
                 "target": ""
             },
             {
-                "name": "Certification",
+                "name": "Certifications",
                 "path": "#certification",
                 "target": ""
             },
@@ -39,11 +54,6 @@
         "name": "More About Me",
         "type": "normal",
         "item": [
-            {
-                "name": "Certification",
-                "path": "/certification",
-                "target": ""
-            },
             {
                 "name": "Speedcubing",
                 "path": "https://www.worldcubeassociation.org/persons/2018DERI01",

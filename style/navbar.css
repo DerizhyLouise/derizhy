@@ -11,6 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+    background-color: hsl(217, 54%, 11%);
 }
 
 .navbar-space {
@@ -97,51 +98,16 @@ header {
     transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
 
-@media only screen and (max-width: 1550px) {
-    .logo {
-        font-size: 2em;
-    }
-}
-
-@media only screen and (max-width: 1340px) {
-    .logo {
-        display: none;
-    }
-
-    .logo-small {
-        display: flex;
-    }
-}
-
-@media only screen and (max-width: 1080px) {
-    .logo-small {
-        display: none;
-    }
-
-    header {
-        justify-content: center;   
-    }
-
-    .navbar-space {
-        height: 80px;
-    }
-}
-
 @media only screen and (max-width: 750px) {
     .nav-button {
         margin: 0px;
     }
-}
 
-@media only screen and (max-width: 600px) {
-    .nav-button {
-        font-size: 0.7rem;
-        width: 80px;
-        letter-spacing: 0.1rem;
-        font-weight: 100;
+    .logo {
+        display: none;
     }
-    
-    .nav-button:hover rect {
-        stroke-dasharray: 20, 176;
+
+    .logo-small {
+        display: block;
     }
 }

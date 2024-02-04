@@ -33,9 +33,6 @@ function fetchingFooter (data) {
         } else {
             const ul = document.createElement('ul');
             category.item.forEach(item => {
-                if (!(window.location.pathname === '/index.html' || window.location.pathname === '/profile/') && item.path.includes('#')) {
-                    item.path = '/profile' + item.path;
-                }
                 ul.innerHTML += `
                     <li><a href="${item.path}" target="${item.target}">${item.name}</a></li>
                 `

@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css">
     <link rel="stylesheet" href="./style/theme.css">
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/home.css">
     <link rel="stylesheet" href="./style/profile.css">
     <link rel="stylesheet" href="./style/resume.css">
     <link rel="stylesheet" href="./style/project.css">
-    <link rel="stylesheet" href="./style/review.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="icon" href="./assets/svg/logo.svg" type="image/svg+xml">
     <title>Louise Derizhy</title>
@@ -77,9 +77,9 @@
                 </div>
             </div>
         </div>
-        <div id="resume" class="resume">
+        <div class="resume">
             <div class="resume-container">
-                <div class="resume-skill">
+                <div id="skill" class="resume-skill pt-24 max-xl:mx-8">
                     <div class="sub-title" data-aos="flip-left" data-aos-duration="1500">
                         <h1>
                             <span class="title-underline gradient-text">Skills</span>
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="resume-experience">
+                <div id="experience" class="resume-experience pt-24 max-xl:mx-8">
                     <div class="sub-title" data-aos="flip-left" data-aos-duration="1500">
                         <h1>
                             <span class="title-underline gradient-text">Experiences</span>
@@ -106,7 +106,7 @@
                         <ol style="--length: 0" role="list"></ol>
                     </div>
                 </div>
-                <div class="resume-education">
+                <div id="education" class="resume-education pt-24 max-xl:mx-8">
                     <div class="sub-title" data-aos="flip-left" data-aos-duration="1500">
                         <h1>
                             <span class="title-underline gradient-text">Educations</span>
@@ -116,7 +116,7 @@
                         <ol style="--length: 0" role="list"></ol>
                     </div>
                 </div>
-                <div class="resume-organization">
+                <div id="organization" class="resume-organization pt-24 max-xl:mx-8">
                     <div class="sub-title" data-aos="flip-left" data-aos-duration="1500">
                         <h1>
                             <span class="title-underline gradient-text">Organizations</span>
@@ -128,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <div id="project" class="project">
+        <div id="project" class="project pt-24 max-xl:mx-8 h-full">
             <div class="projects">
                 <div class="sub-title" data-aos="flip-left" data-aos-duration="1500">
                     <h1>
@@ -138,21 +138,21 @@
                 <div class="project-container"></div>
             </div>
         </div>
-        <div id="certification" class="pt-24">
+        <div id="certification" class="pt-24 max-xl:mx-8">
             <div class="sub-title" data-aos="flip-left" data-aos-duration="1500">
                 <h1>
                     <span class="title-underline gradient-text">Certifications</span>
                 </h1>
             </div>
-            <div class="certification-container h-screen w-full bg-[#1F375C] my-8 rounded-lg overflow-auto"></div>
+            <div class="certification-container h-screen w-full bg-[#1F375C] my-8 rounded-lg overflow-auto" data-aos="fade-up" data-aos-duration="1500"></div>
         </div>
-        <div id="review" class="review">
+        <div id="review" class="pt-24 mb-60 max-xl:mx-8">
             <div class="sub-title" data-aos="flip-left" data-aos-duration="1500">
                 <h1>
                     <span class="title-underline gradient-text">Review</span>
                 </h1>
             </div>
-            <div class="review-content"></div>
+            <div class="review-content flex pt-8 flex-wrap"></div>
         </div>
     </div>
     <div class="side-bar side-right"></div>
@@ -164,6 +164,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="./script/navbar.js"></script>
     <script src="./script/main.js"></script>
     <script src="./script/footer.js"></script>

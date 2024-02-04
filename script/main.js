@@ -339,26 +339,26 @@ fetch('./json/certifications.json').then(response => response.json()).then(data 
 
         if (certi.credentialId) {
             certiList.innerHTML = `
-                <div class="flex-none w-20 bg-[#1F375C] ml-4 my-4">
-                    <img src="${certi.logo}" class="bg-[#1F375C] w-14 h-14">
+                <div class="flex-none w-20 ml-4 my-4">
+                    <img src="${certi.logo}" class="w-14 h-14">
                 </div>
-                <div class="flex-initial w-full bg-[#1F375C] mr-4 my-4">
-                    <h3 class="bg-[#1F375C] gradient-text text-2xl font-bold">${certi.certificateName}</h3>
-                    <p class="bg-[#1F375C] text-[#FFF9D2]">${certi.issuer}</p>
-                    <p class="bg-[#1F375C]">Issued ${certi.issueDate}</p>
-                    <p class="bg-[#1F375C]">Credential ID ${certi.credentialId}</p>
+                <div class="flex-initial w-full mr-4 my-4">
+                    <h3 class=" gradient-text text-2xl font-bold m-0">${certi.certificateName}</h3>
+                    <p class="text-[#FFF9D2]">${certi.issuer}</p>
+                    <p>Issued ${certi.issueDate}</p>
+                    <p>Credential ID ${certi.credentialId}</p>
                     <a class="rounded my-4 h-8 px-4 bg-[#E91E63] hover:bg-[#BA124A]" target='_blank' href="${certi.url}">Show Credential</a>
                 </div>
             `;
         } else {
             certiList.innerHTML = `
-                <div class="flex-none w-20 bg-[#1F375C] ml-4 my-4">
-                    <img src="${certi.logo}" class="bg-[#1F375C] w-14 h-14">
+                <div class="flex-none w-20 ml-4 my-4">
+                    <img src="${certi.logo}" class="w-14 h-14">
                 </div>
-                <div class="flex-initial w-full bg-[#1F375C] mr-4 my-4">
-                    <h3 class="bg-[#1F375C] gradient-text text-2xl font-bold">${certi.certificateName}</h3>
-                    <p class="bg-[#1F375C] text-[#FFF9D2]">${certi.issuer}</p>
-                    <p class="bg-[#1F375C]">Issued ${certi.issueDate}</p>
+                <div class="flex-initial w-full mr-4 my-4 m-0">
+                    <h3 class=" gradient-text text-2xl font-bold">${certi.certificateName}</h3>
+                    <p class="text-[#FFF9D2]">${certi.issuer}</p>
+                    <p>Issued ${certi.issueDate}</p>
                     <a class="rounded my-4 h-8 px-4 bg-[#E91E63] hover:bg-[#BA124A]" target='_blank' href="${certi.url}">Show Credential</a>
                 </div>
             `;
@@ -376,18 +376,21 @@ fetch('./json/reviews.json').then(response => response.json()).then(data => {
 
     data.forEach((review, index) => {
         const listItem = document.createElement('a');
-        listItem.classList.add("review-child")
+        listItem.className = "h-full bg-[#1F375C] no-underline rounded-lg flex flex-col p-4 mb-4";
         listItem.setAttribute('data-aos', 'fade-up');
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.href = review.url;
         listItem.target = "_blank";
 
         listItem.innerHTML = `
-            <div class="review-img"><img src="${review.img}"></div>
-            <div class="review-desc">
-                <h3 class="gradient-text">${review.name}</h3>
-                <p>${review.desc}</p>
+            <div class="bg-[#1F375C] flex justify-start items-center pb-2">
+                <img class="rounded-full h-20 w-20" src="${review.img}">
+                <div class="pl-2 bg-[#1F375C]">
+                    <h3 class="gradient-text text-2xl">${review.name}</h3>
+                    <p class="bg-[#1F375C] text-sm">${review.role}</p>
+                </div>
             </div>
+            <p class="bg-[#1F375C]">${review.desc}</p>
         `
 
         reviewContainer.appendChild(listItem);

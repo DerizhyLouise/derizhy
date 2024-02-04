@@ -13,7 +13,6 @@
 | Author            | Link                                                |
 |-------------------|-----------------------------------------------------|
 | @animationbro      | [AnimationBro](https://codepen.io/animationbro/pen/OJQEVEj) |
-| @nuhmanpk          | [Nuhmanpk](https://codepen.io/nuhmanpk/pen/XWqBrae)  |
 | @michellebarker    | [Michellebarker](https://codepen.io/michellebarker/pen/poLoeRq)|
 | @MarkBoots         | [MarkBoots](https://codepen.io/MarkBoots/pen/yLPwvda)|
 | @FlorinPop17       | [FlorinPop17](https://codepen.io/FlorinPop17/pen/dyPvNKK)|
