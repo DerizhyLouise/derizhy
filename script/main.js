@@ -173,19 +173,18 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
 
     data.forEach((project, index) => {
         const articleWrapper = document.createElement('article');
-        const aosEffect = index % 2 === 0 ? 'flip-up' : 'flip-down';
         articleWrapper.classList.add('article-wrapper');
-        articleWrapper.setAttribute('data-aos', aosEffect);
+        articleWrapper.setAttribute('data-aos', 'flip-left');
         articleWrapper.setAttribute('data-aos-duration', '2000');
 
         articleWrapper.innerHTML = `
             <div class="rounded-lg container-project">
                 <img src="${project.img}">
             </div>
+            <div class="project-title">
+                <h3>${project.title}</h3>
+            </div>
             <div class="project-info">
-                <div class="project-title">
-                    <h3>${project.title}</h3>
-                </div>
                 <input type="hidden" class="projectId" value="${project.id}">
                 <button class="project-button">
                     <div class="project-button-left"></div>

@@ -1,5 +1,26 @@
 [
     {
+        "id": 7,
+        "title": "Portfolio",
+        "img": "./assets/image/portfolio.png",
+        "media": [
+            {
+                "title": "Source Code",
+                "url": "https://github.com/DerizhyLouise/profile",
+                "type": "Github"
+            },
+            {
+                "title": "Portfolio Website",
+                "url": "https://derizhylouise.github.io/profile",
+                "type": "Web"
+            }
+        ],
+        "time": "Dec 2023 - Present",
+        "description": [
+            "My portfolio website deployed with Github Pages. This website built with pure HTML, CSS, and JavaScript without any framework."
+        ]
+    },
+    {
         "id": 6,
         "title": "Shopping Cart Database Analysis",
         "img": "./assets/image/revouDa.png",

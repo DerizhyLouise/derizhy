@@ -17,6 +17,7 @@
     align-content: center;
     color: var(--color);
     user-select: none;
+    margin-top:12px;
 }
 
 .soft {

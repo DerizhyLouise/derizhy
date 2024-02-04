@@ -13,50 +13,36 @@
 
 .article-wrapper {
     width: 250px;
-    height: 400px;
+    height: auto;
     border-radius: 8px;
     padding: 5px;
     border: 4px solid transparent;
     background-color: hsl(216, 50%, 24%);
     margin: 20px 10px;
+    display:flex;
+    justify-content:space-between;
+    flex-direction: column;
 }
 
 .project-info {
-    height: 210px;
+    height: auto;
     padding-top: 20px;
     padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
+    justify-content: space-between;
     background-color: hsl(216, 50%, 24%);
 }
 
 .project-title {
     background-color: hsl(216, 50%, 24%);
+    padding: 2px 0px;
 }
 
 .project-title h3 {
     text-align: center;
     font-size: 1.5em;
     font-weight: 600;
-    background-color: hsl(216, 50%, 24%);
-}
-
-.flex-pr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     background-color: hsl(216, 50%, 24%);
 }
 
@@ -304,6 +290,7 @@ button.project-modal-close:hover {
 .project-modal-info h4 {
     margin-top: 0px;
     font-weight: 600;
+    font-size: 24px;
 }
 
 .project-modal-info p {
