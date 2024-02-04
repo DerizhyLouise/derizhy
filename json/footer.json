@@ -24,6 +24,11 @@
                 "target": ""
             },
             {
+                "name": "Certification",
+                "path": "#certification",
+                "target": ""
+            },
+            {
                 "name": "Review",
                 "path": "#review",
                 "target": ""

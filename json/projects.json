@@ -2,7 +2,7 @@
     {
         "id": 7,
         "title": "Portfolio",
-        "img": "./assets/image/portfolio.png",
+        "img": "./assets/image/project/portfolio.png",
         "media": [
             {
                 "title": "Source Code",
@@ -23,7 +23,7 @@
     {
         "id": 6,
         "title": "Shopping Cart Database Analysis",
-        "img": "./assets/image/revouDa.png",
+        "img": "./assets/image/project/revouDa.png",
         "media": [
             {
                 "title": "Presentation",
@@ -68,7 +68,7 @@
     {
         "id": 5,
         "title": "Clo - E-Commerce Website",
-        "img": "./assets/image/clo.png",
+        "img": "./assets/image/project/clo.png",
         "media": [
             {
                 "title": "Presentation",
@@ -100,7 +100,7 @@
     {
         "id": 4,
         "title": "Bike Rental - Data Analytics",
-        "img": "./assets/image/da.jpg",
+        "img": "./assets/image/project/da.jpg",
         "media": [
             {
                 "title": "Analysis Process",
@@ -117,7 +117,7 @@
     {
         "id": 3,
         "title": "Cryptography",
-        "img": "./assets/image/crypto.jpg",
+        "img": "./assets/image/project/crypto.jpg",
         "media": [
             {
                 "title": "Source Code",
@@ -141,7 +141,7 @@
     {
         "id": 2,
         "title": "Image Processing",
-        "img": "./assets/image/imageProcessing.jpg",
+        "img": "./assets/image/project/imageProcessing.jpg",
         "media": [
             {
                 "title": "Source Code",
@@ -166,7 +166,7 @@
     {
         "id": 1,
         "title": "Help Me",
-        "img": "./assets/image/helpMe.png",
+        "img": "./assets/image/project/helpMe.png",
         "media": [
             {
                 "title": "Prototype",

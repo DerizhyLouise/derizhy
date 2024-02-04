@@ -326,6 +326,50 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
     console.error('Error fetching or processing JSON data:', error);
 });
 
+// Fetch Certifications
+fetch('./json/certifications.json').then(response => response.json()).then(data => {
+    const certiContainer = document.querySelector('.certification-container');
+    
+    data.reverse();
+    data.forEach((certi, index) => {
+        const certiList = document.createElement('div');
+        const isLastData = index === data.length - 1;
+        const borderClasses = isLastData ? "" : "border-b-2 border-[#E91E63]";
+        certiList.className = `flex bg-[#1F375C] mx-2 ${borderClasses}`;
+
+        if (certi.credentialId) {
+            certiList.innerHTML = `
+                <div class="flex-none w-20 bg-[#1F375C] ml-4 my-4">
+                    <img src="${certi.logo}" class="bg-[#1F375C] w-14 h-14">
+                </div>
+                <div class="flex-initial w-full bg-[#1F375C] mr-4 my-4">
+                    <h3 class="bg-[#1F375C] gradient-text text-2xl font-bold">${certi.certificateName}</h3>
+                    <p class="bg-[#1F375C] text-[#FFF9D2]">${certi.issuer}</p>
+                    <p class="bg-[#1F375C]">Issued ${certi.issueDate}</p>
+                    <p class="bg-[#1F375C]">Credential ID ${certi.credentialId}</p>
+                    <a class="rounded my-4 h-8 px-4 bg-[#E91E63] hover:bg-[#BA124A]" target='_blank' href="${certi.url}">Show Credential</a>
+                </div>
+            `;
+        } else {
+            certiList.innerHTML = `
+                <div class="flex-none w-20 bg-[#1F375C] ml-4 my-4">
+                    <img src="${certi.logo}" class="bg-[#1F375C] w-14 h-14">
+                </div>
+                <div class="flex-initial w-full bg-[#1F375C] mr-4 my-4">
+                    <h3 class="bg-[#1F375C] gradient-text text-2xl font-bold">${certi.certificateName}</h3>
+                    <p class="bg-[#1F375C] text-[#FFF9D2]">${certi.issuer}</p>
+                    <p class="bg-[#1F375C]">Issued ${certi.issueDate}</p>
+                    <a class="rounded my-4 h-8 px-4 bg-[#E91E63] hover:bg-[#BA124A]" target='_blank' href="${certi.url}">Show Credential</a>
+                </div>
+            `;
+        }
+
+        certiContainer.appendChild(certiList);
+    });
+}).catch(error => {
+    console.error('Error fetching or processing JSON data:', error);
+});
+
 // Fetch Reviews
 fetch('./json/reviews.json').then(response => response.json()).then(data => {
     const reviewContainer = document.querySelector('.review-content');
