@@ -5,8 +5,10 @@
 #### Library
 | Library                | Link                                   |
 |------------------------|----------------------------------------|
+| Tailwind CSS     | [Tailwind CSS](https://tailwindcss.com/) |
 | Animated on Scroll     | [AOS](https://michalsnik.github.io/aos) |
 | JQuery                 | [JQuery](https://jquery.com/)           |
+| Flowbite                | [Flowbite](https://flowbite.com/))    |
 
 #### Inspiration
 
