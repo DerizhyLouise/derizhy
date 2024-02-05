@@ -32,7 +32,7 @@
 
 .project-title {
     background-color: hsl(216, 50%, 24%);
-    padding: 2px 0px;
+    padding-top: 6px;
 }
 
 .project-title h3 {
@@ -77,6 +77,7 @@
     transition: opacity 600ms linear 600ms;
     overflow: auto;
     width: 60vw;
+    background-color: hsl(217, 54%, 11%);
 }
 
 .project-modal-info {
@@ -96,10 +97,6 @@
 button.project-modal-close {
     background: #E91E63;
     border: none;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     border-radius: 50%;
     color: #FFFFFF;
     cursor: pointer;
@@ -109,11 +106,6 @@ button.project-modal-close {
     position: absolute;
     right: 30px;
     top: 30px;
-    -webkit-transition: -webkit-transform 600ms;
-    -moz-transition: -moz-transform 600ms;
-    -ms-transition: -ms-transform 600ms;
-    -o-transition: -o-transform 600ms;
-    transition: transform 600ms;
 }
 
 .project-modal-overlay {
@@ -126,61 +118,10 @@ button.project-modal-close {
     top: 0;
     visibility: hidden;
     z-index: 900;
-    -webkit-transition: opacity 200ms linear;
-    -moz-transition: opacity 200ms linear;
-    -ms-transition: opacity 200ms linear;
-    -o-transition: opacity 200ms linear;
-    transition: opacity 200ms linear;
 }
 
 button.project-modal-close:hover {
     background: #e91ea5;
-    -webkit-transform: rotate(360deg) scale(1.10);
-    -moz-transform: rotate(360deg) scale(1.10);
-    -ms-transform: rotate(360deg) scale(1.10);
-    -o-transform: rotate(360deg) scale(1.10);
-    transform: rotate(360deg) scale(1.10);
-    -webkit-transition: -webkit-transform 600ms;
-    -moz-transition: -moz-transform 600ms;
-    -ms-transition: -ms-transform 600ms;
-    -o-transition: -o-transform 600ms;
-    transition: transform 600ms;
-}
-
-.modal button.project-modal-close span, .modal span:before, .modal span:after {
-    background: #FFFFFF;
-    cursor: pointer;
-    display: block;
-    height: 2px;
-    position: absolute;
-    width: 20px;
-}
-
-.modal button.project-modal-close span:first-child {
-    background: white;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.modal button.project-modal-close span:before {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.modal button.project-modal-close span:after {
-    -webkit-transform: translateY(-2px) rotate(-45deg);
-    -moz-transform: translateY(-2px) rotate(-45deg);
-    -ms-transform: translateY(-2px) rotate(-45deg);
-    -o-transform: translateY(-2px) rotate(-45deg);
-    transform: translateY(-2px) rotate(-45deg);
-    top: 2px;
 }
 
 .project-button {
@@ -401,7 +342,6 @@ button.project-modal-close:hover {
 @media only screen and (max-width: 480px) {
     .article-wrapper {
         width: 200px;
-        height: 300px;
     }
 
     .project-title h3 {
@@ -414,10 +354,6 @@ button.project-modal-close:hover {
     
     .container-project img {
         height: 120px;
-    }
-
-    .project-info {
-        height: 150px;
     }
 
     .project-button {
@@ -458,7 +394,6 @@ button.project-modal-close:hover {
 @media only screen and (max-width: 425px) {
     .article-wrapper {
         width: 170px;
-        height: 270px;
     }
     
     .container-project {
@@ -467,10 +402,6 @@ button.project-modal-close:hover {
     
     .container-project img {
         height: 100px;
-    }
-
-    .project-info {
-        height: 150px;
     }
 
     .project-button::after {
