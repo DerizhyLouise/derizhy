@@ -182,7 +182,7 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
                 <img src="${project.img}">
             </div>
             <div class="project-title">
-                <h3>${project.title}</h3>
+                <h3 class="gradient-text">${project.title}</h3>
             </div>
             <div class="project-info">
                 <input type="hidden" class="projectId" value="${project.id}">
@@ -260,10 +260,19 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
     }());
       
     var modal = (function(){
-        var $close = $('<button role="button" class="project-modal-close" title="Close"><span></span></button>');
+        var $close = $('<button role="button" class="project-modal-close hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close"><i class="fa-solid fa-xmark"></i></button>');
         var $content = $('<div class="project-modal-content"/>');
         var $modal = $('<div class="modal"/>');
         var $window = $(window);
+
+        $close.hover(
+            function() {
+                $(this).toggleClass('hover:scale-105 hover:rotate-[360deg]', true);
+            },
+            function() {
+                $(this).toggleClass('hover:scale-105 hover:rotate-[360deg]', false);
+            }
+        );
       
         $modal.append($content, $close);
       
@@ -343,7 +352,7 @@ fetch('./json/certifications.json').then(response => response.json()).then(data 
                     <img src="${certi.logo}" class="w-14 h-14">
                 </div>
                 <div class="flex-initial w-full mr-4 my-4">
-                    <h3 class=" gradient-text text-2xl font-bold m-0">${certi.certificateName}</h3>
+                    <h3 class="gradient-text text-2xl font-bold m-0">${certi.certificateName}</h3>
                     <p class="text-[#FFF9D2]">${certi.issuer}</p>
                     <p>Issued ${certi.issueDate}</p>
                     <p>Credential ID ${certi.credentialId}</p>
@@ -356,7 +365,7 @@ fetch('./json/certifications.json').then(response => response.json()).then(data 
                     <img src="${certi.logo}" class="w-14 h-14">
                 </div>
                 <div class="flex-initial w-full mr-4 my-4 m-0">
-                    <h3 class=" gradient-text text-2xl font-bold">${certi.certificateName}</h3>
+                    <h3 class="gradient-text text-2xl font-bold">${certi.certificateName}</h3>
                     <p class="text-[#FFF9D2]">${certi.issuer}</p>
                     <p>Issued ${certi.issueDate}</p>
                     <a class="rounded my-4 h-8 px-4 bg-[#E91E63] hover:bg-[#BA124A]" target='_blank' href="${certi.url}">Show Credential</a>

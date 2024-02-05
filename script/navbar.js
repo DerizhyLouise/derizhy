@@ -5,8 +5,8 @@ function showNavbar() {
     
     navbar.innerHTML = `
         <div class="flex mr-4">
-            <img class="w-24 h-24 mr-4" src="./assets/svg/logo.svg">
-            <h2 class="text-4xl flex max-sm:hidden items-center select-none gradient-text">Louise Derizhy</h2>
+            <a href="#home"><img class="w-24 h-24 mr-4" src="./assets/svg/logo.svg"></a>
+            <h2 class="text-4xl flex max-sm:hidden items-center select-none gradient-text"><a href="#home">Louise Derizhy</a></h2>
         </div>
         <div class="w-40 inline-flex items-center">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-offset-distance="2" class="group text-white bg-[#E91E63] hover:bg-[#BA124A] font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button">
