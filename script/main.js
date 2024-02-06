@@ -344,7 +344,7 @@ fetch('./json/certifications.json').then(response => response.json()).then(data 
         const certiList = document.createElement('div');
         const isLastData = index === data.length - 1;
         const borderClasses = isLastData ? "" : "border-b-2 border-[#E91E63]";
-        certiList.className = `flex bg-[#1F375C] mx-2 ${borderClasses}`;
+        certiList.className = `flex bg-[#1F375C] hover:bg-[#172945] mx-2 ${borderClasses}`;
 
         if (certi.credentialId) {
             certiList.innerHTML = `
@@ -385,21 +385,21 @@ fetch('./json/reviews.json').then(response => response.json()).then(data => {
 
     data.forEach((review, index) => {
         const listItem = document.createElement('a');
-        listItem.className = "h-full bg-[#1F375C] no-underline rounded-lg flex flex-col p-4 mb-4";
+        listItem.className = "h-full bg-[#1F375C] hover:bg-[#172945] no-underline rounded-lg flex flex-col p-4 mb-4";
         listItem.setAttribute('data-aos', 'fade-up');
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.href = review.url;
         listItem.target = "_blank";
 
         listItem.innerHTML = `
-            <div class="bg-[#1F375C] flex justify-start items-center pb-2">
+            <div class="flex justify-start items-center pb-2">
                 <img class="rounded-full h-20 w-20" src="${review.img}">
-                <div class="pl-2 bg-[#1F375C]">
+                <div class="pl-2">
                     <h3 class="gradient-text text-2xl">${review.name}</h3>
-                    <p class="bg-[#1F375C] text-sm">${review.role}</p>
+                    <p class="text-sm">${review.role}</p>
                 </div>
             </div>
-            <p class="bg-[#1F375C]">${review.desc}</p>
+            <p>${review.desc}</p>
         `
 
         reviewContainer.appendChild(listItem);
