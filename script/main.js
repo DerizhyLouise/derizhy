@@ -37,10 +37,10 @@ fetch('./json/softSkills.json').then(response => response.json()).then(data => {
         const listItem = document.createElement('li');
         listItem.style.setProperty('--accent-color', skill.theme);
         listItem.innerHTML = `
-            <div class="icon">
+            <div class="icon text-5xl h-12 w-12 mx-auto my-2">
                 <i class="${skill.icon}"></i>
             </div>
-            <div class="skill-list-title">
+            <div class="text-md font-semibold">
                 ${skill.skill}
             </div>
         `
@@ -59,25 +59,22 @@ fetch('./json/techSkills.json').then(response => response.json()).then(data => {
         const listItem = document.createElement('li');
         listItem.style.setProperty('--accent-color', skill.theme);
 
-        let iconElement;
+        const iconElement = document.createElement('i');
         if (skill.icon.startsWith('fa-')) {
-            iconElement = document.createElement('i');
             iconElement.className = skill.icon;
         } else {
-            iconElement = document.createElement('img');
-            iconElement.src = skill.icon;
-            iconElement.alt = skill.skill;
-            iconElement.style.width = '3rem';
-            iconElement.style.height = '3rem';
-            iconElement.style.margin = 'auto';
-            iconElement.style.backgroundColor = skill.theme;
+            const img = document.createElement('img');
+            img.src = skill.icon;
+            img.alt = skill.skill;
+            img.className = "w-12 h-12 mx-auto"
+            iconElement.appendChild(img);
         }
 
         listItem.innerHTML = `
-            <div class="icon">
+            <div class="icon text-5xl h-12 w-12 mx-auto my-2">
                 ${iconElement.outerHTML}
             </div>
-            <div class="skill-list-title">
+            <div class="text-md font-semibold">
                 ${skill.skill}
             </div>
         `;
@@ -344,7 +341,7 @@ fetch('./json/certifications.json').then(response => response.json()).then(data 
         const certiList = document.createElement('div');
         const isLastData = index === data.length - 1;
         const borderClasses = isLastData ? "" : "border-b-2 border-[#E91E63]";
-        certiList.className = `flex bg-[#1F375C] mx-2 ${borderClasses}`;
+        certiList.className = `flex bg-[#1F375C] hover:bg-[#172945] mx-2 ${borderClasses}`;
 
         if (certi.credentialId) {
             certiList.innerHTML = `
@@ -385,21 +382,21 @@ fetch('./json/reviews.json').then(response => response.json()).then(data => {
 
     data.forEach((review, index) => {
         const listItem = document.createElement('a');
-        listItem.className = "h-full bg-[#1F375C] no-underline rounded-lg flex flex-col p-4 mb-4";
+        listItem.className = "h-full bg-[#1F375C] hover:bg-[#172945] no-underline rounded-lg flex flex-col p-4 mb-4";
         listItem.setAttribute('data-aos', 'fade-up');
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.href = review.url;
         listItem.target = "_blank";
 
         listItem.innerHTML = `
-            <div class="bg-[#1F375C] flex justify-start items-center pb-2">
+            <div class="flex justify-start items-center pb-2">
                 <img class="rounded-full h-20 w-20" src="${review.img}">
-                <div class="pl-2 bg-[#1F375C]">
+                <div class="pl-2">
                     <h3 class="gradient-text text-2xl">${review.name}</h3>
-                    <p class="bg-[#1F375C] text-sm">${review.role}</p>
+                    <p class="text-sm">${review.role}</p>
                 </div>
             </div>
-            <p class="bg-[#1F375C]">${review.desc}</p>
+            <p>${review.desc}</p>
         `
 
         reviewContainer.appendChild(listItem);

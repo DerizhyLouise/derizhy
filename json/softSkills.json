@@ -1,17 +1,17 @@
 [
     {
         "skill": "Critical Thinking",
-        "icon": "fa-solid fa-face-thinking",
+        "icon": "fa-light fa-face-thinking",
         "theme": "#0D6EFD"
     },
     {
         "skill": "Analytics",
-        "icon": "fa-regular fa-print-magnifying-glass",
+        "icon": "fa-light fa-print-magnifying-glass",
         "theme": "#DC3545"
     },
     {
         "skill": "Problem Solving",
-        "icon": "fa-duotone fa-screwdriver-wrench",
+        "icon": "fa-light fa-screwdriver-wrench",
         "theme": "#6710F5"
     },
     {
@@ -21,7 +21,7 @@
     },
     {
         "skill": "Public Speaking",
-        "icon": "fa-regular fa-microphone-stand",
+        "icon": "fa-light fa-microphone-stand",
         "theme": "#D63384"
     }
 ]

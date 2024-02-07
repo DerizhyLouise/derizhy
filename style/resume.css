@@ -84,26 +84,6 @@
     z-index: 1;
 }
 
-.resume-skill-content ul li .icon, .resume-skill-content ul li .skill-list-title {
-    padding-inline: 1rem;
-    color: white;
-    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-    background: var(--accent-color);
-}
-
-.resume-skill-content ul li .icon {
-    font-size: 3rem;
-}
-
-.resume-skill-content ul li .skill-list-title {
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.resume-skill-content i {
-    background-color: var(--accent-color);
-}
-
 .resume-skill-content h3 {
     text-align: center;
 }
