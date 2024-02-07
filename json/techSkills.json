@@ -6,7 +6,7 @@
     },
     {
         "skill": "SQL",
-        "icon": "fa-solid fa-database",
+        "icon": "fa-light fa-database",
         "theme": "#DB7533"
     },
     {
@@ -20,7 +20,7 @@
         "theme": "#264DE4"
     },
     {
-        "skill": "Javascript",
+        "skill": "JavaScript",
         "icon": "fa-brands fa-js",
         "theme": "#F7E018"
     },
@@ -30,13 +30,18 @@
         "theme": "#5382A1"
     },
     {
+        "skill": "Tailwind CSS",
+        "icon": "./assets/svg/tailwind.svg",
+        "theme": "#48AEB3"
+    },
+    {
         "skill": "Microservices",
         "icon": "fa-light fa-chart-network",
         "theme": "#0192FF"
     },
     {
         "skill": "PostgreSQL",
-        "icon": "./assets/image/logo/postgresql.png",
+        "icon": "./assets/svg/postgresql.svg",
         "theme": "#305D8D"
     },
     {
@@ -53,5 +58,10 @@
         "skill": "Git",
         "icon": "fa-brands fa-git-alt",
         "theme": "#F15233"
+    },
+    {
+        "skill": "TypeScript",
+        "icon": "./assets/svg/typescript.svg",
+        "theme": "#2D79C7"
     }
 ]

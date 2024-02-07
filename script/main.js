@@ -37,10 +37,10 @@ fetch('./json/softSkills.json').then(response => response.json()).then(data => {
         const listItem = document.createElement('li');
         listItem.style.setProperty('--accent-color', skill.theme);
         listItem.innerHTML = `
-            <div class="icon">
+            <div class="icon text-5xl h-12 w-12 mx-auto my-2">
                 <i class="${skill.icon}"></i>
             </div>
-            <div class="skill-list-title">
+            <div class="text-md font-semibold">
                 ${skill.skill}
             </div>
         `
@@ -59,25 +59,22 @@ fetch('./json/techSkills.json').then(response => response.json()).then(data => {
         const listItem = document.createElement('li');
         listItem.style.setProperty('--accent-color', skill.theme);
 
-        let iconElement;
+        const iconElement = document.createElement('i');
         if (skill.icon.startsWith('fa-')) {
-            iconElement = document.createElement('i');
             iconElement.className = skill.icon;
         } else {
-            iconElement = document.createElement('img');
-            iconElement.src = skill.icon;
-            iconElement.alt = skill.skill;
-            iconElement.style.width = '3rem';
-            iconElement.style.height = '3rem';
-            iconElement.style.margin = 'auto';
-            iconElement.style.backgroundColor = skill.theme;
+            const img = document.createElement('img');
+            img.src = skill.icon;
+            img.alt = skill.skill;
+            img.className = "w-12 h-12 mx-auto"
+            iconElement.appendChild(img);
         }
 
         listItem.innerHTML = `
-            <div class="icon">
+            <div class="icon text-5xl h-12 w-12 mx-auto my-2">
                 ${iconElement.outerHTML}
             </div>
-            <div class="skill-list-title">
+            <div class="text-md font-semibold">
                 ${skill.skill}
             </div>
         `;
