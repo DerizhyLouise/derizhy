@@ -396,7 +396,7 @@ fetch('./json/reviews.json').then(response => response.json()).then(data => {
                     <p class="text-sm">${review.role}</p>
                 </div>
             </div>
-            <p>${review.desc}</p>
+            <q>${review.desc}</q>
         `
 
         reviewContainer.appendChild(listItem);
