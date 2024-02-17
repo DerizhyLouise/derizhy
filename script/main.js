@@ -176,7 +176,7 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
 
         articleWrapper.innerHTML = `
             <div class="rounded-lg container-project">
-                <img src="${project.img}">
+                <img src="${project.img}"">
             </div>
             <div class="project-title">
                 <h3 class="gradient-text">${project.title}</h3>
@@ -218,6 +218,12 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
                     h1a.innerHTML = `
                         <span class="gradient-text">Project's Media</span>
                     `;
+
+                    if (project.media.length === 0) {
+                        const empty = document.createElement('p');
+                        empty.innerHTML = "No media available in this project.<br/>I will upload the media soon after the project has done.";
+                        div.append(empty);
+                    }
 
                     project.media.forEach(media => {
                         const list = document.createElement('div');

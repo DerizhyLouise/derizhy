@@ -1,5 +1,22 @@
 [
     {
+        "id": 8,
+        "title": "MTHIS 2.0",
+        "img": "./assets/image/project/mthis.jpg",
+        "media": [],
+        "time": "Jan 2024 - Present (ongoing process)",
+        "description": [
+            "MTHIS (Murni Teguh Hospital Information System) is an information system digital platform that manages and integrates medical, administrative, and financial functions within a healthcare facility to streamline operations and improve patient care.<br/><br/>",
+            "This project is related to my position as a Software Developer in PT Murni Sadar Tbk.<br/><br/>",
+            "-- Tech --<br/>",
+            "Frontend: Constructed with the Svelte framework and shadcn-svelte for a sleek and user-friendly interface.<br/>",
+            "Backend: Implemented using Java with a microservices architecture, ensuring scalability and agility.<br/>",
+            "Database: Powered by PostgreSQL for robust and secure data management.<br/>",
+            "Middleware: Leveraging Kafka for efficient data streaming and communication.<br/>",
+            "Design: Styled with Tailwind CSS to achieve modern aesthetics and responsiveness.<br/>"
+        ]
+    },
+    {
         "id": 7,
         "title": "Portfolio",
         "img": "./assets/image/project/portfolio.png",
