@@ -35,11 +35,6 @@
         "theme": "#48AEB3"
     },
     {
-        "skill": "Microservices",
-        "icon": "fa-light fa-chart-network",
-        "theme": "#0192FF"
-    },
-    {
         "skill": "PostgreSQL",
         "icon": "./assets/svg/postgresql.svg",
         "theme": "#305D8D"
