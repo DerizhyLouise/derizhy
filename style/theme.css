@@ -21,19 +21,6 @@ html {
     top: 0;
 }
 
-.side-left {
-    left: 0;
-}
-
-.side-right {
-    right: 0;
-}
-
-.main, header {
-    padding-left: 250px;
-    padding-right: 250px;
-}
-
 h1, h2, h3, h4, h5, h6, p, table {
     user-select: none;
 }
@@ -96,68 +83,20 @@ h1, h2, h3, h4, h5, h6, p, table {
     }
 }
 
-@media only screen and (max-width: 1480px) {
-    .main, header {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .main, header {
-        padding-left: 150px;
-        padding-right: 150px;
-    }
-}
-
 @media only screen and (max-width: 960px) {
-    header {
-        padding-left: 120px;
-        padding-right: 120px;
-    }
-
-    .main {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
     .side-bar {
         width: 0px;
     }
 }
 
-@media only screen and (max-width: 800px) {
-    header {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-}
-
 @media only screen and (max-width: 650px) {
-    header {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-
     .sub-title h1 {
         font-size: 48px;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    header {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
     .sub-title h1 {
         font-size: 36px;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    header {
-        padding-left: 40px;
-        padding-right: 40px;
     }
 }
