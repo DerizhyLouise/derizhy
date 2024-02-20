@@ -10,10 +10,10 @@ function showNavbar() {
         </div>
         <div class="w-40 inline-flex items-center">
             <button id="dropdownDefaultButton" onclick="navbarClick()" data-dropdown-toggle="dropdown" data-dropdown-offset-distance="0" class="group text-white bg-[#E91E63] hover:bg-[#BA124A] font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button">
-                Page's Menu
+                Navigation
                 <i id="dropdownIcon" class="fa-solid fa-chevron-down ml-2 bg-[#E91E63] group-hover:bg-[#BA124A]"></i>
             </button>
-            <div id="dropdown" class="z-10 hidden w-36 rounded-b-lg border-b-2 border-x-2 border-[#E91E63]">
+            <div id="dropdown" class="z-10 hidden w-[124px] rounded-b-lg border-b-2 border-x-2 border-[#E91E63]">
                 <ul class="text-sm rounded-b-lg" aria-labelledby="dropdownDefaultButton">
                     <li>
                         <a href="#home" class="bg-[#1F375C] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Home</a>
