@@ -392,7 +392,7 @@ button.project-modal-close:hover {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 440px) {
     .article-wrapper {
         width: 170px;
     }

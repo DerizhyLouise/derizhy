@@ -13,21 +13,8 @@ html {
     background-color: hsl(217, 54%, 11%);
 }
 
-.side-bar {
-    height: 100%;
-    width: 15%;
-    position: fixed;
-    z-index: -1;
-    top: 0;
-}
-
 h1, h2, h3, h4, h5, h6, p, table {
     user-select: none;
-}
-
-.sub-title h1 {
-    font-size: 60px;
-    text-align: center;
 }
 
 .title-underline {
@@ -70,33 +57,5 @@ h1, h2, h3, h4, h5, h6, p, table {
 @keyframes textclip {
     to {
         background-position: 200% center;
-    }
-}
-
-@keyframes wave {
-    0%, 40%, 100% {
-        transform: translateY(0);
-    }
-
-    20% {
-        transform: translateY(-70px);
-    }
-}
-
-@media only screen and (max-width: 960px) {
-    .side-bar {
-        width: 0px;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    .sub-title h1 {
-        font-size: 48px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .sub-title h1 {
-        font-size: 36px;
     }
 }
