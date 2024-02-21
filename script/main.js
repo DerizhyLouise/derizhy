@@ -299,12 +299,10 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
             }, open: function(settings){
                 const body = document.querySelector('html');
                 const main = document.querySelector('.main');
-                const sidebar = document.querySelector('.side-bar');
                 const navbar = document.querySelector('header');
                 const footer = document.querySelector('footer');
                 body.style.overflow = 'hidden';
                 main.style.filter = 'blur(20px)';
-                sidebar.style.filter = 'blur(20px)';
                 navbar.style.filter = 'blur(20px)';
                 footer.style.filter = 'blur(20px)';
     
@@ -319,12 +317,10 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
             }, close: function(){
                 const body = document.querySelector('html');
                 const main = document.querySelector('.main');
-                const sidebar = document.querySelector('.side-bar');
                 const navbar = document.querySelector('header');
                 const footer = document.querySelector('footer');
                 body.style.overflow = 'scroll';
                 main.style.filter = 'none';
-                sidebar.style.filter = 'none';
                 navbar.style.filter = 'none';
                 footer.style.filter = 'none';
     
