@@ -23,8 +23,8 @@
     <title>Louise Derizhy</title>
 </head>
 
-<body oncontextmenu="return false">
-    <div class="h-full fixed -z-1 top-0 left-0"></div>
+<body oncontextmenu="return true">
+    <div class="side-bar h-full fixed -z-1 top-0 left-0"></div>
     <div class="main px-72 max-2xl:px-48 max-xl:px-40 max-lg:px-0">
         <div id="home" class="home max-xl:mx-8">
             <div class="home-text" data-aos="fade-right" data-aos-duration="1500">
@@ -141,7 +141,7 @@
                         <span class="title-underline gradient-text">Projects</span>
                     </h1>
                 </div>
-                <div class="project-container"></div>
+                <div class="project-container flex justify-evenly flex-wrap py-2.5 w-full"></div>
             </div>
         </div>
         <div id="certification" class="pt-24 max-xl:mx-8">
@@ -161,11 +161,13 @@
             <div class="review-content flex pt-8 flex-wrap"></div>
         </div>
     </div>
-    <div class="h-full fixed -z-1 top-0 right-0"></div>
+    <div class="side-bar h-full fixed -z-1 top-0 right-0"></div>
     <footer></footer>
-    <div class="project-modal">
-        <div class="project-modal-info"></div>
-        <div class="project-modal-overlay"></div>
+    <div id="projectModal" class="hidden fixed z-[999] inset-0 flex items-center justify-center mx-auto my-24 w-3/6 max-xl:w-5/6 bg-[#1F375C] overflow-y-auto max-md:w-full max-md:rounded-none rounded-xl">
+        <div class="p-12 w-full">
+            <button class="bg-[#E91E63] rounded-full text-white w-14 h-14 absolute right-5 top-5 hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="project-modal-info"></div>
+        </div>
     </div>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -174,6 +176,7 @@
     <script src="./script/navbar.js"></script>
     <script src="./script/main.js"></script>
     <script src="./script/footer.js"></script>
+    <script src="./script/modal.js"></script>
 </body>
 
 </html>
