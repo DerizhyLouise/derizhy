@@ -43,7 +43,7 @@ fetch('./json/softSkills.json').then(response => response.json()).then(data => {
             <div class="text-md font-semibold">
                 ${skill.skill}
             </div>
-        `
+        `;
 
         softSkillsContainer.appendChild(listItem);
     });
@@ -103,7 +103,7 @@ fetch('./json/experiences.json').then(response => response.json()).then(data => 
                 <h3>${experience.position} - ${experience.company} (${experience.time})</h3>
             </div>
             <p>${experience.description.replace(/\n/g, '<br/>')}</p>
-        `
+        `;
 
         experienceContainer.appendChild(listItem);
     });
@@ -130,7 +130,7 @@ fetch('./json/educations.json').then(response => response.json()).then(data => {
                 <h3>${education.institute} - ${education.major} (${education.time})</h3>
             </div>
             <p>${education.description.replace(/\n/g, '<br/>')}</p>
-        `
+        `;
 
         educationContainer.appendChild(listItem);
     });
@@ -156,7 +156,7 @@ fetch('./json/organizations.json').then(response => response.json()).then(data =
                 <h3>${organization.organization}</h3>
             </div>
             <p>${organization.detail}</p>
-        `
+        `;
 
         organizationContainer.appendChild(listItem);
     });
@@ -168,168 +168,30 @@ fetch('./json/organizations.json').then(response => response.json()).then(data =
 fetch('./json/projects.json').then(response => response.json()).then(data => {
     const projectsContainer = document.querySelector('.project-container');
 
-    data.forEach((project, index) => {
+    data.forEach((project) => {
         const articleWrapper = document.createElement('article');
-        articleWrapper.classList.add('article-wrapper');
+        articleWrapper.className = "w-64 rounded-lg p-1 border-4 border-solid border-transparent bg-[#1F375C] my-5 mx-2.5 flex justify-between flex-col max-[480px]:w-56";
         articleWrapper.setAttribute('data-aos', 'flip-left');
         articleWrapper.setAttribute('data-aos-duration', '2000');
 
         articleWrapper.innerHTML = `
-            <div class="rounded-lg container-project">
-                <img src="${project.img}"">
+            <div class="rounded-lg w-full h-44">
+                <img src="${project.img}" class="w-full h-44 rounded-lg object-cover">
             </div>
-            <div class="project-title">
-                <h3 class="gradient-text">${project.title}</h3>
+            <div class="max-[480px]:text-sm pt-1.5">
+                <h3 class="gradient-text text-center text-2xl font-semibold">${project.title}</h3>
             </div>
-            <div class="project-info">
-                <input type="hidden" class="projectId" value="${project.id}">
-                <button class="project-button">
+            <div class="p-2.5 pt-5 flex flex-col justify-between">
+                <button class="project-button" onClick="openModal(${project.id})">
                     <div class="project-button-left"></div>
                     More
                     <div class="project-button-right"></div>
                 </button>
             </div>
-        `
+        `;
 
         projectsContainer.appendChild(articleWrapper);
     });
-
-    (function(){
-        var $content = $('.project-modal-info').detach();
-        
-        $('.project-button').on('click', function(e){
-            var projectId = $(this).prev('.projectId').val();
-            
-            fetch('./json/projects.json').then(response => response.json()).then(data => {
-                var project = data.find(item => item.id === parseInt(projectId));
-                if (project) {
-                    const h1 = document.createElement('h1');
-                    const h4 = document.createElement('h4');
-                    const p = document.createElement('p');
-                    const div = document.createElement('div');
-                    div.classList.add('project-media');
-                    const h1a = document.createElement('h1');
-    
-                    h1.innerHTML = `
-                        <span class="gradient-text">${project.title}</span>
-                    `;
-                    h4.textContent = project.time;
-                    p.innerHTML = project.description.join('');
-                    h1a.innerHTML = `
-                        <span class="gradient-text">Project's Media</span>
-                    `;
-
-                    if (project.media.length === 0) {
-                        const empty = document.createElement('p');
-                        empty.innerHTML = "No media available in this project.<br/>I will upload the media soon after the project has done.";
-                        div.append(empty);
-                    }
-
-                    project.media.forEach(media => {
-                        const list = document.createElement('div');
-                        list.classList.add('project-media-child');
-                        list.innerHTML = `
-                            <div class="project-media-preview">
-                                <h6>MEDIA TYPE :</h6>
-                                <h2>${media.type}</h2>
-                                <a href="#"></a>
-                            </div>
-                            <div class="project-media-info">
-                                <h6>TITLE</h6>
-                                <h2>${media.title}</h2>
-                                <button class="project-media-btn" onClick="directToMedia('${media.url}')">View</button>
-                            </div>
-                        `
-
-                        div.append(list);
-                    })
-    
-                    $content.empty();
-                    $content.append(h1, h4, p, h1a, div);
-                }
-    
-                modal.open({
-                    content: $content,
-                    height: '100vh',
-                });
-    
-                $content.addClass('project-modal-content');
-                $('.modal, .project-modal-overlay').addClass('display');
-                $('.project-button').addClass('load');
-            }).catch(error => {
-                console.error('Error fetching or processing JSON data:', error);
-            });
-        });
-    }());
-      
-    var modal = (function(){
-        var $close = $('<button role="button" class="project-modal-close hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close"><i class="fa-solid fa-xmark"></i></button>');
-        var $content = $('<div class="project-modal-content"/>');
-        var $modal = $('<div class="modal"/>');
-        var $window = $(window);
-
-        $close.hover(
-            function() {
-                $(this).toggleClass('hover:scale-105 hover:rotate-[360deg]', true);
-            },
-            function() {
-                $(this).toggleClass('hover:scale-105 hover:rotate-[360deg]', false);
-            }
-        );
-      
-        $modal.append($content, $close);
-      
-        $close.on('click', function(e){
-            $('.modal, .project-modal-overlay').addClass('conceal');
-            $('.modal, .project-modal-overlay').removeClass('display');
-            $('.project-button').removeClass('load');
-            e.preventDefault();
-            modal.close();
-        });
-      
-        return {
-            center: function(){
-                var top = Math.max($window.height() - $modal.outerHeight(), 0) / 2;
-                var left = Math.max($window.width() - $modal.outerWidth(), 0) / 2;
-                
-                $modal.css({
-                    top: top + $window.scrollTop(),
-                    left: left + $window.scrollLeft(),
-                });
-            }, open: function(settings){
-                const body = document.querySelector('html');
-                const main = document.querySelector('.main');
-                const navbar = document.querySelector('header');
-                const footer = document.querySelector('footer');
-                body.style.overflow = 'hidden';
-                main.style.filter = 'blur(20px)';
-                navbar.style.filter = 'blur(20px)';
-                footer.style.filter = 'blur(20px)';
-    
-                $content.empty().append(settings.content);
-        
-                $modal.css({
-                    height: settings.height || '100vh'
-                }).appendTo('body');
-      
-                modal.center();
-                $(window).on('resize', modal.center);
-            }, close: function(){
-                const body = document.querySelector('html');
-                const main = document.querySelector('.main');
-                const navbar = document.querySelector('header');
-                const footer = document.querySelector('footer');
-                body.style.overflow = 'scroll';
-                main.style.filter = 'none';
-                navbar.style.filter = 'none';
-                footer.style.filter = 'none';
-    
-                $content.empty();
-                $modal.detach();
-                $(window).off('resize', modal.center);
-            }
-        };
-    }());
 }).catch(error => {
     console.error('Error fetching or processing JSON data:', error);
 });
@@ -399,7 +261,7 @@ fetch('./json/reviews.json').then(response => response.json()).then(data => {
                 </div>
             </div>
             <q>${review.desc}</q>
-        `
+        `;
 
         reviewContainer.appendChild(listItem);
     });
