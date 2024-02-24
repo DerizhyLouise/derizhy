@@ -1,5 +1,11 @@
+let isOpen = false;
+
 function openModal (id) {
     var modal = document.getElementById("projectModal");
+
+    if (isOpen == true) {
+        return;
+    }
 
     fetch('./json/projects.json').then(response => response.json()).then(data => {
         const project = data.find(item => item.id === parseInt(id));
@@ -68,6 +74,8 @@ function openModal (id) {
         sideBar.style.filter = 'blur(20px)';
         footer.style.filter = 'blur(20px)';
 
+        isOpen = true;
+
         window.onclick = function(event) {
             var modal = document.getElementById("projectModal");
             console.log(event.target);
@@ -101,4 +109,6 @@ function closeModal () {
     main.style.filter = 'none';
     sideBar.style.filter = 'none';
     footer.style.filter = 'none';
+
+    isOpen = false;
 }
