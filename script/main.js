@@ -92,15 +92,14 @@ fetch('./json/experiences.json').then(response => response.json()).then(data => 
 
     data.forEach((experience, index) => {
         const listItem = document.createElement('li');
-        const aosEffect = index % 2 === 0 ? 'fade-up-right' : 'fade-up-left';
         listItem.style.setProperty('--i', index + 1);
         listItem.style.setProperty('--col', experience.theme);
-        listItem.setAttribute('data-aos', aosEffect);
+        listItem.setAttribute('data-aos', 'fade-up');
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.innerHTML = `
             <div class="resume-list-title">
                 <img src="${experience.logo}">
-                <h3>${experience.position} - ${experience.company} (${experience.time})</h3>
+                <h3 class="">${experience.position} - ${experience.company} (${experience.time})</h3>
             </div>
             <p>${experience.description.replace(/\n/g, '<br/>')}</p>
         `;
@@ -118,16 +117,15 @@ fetch('./json/educations.json').then(response => response.json()).then(data => {
 
     data.forEach((education, index) => {
         const listItem = document.createElement('li');
-        const aosEffect = index % 2 === 0 ? 'fade-up-left' : 'fade-up-right';
         listItem.style.setProperty('--i', index + 1);
         listItem.style.setProperty('--col', education.theme);
-        listItem.setAttribute('data-aos', aosEffect);
+        listItem.setAttribute('data-aos', 'fade-up');
         listItem.setAttribute('data-aos-duration', '1500');
 
         listItem.innerHTML = `
             <div class="resume-list-title">
                 <img src="${education.logo}">
-                <h3>${education.institute} - ${education.major} (${education.time})</h3>
+                <h3 class="">${education.institute} - ${education.major} (${education.time})</h3>
             </div>
             <p>${education.description.replace(/\n/g, '<br/>')}</p>
         `;
@@ -145,15 +143,14 @@ fetch('./json/organizations.json').then(response => response.json()).then(data =
 
     data.forEach((organization, index) => {
         const listItem = document.createElement('li');
-        const aosEffect = index % 2 === 0 ? 'fade-up-right' : 'fade-up-left';
         listItem.style.setProperty('--i', index + 1);
         listItem.style.setProperty('--col', organization.theme);
-        listItem.setAttribute('data-aos', aosEffect);
+        listItem.setAttribute('data-aos', 'fade-up');
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.innerHTML = `
             <div class="resume-list-title">
                 <img src="${organization.logo}">
-                <h3>${organization.organization}</h3>
+                <h3 class="">${organization.organization}</h3>
             </div>
             <p>${organization.detail}</p>
         `;
