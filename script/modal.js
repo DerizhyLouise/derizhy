@@ -13,19 +13,19 @@ function openModal (id) {
 
         if (project) {
             const h1 = document.createElement('h1');
-            h1.className = "underline decoration-[#E91E63] text-4xl";
+            h1.className = "underline decoration-[#E91E63] text-4xl max-md:text-3xl";
 
             const h4 = document.createElement('h4');
-            h4.className = "mt-0 font-semibold text-2xl";
+            h4.className = "mt-0 mb-4 font-semibold text-2xl max-md:text-xl max-md:font-medium";
 
             const p = document.createElement('p');
-            p.className = "text-base mb-5 max-[480px]:text-sm";
+            p.className = "text-base mb-5 max-md:text-sm";
 
             const div = document.createElement('div');
             div.className = "bg-[#1F375C]"
 
             const h1a = document.createElement('h1');
-            h1a.className = "underline decoration-[#E91E63] text-4xl";
+            h1a.className = "underline decoration-[#E91E63] text-4xl max-md:text-3xl";
 
             h1.innerHTML = `
                 <span class="gradient-text">${project.title}</span>
@@ -62,6 +62,10 @@ function openModal (id) {
             })
 
             content.append(h1, h4, p, h1a, div);
+
+            modal.onclick = function(event) {
+                event.stopPropagation();
+            }
         }
 
         const header = document.getElementsByTagName("header")[0];
@@ -75,27 +79,22 @@ function openModal (id) {
         footer.style.filter = 'blur(20px)';
 
         isOpen = true;
+        modal.style.display = "block";
 
-        window.onclick = function(event) {
-            var modal = document.getElementById("projectModal");
-            console.log(event.target);
-            if (event.target == modal) {
-                closeModal();
-            }
+        window.onclick = function() {
+            closeModal();
         }
     }).catch(error => {
         console.error('Error fetching or processing JSON data:', error);
     });
-
-    modal.style.display = "block";
 }
 
 function closeModal () {
     var modal = document.getElementById("projectModal");
     modal.style.display = "none";
     modal.innerHTML = `
-        <div class="p-12 w-full">
-            <button class="bg-[#E91E63] rounded-full text-white w-14 h-14 absolute right-5 top-5 hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="p-12 w-full">
+            <button class="bg-[#E91E63] rounded-full text-white w-14 h-14 max-md:w-8 max-md:h-8 absolute right-5 top-5 hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
             <div class="project-modal-info"></div>
         </div>
     `;
@@ -110,5 +109,6 @@ function closeModal () {
     sideBar.style.filter = 'none';
     footer.style.filter = 'none';
 
-    isOpen = false;
+    isOpen = false; 
+    modal.onclick = null;
 }
