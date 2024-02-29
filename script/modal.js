@@ -13,10 +13,10 @@ function openModal (id) {
 
         if (project) {
             const h1 = document.createElement('h1');
-            h1.className = "underline decoration-[#E91E63] text-4xl max-md:text-2xl";
+            h1.className = "underline decoration-[#E91E63] text-4xl max-md:text-3xl";
 
             const h4 = document.createElement('h4');
-            h4.className = "mt-0 font-semibold text-2xl max-md:text-xl max-md:font-medium";
+            h4.className = "mt-0 mb-4 font-semibold text-2xl max-md:text-xl max-md:font-medium";
 
             const p = document.createElement('p');
             p.className = "text-base mb-5 max-md:text-sm";
@@ -25,7 +25,7 @@ function openModal (id) {
             div.className = "bg-[#1F375C]"
 
             const h1a = document.createElement('h1');
-            h1a.className = "underline decoration-[#E91E63] text-4xl max-md:text-2xl";
+            h1a.className = "underline decoration-[#E91E63] text-4xl max-md:text-3xl";
 
             h1.innerHTML = `
                 <span class="gradient-text">${project.title}</span>
@@ -93,8 +93,8 @@ function closeModal () {
     var modal = document.getElementById("projectModal");
     modal.style.display = "none";
     modal.innerHTML = `
-        <div class="p-12 w-full">
-            <button class="bg-[#E91E63] rounded-full text-white w-14 h-14 absolute right-5 top-5 hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="p-12 w-full">
+            <button class="bg-[#E91E63] rounded-full text-white w-14 h-14 max-md:w-8 max-md:h-8 absolute right-5 top-5 hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
             <div class="project-modal-info"></div>
         </div>
     `;
