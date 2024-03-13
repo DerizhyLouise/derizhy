@@ -53,7 +53,7 @@ function openModal (id) {
                     <div class="bg-[#7175DA] p-8 relative w-full max-xl:px-8 max-[480px]:py-8 max-[480px]:px-2.5 rounded-r-lg">
                         <h6 class="text-xs opacity-60 m-0 uppercase tracking-wider bg-[#7175DA] text-[#0D192B] max-[480px]:text-xs">TITLE</h6>
                         <h2 class="text-2xl tracking-wider my-2.5 bg-[#7175DA] text-[#0D192B] max-[480px]:text-base">${media.title}</h2>
-                        <button class="project-media-btn" onClick="directToMedia('${media.url}')">View</button>
+                        <button class="bg-[#2A265F] rounded-lg shadow-md text-white text-base px-4 py-2 absolute bottom-3.5 right-7 max-sm:right-3.5 max-sm:text-xs tracking-wide transition-transform transition-colors duration-200 ease-in-out hover:scale-110 hover:bg-[#334579]" onClick="directToMedia('${media.url}')">View</button>
                     </div>
                 `;
 
