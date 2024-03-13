@@ -163,28 +163,24 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
     const projectsContainer = document.querySelector('.project-container');
 
     data.forEach((project) => {
-        const articleWrapper = document.createElement('article');
-        articleWrapper.className = "w-64 rounded-lg p-1 border-4 border-solid border-transparent bg-[#1F375C] my-5 mx-2.5 flex justify-between flex-col max-[480px]:w-56";
-        articleWrapper.setAttribute('data-aos', 'flip-left');
-        articleWrapper.setAttribute('data-aos-duration', '2000');
+        const projectItem = document.createElement('button');
+        projectItem.className = "h-96 w-96 max-sm:w-80 max-sm:h-80 bg-[#1F375C] my-5 mx-5 hover:bg-[#172945] rounded";
+        projectItem.setAttribute('data-aos', 'flip-left');
+        projectItem.setAttribute('data-aos-duration', '2000');
+        projectItem.onclick = function() {
+            openModal(project.id);
+        };
 
-        articleWrapper.innerHTML = `
-            <div class="rounded-lg w-full h-44">
-                <img src="${project.img}" class="w-full h-44 rounded-lg object-cover">
+        projectItem.innerHTML = `
+            <div class="w-full h-64 max-sm:h-56">
+                <img src="${project.img}" class="w-full h-64 max-sm:h-56 object-cover rounded-t">
             </div>
-            <div class="max-[480px]:text-sm pt-1.5">
-                <h3 class="gradient-text text-center text-2xl font-semibold">${project.title}</h3>
-            </div>
-            <div class="p-2.5 pt-5 flex flex-col justify-between">
-                <button class="project-button" onClick="openModal(${project.id})">
-                    <div class="project-button-left"></div>
-                    More
-                    <div class="project-button-right"></div>
-                </button>
+            <div class="max-[480px]:text-sm h-32 max-sm:h-24 flex items-center justify-center px-4">
+                <h3 class="gradient-text text-center text-3xl font-semibold">${project.title}</h3>
             </div>
         `;
 
-        projectsContainer.appendChild(articleWrapper);
+        projectsContainer.appendChild(projectItem);
     });
 }).catch(error => {
     console.error('Error fetching or processing JSON data:', error);
@@ -240,7 +236,7 @@ fetch('./json/reviews.json').then(response => response.json()).then(data => {
 
     data.forEach((review) => {
         const listItem = document.createElement('a');
-        listItem.className = "h-[416px] w-[416px] bg-[#1F375C] hover:bg-[#172945] no-underline flex flex-col p-4 mb-4";
+        listItem.className = "h-[416px] w-[416px] max-sm:h-full bg-[#1F375C] hover:bg-[#172945] no-underline flex flex-col p-4 mb-4 rounded";
         listItem.setAttribute('data-aos', 'fade-up');
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.href = review.url;

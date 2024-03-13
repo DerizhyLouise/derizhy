@@ -1,99 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
 
-.project-button {
-    position: relative;
-    padding: 10px 20px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-family: "Source Code Pro";
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 30px;
-    color: hsla(210, 50%, 85%, 1);
-
-    background-color: hsl(210, 80%, 42%);
-    box-shadow: hsla(210, 40%, 52%, .4) 2px 2px 22px;
-    border-radius: 4px;
-    z-index: 0;
-    overflow: hidden;
-}
-
-.project-button:focus {
-    outline-color: transparent;
-    box-shadow: hsl(210, 80%, 42%) 2px 2px 22px;
-}
-
-.project-button-right::after, .project-button::after {
-    content: 'More';
-    display: block;
-    position: absolute;
-    white-space: nowrap;
-    padding: 40px 40px;
-    pointer-events: none;
-}
-
-.project-button::after {
-    font-weight: 200;
-    top: -30px;
-    left: 27px;
-}
-
-.project-button-right, .project-button-left {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: transparent;
-}
-
-.project-button-right {
-    left: 66%;
-}
-
-.project-button-left {
-    right: 66%;
-}
-
-.project-button-right::after {
-    top: -30px;
-    left: calc(-70%);
-    width: 110%;
-    background-color: #141218;
-    color: transparent;
-    transition: transform .4s ease-out;
-    transform: translate(0, -90%) rotate(0deg)
-}
-
-.project-button:hover .project-button-right::after {
-    transform: translate(0, -47%) rotate(0deg)
-}
-
-.project-button .project-button-right:hover::after {
-    transform: translate(0, -50%) rotate(-7deg)
-}
-
-.project-button .project-button-left:hover ~ .project-button-right::after {
-    transform: translate(0, -50%) rotate(7deg)
-}
-
-.project-button::before {
-    content: '';
-    pointer-events: none;
-    opacity: .6;
-    background:
-        radial-gradient(circle at 20% 35%, transparent 0, transparent 2px, hsla(210, 50%, 85%, 1) 3px, hsla(210, 50%, 85%, 1) 4px, transparent 4px),
-        radial-gradient(circle at 75% 44%, transparent 0, transparent 2px, hsla(210, 50%, 85%, 1) 3px, hsla(210, 50%, 85%, 1) 4px, transparent 4px),
-        radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, hsla(210, 50%, 85%, 1) 5px, hsla(210, 50%, 85%, 1) 6px, transparent 6px);
-
-    width: 100%;
-    height: 300%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    animation: bubbles 5s linear infinite both;
-}
-
 .project-media-btn {
 	background-color: #2A265F;
 	border: 0;
@@ -119,31 +25,9 @@
     background-color: hsl(244, 58%, 30%);
 }
 
-@keyframes bubbles {
-    from {
-        transform: translate();
-    }
-
-    to {
-        transform: translate(0, -66.666%);
-    }
-}
-
 @media only screen and (max-width: 480px) {
-    .project-button {
-        font-size: 16px;
-    }
-
-    .project-button::after {
-        left: 22px;
-    }
-
     .project-media-btn {
         right: 15px;
         font-size: 12px;
-    }
-
-    .project-button::after {
-        left: 29px;
     }
 }
