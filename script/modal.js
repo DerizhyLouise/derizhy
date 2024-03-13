@@ -22,7 +22,6 @@ function openModal (id) {
             p.className = "text-base mb-5 max-md:text-sm";
 
             const div = document.createElement('div');
-            div.className = "bg-[#1F375C]"
 
             const h1a = document.createElement('h1');
             h1a.className = "underline decoration-[#E91E63] text-4xl max-md:text-3xl";
@@ -46,12 +45,12 @@ function openModal (id) {
                 const list = document.createElement('div');
                 list.className = "flex max-w-full my-5 mr-5 w-[600px] h-44";
                 list.innerHTML = `
-                    <div class="bg-[#0D192B] p-8 w-64 max-[480px]:py-8 max-[480px]:px-2.5">
+                    <div class="bg-[#0D192B] p-8 w-64 max-[480px]:py-8 max-[480px]:px-2.5 rounded-l-lg">
                         <h6 class="text-xs text-white opacity-60 m-0 uppercase tracking-wider bg-[#0D192B] max-[480px]:text-xs">MEDIA TYPE :</h6>
                         <h2 class="text-2xl text-white tracking-wider my-2.5 bg-[#0D192B] max-[480px]:text-base">${media.type}</h2>
                         <a href="#"></a>
                     </div>
-                    <div class="bg-[#7175DA] p-8 relative w-full max-xl:px-8 max-[480px]:py-8 max-[480px]:px-2.5">
+                    <div class="bg-[#7175DA] p-8 relative w-full max-xl:px-8 max-[480px]:py-8 max-[480px]:px-2.5 rounded-r-lg">
                         <h6 class="text-xs opacity-60 m-0 uppercase tracking-wider bg-[#7175DA] text-[#0D192B] max-[480px]:text-xs">TITLE</h6>
                         <h2 class="text-2xl tracking-wider my-2.5 bg-[#7175DA] text-[#0D192B] max-[480px]:text-base">${media.title}</h2>
                         <button class="project-media-btn" onClick="directToMedia('${media.url}')">View</button>
