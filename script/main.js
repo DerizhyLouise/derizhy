@@ -13,17 +13,14 @@ $(document).keydown(function (event) {
 function downloadCv (type) {
     var link = document.createElement('a');
     var pdfPath = "";
-    var downloadLink = "";
     
     if (type == "ats") {
         pdfPath = './assets/pdf/atsCV.pdf';
-        downloadLink = "atsCV.pdf";
     } else {
         pdfPath = './assets/pdf/creCV.pdf';
-        downloadLink = "creCV.pdf";
     }
     link.href = pdfPath;
-    link.download = downloadLink;
+    link.target = "_blank";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -241,23 +238,23 @@ fetch('./json/certifications.json').then(response => response.json()).then(data 
 fetch('./json/reviews.json').then(response => response.json()).then(data => {
     const reviewContainer = document.querySelector('.review-content');
 
-    data.forEach((review, index) => {
+    data.forEach((review) => {
         const listItem = document.createElement('a');
-        listItem.className = "h-full bg-[#1F375C] hover:bg-[#172945] no-underline rounded-lg flex flex-col p-4 mb-4";
+        listItem.className = "h-[416px] w-[416px] bg-[#1F375C] hover:bg-[#172945] no-underline flex flex-col p-4 mb-4";
         listItem.setAttribute('data-aos', 'fade-up');
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.href = review.url;
         listItem.target = "_blank";
 
         listItem.innerHTML = `
-            <div class="flex justify-start items-center pb-2">
+            <div class="flex justify-start items-center pb-2 border-b-2 border-[#E91E63]">
                 <img class="rounded-full h-20 w-20" src="${review.img}">
                 <div class="pl-2">
                     <h3 class="gradient-text text-2xl">${review.name}</h3>
                     <p class="text-sm">${review.role}</p>
                 </div>
             </div>
-            <q>${review.desc}</q>
+            <q class="mt-2 text-center flex justify-center">${review.desc}</q>
         `;
 
         reviewContainer.appendChild(listItem);
