@@ -1,5 +1,10 @@
-Primary     : hsl(217, 54%, 11%) #0D192B
-Secondary   : hsl(216, 50%, 24%) #1F375C
+Primary     : #0D192B
+Secondary   : #142D55
 Other       : #2A265F
               #FFF9D2
               #E91E63
+
+Palatte
+#02586F
+#5A233B
+#17273D

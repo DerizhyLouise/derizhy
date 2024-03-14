@@ -67,7 +67,7 @@ button:hover, button:active:not(:focus-visible) {
 
 #cre:active {
     box-shadow: inset 0 0 0 100vmax var(--_c);
-    color: hsl(217, 54%, 11%);
+    color: #0D192B;
 }
 
 @keyframes moveGradient {

@@ -16,31 +16,31 @@ function showNavbar() {
             <div id="dropdown" class="z-10 hidden w-[124px] rounded-b-lg border-b-2 border-x-2 border-[#E91E63]">
                 <ul class="text-sm rounded-b-lg" aria-labelledby="dropdownDefaultButton">
                     <li>
-                        <a href="#home" class="bg-[#1F375C] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Home</a>
+                        <a href="#home" class="bg-[#142D55] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Home</a>
                     </li>
                     <li>
-                        <a href="#profile" class="bg-[#1F375C] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Profile</a>
+                        <a href="#profile" class="bg-[#142D55] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Profile</a>
                     </li>
                     <li>
-                        <a href="#skill" class="bg-[#1F375C] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Skills</a>
+                        <a href="#skill" class="bg-[#142D55] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Skills</a>
                     </li>
                     <li>
-                        <a href="#experience" class="bg-[#1F375C] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Experiences</a>
+                        <a href="#experience" class="bg-[#142D55] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Experiences</a>
                     </li>
                     <li>
-                        <a href="#education" class="bg-[#1F375C] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Educations</a>
+                        <a href="#education" class="bg-[#142D55] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Educations</a>
                     </li>
                     <li>
-                        <a href="#organization" class="bg-[#1F375C] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Organizations</a>
+                        <a href="#organization" class="bg-[#142D55] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Organizations</a>
                     </li>
                     <li>
-                        <a href="#project" class="bg-[#1F375C] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Project</a>
+                        <a href="#project" class="bg-[#142D55] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Project</a>
                     </li>
                     <li>
-                        <a href="#certification" class="bg-[#1F375C] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Certification</a>
+                        <a href="#certification" class="bg-[#142D55] block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Certification</a>
                     </li>
                     <li>
-                        <a href="#review" class="bg-[#1F375C] rounded-b-lg block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Review</a>
+                        <a href="#review" class="bg-[#142D55] rounded-b-lg block px-4 py-2 hover:bg-gray-100 hover:text-[#0D192B]">Review</a>
                     </li>
                 </ul>
             </div>
