@@ -164,7 +164,7 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
 
     data.forEach((project) => {
         const projectItem = document.createElement('button');
-        projectItem.className = "h-96 w-96 max-sm:w-80 max-sm:h-80 bg-[#142D55] my-5 mx-5 hover:bg-[#1F375C] rounded";
+        projectItem.className = "h-96 w-96 max-sm:w-80 max-sm:h-80 bg-[#1B3358] my-5 mx-5 hover:bg-[#473E66] rounded";
         projectItem.setAttribute('data-aos', 'flip-left');
         projectItem.setAttribute('data-aos-duration', '2000');
         projectItem.onclick = function() {
@@ -195,7 +195,7 @@ fetch('./json/certifications.json').then(response => response.json()).then(data 
         const certiList = document.createElement('div');
         const isLastData = index === data.length - 1;
         const borderClasses = isLastData ? "" : "border-b-2 border-[#E91E63]";
-        certiList.className = `flex bg-[#142D55] hover:bg-[#1F375C] mx-2 ${borderClasses}`;
+        certiList.className = `flex bg-[#1B3358] hover:bg-[#473E66] mx-2 ${borderClasses}`;
 
         if (certi.credentialId) {
             certiList.innerHTML = `
@@ -236,7 +236,7 @@ fetch('./json/reviews.json').then(response => response.json()).then(data => {
 
     data.forEach((review) => {
         const listItem = document.createElement('a');
-        listItem.className = "h-[416px] w-[416px] max-sm:h-full bg-[#142D55] hover:bg-[#1F375C] no-underline flex flex-col p-4 mb-4 rounded";
+        listItem.className = "h-[416px] w-[416px] max-sm:h-full bg-[#1B3358] hover:bg-[#473E66] no-underline flex flex-col p-4 mb-4 rounded";
         listItem.setAttribute('data-aos', 'fade-up');
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.href = review.url;

@@ -1,5 +1,5 @@
 Primary     : #0D192B
-Secondary   : #142D55
+Secondary   : #1B3358 > Hover : #473E66
 Other       : #2A265F
               #FFF9D2
               #E91E63
