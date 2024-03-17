@@ -164,7 +164,7 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
 
     data.forEach((project) => {
         const projectItem = document.createElement('button');
-        projectItem.className = "h-96 w-96 max-sm:w-80 max-sm:h-80 bg-[#1B3358] my-5 mx-5 hover:bg-[#473E66] rounded";
+        projectItem.className = "h-96 w-96 max-[1600px]:w-80 max-[1600px]:h-80 bg-[#1B3358] my-5 mx-5 hover:bg-[#473E66] rounded";
         projectItem.setAttribute('data-aos', 'flip-left');
         projectItem.setAttribute('data-aos-duration', '2000');
         projectItem.onclick = function() {
@@ -172,10 +172,10 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
         };
 
         projectItem.innerHTML = `
-            <div class="w-full h-64 max-sm:h-56">
-                <img src="${project.img}" class="w-full h-64 max-sm:h-56 object-cover rounded-t">
+            <div class="w-full h-64 max-[1600px]:h-56">
+                <img src="${project.img}" class="w-full h-64 max-[1600px]:h-56 object-cover rounded-t">
             </div>
-            <div class="max-[480px]:text-sm h-32 max-sm:h-24 flex items-center justify-center px-4">
+            <div class="max-[480px]:text-sm h-32 max-[1600px]:h-24 flex items-center justify-center px-4">
                 <h3 class="gradient-text text-center text-3xl font-semibold">${project.title}</h3>
             </div>
         `;
