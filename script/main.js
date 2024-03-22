@@ -1,18 +1,16 @@
 $(document).keydown(function (event) {
     if (event.keyCode == 123) {
         return false;
-    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {    
-        return false;
-    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
-        return false;
-    } else if (event.metaKey && event.shiftKey && event.keyCode == 67) {
+    } 
+    
+    if ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.keyCode == 67 || event.keyCode == 73)) {
         return false;
     }
 });
 
 function downloadCv (type) {
-    var link = document.createElement('a');
-    var pdfPath = "";
+    const link = document.createElement('a');
+    let pdfPath = "";
     
     if (type == "ats") {
         pdfPath = './assets/pdf/atsCV.pdf';
@@ -176,7 +174,7 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
                 <img src="${project.img}" class="w-full h-64 max-[1600px]:h-56 object-cover rounded-t">
             </div>
             <div class="max-[480px]:text-sm h-32 max-[1600px]:h-24 flex items-center justify-center px-4">
-                <h3 class="gradient-text text-center text-3xl font-semibold">${project.title}</h3>
+                <h3 class="gradient-text text-center text-3xl max-[1600px]:text-2xl font-semibold">${project.title}</h3>
             </div>
         `;
 
@@ -260,7 +258,7 @@ fetch('./json/reviews.json').then(response => response.json()).then(data => {
 });
 
 function directToMedia (url) {
-    var link = document.createElement('a');
+    const link = document.createElement('a');
     link.href = url;
     link.target = "_blank";
     document.body.appendChild(link);

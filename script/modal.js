@@ -1,9 +1,9 @@
 let isOpen = false;
 
 function openModal (id) {
-    var modal = document.getElementById("projectModal");
+    const modal = document.getElementById("projectModal");
 
-    if (isOpen == true) {
+    if (isOpen) {
         return;
     }
 
@@ -12,38 +12,26 @@ function openModal (id) {
         const content = document.querySelector(".project-modal-info");
 
         if (project) {
-            const h1 = document.createElement('h1');
-            h1.className = "underline decoration-[#E91E63] text-4xl max-md:text-3xl";
-
-            const h4 = document.createElement('h4');
-            h4.className = "mt-0 mb-4 font-semibold text-2xl max-md:text-xl max-md:font-medium";
-
-            const p = document.createElement('p');
-            p.className = "text-base mb-5 max-md:text-sm";
-
-            const div = document.createElement('div');
-
-            const h1a = document.createElement('h1');
-            h1a.className = "underline decoration-[#E91E63] text-4xl max-md:text-3xl";
-
-            h1.innerHTML = `
-                <span class="gradient-text">${project.title}</span>
+            content.innerHTML += `
+                <h1 class="text-4xl max-md:text-3xl"><span class="gradient-text">${project.title}</span></h1>
+                <h2 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#E91E63]">Description</h2>
+                <p class="text-base mb-5 max-md:text-sm">${project.time}</p>
+                <p class="text-base mb-5 max-md:text-sm">${project.description.join('')}</p>
+                <h2 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#E91E63]">Project's Media</h2>
             `;
-            h4.textContent = project.time;
-            p.innerHTML = project.description.join('');
-            h1a.innerHTML = `
-                <span class="gradient-text">Project's Media</span>
-            `;
-
+            
+            const projectMedia = document.createElement('div');
+            
             if (project.media.length === 0) {
                 const empty = document.createElement('p');
                 empty.innerHTML = "No media available in this project.<br/>I will upload the media soon after the project has done.";
-                div.append(empty);
+                empty.className = "mt-2"
+                projectMedia.append(empty);
             }
 
             project.media.forEach(media => {
                 const list = document.createElement('div');
-                list.className = "flex max-w-full my-5 mr-5 w-[600px] h-44";
+                list.className = "flex w-full my-5 mr-5 h-44";
                 list.innerHTML = `
                     <div class="bg-[#0D192B] p-8 w-64 max-[480px]:py-8 max-[480px]:px-2.5 rounded-l-lg">
                         <h6 class="text-xs text-white opacity-60 m-0 uppercase tracking-wider bg-[#0D192B] max-[480px]:text-xs">MEDIA TYPE :</h6>
@@ -57,10 +45,10 @@ function openModal (id) {
                     </div>
                 `;
 
-                div.append(list);
+                projectMedia.append(list);
             })
 
-            content.append(h1, h4, p, h1a, div);
+            content.append(projectMedia);
 
             modal.onclick = function(event) {
                 event.stopPropagation();
@@ -89,11 +77,13 @@ function openModal (id) {
 }
 
 function closeModal () {
-    var modal = document.getElementById("projectModal");
+    const modal = document.getElementById("projectModal");
     modal.style.display = "none";
     modal.innerHTML = `
-            <div class="p-12 w-full">
-            <button class="bg-[#E91E63] rounded-full text-white w-14 h-14 max-md:w-8 max-md:h-8 absolute right-5 top-5 hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="p-12 w-full">
+            <button class="bg-[#E91E63] rounded-full text-white w-14 h-14 max-md:w-8 max-md:h-8 absolute right-5 top-5 hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
             <div class="project-modal-info"></div>
         </div>
     `;
