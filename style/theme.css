@@ -45,8 +45,6 @@ h1, h2, h3, h4, h5, h6, p, table {
         #E7E7E7 65%,
         #FFFFFF 100%
     );
-    background-size: auto auto;
-    background-clip: border-box;
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;

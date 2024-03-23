@@ -151,11 +151,8 @@
 	padding: 1rem;
 	border-radius: 50%;
 	background-color: var(--c1);
-}
-
-.resume-listing-content h3::before {
-	width: 1.5rem;
-	height: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .resume-list-title {

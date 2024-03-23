@@ -64,9 +64,9 @@ function navbarClick() {
 }
 
     function handleOutsideClick(event) {
-        var dropdownButton = document.getElementById('dropdownDefaultButton');
-        var dropdown = document.getElementById('dropdown');
-        var icon = document.getElementById('dropdownIcon');
+        const dropdownButton = document.getElementById('dropdownDefaultButton');
+        const dropdown = document.getElementById('dropdown');
+        const icon = document.getElementById('dropdownIcon');
 
         if (!dropdownButton.contains(event.target) && !dropdown.contains(event.target)) {
             icon.classList.remove('fa-chevron-up');
