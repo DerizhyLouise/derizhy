@@ -81,9 +81,11 @@ function closeModal () {
     modal.style.display = "none";
     modal.innerHTML = `
         <div class="p-12 w-full">
-            <button class="bg-[#E91E63] rounded-full text-white w-14 h-14 max-md:w-8 max-md:h-8 absolute right-5 top-5 hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+            <div class="absolute right-20 top-5 z-50">
+                <button class="bg-[#E91E63] rounded-full text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
             <div class="project-modal-info"></div>
         </div>
     `;
