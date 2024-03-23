@@ -1,12 +1,4 @@
 fetch('./json/footer.json').then(response => response.json()).then(data => {
-    fetchingFooter(data);
-}).catch(error => {
-    fetch('../json/footer.json').then(response => response.json()).then(data => {
-        fetchingFooter(data);
-    });
-});
-
-function fetchingFooter (data) {
     const footer = document.querySelector('footer');
     const footerContainer = document.createElement('div');
     const footerRow = document.createElement('div');
@@ -44,4 +36,6 @@ function fetchingFooter (data) {
     });
     footerContainer.appendChild(footerRow);
     footer.appendChild(footerContainer);
-}
+}).catch(error => {
+    console.error('Error fetching or processing JSON data:', error);
+});
