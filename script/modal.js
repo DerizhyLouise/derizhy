@@ -34,12 +34,12 @@ function openModal (id) {
                 list.className = "flex w-full my-5 mr-5 h-44";
                 list.innerHTML = `
                     <div class="bg-[#0D192B] p-8 w-64 max-[480px]:py-8 max-[480px]:px-2.5 rounded-l-lg">
-                        <h6 class="text-xs text-white opacity-60 m-0 uppercase tracking-wider bg-[#0D192B] max-[480px]:text-xs">MEDIA TYPE :</h6>
+                        <h3 class="text-sm font-semibold text-white opacity-80 m-0 uppercase tracking-wider bg-[#0D192B] max-[480px]:text-xs">MEDIA TYPE :</h3>
                         <h2 class="text-2xl text-white tracking-wider my-2.5 bg-[#0D192B] max-[480px]:text-base">${media.type}</h2>
                         <a href="#"></a>
                     </div>
                     <div class="bg-[#7175DA] p-8 relative w-full max-xl:px-8 max-[480px]:py-8 max-[480px]:px-2.5 rounded-r-lg">
-                        <h6 class="text-xs opacity-60 m-0 uppercase tracking-wider bg-[#7175DA] text-[#0D192B] max-[480px]:text-xs">TITLE</h6>
+                        <h3 class="text-sm font-semibold opacity-80 m-0 uppercase tracking-wider bg-[#7175DA] text-[#0D192B] max-[480px]:text-xs">TITLE :</h3>
                         <h2 class="text-2xl tracking-wider my-2.5 bg-[#7175DA] text-[#0D192B] max-[480px]:text-base">${media.title}</h2>
                         <button class="bg-[#2A265F] rounded-lg shadow-md text-white text-base px-4 py-2 absolute bottom-3.5 right-7 max-sm:right-3.5 max-sm:text-xs tracking-wide transition-transform transition-colors duration-200 ease-in-out hover:scale-110 hover:bg-[#334579]" onClick="directToMedia('${media.url}')">View</button>
                     </div>
