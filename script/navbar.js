@@ -1,7 +1,7 @@
 function showNavbar() {
     const body = document.getElementsByTagName('body')[0];
     const navbar = document.createElement('header');
-    navbar.className = "fixed top-0 left-0 w-screen h-[100px] py-5 flex justify-between items-center z-50 bg-[#0D192B] px-60 max-2xl:px-48 max-xl:px-40 max-lg:px-32 max-md:px-24 max-sm:px-20 max-[480px]:px-14 max-[380px]:px-4"
+    navbar.className = "fixed top-0 left-0 w-screen h-28 py-5 flex justify-between items-center z-50 bg-[#0D192B] px-60 max-2xl:px-48 max-xl:px-40 max-lg:px-32 max-md:px-24 max-sm:px-20 max-[480px]:px-14 max-[380px]:px-4"
     
     navbar.innerHTML = `
         <div class="flex mr-4">
