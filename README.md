@@ -5,6 +5,7 @@
 #### Library
 | Library                | Link                                   |
 |------------------------|----------------------------------------|
+| Font Awesome          | [Font Awesome](https://fontawesome.com/) |
 | Tailwind CSS     | [Tailwind CSS](https://tailwindcss.com/) |
 | Animated on Scroll     | [AOS](https://michalsnik.github.io/aos) |
 | JQuery                 | [JQuery](https://jquery.com/)           |
