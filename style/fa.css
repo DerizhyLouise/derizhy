@@ -1,0 +1,223 @@
+.fa-face-thinking:before {
+  content: "\e39b";
+}
+
+.fa-print-magnifying-glass:before {
+  content: "\f81a";
+}
+
+.fa-screwdriver-wrench:before {
+  content: "\f7d9";
+}
+
+.fa-screen-users:before {
+  content: "\f63d";
+}
+
+.fa-microphone-stand:before {
+  content: "\1f3a4";
+}
+
+.fa-python:before {
+  content: "\f3e2";
+}
+
+.fa-database:before {
+  content: "\f1c0";
+}
+
+.fa-html5:before {
+  content: "\f13b";
+}
+
+.fa-css3-alt:before {
+  content: "\f38b";
+}
+
+.fa-js:before {
+  content: "\f3b8";
+}
+
+.fa-java:before {
+  content: "\f4e4";
+}
+
+.fa-figma:before {
+  content: "\f799";
+}
+
+.fa-git-alt:before {
+  content: "\f841";
+}
+
+.fa-whatsapp:before {
+  content: "\f232";
+}
+
+.fa-envelope:before {
+  content: "\2709";
+}
+
+.fa-telegram:before {
+  content: "\f2c6";
+}
+
+.fa-line:before {
+  content: "\f3c0";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-facebook-f:before {
+  content: "\f39e";
+}
+
+.fa-linkedin-in:before {
+  content: "\f0e1";
+}
+
+.fa-github:before {
+  content: "\f09b";
+}
+
+.fa-tiktok:before {
+  content: "\e07b";
+}
+
+.fa-discord:before {
+  content: "\f392";
+}
+
+.fa-chevron-down:before {
+  content: "\f078";
+}
+
+.fa-chevron-up:before {
+  content: "\f077";
+}
+
+.fa-xmark:before {
+  content: "\d7";
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url(../assets/font/fa-light-300.woff2) format("woff2"),
+    url(../assets/font/fa-light-300.woff) format("woff"),
+    url(../assets/font/fa-light-300.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../assets/font/fa-regular-400.woff2) format("woff2"),
+    url(../assets/font/fa-regular-400.woff) format("woff"),
+    url(../assets/font/fa-regular-400.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(../assets/font/fa-solid-900.woff2) format("woff2"),
+    url(../assets/font/fa-solid-900.woff) format("woff"),
+    url(../assets/font/fa-solid-900.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Pro";
+  font-style: normal;
+  font-weight: 100;
+  font-display: block;
+  src: url(../assets/font/fa-thin-100.woff2) format("woff2"),
+    url(../assets/font/fa-thin-100.woff) format("woff"),
+    url(../assets/font/fa-thin-100.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../assets/font/fa-brands-400.woff2) format("woff2"),
+    url(../assets/font/fa-brands-400.woff) format("woff"),
+    url(../assets/font/fa-brands-400.ttf) format("truetype");
+}
+
+.fa-light,
+.fal {
+  font-weight: 300;
+}
+
+.fa-regular,
+.far {
+  font-weight: 400;
+}
+
+.fa-solid,
+.fas {
+  font-weight: 900;
+}
+
+.fa-thin,
+.fat {
+  font-weight: 100;
+}
+
+.fa,
+.fa-brands,
+.fa-duotone,
+.fa-light,
+.fa-regular,
+.fa-solid,
+.fa-thin,
+.fab,
+.fad,
+.fal,
+.far,
+.fas,
+.fat {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fa-brands,
+.fab {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+}
+
+.fa {
+  font-family: "Font Awesome 6 Pro";
+  font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+  font-weight: 900;
+  font-weight: var(--fa-style, 900);
+}
+
+.fa-solid,
+.fa-thin,
+.fas,
+.fat {
+  font-family: "Font Awesome 6 Pro";
+}
+
+.fa-light,
+.fa-regular,
+.fal,
+.far {
+  font-family: "Font Awesome 6 Pro";
+}
