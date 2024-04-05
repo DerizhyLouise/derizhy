@@ -29,6 +29,84 @@
     height: auto;
 }
 
+.profile-cv {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    --b: 2px;
+    --h: 1.5em;
+}
+
+.profile-cv button {
+    --_c: #E91E63;
+    flex: calc(1 + var(--_s, 0));
+    min-width: 0;
+    font-size: 28px;
+    font-weight: bold;
+    height: var(--h);
+    cursor: pointer;
+    color: var(--_c);
+    border: var(--b) solid var(--_c);
+    background: conic-gradient(at calc(100% - 1.3*var(--b)) 0, var(--_c) 209deg, #0000 211deg) border-box;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 0.577*var(--h)) 100%, 0 100%);
+    padding: 0 calc(0.288*var(--h)) 0 0;
+    margin: 0 calc(-0.288*var(--h)) 0 0;
+    box-sizing: border-box;
+    transition: flex .4s;
+}
+
+.profile-cv button+button {
+    --_c: #FFF9D2;
+    flex: calc(1 + var(--_s, 0));
+    background: conic-gradient(from -90deg at calc(1.3*var(--b)) 100%, var(--_c) 119deg, #0000 121deg) border-box;
+    clip-path: polygon(calc(0.577*var(--h)) 0, 100% 0, 100% 100%, 0 100%);
+    margin: 0 0 0 calc(-0.288*var(--h));
+    padding: 0 0 0 calc(0.288*var(--h));
+}
+
+.profile-cv button:focus-visible {
+    outline-offset: calc(-2*var(--b));
+    outline: calc(var(--b)/2) solid #000;
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-cv button:focus-visible+button {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-cv button:has(+ button:focus-visible) {
+    background: none;
+    clip-path: none;
+    margin: 0;
+    padding: 0;
+}
+
+button:hover, button:active:not(:focus-visible) {
+    --_s: .75;
+}
+
+#ats:active {
+    box-shadow: inset 0 0 0 100vmax var(--_c);
+    color: #fff;
+}
+
+#cre:active {
+    box-shadow: inset 0 0 0 100vmax var(--_c);
+    color: #0D192B;
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
 @media only screen and (max-width: 1440px) {
     .home {
         flex-direction: column;
