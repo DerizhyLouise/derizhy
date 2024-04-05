@@ -107,9 +107,7 @@
   font-style: normal;
   font-weight: 300;
   font-display: block;
-  src: url(../assets/font/fa-light-300.woff2) format("woff2"),
-    url(../assets/font/fa-light-300.woff) format("woff"),
-    url(../assets/font/fa-light-300.ttf) format("truetype");
+  src: url(../assets/font/fa-light-300.woff2) format("woff2");
 }
 
 @font-face {
@@ -117,9 +115,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(../assets/font/fa-regular-400.woff2) format("woff2"),
-    url(../assets/font/fa-regular-400.woff) format("woff"),
-    url(../assets/font/fa-regular-400.ttf) format("truetype");
+  src: url(../assets/font/fa-regular-400.woff2) format("woff2");
 }
 
 @font-face {
@@ -127,9 +123,7 @@
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url(../assets/font/fa-solid-900.woff2) format("woff2"),
-    url(../assets/font/fa-solid-900.woff) format("woff"),
-    url(../assets/font/fa-solid-900.ttf) format("truetype");
+  src: url(../assets/font/fa-solid-900.woff2) format("woff2");
 }
 
 @font-face {
@@ -137,9 +131,7 @@
   font-style: normal;
   font-weight: 100;
   font-display: block;
-  src: url(../assets/font/fa-thin-100.woff2) format("woff2"),
-    url(../assets/font/fa-thin-100.woff) format("woff"),
-    url(../assets/font/fa-thin-100.ttf) format("truetype");
+  src: url(../assets/font/fa-thin-100.woff2) format("woff2");
 }
 
 @font-face {
@@ -147,9 +139,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(../assets/font/fa-brands-400.woff2) format("woff2"),
-    url(../assets/font/fa-brands-400.woff) format("woff"),
-    url(../assets/font/fa-brands-400.ttf) format("truetype");
+  src: url(../assets/font/fa-brands-400.woff2) format("woff2");
 }
 
 .fa-light,
