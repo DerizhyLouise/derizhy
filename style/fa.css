@@ -113,25 +113,9 @@
 @font-face {
   font-family: "Font Awesome 6 Pro";
   font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url(../assets/font/fa-regular-400.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: "Font Awesome 6 Pro";
-  font-style: normal;
   font-weight: 900;
   font-display: block;
   src: url(../assets/font/fa-solid-900.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: "Font Awesome 6 Pro";
-  font-style: normal;
-  font-weight: 100;
-  font-display: block;
-  src: url(../assets/font/fa-thin-100.woff2) format("woff2");
 }
 
 @font-face {
@@ -147,28 +131,15 @@
   font-weight: 300;
 }
 
-.fa-regular,
-.far {
-  font-weight: 400;
-}
-
 .fa-solid,
 .fas {
   font-weight: 900;
 }
 
-.fa-thin,
-.fat {
-  font-weight: 100;
-}
-
 .fa,
 .fa-brands,
-.fa-duotone,
 .fa-light,
-.fa-regular,
 .fa-solid,
-.fa-thin,
 .fab,
 .fad,
 .fal,
@@ -199,14 +170,12 @@
 }
 
 .fa-solid,
-.fa-thin,
 .fas,
 .fat {
   font-family: "Font Awesome 6 Pro";
 }
 
 .fa-light,
-.fa-regular,
 .fal,
 .far {
   font-family: "Font Awesome 6 Pro";

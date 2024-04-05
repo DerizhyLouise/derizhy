@@ -73,26 +73,22 @@
             {
                 "name": "Whatsapp",
                 "path": "https://wa.me/6282367319569",
-                "target": "_blank",
-                "icon": "fa-brands fa-whatsapp"
+                "target": "_blank"
             },
             {
                 "name": "Email",
                 "path": "mailto:louise.derizhy@gmail.com",
-                "target": "_blank",
-                "icon": "fa-light fa-envelope"
+                "target": "_blank"
             },
             {
                 "name": "Telegram",
                 "path": "https://t.me/derizhylouise",
-                "target": "_blank",
-                "icon": "fa-brands fa-telegram"
+                "target": "_blank"
             },
             {
                 "name": "LINE",
                 "path": "https://line.me/R/ti/p/eo96yTt8Ix",
-                "target": "_blank",
-                "icon": "fa-brands fa-line"
+                "target": "_blank"
             }
         ]
     },
