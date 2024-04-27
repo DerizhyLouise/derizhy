@@ -93,7 +93,7 @@ fetch('./json/experiences.json').then(response => response.json()).then(data => 
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.innerHTML = `
             <div class="resume-list-title">
-                <img src="${experience.logo}">
+                <img src="${experience.logo}" alt="${experience.company}'s Logo">
                 <h3 class="">${experience.position} - ${experience.company} (${experience.time})</h3>
             </div>
             <p>${experience.description.replace(/\n/g, '<br/>')}</p>
@@ -119,7 +119,7 @@ fetch('./json/educations.json').then(response => response.json()).then(data => {
 
         listItem.innerHTML = `
             <div class="resume-list-title">
-                <img src="${education.logo}">
+                <img src="${education.logo}" alt="${education.institute}'s Logo">
                 <h3 class="">${education.institute} - ${education.major} (${education.time})</h3>
             </div>
             <p>${education.description.replace(/\n/g, '<br/>')}</p>
@@ -144,7 +144,7 @@ fetch('./json/organizations.json').then(response => response.json()).then(data =
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.innerHTML = `
             <div class="resume-list-title">
-                <img src="${organization.logo}">
+                <img src="${organization.logo} alt="${organization.organization}'s Logo">
                 <h3 class="">${organization.organization}</h3>
             </div>
             <p>${organization.detail}</p>
@@ -171,7 +171,7 @@ fetch('./json/projects.json').then(response => response.json()).then(data => {
 
         projectItem.innerHTML = `
             <div class="w-full h-64 max-[1600px]:h-56">
-                <img src="${project.img}" class="w-full h-64 max-[1600px]:h-56 object-cover rounded-t">
+                <img src="${project.img}" class="w-full h-64 max-[1600px]:h-56 object-cover rounded-t" alt="${project.title} Image">
             </div>
             <div class="max-[480px]:text-sm h-32 max-[1600px]:h-24 flex items-center justify-center px-4">
                 <h3 class="gradient-text text-center text-3xl max-[1600px]:text-2xl font-semibold">${project.title}</h3>
@@ -198,7 +198,7 @@ fetch('./json/certifications.json').then(response => response.json()).then(data 
         if (certi.credentialId) {
             certiList.innerHTML = `
                 <div class="flex-none w-20 ml-4 my-4">
-                    <img src="${certi.logo}" class="w-14 h-14">
+                    <img src="${certi.logo}" class="w-14 h-14" alt="${certi.issuer}'s Logo">
                 </div>
                 <div class="flex-initial w-full mr-4 my-4">
                     <h3 class="gradient-text text-2xl font-bold m-0">${certi.certificateName}</h3>
@@ -211,7 +211,7 @@ fetch('./json/certifications.json').then(response => response.json()).then(data 
         } else {
             certiList.innerHTML = `
                 <div class="flex-none w-20 ml-4 my-4">
-                    <img src="${certi.logo}" class="w-14 h-14">
+                    <img src="${certi.logo}" class="w-14 h-14" alt="${certi.issuer}'s Logo">
                 </div>
                 <div class="flex-initial w-full mr-4 my-4 m-0">
                     <h3 class="gradient-text text-2xl font-bold">${certi.certificateName}</h3>
@@ -242,7 +242,7 @@ fetch('./json/reviews.json').then(response => response.json()).then(data => {
 
         listItem.innerHTML = `
             <div class="flex justify-start items-center pb-2 border-b-2 border-[#E91E63]">
-                <img class="rounded-full h-20 w-20" src="${review.img}">
+                <img class="rounded-full h-20 w-20" src="${review.img} alt="${review.name}'s Pic">
                 <div class="pl-2">
                     <h3 class="gradient-text text-2xl">${review.name}</h3>
                     <p class="text-sm">${review.role}</p>

@@ -5,7 +5,7 @@ function showNavbar() {
     
     navbar.innerHTML = `
         <div class="flex mr-4">
-            <a href="#home"><img class="w-24 h-24 mr-4" src="./assets/svg/logo.svg"></a>
+            <a href="#home"><img class="w-24 h-24 mr-4" src="./assets/svg/logo.svg" alt="Logo"></a>
             <h2 class="text-4xl flex max-md:hidden items-center select-none gradient-text"><a href="#home">Louise Derizhy</a></h2>
         </div>
         <div class="w-40 inline-flex items-center">
@@ -129,7 +129,7 @@ function openModal (id) {
 
         if (project) {
             content.innerHTML += `
-                <h1 class="text-4xl max-md:text-3xl"><span class="gradient-text">${project.title}</span></h1>
+                <h2 class="text-4xl max-md:text-3xl"><span class="gradient-text">${project.title}</span></h2>
                 <h2 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#E91E63]">Description</h2>
                 <p class="text-base mb-5 max-md:text-sm">${project.time}</p>
                 <p class="text-base mb-5 max-md:text-sm">${project.description.join('')}</p>
