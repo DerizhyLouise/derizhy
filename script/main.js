@@ -94,7 +94,7 @@ fetch('./json/experiences.json').then(response => response.json()).then(data => 
         listItem.innerHTML = `
             <div class="resume-list-title">
                 <img src="${experience.logo}" alt="${experience.company}'s Logo">
-                <h3 class="">${experience.position} - ${experience.company} (${experience.time})</h3>
+                <h3>${experience.position} - ${experience.company} (${experience.time})</h3>
             </div>
             <p>${experience.description.replace(/\n/g, '<br/>')}</p>
         `;
@@ -120,7 +120,7 @@ fetch('./json/educations.json').then(response => response.json()).then(data => {
         listItem.innerHTML = `
             <div class="resume-list-title">
                 <img src="${education.logo}" alt="${education.institute}'s Logo">
-                <h3 class="">${education.institute} - ${education.major} (${education.time})</h3>
+                <h3>${education.institute} - ${education.major} (${education.time})</h3>
             </div>
             <p>${education.description.replace(/\n/g, '<br/>')}</p>
         `;
@@ -144,8 +144,8 @@ fetch('./json/organizations.json').then(response => response.json()).then(data =
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.innerHTML = `
             <div class="resume-list-title">
-                <img src="${organization.logo} alt="${organization.organization}'s Logo">
-                <h3 class="">${organization.organization}</h3>
+                <img src="${organization.logo}" alt="${organization.organization}'s Logo">
+                <h3>${organization.organization}</h3>
             </div>
             <p>${organization.detail}</p>
         `;
