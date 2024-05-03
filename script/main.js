@@ -242,7 +242,7 @@ fetch('./json/reviews.json').then(response => response.json()).then(data => {
 
         listItem.innerHTML = `
             <div class="flex justify-start items-center pb-2 border-b-2 border-[#E91E63]">
-                <img class="rounded-full h-20 w-20" src="${review.img} alt="${review.name}'s Pic">
+                <img class="rounded-full h-20 w-20" src="${review.img}" alt="${review.name}'s Pic">
                 <div class="pl-2">
                     <h3 class="gradient-text text-2xl">${review.name}</h3>
                     <p class="text-sm">${review.role}</p>
