@@ -385,5 +385,14 @@
         "credentialId": "CMP/12-23/6476273",
         "url": "https://certificates.revou.co/louise-derizhy-certificate-completion-kmb4.pdf",
         "logo": "./assets/image/logo/revou.png"
+    },
+    {
+        "certificateName": "Front End Development - HTML",
+        "issuer": "Great Learning",
+        "issueDate": "14 May 2024",
+        "expirationDate": "-",
+        "credentialId": "",
+        "url": "https://verify.mygreatlearning.com/verify/WYKQLEKH",
+        "logo": "./assets/image/logo/greatlearning.png"
     }
 ]
