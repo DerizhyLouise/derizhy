@@ -1,5 +1,16 @@
 [
     {
+        "id": 9,
+        "title": "Peduli Anak",
+        "img": "./assets/image/project/peduliAnak.jpg",
+        "media": [],
+        "time": "March 2024 - Present (ongoing process)",
+        "description": [
+            "This is final project for Mikroskil University - Informatics Engineering's Bachelor Degree.<br/>",
+            "This is an UI for a Stunting web based app.<br/><br/>"
+        ]
+    },
+    {
         "id": 8,
         "title": "MTHIS 2.0",
         "img": "./assets/image/project/mthis.jpg",
