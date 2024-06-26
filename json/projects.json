@@ -3,7 +3,18 @@
         "id": 9,
         "title": "Peduli Anak",
         "img": "./assets/image/project/peduliAnak.jpg",
-        "media": [],
+        "media": [
+            {
+                "title": "Source Code",
+                "url": "https://github.com/DerizhyLouise/peduli-anak",
+                "type": "Github"
+            },
+            {
+                "title": "Peduli Anak Website",
+                "url": "https://peduli-anak.derizhy.xyz",
+                "type": "Web"
+            }
+        ],
         "time": "March 2024 - Present (ongoing process)",
         "description": [
             "This is final project for Mikroskil University - Informatics Engineering's Bachelor Degree.<br/>",
