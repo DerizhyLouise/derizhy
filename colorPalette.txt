@@ -1,10 +1,45 @@
-Primary     : #0D192B
-Secondary   : #1B3358 > Hover : #473E66
-Other       : #2A265F
-              #FFF9D2
-              #E91E63
+#F8E9A1
+#F76C6C
+#A8D0E6
+#374785
+#24305E
 
-Palatte
-#02586F
-#5A233B
-#17273D
+Header:
+    Color: #24305E (Dark Blue)
+
+Side Navigation Bar:
+    Color: #374785 (Slate Blue)
+
+Button:
+    Primary Button Color: #F76C6C (Coral Red)
+    Hover State: Slightly darker shade of #F76C6C or adding a bit of transparency for a subtle effect.
+
+Background:
+    Color: #A8D0E6 (Light Blue)
+
+Primary Text:
+    Color: #24305E (Dark Blue) or Black
+
+Secondary Text:
+    Color: #374785 (Slate Blue)
+
+Border:
+    Color: #F8E9A1 (Pale Yellow)
+
+Card:
+    Background Color: #F8E9A1 (Pale Yellow) or #FFFFFF (White)
+    Border Color: #24305E (Dark Blue)
+
+Modal Background:
+    Color: #24305E (Dark Blue) with a transparency of around 85% (opacity 0.85)
+
+Footer:
+    Color: #24305E ( Dark Blue)
+    Text Color: White
+    Link Hover Effect: Slightly lighter or darker gray (hover:text-gray-300)
+
+Others:
+    Links: #F76C6C (Coral Red)
+    Hover Effects on Links: Darker shade of #F76C6C
+    Footer: #24305E (Dark Blue)
+    Icons/Illustrations: #F8E9A1 (Pale Yellow) for consistency and to add subtle highlights.

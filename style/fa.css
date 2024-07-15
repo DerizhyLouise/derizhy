@@ -102,6 +102,10 @@
   content: "\d7";
 }
 
+.fa-bars:before {
+	content: "\f0c9";
+}
+
 @font-face {
   font-family: "Font Awesome 6 Pro";
   font-style: normal;

@@ -1,9 +1,8 @@
 footer {
-    height: 300px;
-    position:relative;
+    height: 100%;
+    position: relative;
     z-index: 2;
     user-select: none;
-    border-top: 2px solid #E91E63;
 }
 
 .footer-container {
@@ -44,7 +43,7 @@ footer {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #E91E63;
+    background-color: #F8E9A1;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
