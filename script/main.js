@@ -10,7 +10,7 @@ fetch('./json/footer.json').then(response => response.json()).then(data => {
         element.className = "footer-col";
         
         element.innerHTML = `
-            <h4>${category.name}</h4>
+            <h4 class="gradient-text">${category.name}</h4>
         `
 
         if (category.type === 'social') {
@@ -26,7 +26,7 @@ fetch('./json/footer.json').then(response => response.json()).then(data => {
             const ul = document.createElement('ul');
             category.item.forEach(item => {
                 ul.innerHTML += `
-                    <li><a href="${item.path}" target="${item.target}">${item.name}</a></li>
+                    <li><a href="${item.path}" target="${item.target}" class="gradient-text">${item.name}</a></li>
                 `
                 element.appendChild(ul);
             });
@@ -39,10 +39,3 @@ fetch('./json/footer.json').then(response => response.json()).then(data => {
 }).catch(error => {
     console.error('Error fetching or processing JSON data:', error);
 });
-
-const loadHeader = () => {
-    const header = document.getElementById("header");
-    header.innerHTML = `
-        
-    `;
-}

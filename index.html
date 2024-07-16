@@ -59,10 +59,13 @@
         <div id="dropdownHome2" class="z-10 hidden bg-[#24305E] border-2 border-[#F8E9A1] rounded-lg shadow w-28">
             <ul class="py-2 text-sm">
                 <li>
-                    <a href="#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Home</a>
+                    <a href="#home" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Home</a>
+                    <a href="#about" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Who am I?</a>
+                </li>
+                <li>
+                    <a href="#know-more" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">What I Do?</a>
                 </li>
             </ul>
         </div>
@@ -89,7 +92,7 @@
     </header>
 
     <div class="">
-        <div
+        <section id="home"
             class="px-10 xl:px-40 2xl:px-80 h-screen w-full bg-[#A8D0E6] bg-[url('./assets/svg/bg-1.svg')] bg-cover bg-blend-multiply text-[#24305E] pt-60 pb-40">
             <div
                 class="h-full w-full p-8 2xl:p-16 max-md:flex max-md:items-center md:grid md:grid-cols-2 lg:grid-cols-5 items-center bg-[#F8E9A1] bg-[url('./assets/svg/bg-2.svg')] bg-cover bg-blend-multiply shadow-xl rounded-lg">
@@ -111,7 +114,7 @@
                         <li>a Speedcuber</li>
                     </ul>
                     <button class="mt-4 p-2 hover:bg-[#F76C6C] hover:scale-110 border-2 border-[#F76C6C] duration-300"
-                        onclick="window.location.href='#'">
+                        onclick="window.location.href='#know-more'">
                         Know me more >
                     </button>
                 </div>
@@ -120,14 +123,47 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div
-            class="px-40 h-screen w-full bg-[#F76C6C] bg-[url('./assets/svg/bg-1.svg')] bg-cover bg-blend-multiply text-[#24305E]">
+        </section>
+        
+        <section id="about" class="px-20 sm:px-40 xl:px-20 min-[1720px]:px-40 max-xl:py-40 h-full xl:h-screen w-full bg-[#F76C6C] bg-[url('./assets/svg/bg-3.svg')] bg-cover bg-blend-multiply text-[#24305E]">
 
-        </div>
-        <div class="px-40 h-screen w-full bg-[#A8D0E6] text-[#24305E]">
-
-        </div>
+        </section>
+        
+        <section id="know-more"
+            class="px-20 sm:px-40 xl:px-20 min-[1720px]:px-40 max-xl:py-40 h-full xl:h-screen w-full bg-[#A8D0E6] bg-[url('./assets/svg/bg-1.svg')] bg-cover bg-blend-multiply text-[#24305E] rotate-180">
+            <div class="h-full w-full xl:grid xl:grid-cols-3 max-xl:flex max-xl:flex-col gap-6 items-center rotate-180">
+                <div
+                    class="relative group w-full h-96 xl:w-96 mx-auto overflow-hidden shadow-2xl border-2 border-[#24305E]">
+                    <div
+                        class="group-hover:-translate-y-full duration-300 ease-in-out w-full h-full bg-[#F8E9A1] bg-[url('./assets/svg/coding.svg')] bg-contain bg-no-repeat bg-center bg-blend-multiply">
+                    </div>
+                    <a href="#"
+                        class="bg-[#24305E] p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
+                        <h2 class="text-5xl text-white text-center">Coding</h2>
+                    </a>
+                </div>
+                <div
+                    class="relative group w-full h-96 xl:w-96 mx-auto overflow-hidden shadow-2xl border-2 border-[#24305E]">
+                    <div
+                        class="group-hover:-translate-y-full duration-300 ease-in-out w-full h-full bg-[#F8E9A1] bg-[url('./assets/svg/mic.svg')] bg-contain bg-no-repeat bg-center bg-blend-multiply">
+                    </div>
+                    <a href="#"
+                        class="bg-[#24305E] p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
+                        <h2 class="text-5xl text-white text-center">Public Speaking</h2>
+                    </a>
+                </div>
+                <div
+                    class="relative group w-full h-96 xl:w-96 mx-auto overflow-hidden shadow-2xl border-2 border-[#24305E]">
+                    <div
+                        class="group-hover:-translate-y-full duration-300 ease-in-out w-full h-full bg-[#F8E9A1] bg-[url('./assets/svg/cube.svg')] bg-contain bg-no-repeat bg-center bg-blend-multiply">
+                    </div>
+                    <a href="#"
+                        class="bg-[#24305E] p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
+                        <h2 class="text-5xl text-white text-center">Speedcubing</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer class="bg-[#24305E] py-2"></footer>

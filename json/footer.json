@@ -4,11 +4,6 @@
         "type": "normal",
         "item": [
             {
-                "name": "Home",
-                "path": "#home",
-                "target": ""
-            },
-            {
                 "name": "Profile",
                 "path": "#profile",
                 "target": ""
