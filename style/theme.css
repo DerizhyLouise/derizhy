@@ -11,29 +11,41 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6, p, table, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+li {
     user-select: none;
 }
 
 .ellipsis-text {
-	display: -webkit-box;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: horizontal;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: horizontal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100%;
 }
 
 .gradient-text {
-    background-image: linear-gradient(
-        -225deg,
-        #F8E9A1 0%,
-        #F76C6C 20%,
-        #A8D0E6 40%,
-        #A8D0E6 60%,
-        #F76C6C 80%,
-        #F8E9A1 100%
-    );
+    background-image: linear-gradient(-225deg,
+            #F8E9A1 0%,
+            #F76C6C 20%,
+            #A8D0E6 40%,
+            #A8D0E6 60%,
+            #F76C6C 80%,
+            #F8E9A1 100%);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
