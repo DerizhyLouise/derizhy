@@ -7,7 +7,7 @@
     <meta name="author" content="Louise Derizhy">
     <meta name="keywords"
         content="louise, louis, derizhy, derizh, deriz, derizheese, engineer, software engineer, html, css, java, javascript, js, sql, database, analytics, programmer, developer, frontend, backend, fullstack, svelte, tailwindcss, tailwind">
-    <meta name="description" content="Portfolio of Louise Derizhy, a Software Engineer">
+    <meta name="description" content="Personal Website of Louise Derizhy, a Software Engineer, a Speedcuber, a Public Speaker">
     <meta name="google-site-verification" content="TPqfPlfZzFnMuO_qkHXqtXeG3T1hviV74rQVJvj3XoQ" />
     <meta name="msvalidate.01" content="839E33E156A87D36BB5B0C63DC07965F" />
 
@@ -51,7 +51,7 @@
             </ul>
         </nav>
         <div class="flex justify-end w-6/12 lg:hidden">
-            <button class="text-2xl hover:duration-200" type="button" data-drawer-target="drawer-navigation"
+            <button class="text-3xl hover:duration-300 hover:scale-150 transition" type="button" data-drawer-target="drawer-navigation"
                 data-drawer-show="drawer-navigation" data-drawer-placement="right" aria-controls="drawer-navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -62,20 +62,38 @@
                     <a href="#home" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Home</a>
                 </li>
                 <li>
-                    <a href="#about" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Who am I?</a>
+                    <a href="#about" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">About Me</a>
                 </li>
                 <li>
                     <a href="#know-more" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">What I Do?</a>
                 </li>
             </ul>
         </div>
-        <div id="dropdownPort2" class="z-10 hidden bg-[#24305E] border-2 border-[#F8E9A1] rounded-lg shadow w-28">
+        <div id="dropdownPort2" class="z-10 hidden bg-[#24305E] border-2 border-[#F8E9A1] rounded-lg shadow w-36">
             <ul class="py-2 text-sm">
                 <li>
-                    <a href="#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Portfolio</a>
+                    <a href="./portfolio#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Profile</a>
                 </li>
                 <li>
-                    <a href="#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Portfolio</a>
+                    <a href="./portfolio#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Skills</a>
+                </li>
+                <li>
+                    <a href="./portfolio#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Experiences</a>
+                </li>
+                <li>
+                    <a href="./portfolio#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Educations</a>
+                </li>
+                <li>
+                    <a href="./portfolio#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Organizations</a>
+                </li>
+                <li>
+                    <a href="./portfolio#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Projects</a>
+                </li>
+                <li>
+                    <a href="./portfolio#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Certifications</a>
+                </li>
+                <li>
+                    <a href="./portfolio#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Reviews</a>
                 </li>
             </ul>
         </div>
@@ -91,10 +109,51 @@
         </div>
     </header>
 
-    <div class="">
+    <aside>
+        <div id="drawer-navigation"
+            class="fixed top-0 right-0 z-40 h-screen p-8 overflow-y-auto transition-transform translate-x-full bg-[#374785] w-96"
+            tabindex="-1" aria-labelledby="drawer-navigation-label">
+            <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+                class="text-white bg-transparent hover:bg-[#F76C6C] rounded-lg text-lg w-12 h-12 absolute top-2.5 end-2.5 inline-flex items-center justify-center group">
+                <span class="fa-solid fa-x group-hover:rotate-180 group-hover:duration-500 transition"></span>
+            </button>
+            <div class="py-4 flex flex-col gap-4">
+                <div>
+                    <h4 class="text-3xl font-semibold text-[#F8E9A1] mb-2">Home</h4>
+                    <div class="flex text-white flex-col text-xl">
+                        <a href="#home" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Home</a>
+                        <a href="#about" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">About Me</a>
+                        <a href="#know-more" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">What I Do?</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-3xl font-semibold text-[#F8E9A1] mb-2">Portfolio</h4>
+                    <div class="flex text-white flex-col text-xl">
+                        <a href="./portfolio#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Profile</a>
+                        <a href="./portfolio#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Skills</a>
+                        <a href="./portfolio#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Experiences</a>
+                        <a href="./portfolio#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Educations</a>
+                        <a href="./portfolio#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Organizations</a>
+                        <a href="./portfolio#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Projects</a>
+                        <a href="./portfolio#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Certifications</a>
+                        <a href="./portfolio#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Reviews</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-3xl font-semibold text-[#F8E9A1] mb-2">Blog</h4>
+                    <div class="flex text-white flex-col text-xl">
+                        <a href="#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Blog 1</a>
+                        <a href="#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Blog 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div>
         <section id="home"
             class="px-10 xl:px-40 2xl:px-80 h-screen w-full bg-[#A8D0E6] bg-[url('./assets/svg/bg-3.svg')] bg-cover bg-blend-multiply text-[#24305E] pt-60 pb-40">
-            <div
+            <div data-aos="fade-up" data-aos-duration="2000"
                 class="h-full w-full p-8 2xl:p-16 max-md:flex max-md:items-center md:grid md:grid-cols-2 lg:grid-cols-5 items-center bg-[#F8E9A1] bg-[url('./assets/svg/bg-1.svg')] bg-cover bg-blend-multiply shadow-xl">
                 <div class="w-full lg:col-span-3">
                     <div class="flex">
@@ -113,7 +172,7 @@
                         <li>a Public Speaker</li>
                         <li>a Speedcuber</li>
                     </ul>
-                    <button class="mt-4 p-2 hover:bg-[#F76C6C] hover:scale-110 border-2 border-[#F76C6C] duration-300"
+                    <button class="mt-4 p-2 font-semibold hover:bg-[#F76C6C] hover:scale-110 border-2 border-[#F76C6C] duration-300"
                         onclick="window.location.href='#know-more'">
                         Know me more >
                     </button>
@@ -128,71 +187,94 @@
         <section id="about"
             class="px-10 xl:px-40 2xl:px-80  h-full w-full bg-[#F76C6C] bg-[url('./assets/svg/bg-4.svg')] bg-cover bg-blend-multiply text-[#24305E]">
             <div class="h-full w-full py-40">
-                <h2 class="uppercase text-6xl text-center font-semibold mb-20">Who Am I?</h2>
-                <div class="h-full w-full grid grid-cols-2 justify-center gap-12">
-                    <a href="https://en.wikipedia.org/wiki/Medan" target="_blank"
-                        class="even:justify-self-end flex gap-4 items-center w-[440px] h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
-                        <div class="text-4xl w-12 text-center">
+                <h2 class="uppercase text-6xl text-center font-semibold mb-10 lg:mb-20" data-aos="fade-up" data-aos-duration="2000">About Me</h2>
+                <div class="h-full w-full grid lg:grid-cols-2 justify-center gap-6 lg:gap-12">
+                    <a href="https://en.wikipedia.org/wiki/Medan" target="_blank" data-aos="fade-up-right" data-aos-duration="2000"
+                        class="even:justify-self-end grid grid-cols-6 gap-4 items-center w-full h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
+                        <div class="text-4xl text-center">
                             <span class="fa-solid fa-location-dot"></span>
                         </div>
-                        <h3 class="text-lg even:text-left">I Live and Born in <span class="font-semibold">Medan, Indonesia</span></h3>
+                        <h3 class="text-lg even:text-left col-span-5">I Live and Born in <span
+                                class="font-semibold">Medan, Indonesia</span></h3>
                     </a>
-                    <a href="https://en.wikipedia.org/wiki/Buddhism" target="_blank"
-                        class="even:justify-self-end flex gap-4 items-center w-[440px] h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
-                        <div class="text-6xl w-12 text-center">
+                    <a href="https://en.wikipedia.org/wiki/Buddhism" target="_blank" data-aos="fade-up-left" data-aos-duration="2000"
+                        class="even:justify-self-end grid grid-cols-6 gap-4 items-center w-full h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
+                        <div class="text-5xl text-center">
                             <span class="fa-regular fa-dharmachakra"></span>
                         </div>
-                        <h3 class="text-lg even:text-left">I am a <span class="font-semibold">Buddhist</span></br>and <span class="font-semibold">Buddhism</span> is My Way of Life</h3>
+                        <h3 class="text-lg even:text-left col-span-5">I am a <span class="font-semibold">Buddhist</span>
+                            and <span class="font-semibold">Buddhism </span> is My Way of Life</h3>
                     </a>
-                    <a href="#"
-                        class="even:justify-self-end flex gap-4 items-center w-[440px] h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
-                        <div class="text-3xl w-12 text-center">
+                    <a href="#" data-aos="fade-up-right" data-aos-duration="2000"
+                        class="even:justify-self-end grid grid-cols-6 gap-4 items-center w-full h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
+                        <div class="text-3xl text-center">
                             <span class="fa-solid fa-signature"></span>
                         </div>
-                        <h3 class="text-lg even:text-left"><span class="font-semibold">張家誠</span> is My Chinese Name and</br><span class="font-semibold">Adhi Guna Dharma</span> is My Buddhist Name</h3>
+                        <h3 class="text-lg even:text-left col-span-5"><span class="font-semibold">張家誠</span> is My
+                            Chinese Name and</br><span class="font-semibold">Adhi Guna Dharma</span> is My Buddhist Name
+                        </h3>
                     </a>
-                    <a href="#"
-                        class="even:justify-self-end flex gap-4 items-center w-[440px] h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
-                        <div class="text-5xl w-12 text-center">
+                    <a href="#" data-aos="fade-up-left" data-aos-duration="2000"
+                        class="even:justify-self-end grid grid-cols-6 gap-4 items-center w-full h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
+                        <div class="text-5xl text-center">
                             <span class="fa-regular fa-square-terminal"></span>
                         </div>
-                        <h3 class="text-lg even:text-left">I Love <span class="font-semibold">Physics</span> but I've Chosen <span class="font-semibold">Coding</span> as My Career</h3>
+                        <h3 class="text-lg even:text-left col-span-5">I Love <span class="font-semibold">Physics</span>
+                            but I've Chosen <span class="font-semibold">Coding</span> as My Career</h3>
                     </a>
-                    <a href="#" target="_blank"
-                        class="even:justify-self-end flex gap-4 items-center w-[440px] h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
-                        <div class="text-4xl w-12 text-center">
+                    <a href="./portfolio#" data-aos="fade-up-right" data-aos-duration="2000"
+                        class="even:justify-self-end grid grid-cols-6 gap-4 items-center w-full h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
+                        <div class="text-4xl text-center">
+                            <span class="fa-regular fa-display-code"></span>
+                        </div>
+                        <h3 class="text-lg even:text-left col-span-5">I am a <span class="font-semibold">Software Engineer</span>, and Check Out The <span class="font-semibold">Projects</span> I've Done Right Here</h3>
+                    </a>
+                    <a href="./portfolio#" data-aos="fade-up-left" data-aos-duration="2000"
+                        class="even:justify-self-end grid grid-cols-6 gap-4 items-center w-full h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
+                        <div class="text-4xl text-center">
                             <span class="fa-solid fa-user-group"></span>
                         </div>
-                        <h3 class="text-lg even:text-left">I Love to Do <span class="font-semibold">Organizational</span> Activity</h3>
+                        <h3 class="text-lg even:text-left col-span-5">I Love to Do <span
+                                class="font-semibold">Organizational</span> Activity</h3>
                     </a>
-                    <a href="#" target="_blank"
-                        class="even:justify-self-end flex gap-4 items-center w-[440px] h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
-                        <div class="text-5xl w-12 text-center">
+                    <a href="#" data-aos="fade-up-right" data-aos-duration="2000"
+                        class="even:justify-self-end grid grid-cols-6 gap-4 items-center w-full h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
+                        <div class="text-5xl text-center">
                             <span class="fa-solid fa-microphone"></span>
                         </div>
-                        <h3 class="text-lg even:text-left">I am a <span class="font-semibold">Public Speaker</span></br>Especially a <span class="font-semibold">Dharmaduta</span></h3>
+                        <h3 class="text-lg even:text-left col-span-5">I am a <span class="font-semibold">Public
+                                Speaker</span> Especially a <span class="font-semibold">Dharmaduta</span></h3>
+                    </a>
+                    <a href="https://www.worldcubeassociation.org/persons/2018DERI01" target="_blank" data-aos="fade-up-left" data-aos-duration="2000"
+                        class="even:justify-self-end grid grid-cols-6 gap-4 items-center w-full h-40 mx-auto px-6 py-4 rounded-lg shadow-xl bg-[#F8E9A1] hover:scale-110 duration-300">
+                        <div class="flex justify-center items-center">
+                            <img src="assets/svg/cube2.svg" class="pt-4 scale-110" alt="cube"></img>
+                        </div>
+                        <h3 class="text-lg even:text-left col-span-5"><span class="font-semibold">Speedcubing </span>is
+                            My Hobby</br>My Current Personal Record of <span class="font-semibold">3x3x3 </span>is <span
+                                class="font-semibold">6.06 sec</span></h3>
                     </a>
                 </div>
             </div>
         </section>
 
         <section id="know-more"
-            class="px-20 sm:px-40 xl:px-20 min-[1720px]:px-40 max-xl:py-40 h-full xl:h-screen w-full bg-[#A8D0E6] bg-[url('./assets/svg/bg-1.svg')] bg-cover bg-blend-multiply text-[#24305E]">
+            class="px-4 min-[540px]:px-20 sm:px-40 xl:px-20 min-[1720px]:px-40 max-xl:py-40 h-full xl:h-screen w-full bg-[#A8D0E6] bg-[url('./assets/svg/bg-1.svg')] bg-cover bg-blend-multiply text-[#24305E]">
             <div class="relative h-full w-full">
-                <h2 class="uppercase text-6xl text-center font-semibold pt-40">What I Do?</h2>
+                <h2 class="uppercase text-6xl text-center font-semibold max-xl:pb-10 xl:pt-40" data-aos="fade-up" data-aos-duration="2000">What I Do?</h2>
                 <div
-                    class="absolute top-0 h-full w-full xl:grid xl:grid-cols-3 max-xl:flex max-xl:flex-col gap-6 items-center">
-                    <div
+                    class="xl:absolute top-0 h-full w-full xl:grid xl:grid-cols-3 max-xl:flex max-xl:flex-col gap-12 xl:gap-6 items-center">
+                    <div data-aos="fade-up" data-aos-duration="2000"
                         class="relative group w-full h-96 xl:w-96 mx-auto overflow-hidden shadow-2xl border-2 border-[#24305E]">
                         <div
                             class="group-hover:-translate-y-full duration-300 ease-in-out w-full h-full bg-[#F8E9A1] bg-[url('./assets/svg/coding.svg')] bg-contain bg-no-repeat bg-center bg-blend-multiply">
                         </div>
-                        <a href="#"
+                        <a href="./portfolio#"
                             class="bg-[#24305E] p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
                             <h2 class="text-5xl text-white text-center">Coding</h2>
                         </a>
                     </div>
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="2000"
                         class="relative group w-full h-96 xl:w-96 mx-auto overflow-hidden shadow-2xl border-2 border-[#24305E]">
                         <div
                             class="group-hover:-translate-y-full duration-300 ease-in-out w-full h-full bg-[#F8E9A1] bg-[url('./assets/svg/mic.svg')] bg-contain bg-no-repeat bg-center bg-blend-multiply">
@@ -202,7 +284,7 @@
                             <h2 class="text-5xl text-white text-center">Public Speaking</h2>
                         </a>
                     </div>
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="2000"
                         class="relative group w-full h-96 xl:w-96 mx-auto overflow-hidden shadow-2xl border-2 border-[#24305E]">
                         <div
                             class="group-hover:-translate-y-full duration-300 ease-in-out w-full h-full bg-[#F8E9A1] bg-[url('./assets/svg/cube.svg')] bg-contain bg-no-repeat bg-center bg-blend-multiply">

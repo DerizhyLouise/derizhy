@@ -130,6 +130,14 @@
 	content: "\f130";
 }
 
+.fa-x:before {
+	content: "\58";
+}
+
+.fa-display-code:before {
+	content: "\e165";
+}
+
 @font-face {
 	font-family: "Font Awesome 6 Pro";
 	font-style: normal;
@@ -176,7 +184,8 @@
 .fa,
 .fa-brands,
 .fa-light,
-.fa-solid {
+.fa-solid,
+.fab {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;
@@ -187,7 +196,8 @@
 	text-rendering: auto;
 }
 
-.fa-brands  {
+.fa-brands,
+.fab {
 	font-family: "Font Awesome 6 Brands";
 	font-weight: 400;
 }
