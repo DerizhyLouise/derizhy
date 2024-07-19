@@ -20,7 +20,7 @@
     <title>Louise Derizhy</title>
 </head>
 
-<body class="content-none">
+<body class="select-none">
     <header
         class="fixed w-full h-28 bg-[#24305E] flex items-center justify-between px-10 md:px-20 xl:px-40 2xl:px-60 py-2 fixed z-30 text-white">
         <div class="w-full">
@@ -165,7 +165,8 @@
                 <div class="w-full lg:col-span-3">
                     <div class="flex">
                         <div class="w-40 h-40 rounded-full md:hidden">
-                            <div class="bg-[url('./assets/image/profile/profilePic.jpg')] bg-cover w-full h-full rounded-full">
+                            <div
+                                class="bg-[url('./assets/image/profile/profilePic.jpg')] bg-cover w-full h-full rounded-full">
 
                             </div>
                         </div>
@@ -379,6 +380,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script>
         AOS.init();
+
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+
+            if ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.keyCode == 67 || event.keyCode == 73)) {
+                return false;
+            }
+        });
     </script>
 </body>
 
