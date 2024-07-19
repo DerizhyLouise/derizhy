@@ -106,10 +106,7 @@
         <div id="dropdownBlog2" class="z-10 hidden bg-[#24305E] border-2 border-[#F8E9A1] rounded-lg shadow w-28">
             <ul class="py-2 text-sm">
                 <li>
-                    <a href="#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Blog</a>
-                </li>
-                <li>
-                    <a href="#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Blog</a>
+                    <a href="#" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Unavailable</a>
                 </li>
             </ul>
         </div>
@@ -121,7 +118,7 @@
             tabindex="-1" aria-labelledby="drawer-navigation-label">
             <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
                 class="text-white bg-transparent hover:bg-[#F76C6C] rounded-lg text-lg w-12 h-12 absolute top-2.5 end-2.5 inline-flex items-center justify-center group">
-                <span class="fa-solid fa-x group-hover:rotate-180 group-hover:duration-500 transition"></span>
+                <span class="fa-solid fa-xmark group-hover:rotate-180 group-hover:duration-500 transition"></span>
             </button>
             <div class="py-4 flex flex-col gap-4">
                 <div>
@@ -148,8 +145,7 @@
                 <div>
                     <h4 class="text-3xl font-semibold text-[#F8E9A1] mb-2">Blog</h4>
                     <div class="flex text-white flex-col text-xl">
-                        <a href="#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Blog 1</a>
-                        <a href="#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Blog 2</a>
+                        <a href="#" class="hover:bg-[#F76C6C] pl-4 p-2 rounded-lg">Unavailable</a>
                     </div>
                 </div>
             </div>
@@ -226,7 +222,7 @@
         </section>
 
         <section id="skills" class="px-10 xl:px-40 2xl:px-80 pb-20 h-full min-h-screen w-full text-[#24305E]">
-            <div class="pt-40">
+            <div class="py-40">
                 <h2 class="text-6xl max-sm:text-5xl font-semibold text-center mb-10 uppercase" data-aos="fade-up"
                     data-aos-duration="2000">Skills</h2>
                 <div id="skills-container" class="flex flex-wrap justify-center items-center gap-8"></div>
@@ -352,9 +348,9 @@
         <div class="p-12 w-full">
             <div class="absolute right-20 top-5 z-50">
                 <button
-                    class="bg-[#F76C6C] rounded-full text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed hover:bg-[#E91EA5] hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center"
+                    class="text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed group hover:bg-[#F76C6C] rounded-lg"
                     title="Close" onClick="closeModal()">
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-xmark text-2xl group-hover:rotate-180 group-hover:duration-500 transition"></i>
                 </button>
             </div>
             <div class="project-modal-info"></div>

@@ -259,12 +259,12 @@ function openModal(id) {
                     <h3 class="text-4xl max-md:text-3xl text-white">${
 						project.title
 					}</h3>
-                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#24305E]">Description</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#F76C6C]">Description</h3>
                     <p class="text-base mb-5 max-md:text-sm">${project.time}</p>
                     <p class="text-base mb-5 max-md:text-sm">${project.description.join(
 						""
 					)}</p>
-                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#24305E]">Project's Media</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#F76C6C]">Project's Media</h3>
                 `;
 
 				const projectMedia = document.createElement("div");
@@ -336,15 +336,17 @@ function closeModal() {
 	const modal = document.getElementById("project-modal");
 	modal.style.display = "none";
 	modal.innerHTML = `
-            <div class="p-12 w-full">
-                <div class="absolute right-20 top-5 z-50">
-                    <button class="bg-[#24305E] rounded-full text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-                <div class="project-modal-info"></div>
-            </div>
-        `;
+		<div class="p-12 w-full">
+			<div class="absolute right-20 top-5 z-50">
+				<button
+					class="text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed group hover:bg-[#F76C6C] rounded-lg"
+					title="Close" onClick="closeModal()">
+					<i class="fa-solid fa-xmark text-2xl group-hover:rotate-180 group-hover:duration-500 transition"></i>
+				</button>
+			</div>
+			<div class="project-modal-info"></div>
+		</div>
+	`;
 
 	const header = document.getElementsByTagName("header")[0];
 	const main = document.getElementById("container");
@@ -361,5 +363,3 @@ function closeModal() {
 }
 
 let isOpen = false;
-showNavbar();
-document.body.addEventListener("click", handleOutsideClick);
