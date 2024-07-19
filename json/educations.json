@@ -4,7 +4,7 @@
         "major": "Informatics Engineering",
         "time": "2020-2024",
         "description": "One of the top technology campus in Medan, Indonesia.<br/><br/>- Part of Mikroskil Programming Club (2020-2021)<br/>- Became a Class Commissioner (2023)",
-        "logo": "./assets/image/logo/mikroskil.jpg",
+        "logo": "../assets/image/logo/mikroskil.jpg",
         "theme": "#034EA2"
     },
     {
@@ -12,7 +12,7 @@
         "major": "Data & Software Engineering",
         "time": "2023",
         "description": "Part of Studi Independen - Kampus Merdeka program by Ministry of Education. Learnt about data analytics and software engineering.<br/><br/>- Leader of Team C and Group 6 Balikpapan Section.<br/>- Leading Group 6 to achieve the best group of Data Analytics' Capstone Project Shoping Cart Category<br/>- Achieved final score 98 out of 100",
-        "logo": "./assets/image/logo/revou.png",
+        "logo": "../assets/image/logo/revou.png",
         "theme": "#FEDE3E"
     },
     {
@@ -20,7 +20,7 @@
         "major": "Science",
         "time": "2017-2020",
         "description": "High school at SMA Sisingamangaraja, Tanjungbalai with science major.<br/><br/>- Bronze winner in the 100m athletics event in Pekan Olahraga Kota Tanjungbalai (2017)<br/>- Became part of school representative in Physics Olympic<br/>- Became part of school representative in 3x3 Honda Developmental Basketball League (DBL) (2019)",
-        "logo": "./assets/image/logo/smraja.jpg",
+        "logo": "../assets/image/logo/smraja.jpg",
         "theme": "#D61F23"
     }
 ]

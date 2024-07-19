@@ -33,7 +33,7 @@ fetch('../json/skills.json').then(response => response.json()).then(data => {
 });
 
 fetch('../json/experiences.json').then(response => response.json()).then(data => {
-    const experienceContainer = document.querySelector('.resume-listing-content ol');
+    const experienceContainer = document.getElementById("resume-experience");
     experienceContainer.style.setProperty('--length', data.length);
 
     data.forEach((experience, index) => {
@@ -44,13 +44,62 @@ fetch('../json/experiences.json').then(response => response.json()).then(data =>
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.innerHTML = `
             <div class="resume-list-title">
-                <img src="${experience.logo}" alt="${experience.company}'s Logo" class="bg-center bg-white rounded-full w-16 h-16 border border-[#24305E]">
+                <img src="${experience.logo}" alt="${experience.company}'s Logo" class="rounded-full w-16 h-16">
                 <h3>${experience.position} - ${experience.company} (${experience.time})</h3>
             </div>
             <p>${experience.description.replace(/\n/g, '<br/>')}</p>
         `;
 
         experienceContainer.appendChild(listItem);
+    });
+}).catch(error => {
+    console.error('Error fetching or processing JSON data:', error);
+});
+
+fetch('../json/educations.json').then(response => response.json()).then(data => {
+    const educationContainer = document.getElementById("resume-education");
+    educationContainer.style.setProperty('--length', data.length);
+
+    data.forEach((education, index) => {
+        const listItem = document.createElement('li');
+        listItem.style.setProperty('--i', index + 1);
+        listItem.style.setProperty('--col', education.theme);
+        listItem.setAttribute('data-aos', 'fade-up');
+        listItem.setAttribute('data-aos-duration', '1500');
+
+        listItem.innerHTML = `
+            <div class="resume-list-title">
+                <img src="${education.logo}" alt="${education.institute}'s Logo" class="rounded-full w-16 h-16">
+                <h3>${education.institute} - ${education.major} (${education.time})</h3>
+            </div>
+            <p>${education.description.replace(/\n/g, '<br/>')}</p>
+        `;
+
+        educationContainer.appendChild(listItem);
+    });
+}).catch(error => {
+    console.error('Error fetching or processing JSON data:', error);
+});
+
+fetch('../json/organizations.json').then(response => response.json()).then(data => {
+    const organizationContainer = document.getElementById("resume-organization");
+    organizationContainer.style.setProperty('--length', data.length);
+
+    data.forEach((organization, index) => {
+        const listItem = document.createElement('li');
+        listItem.style.setProperty('--i', index + 1);
+        listItem.style.setProperty('--col', organization.theme);
+        listItem.setAttribute('data-aos', 'fade-up');
+        listItem.setAttribute('data-aos-duration', '1500');
+        listItem.innerHTML = `
+            <div class="resume-list-title">
+                <img src="${organization.logo}" alt="${organization.organization}'s Logo" class="rounded-full w-16 h-16">
+                <h3>${organization.organization}</h3>
+            </div>
+            <p>${organization.detail}</p>
+        `;
+
+        organizationContainer.appendChild(listItem);
     });
 }).catch(error => {
     console.error('Error fetching or processing JSON data:', error);
