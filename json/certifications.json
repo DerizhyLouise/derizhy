@@ -6,7 +6,7 @@
         "expirationDate": "-",
         "credentialId": "",
         "url": "https://progate.com/course_certificate/aa5bd43fqmh0xb",
-        "logo": "./assets/image/logo/progate.jpeg"
+        "logo": "../assets/image/logo/progate.jpeg"
     },
     {
         "certificateName": "SQL Course",
@@ -15,7 +15,7 @@
         "expirationDate": "-",
         "credentialId": "",
         "url": "https://progate.com/course_certificate/7e174d59qmlwt9",
-        "logo": "./assets/image/logo/progate.jpeg"
+        "logo": "../assets/image/logo/progate.jpeg"
     },
     {
         "certificateName": "Git Course",
@@ -24,7 +24,7 @@
         "expirationDate": "-",
         "credentialId": "",
         "url": "https://progate.com/course_certificate/42cc5892qmm1z4",
-        "logo": "./assets/image/logo/progate.jpeg"
+        "logo": "../assets/image/logo/progate.jpeg"
     },
     {
         "certificateName": "Python Course",
@@ -33,7 +33,7 @@
         "expirationDate": "-",
         "credentialId": "",
         "url": "https://progate.com/course_certificate/6e16b040qmq2uo",
-        "logo": "./assets/image/logo/progate.jpeg"
+        "logo": "../assets/image/logo/progate.jpeg"
     },
     {
         "certificateName": "Ruby Course",
@@ -42,7 +42,7 @@
         "expirationDate": "-",
         "credentialId": "",
         "url": "https://progate.com/course_certificate/61bc4aaeqmxa1s",
-        "logo": "./assets/image/logo/progate.jpeg"
+        "logo": "../assets/image/logo/progate.jpeg"
     },
     {
         "certificateName": "HTML & CSS Course",
@@ -51,7 +51,7 @@
         "expirationDate": "-",
         "credentialId": "",
         "url": "https://progate.com/course_certificate/c9218025qp8gz2",
-        "logo": "./assets/image/logo/progate.jpeg"
+        "logo": "../assets/image/logo/progate.jpeg"
     },
     {
         "certificateName": "Belajar Dasar Structured Query Language (SQL)",
@@ -60,7 +60,7 @@
         "expirationDate": "13 September 2026",
         "credentialId": "N9ZO57240PG5",
         "url": "https://dicoding.com/certificates/N9ZO57240PG5",
-        "logo": "./assets/image/logo/dicoding.jpeg"
+        "logo": "../assets/image/logo/dicoding.jpeg"
     },
     {
         "certificateName": "Belajar Dasar Data Science",
@@ -69,7 +69,7 @@
         "expirationDate": "14 September 2026",
         "credentialId": "98XWVRQ60PM3",
         "url": "https://dicoding.com/certificates/98XWVRQ60PM3",
-        "logo": "./assets/image/logo/dicoding.jpeg"
+        "logo": "../assets/image/logo/dicoding.jpeg"
     },
     {
         "certificateName": "Memulai Pemrograman dengan Python",
@@ -78,7 +78,7 @@
         "expirationDate": "14 September 2026",
         "credentialId": "1RXY0MVEKZVM",
         "url": "https://dicoding.com/certificates/1RXY0MVEKZVM",
-        "logo": "./assets/image/logo/dicoding.jpeg"
+        "logo": "../assets/image/logo/dicoding.jpeg"
     },
     {
         "certificateName": "Pengenalan Data pada Pemrograman (Data 101)",
@@ -87,7 +87,7 @@
         "expirationDate": "20 September 2026",
         "credentialId": "JMZV1975RXN9",
         "url": "https://dicoding.com/certificates/JMZV1975RXN9",
-        "logo": "./assets/image/logo/dicoding.jpeg"
+        "logo": "../assets/image/logo/dicoding.jpeg"
     },
     {
         "certificateName": "Pengenalan ke Logika Pemrograman (Programming Logic 101)",
@@ -96,7 +96,7 @@
         "expirationDate": "20 September 2026",
         "credentialId": "MRZMLQ1WNXYQ",
         "url": "https://dicoding.com/certificates/MRZMLQ1WNXYQ",
-        "logo": "./assets/image/logo/dicoding.jpeg"
+        "logo": "../assets/image/logo/dicoding.jpeg"
     },
     {
         "certificateName": "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
@@ -105,7 +105,7 @@
         "expirationDate": "20 September 2026",
         "credentialId": "EYX4Y6DK6ZDL",
         "url": "https://dicoding.com/certificates/EYX4Y6DK6ZDL",
-        "logo": "./assets/image/logo/dicoding.jpeg"
+        "logo": "../assets/image/logo/dicoding.jpeg"
     },
     {
         "certificateName": "Meniti Karier sebagai Software Developer",
@@ -114,7 +114,7 @@
         "expirationDate": "20 September 2026",
         "credentialId": "KEXLL061RXG2",
         "url": "https://dicoding.com/certificates/KEXLL061RXG2",
-        "logo": "./assets/image/logo/dicoding.jpeg"
+        "logo": "../assets/image/logo/dicoding.jpeg"
     },
     {
         "certificateName": "Python Dasar",
@@ -123,7 +123,7 @@
         "expirationDate": "21 September 2025",
         "credentialId": "9ipEP6NRTVu8EqP_A2TO3Q",
         "url": "https://skilvul.com/courses/python-dasar/student/clmskbj5800nv01ld604t8cd6",
-        "logo": "./assets/image/logo/skilvul.jpeg"
+        "logo": "../assets/image/logo/skilvul.jpeg"
     },
     {
         "certificateName": "Algorithm & Data Structures with Python",
@@ -132,7 +132,7 @@
         "expirationDate": "21 September 2025",
         "credentialId": "PmLtQtprQQCj6P-BIzKPTA",
         "url": "https://skilvul.com/courses/algorithm-and-data-structures-with-python/student/clmskbj5800nv01ld604t8cd6",
-        "logo": "./assets/image/logo/skilvul.jpeg"
+        "logo": "../assets/image/logo/skilvul.jpeg"
     },
     {
         "certificateName": "Python Lanjutan",
@@ -141,7 +141,7 @@
         "expirationDate": "21 September 2025",
         "credentialId": "M0VHIQWrQzuNTPaJ2c6ZIQ",
         "url": "https://skilvul.com/courses/python-lanjutan/student/clmskbj5800nv01ld604t8cd6",
-        "logo": "./assets/image/logo/skilvul.jpeg"
+        "logo": "../assets/image/logo/skilvul.jpeg"
     },
     {
         "certificateName": "Coding di Skilvul Playground",
@@ -150,7 +150,7 @@
         "expirationDate": "21 September 2025",
         "credentialId": "EsF9WtoeQ_q4OWjmyxh4KA",
         "url": "https://skilvul.com/paths/coding-di-skilvul-playground/student/clmskbj5800nv01ld604t8cd6",
-        "logo": "./assets/image/logo/skilvul.jpeg"
+        "logo": "../assets/image/logo/skilvul.jpeg"
     },
     {
         "certificateName": "SQL - The Fundamental SQL Bootcamp",
@@ -159,7 +159,7 @@
         "expirationDate": "-",
         "credentialId": "D1S7TCL0C",
         "url": "https://www.educba.com/certificate/?c=D1S7TCL0C",
-        "logo": "./assets/image/logo/educba.jpeg"
+        "logo": "../assets/image/logo/educba.jpeg"
     },
     {
         "certificateName": "Belajar Dasar Visualisasi Data",
@@ -168,7 +168,7 @@
         "expirationDate": "25 September 2026",
         "credentialId": "1OP81NRYQZQK",
         "url": "https://dicoding.com/certificates/1OP81NRYQZQK",
-        "logo": "./assets/image/logo/dicoding.jpeg"
+        "logo": "../assets/image/logo/dicoding.jpeg"
     },
     {
         "certificateName": "Belajar Dasar-Dasar DevOps",
@@ -177,7 +177,7 @@
         "expirationDate": "25 September 2026",
         "credentialId": "NVP78731VXR0",
         "url": "https://dicoding.com/certificates/NVP78731VXR0",
-        "logo": "./assets/image/logo/dicoding.jpeg"
+        "logo": "../assets/image/logo/dicoding.jpeg"
     },
     {
         "certificateName": "Belajar Dasar Git dengan Github",
@@ -186,7 +186,7 @@
         "expirationDate": "26 September 2026",
         "credentialId": "2VX36OD2QXYQ",
         "url": "https://dicoding.com/certificates/2VX36OD2QXYQ",
-        "logo": "./assets/image/logo/dicoding.jpeg"
+        "logo": "../assets/image/logo/dicoding.jpeg"
     },
     {
         "certificateName": "Belajar Dasar Manajemen Proyek",
@@ -195,7 +195,7 @@
         "expirationDate": "27 September 2026",
         "credentialId": "6RPN41DJ5X2M",
         "url": "https://dicoding.com/certificates/6RPN41DJ5X2M",
-        "logo": "./assets/image/logo/dicoding.jpeg"
+        "logo": "../assets/image/logo/dicoding.jpeg"
     },
     {
         "certificateName": "Problem Solving (Basic)",
@@ -204,7 +204,7 @@
         "expirationDate": "-",
         "credentialId": "28B363F0ABBC",
         "url": "https://www.hackerrank.com/certificates/28b363f0abbc",
-        "logo": "./assets/image/logo/hackerrank.jpeg"
+        "logo": "../assets/image/logo/hackerrank.jpeg"
     },
     {
         "certificateName": "Python (Basic)",
@@ -213,7 +213,7 @@
         "expirationDate": "-",
         "credentialId": "71434BD953F8",
         "url": "https://www.hackerrank.com/certificates/71434bd953f8",
-        "logo": "./assets/image/logo/hackerrank.jpeg"
+        "logo": "../assets/image/logo/hackerrank.jpeg"
     },
     {
         "certificateName": "SQL (Basic)",
@@ -222,7 +222,7 @@
         "expirationDate": "-",
         "credentialId": "7B542DF5E1E2",
         "url": "https://www.hackerrank.com/certificates/7b542df5e1e2",
-        "logo": "./assets/image/logo/hackerrank.jpeg"
+        "logo": "../assets/image/logo/hackerrank.jpeg"
     },
     {
         "certificateName": "SQL (Intermediate)",
@@ -231,7 +231,7 @@
         "expirationDate": "-",
         "credentialId": "AF3FE3D8C80F",
         "url": "https://www.hackerrank.com/certificates/af3fe3d8c80f",
-        "logo": "./assets/image/logo/hackerrank.jpeg"
+        "logo": "../assets/image/logo/hackerrank.jpeg"
     },
     {
         "certificateName": "SQL (Advanced)",
@@ -240,7 +240,7 @@
         "expirationDate": "-",
         "credentialId": "1002E7e4853B",
         "url": "https://www.hackerrank.com/certificates/1002e7e4853b",
-        "logo": "./assets/image/logo/hackerrank.jpeg"
+        "logo": "../assets/image/logo/hackerrank.jpeg"
     },
     {
         "certificateName": "Learn SQL",
@@ -249,7 +249,7 @@
         "expirationDate": "-",
         "credentialId": "653892EBA5",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "Analyze Data with SQL",
@@ -258,7 +258,7 @@
         "expirationDate": "-",
         "credentialId": "6538F13A4B",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/5cafb2d937090210d7df3652",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "Full-Stack Engineer",
@@ -267,7 +267,7 @@
         "expirationDate": "-",
         "credentialId": "653FE8BFEF",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/ffd0f42cce1a44e9a0108b365047a0a6",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "Design Databases with PostgreSQL",
@@ -276,7 +276,7 @@
         "expirationDate": "-",
         "credentialId": "653FED15E8",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/5f64e3b492de0000131ecbe0",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "How to Deploy a Website",
@@ -285,7 +285,7 @@
         "expirationDate": "-",
         "credentialId": "65409F1A8B",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/358e250fca144526a6b2934ff44fbc01",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "Build a Website with HTML, CSS, and Github Pages",
@@ -294,7 +294,7 @@
         "expirationDate": "-",
         "credentialId": "65407E3DEF",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/5cadfefe5f1de806e9704577",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "Create a Back-End App with JavaScript",
@@ -303,7 +303,7 @@
         "expirationDate": "-",
         "credentialId": "6540BD77C8",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/5cb678013709022f5b908913",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "Learn CSS-in-JS",
@@ -312,7 +312,7 @@
         "expirationDate": "-",
         "credentialId": "6540BF4FEF",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/ea3393a7494383023c17a96830b95be8",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "Learn Color Design",
@@ -321,7 +321,7 @@
         "expirationDate": "-",
         "credentialId": "65447DA748",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/0a6884fad1dbf4afe5df084d2ec1e7c3",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "How to Analyze Business Metrics with SQL",
@@ -330,7 +330,7 @@
         "expirationDate": "-",
         "credentialId": "654481B048",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/df5cd23425d43d23a967efebf18f5a8e",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "Back-End Engineer",
@@ -339,7 +339,7 @@
         "expirationDate": "-",
         "credentialId": "6545A67C79",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/810f53d14de24b938cc13c7c2af1e686",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "Learn Intermediate JavaScript",
@@ -348,7 +348,7 @@
         "expirationDate": "-",
         "credentialId": "6545CF1A29",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/512386fdc7f6c934f98b01e6afa8285a",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "Learn jQuery",
@@ -357,7 +357,7 @@
         "expirationDate": "-",
         "credentialId": "6545D11AF2",
         "url": "https://www.codecademy.com/profiles/derizheese/certificates/0becf7c1cd2bd715f24331dddd23425a",
-        "logo": "./assets/image/logo/codecademy.jpeg"
+        "logo": "../assets/image/logo/codecademy.jpeg"
     },
     {
         "certificateName": "Responsive Web Design",
@@ -366,7 +366,7 @@
         "expirationDate": "-",
         "credentialId": "",
         "url": "https://www.freecodecamp.org/certification/derizheese/responsive-web-design",
-        "logo": "./assets/image/logo/freecodecamp.jpeg"
+        "logo": "../assets/image/logo/freecodecamp.jpeg"
     },
     {
         "certificateName": "JavaScript Algorithms and Data Structures",
@@ -375,7 +375,7 @@
         "expirationDate": "-",
         "credentialId": "",
         "url": "https://www.freecodecamp.org/certification/derizheese/javascript-algorithms-and-data-structures",
-        "logo": "./assets/image/logo/freecodecamp.jpeg"
+        "logo": "../assets/image/logo/freecodecamp.jpeg"
     },
     {
         "certificateName": "RevoU - Data & Software Engineering",
@@ -384,7 +384,7 @@
         "expirationDate": "-",
         "credentialId": "CMP/12-23/6476273",
         "url": "https://certificates.revou.co/louise-derizhy-certificate-completion-kmb4.pdf",
-        "logo": "./assets/image/logo/revou.png"
+        "logo": "../assets/image/logo/revou.png"
     },
     {
         "certificateName": "Front End Development - HTML",
@@ -393,6 +393,6 @@
         "expirationDate": "-",
         "credentialId": "",
         "url": "https://verify.mygreatlearning.com/verify/WYKQLEKH",
-        "logo": "./assets/image/logo/greatlearning.png"
+        "logo": "../assets/image/logo/greatlearning.png"
     }
 ]

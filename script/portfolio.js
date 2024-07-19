@@ -131,6 +131,84 @@ fetch("../json/organizations.json")
 		console.error("Error fetching or processing JSON data:", error);
 	});
 
+fetch("../json/certifications.json")
+	.then((response) => response.json())
+	.then((data) => {
+		const certiContainer = document.getElementById(
+			"certification-container"
+		);
+
+		data.reverse();
+		data.forEach((certi) => {
+			const certiList = document.createElement("div");
+			certiList.className = `flex group mx-2 border-b-2 border-[#24305E] last:border-0`;
+
+			if (certi.credentialId) {
+				certiList.innerHTML = `
+                    <div class="flex items-center w-20 ml-4 my-4">
+                        <img src="${certi.logo}" class="w-14 h-14" alt="${certi.issuer}'s Logo">
+                    </div>
+                    <div class="flex-initial w-full mr-4 my-4">
+                        <h3 class="text-2xl font-bold m-0">${certi.certificateName}</h3>
+                        <p>${certi.issuer}</p>
+                        <p>Issued ${certi.issueDate}</p>
+                        <p class="mb-2">Credential ID ${certi.credentialId}</p>
+                        <a class="my-4 h-8 px-4 hover:bg-[#F76C6C] duration-300 border-2 border-[#F76C6C]" target='_blank' href="${certi.url}">Show Credential</a>
+                    </div>
+                `;
+			} else {
+				certiList.innerHTML = `
+                    <div class="flex items-center w-20 ml-4 my-4">
+                        <img src="${certi.logo}" class="w-14 h-14" alt="${certi.issuer}'s Logo">
+                    </div>
+                    <div class="flex-initial w-full mr-4 my-4 m-0">
+                        <h3 class="text-2xl font-bold">${certi.certificateName}</h3>
+                        <p>${certi.issuer}</p>
+                        <p class="mb-2">Issued ${certi.issueDate}</p>
+                        <a class="my-4 h-8 px-4 hover:bg-[#F76C6C] duration-300 border-2 border-[#F76C6C]" target='_blank' href="${certi.url}">Show Credential</a>
+                    </div>
+                `;
+			}
+
+			certiContainer.appendChild(certiList);
+		});
+	})
+	.catch((error) => {
+		console.error("Error fetching or processing JSON data:", error);
+	});
+
+fetch("../json/reviews.json")
+	.then((response) => response.json())
+	.then((data) => {
+		const reviewContainer = document.getElementById("review-container");
+
+		data.forEach((review) => {
+			const listItem = document.createElement("a");
+			listItem.className =
+				"h-[416px] w-[416px] max-sm:h-full bg-[#F8E9A1] no-underline flex flex-col p-4 rounded shadow-2xl";
+			listItem.setAttribute("data-aos", "fade-up");
+			listItem.setAttribute("data-aos-duration", "2000");
+			listItem.href = review.url;
+			listItem.target = "_blank";
+
+			listItem.innerHTML = `
+                <div class="flex justify-start items-center pb-2 border-b-2 border-[#E91E63]">
+                    <img class="rounded-full h-20 w-20" src="${review.img}" alt="${review.name}'s Pic">
+                    <div class="pl-2">
+                        <h3 class="text-2xl font-semibold">${review.name}</h3>
+                        <p class="text-sm">${review.role}</p>
+                    </div>
+                </div>
+                <q class="mt-2 text-center flex justify-center">${review.desc}</q>
+            `;
+
+			reviewContainer.appendChild(listItem);
+		});
+	})
+	.catch((error) => {
+		console.error("Error fetching or processing JSON data:", error);
+	});
+
 fetch("../json/projects.json")
 	.then((response) => response.json())
 	.then((data) => {
@@ -181,12 +259,12 @@ function openModal(id) {
                     <h3 class="text-4xl max-md:text-3xl text-white">${
 						project.title
 					}</h3>
-                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#E91E63]">Description</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#24305E]">Description</h3>
                     <p class="text-base mb-5 max-md:text-sm">${project.time}</p>
                     <p class="text-base mb-5 max-md:text-sm">${project.description.join(
 						""
 					)}</p>
-                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#E91E63]">Project's Media</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#24305E]">Project's Media</h3>
                 `;
 
 				const projectMedia = document.createElement("div");
@@ -200,13 +278,14 @@ function openModal(id) {
 				}
 
 				project.media.forEach((media) => {
-                    projectMedia.className = "flex flex-wrap items-center gap-12"
+					projectMedia.className =
+						"flex flex-wrap items-center gap-12";
 
 					const list = document.createElement("a");
 					list.className =
 						"relative group shadow-2xl h-60 w-60 overflow-hidden border-2 border-[#24305E] bg-[#F8E9A1]";
-                    list.setAttribute("href", media.url);
-                    list.setAttribute("target", "_blank");
+					list.setAttribute("href", media.url);
+					list.setAttribute("target", "_blank");
 
 					list.innerHTML = `
                         <div
@@ -259,7 +338,7 @@ function closeModal() {
 	modal.innerHTML = `
             <div class="p-12 w-full">
                 <div class="absolute right-20 top-5 z-50">
-                    <button class="bg-[#E91E63] rounded-full text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()">
+                    <button class="bg-[#24305E] rounded-full text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
