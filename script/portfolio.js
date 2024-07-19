@@ -3,7 +3,7 @@ fetch('../json/skills.json').then(response => response.json()).then(data => {
 
     data.forEach(skill => {
         const item = document.createElement('a');
-        item.className = "w-40 h-40 p-4 bg-[#F8E9A1] flex flex-col justify-center items-center gap-2 shadow-lg shadow-[#24305E] hover:scale-110 hover:duration-300 transition";
+        item.className = "w-40 h-40 p-4 bg-[#F76C6C] flex flex-col justify-center items-center gap-2 shadow-lg shadow-[#24305E] hover:scale-125 hover:duration-300 transition";
         item.setAttribute("href", skill.link);
         item.setAttribute("target", "_blank");
 
@@ -44,7 +44,7 @@ fetch('../json/experiences.json').then(response => response.json()).then(data =>
         listItem.setAttribute('data-aos-duration', '1500');
         listItem.innerHTML = `
             <div class="resume-list-title">
-                <img src="${experience.logo}" alt="${experience.company}'s Logo">
+                <img src="${experience.logo}" alt="${experience.company}'s Logo" class="bg-center bg-white rounded-full w-16 h-16 border border-[#24305E]">
                 <h3>${experience.position} - ${experience.company} (${experience.time})</h3>
             </div>
             <p>${experience.description.replace(/\n/g, '<br/>')}</p>
