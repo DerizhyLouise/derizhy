@@ -2,61 +2,61 @@
     {
         "skill": "Python",
         "icon": "fa-brands fa-python",
-        "theme": "#244D70"
+        "link": "https://www.python.org/"
     },
     {
         "skill": "SQL",
         "icon": "fa-light fa-database",
-        "theme": "#DB7533"
+        "link": "https://en.wikipedia.org/wiki/SQL"
     },
     {
         "skill": "HTML",
         "icon": "fa-brands fa-html5",
-        "theme": "#E44D26"
+        "link": "https://en.wikipedia.org/wiki/HTML"
     },
     {
         "skill": "CSS",
         "icon": "fa-brands fa-css3-alt",
-        "theme": "#264DE4"
+        "link": "https://en.wikipedia.org/wiki/CSS"
     },
     {
         "skill": "JavaScript",
         "icon": "fa-brands fa-js",
-        "theme": "#F7E018"
+        "link": "https://www.javascript.com/"
     },
     {
         "skill": "Java",
         "icon": "fa-brands fa-java",
-        "theme": "#5382A1"
+        "link": "https://www.java.com/en/"
     },
     {
         "skill": "Tailwind CSS",
-        "icon": "./assets/svg/tailwind.svg",
-        "theme": "#48AEB3"
+        "icon": "../assets/svg/tailwind.svg",
+        "link": "https://tailwindcss.com/"
     },
     {
         "skill": "PostgreSQL",
-        "icon": "./assets/svg/postgresql.svg",
-        "theme": "#305D8D"
+        "icon": "../assets/svg/postgresql.svg",
+        "link": "https://www.postgresql.org/"
     },
     {
         "skill": "Pandas",
-        "icon": "./assets/svg/pandas.svg",
-        "theme": "#150458"
+        "icon": "../assets/svg/pandas.svg",
+        "link": "https://pandas.pydata.org/"
     },
     {
         "skill": "Figma",
         "icon": "fa-brands fa-figma",
-        "theme": "#2D3038"
+        "link": "https://www.figma.com/"
     },
     {
         "skill": "Git",
         "icon": "fa-brands fa-git-alt",
-        "theme": "#F15233"
+        "link": "https://git-scm.com/"
     },
     {
         "skill": "TypeScript",
-        "icon": "./assets/svg/typescript.svg",
-        "theme": "#2D79C7"
+        "icon": "../assets/svg/typescript.svg",
+        "link": "https://www.typescriptlang.org/"
     }
 ]
