@@ -12,6 +12,8 @@
     <meta name="msvalidate.01" content="839E33E156A87D36BB5B0C63DC07965F" />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" type="text/css" />
     <link rel="stylesheet" href="../style/fa.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/theme.css">
@@ -80,24 +82,24 @@
                     <a href="#skills" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Skills</a>
                 </li>
                 <li>
-                    <a href="#Experiences" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Experiences</a>
+                    <a href="#experiences" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Experiences</a>
                 </li>
                 <li>
-                    <a href="#Educations" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Educations</a>
+                    <a href="#educations" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Educations</a>
                 </li>
                 <li>
-                    <a href="#Organizations"
+                    <a href="#organizations"
                         class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Organizations</a>
                 </li>
                 <li>
-                    <a href="#Projects" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Projects</a>
+                    <a href="#projects" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Projects</a>
                 </li>
                 <li>
-                    <a href="#Certifications"
+                    <a href="#certifications"
                         class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Certifications</a>
                 </li>
                 <li>
-                    <a href="#Reviews" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Reviews</a>
+                    <a href="#reviews" class="block w-full text-left px-4 py-2 hover:bg-[#F76C6C]">Reviews</a>
                 </li>
             </ul>
         </div>
@@ -154,9 +156,9 @@
         </div>
     </aside>
 
-    <div>
+    <div id="container">
         <section id="profile"
-            class="px-10 min-[1360px]:px-40 min-[1664px]:px-80 h-full w-full bg-[#A8D0E6] bg-[url('../assets/svg/bg-1.svg')] bg-cover bg-blend-multiply text-[#24305E] pt-32 pb-20 min-[892px]:pb-40">
+            class="px-10 min-[1360px]:px-40 min-[1664px]:px-80 h-full min-h-screen w-full bg-[#A8D0E6] bg-[url('../assets/svg/bg-1.svg')] bg-cover bg-blend-multiply text-[#24305E] pt-32 pb-20 min-[892px]:pb-40">
             <div data-aos="fade-up" data-aos-duration="2000">
                 <h2 class="text-5xl min-[574px]:text-6xl text-center font-semibold uppercase">Louise Derizhy</h2>
                 <div
@@ -223,18 +225,19 @@
             </div>
         </section>
 
-        <section id="skills"
-            class="px-10 xl:px-40 2xl:px-80 h-full lg:h-screen w-full text-[#24305E]">
-            <div class="pt-40 max-lg:pb-20">
-                <h2 class="text-6xl max-sm:text-5xl font-semibold text-center mb-10 uppercase">Skills</h2>
+        <section id="skills" class="px-10 xl:px-40 2xl:px-80 pb-20 h-full min-h-screen w-full text-[#24305E]">
+            <div class="pt-40">
+                <h2 class="text-6xl max-sm:text-5xl font-semibold text-center mb-10 uppercase" data-aos="fade-up"
+                    data-aos-duration="2000">Skills</h2>
                 <div id="skills-container" class="flex flex-wrap justify-center items-center gap-8"></div>
             </div>
         </section>
 
         <section id="experiences"
             class="px-10 xl:px-40 2xl:px-80 h-full w-full text-[#24305E] bg-[#F76C6C] bg-[url('../assets/svg/bg-4.svg')] bg-cover bg-blend-multiply">
-            <div class="pt-40 pb-20">
-                <h2 class="text-6xl max-sm:text-5xl font-semibold text-center uppercase">Experiences</h2>
+            <div class="pt-40 pb-40">
+                <h2 class="text-6xl max-sm:text-5xl font-semibold text-center uppercase" data-aos="fade-up"
+                    data-aos-duration="2000">Experiences</h2>
                 <div class="resume-listing-content">
                     <ol id="resume-experience" style="--length: 0"></ol>
                 </div>
@@ -243,8 +246,9 @@
 
         <section id="educations"
             class="px-10 xl:px-40 2xl:px-80 h-full w-full text-[#24305E] bg-[#A8D0E6] bg-[url('../assets/svg/bg-4.svg')] bg-cover bg-blend-multiply">
-            <div class="pt-40 pb-20">
-                <h2 class="text-6xl max-sm:text-5xl font-semibold text-center uppercase">Educations</h2>
+            <div class="pt-40 pb-40">
+                <h2 class="text-6xl max-sm:text-5xl font-semibold text-center uppercase" data-aos="fade-up"
+                    data-aos-duration="2000">Educations</h2>
                 <div class="resume-listing-content">
                     <ol id="resume-education" style="--length: 0"></ol>
                 </div>
@@ -253,10 +257,20 @@
 
         <section id="organizations"
             class="px-10 xl:px-40 2xl:px-80 h-full w-full text-[#24305E] bg-[#374785] bg-[url('../assets/svg/bg-4.svg')] bg-cover bg-blend-multiply">
-            <div class="pt-40 pb-20">
-                <h2 class="text-6xl max-sm:text-5xl font-semibold text-center uppercase text-[#F8E9A1]">Organizations</h2>
+            <div class="pt-40 pb-40">
+                <h2 class="text-6xl max-sm:text-5xl font-semibold text-center uppercase text-[#F8E9A1]"
+                    data-aos="fade-up" data-aos-duration="2000">Organizations</h2>
                 <div class="resume-listing-content">
                     <ol id="resume-organization" style="--length: 0"></ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="px-10 xl:px-40 2xl:px-80 h-full w-full">
+            <div class="pt-40 pb-40">
+                <h2 class="text-6xl max-sm:text-5xl font-semibold text-center mb-10 uppercase text-[#24305E]"
+                    data-aos="fade-up" data-aos-duration="2000">Projects</h2>
+                <div id="project-container" class="flex flex-wrap justify-center items-center gap-8 text-[#F8E9A1]">
                 </div>
             </div>
         </section>
@@ -315,11 +329,25 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>    
+
+    <div id="project-modal"
+        class="hidden fixed z-[999] inset-0 flex items-center justify-center mx-auto my-24 w-3/6 max-xl:w-5/6 bg-[#24305E] text-white overflow-y-auto max-md:w-full max-md:rounded-none rounded">
+        <div class="p-12 w-full">
+            <div class="absolute right-20 top-5 z-50">
+                <button
+                    class="bg-[#F76C6C] rounded-full text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed hover:bg-[#E91EA5] hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center"
+                    title="Close" onClick="closeModal()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="project-modal-info"></div>
+        </div>
+    </div>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
     <script src="../script/portfolio.js"></script>
     <script>
         AOS.init();

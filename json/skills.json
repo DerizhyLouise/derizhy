@@ -10,6 +10,21 @@
         "link": "https://en.wikipedia.org/wiki/SQL"
     },
     {
+        "skill": "Tailwind CSS",
+        "icon": "../assets/svg/tailwind.svg",
+        "link": "https://tailwindcss.com/"
+    },
+    {
+        "skill": "TypeScript",
+        "icon": "../assets/svg/typescript.svg",
+        "link": "https://www.typescriptlang.org/"
+    },
+    {
+        "skill": "JavaScript",
+        "icon": "fa-brands fa-js",
+        "link": "https://www.javascript.com/"
+    },
+    {
         "skill": "HTML",
         "icon": "fa-brands fa-html5",
         "link": "https://en.wikipedia.org/wiki/HTML"
@@ -20,19 +35,9 @@
         "link": "https://en.wikipedia.org/wiki/CSS"
     },
     {
-        "skill": "JavaScript",
-        "icon": "fa-brands fa-js",
-        "link": "https://www.javascript.com/"
-    },
-    {
         "skill": "Java",
         "icon": "fa-brands fa-java",
         "link": "https://www.java.com/en/"
-    },
-    {
-        "skill": "Tailwind CSS",
-        "icon": "../assets/svg/tailwind.svg",
-        "link": "https://tailwindcss.com/"
     },
     {
         "skill": "PostgreSQL",
@@ -53,10 +58,5 @@
         "skill": "Git",
         "icon": "fa-brands fa-git-alt",
         "link": "https://git-scm.com/"
-    },
-    {
-        "skill": "TypeScript",
-        "icon": "../assets/svg/typescript.svg",
-        "link": "https://www.typescriptlang.org/"
     }
 ]

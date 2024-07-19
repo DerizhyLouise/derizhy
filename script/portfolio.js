@@ -1,106 +1,286 @@
-fetch('../json/skills.json').then(response => response.json()).then(data => {
-    const skillsContainer = document.getElementById("skills-container");
+fetch("../json/skills.json")
+	.then((response) => response.json())
+	.then((data) => {
+		const skillsContainer = document.getElementById("skills-container");
 
-    data.forEach(skill => {
-        const item = document.createElement('a');
-        item.className = "w-40 h-40 p-4 bg-[#F76C6C] flex flex-col justify-center items-center gap-2 shadow-lg shadow-[#24305E] hover:scale-125 hover:duration-300 transition";
-        item.setAttribute("href", skill.link);
-        item.setAttribute("target", "_blank");
+		data.forEach((skill) => {
+			const item = document.createElement("a");
+			item.className =
+				"w-40 h-40 p-4 bg-[#F76C6C] flex flex-col justify-center items-center gap-2 shadow-lg shadow-[#24305E] hover:scale-125 hover:duration-300 transition";
+			item.setAttribute("href", skill.link);
+			item.setAttribute("target", "_blank");
+			item.setAttribute("data-aos", "fade-up");
+			item.setAttribute("data-aos-duration", "2000");
 
-        const iconElement = document.createElement('div');
-        iconElement.className = "text-5xl text-center";
-        if (skill.icon.startsWith('fa-')) {
-            iconElement.innerHTML = `<span class="${skill.icon}"></span>`;
-        } else {
-            const img = document.createElement('img');
-            img.src = skill.icon;
-            img.alt = skill.skill;
-            img.className = "w-12 h-12 mx-auto"
-            iconElement.appendChild(img);
-        }
+			const iconElement = document.createElement("div");
+			iconElement.className = "text-5xl text-center";
+			if (skill.icon.startsWith("fa-")) {
+				iconElement.innerHTML = `<span class="${skill.icon}"></span>`;
+			} else {
+				const img = document.createElement("img");
+				img.src = skill.icon;
+				img.alt = skill.skill;
+				img.className = "w-12 h-12 mx-auto";
+				iconElement.appendChild(img);
+			}
 
-        item.innerHTML = `
+			item.innerHTML = `
             ${iconElement.outerHTML}
             <h4 class="font-semibold text-center">
                 ${skill.skill}
             </h4>
         `;
 
-        skillsContainer.appendChild(item);
-    });
-}).catch(error => {
-    console.error('Error fetching or processing JSON data:', error);
-});
+			skillsContainer.appendChild(item);
+		});
+	})
+	.catch((error) => {
+		console.error("Error fetching or processing JSON data:", error);
+	});
 
-fetch('../json/experiences.json').then(response => response.json()).then(data => {
-    const experienceContainer = document.getElementById("resume-experience");
-    experienceContainer.style.setProperty('--length', data.length);
+fetch("../json/experiences.json")
+	.then((response) => response.json())
+	.then((data) => {
+		const experienceContainer =
+			document.getElementById("resume-experience");
+		experienceContainer.style.setProperty("--length", data.length);
 
-    data.forEach((experience, index) => {
-        const listItem = document.createElement('li');
-        listItem.style.setProperty('--i', index + 1);
-        listItem.style.setProperty('--col', experience.theme);
-        listItem.setAttribute('data-aos', 'fade-up');
-        listItem.setAttribute('data-aos-duration', '1500');
-        listItem.innerHTML = `
+		data.forEach((experience, index) => {
+			const listItem = document.createElement("li");
+			listItem.style.setProperty("--i", index + 1);
+			listItem.style.setProperty("--col", experience.theme);
+			listItem.setAttribute("data-aos", "fade-up");
+			listItem.setAttribute("data-aos-duration", "1500");
+			listItem.innerHTML = `
             <div class="resume-list-title">
-                <img src="${experience.logo}" alt="${experience.company}'s Logo" class="rounded-full w-16 h-16">
-                <h3>${experience.position} - ${experience.company} (${experience.time})</h3>
+                <img src="${experience.logo}" alt="${
+				experience.company
+			}"s Logo" class="rounded-full w-16 h-16">
+                <h3>${experience.position} - ${experience.company} (${
+				experience.time
+			})</h3>
             </div>
-            <p>${experience.description.replace(/\n/g, '<br/>')}</p>
+            <p>${experience.description.replace(/\n/g, "<br/>")}</p>
         `;
 
-        experienceContainer.appendChild(listItem);
-    });
-}).catch(error => {
-    console.error('Error fetching or processing JSON data:', error);
-});
+			experienceContainer.appendChild(listItem);
+		});
+	})
+	.catch((error) => {
+		console.error("Error fetching or processing JSON data:", error);
+	});
 
-fetch('../json/educations.json').then(response => response.json()).then(data => {
-    const educationContainer = document.getElementById("resume-education");
-    educationContainer.style.setProperty('--length', data.length);
+fetch("../json/educations.json")
+	.then((response) => response.json())
+	.then((data) => {
+		const educationContainer = document.getElementById("resume-education");
+		educationContainer.style.setProperty("--length", data.length);
 
-    data.forEach((education, index) => {
-        const listItem = document.createElement('li');
-        listItem.style.setProperty('--i', index + 1);
-        listItem.style.setProperty('--col', education.theme);
-        listItem.setAttribute('data-aos', 'fade-up');
-        listItem.setAttribute('data-aos-duration', '1500');
+		data.forEach((education, index) => {
+			const listItem = document.createElement("li");
+			listItem.style.setProperty("--i", index + 1);
+			listItem.style.setProperty("--col", education.theme);
+			listItem.setAttribute("data-aos", "fade-up");
+			listItem.setAttribute("data-aos-duration", "1500");
 
-        listItem.innerHTML = `
+			listItem.innerHTML = `
             <div class="resume-list-title">
-                <img src="${education.logo}" alt="${education.institute}'s Logo" class="rounded-full w-16 h-16">
-                <h3>${education.institute} - ${education.major} (${education.time})</h3>
+                <img src="${education.logo}" alt="${
+				education.institute
+			}"s Logo" class="rounded-full w-16 h-16">
+                <h3>${education.institute} - ${education.major} (${
+				education.time
+			})</h3>
             </div>
-            <p>${education.description.replace(/\n/g, '<br/>')}</p>
+            <p>${education.description.replace(/\n/g, "<br/>")}</p>
         `;
 
-        educationContainer.appendChild(listItem);
-    });
-}).catch(error => {
-    console.error('Error fetching or processing JSON data:', error);
-});
+			educationContainer.appendChild(listItem);
+		});
+	})
+	.catch((error) => {
+		console.error("Error fetching or processing JSON data:", error);
+	});
 
-fetch('../json/organizations.json').then(response => response.json()).then(data => {
-    const organizationContainer = document.getElementById("resume-organization");
-    organizationContainer.style.setProperty('--length', data.length);
+fetch("../json/organizations.json")
+	.then((response) => response.json())
+	.then((data) => {
+		const organizationContainer = document.getElementById(
+			"resume-organization"
+		);
+		organizationContainer.style.setProperty("--length", data.length);
 
-    data.forEach((organization, index) => {
-        const listItem = document.createElement('li');
-        listItem.style.setProperty('--i', index + 1);
-        listItem.style.setProperty('--col', organization.theme);
-        listItem.setAttribute('data-aos', 'fade-up');
-        listItem.setAttribute('data-aos-duration', '1500');
-        listItem.innerHTML = `
+		data.forEach((organization, index) => {
+			const listItem = document.createElement("li");
+			listItem.style.setProperty("--i", index + 1);
+			listItem.style.setProperty("--col", organization.theme);
+			listItem.setAttribute("data-aos", "fade-up");
+			listItem.setAttribute("data-aos-duration", "1500");
+			listItem.innerHTML = `
             <div class="resume-list-title">
-                <img src="${organization.logo}" alt="${organization.organization}'s Logo" class="rounded-full w-16 h-16">
+                <img src="${organization.logo}" alt="${organization.organization}"s Logo" class="rounded-full w-16 h-16">
                 <h3>${organization.organization}</h3>
             </div>
             <p>${organization.detail}</p>
         `;
 
-        organizationContainer.appendChild(listItem);
-    });
-}).catch(error => {
-    console.error('Error fetching or processing JSON data:', error);
-});
+			organizationContainer.appendChild(listItem);
+		});
+	})
+	.catch((error) => {
+		console.error("Error fetching or processing JSON data:", error);
+	});
+
+fetch("../json/projects.json")
+	.then((response) => response.json())
+	.then((data) => {
+		const projectsContainer = document.getElementById("project-container");
+
+		data.forEach((project) => {
+			const item = document.createElement("button");
+			item.className =
+				"relative group shadow-2xl h-96 w-96 overflow-hidden border-2 border-[#24305E] bg-[#F8E9A1]";
+			item.onclick = function () {
+				openModal(project.id);
+			};
+			item.setAttribute("data-aos", "fade-up");
+			item.setAttribute("data-aos-duration", "2000");
+
+			item.innerHTML = `
+                <div
+                    class="group-hover:-translate-y-full flex justify-center items-center duration-300 ease-in-out w-full h-full bg-[#F8E9A1]">
+                    <img src="${project.img}" class="h-full w-full object-cover" alt="${project.title} Image">
+                </div>
+                <div class="bg-[#24305E] p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
+                    <h2 class="text-4xl font-semibold text-center">${project.title}</h2>
+                </div>
+            `;
+
+			projectsContainer.appendChild(item);
+		});
+	})
+	.catch((error) => {
+		console.error("Error fetching or processing JSON data:", error);
+	});
+
+function openModal(id) {
+	const modal = document.getElementById("project-modal");
+
+	if (isOpen) {
+		return;
+	}
+
+	fetch("../json/projects.json")
+		.then((response) => response.json())
+		.then((data) => {
+			const project = data.find((item) => item.id === parseInt(id));
+			const content = document.querySelector(".project-modal-info");
+
+			if (project) {
+				content.innerHTML += `
+                    <h3 class="text-4xl max-md:text-3xl text-white">${
+						project.title
+					}</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#E91E63]">Description</h3>
+                    <p class="text-base mb-5 max-md:text-sm">${project.time}</p>
+                    <p class="text-base mb-5 max-md:text-sm">${project.description.join(
+						""
+					)}</p>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#E91E63]">Project's Media</h3>
+                `;
+
+				const projectMedia = document.createElement("div");
+
+				if (project.media.length === 0) {
+					const empty = document.createElement("p");
+					empty.innerHTML =
+						"No media available in this project.<br/>I will upload the media soon after the project has done.";
+					empty.className = "mt-2";
+					projectMedia.append(empty);
+				}
+
+				project.media.forEach((media) => {
+                    projectMedia.className = "flex flex-wrap items-center gap-12"
+
+					const list = document.createElement("a");
+					list.className =
+						"relative group shadow-2xl h-60 w-60 overflow-hidden border-2 border-[#24305E] bg-[#F8E9A1]";
+                    list.setAttribute("href", media.url);
+                    list.setAttribute("target", "_blank");
+
+					list.innerHTML = `
+                        <div
+                            class="group-hover:-translate-y-full text-[#24305E] flex justify-center items-center duration-300 ease-in-out w-full h-full bg-[#F8E9A1]">
+                            <div class="flex flex-col items-center justify-center">
+                                <span class="${media.typeSymbol} text-6xl"></span>
+                                <h2 class="text-2xl font-semibold text-center">${media.type}</h2>
+                            </div>
+                        </div>
+                        <div class="bg-[#F76C6C] text-[#24305E] p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
+                            <h2 class="text-2xl font-semibold text-center">${media.title}</h2>
+                        </div>
+                    `;
+
+					projectMedia.append(list);
+				});
+
+				content.append(projectMedia);
+
+				modal.onclick = function (event) {
+					event.stopPropagation();
+				};
+			}
+
+			const header = document.getElementsByTagName("header")[0];
+			const main = document.getElementById("container");
+			const sideBar = document.getElementsByTagName("aside")[0];
+			const footer = document.getElementsByTagName("footer")[0];
+
+			header.style.filter = "blur(20px)";
+			main.style.filter = "blur(20px)";
+			sideBar.style.filter = "blur(20px)";
+			footer.style.filter = "blur(20px)";
+
+			isOpen = true;
+			modal.style.display = "block";
+
+			window.onclick = function () {
+				closeModal();
+			};
+		})
+		.catch((error) => {
+			console.error("Error fetching or processing JSON data:", error);
+		});
+}
+
+function closeModal() {
+	const modal = document.getElementById("project-modal");
+	modal.style.display = "none";
+	modal.innerHTML = `
+            <div class="p-12 w-full">
+                <div class="absolute right-20 top-5 z-50">
+                    <button class="bg-[#E91E63] rounded-full text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed hover:bg-[#E91EA5] hover:ease-in-out hover:scale-105 hover:rotate-[360deg] hover:duration-300 transition-transform transform origin-center" title="Close" onClick="closeModal()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="project-modal-info"></div>
+            </div>
+        `;
+
+	const header = document.getElementsByTagName("header")[0];
+	const main = document.getElementById("container");
+	const sideBar = document.getElementsByTagName("aside")[0];
+	const footer = document.getElementsByTagName("footer")[0];
+
+	header.style.filter = "none";
+	main.style.filter = "none";
+	sideBar.style.filter = "none";
+	footer.style.filter = "none";
+
+	isOpen = false;
+	modal.onclick = null;
+}
+
+let isOpen = false;
+showNavbar();
+document.body.addEventListener("click", handleOutsideClick);
