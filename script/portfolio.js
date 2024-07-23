@@ -145,27 +145,27 @@ fetch("../json/certifications.json")
 
 			if (certi.credentialId) {
 				certiList.innerHTML = `
-                    <div class="flex items-center w-20 ml-4 my-4">
+                    <div class="flex items-center w-20 mr-4 sm:mr-2 ml-4">
                         <img src="${certi.logo}" class="w-14 h-14" alt="${certi.issuer}'s Logo">
                     </div>
                     <div class="flex-initial w-full mr-4 my-4">
-                        <h3 class="text-2xl font-bold m-0">${certi.certificateName}</h3>
-                        <p>${certi.issuer}</p>
-                        <p>Issued ${certi.issueDate}</p>
-                        <p class="mb-2">Credential ID ${certi.credentialId}</p>
-                        <a class="my-4 h-8 px-4 hover:bg-[#F76C6C] duration-300 border-2 border-[#F76C6C]" target='_blank' href="${certi.url}">Show Credential</a>
+                        <h3 class="text-lg sm:text-2xl font-bold m-0">${certi.certificateName}</h3>
+                        <p class="text-sm sm:text-lg">${certi.issuer}</p>
+                        <p class="text-sm sm:text-lg">Issued ${certi.issueDate}</p>
+                        <p class="mb-2 text-sm sm:text-lg">Credential ID ${certi.credentialId}</p>
+                        <a class="my-4 h-8 px-4 text-sm sm:text-lg hover:bg-[#F76C6C] duration-300 border-2 border-[#F76C6C]" target='_blank' href="${certi.url}">Show Credential</a>
                     </div>
                 `;
 			} else {
 				certiList.innerHTML = `
-                    <div class="flex items-center w-20 ml-4 my-4">
+                    <div class="flex items-center w-20 mr-4 sm:mr-2 ml-4">
                         <img src="${certi.logo}" class="w-14 h-14" alt="${certi.issuer}'s Logo">
                     </div>
                     <div class="flex-initial w-full mr-4 my-4 m-0">
-                        <h3 class="text-2xl font-bold">${certi.certificateName}</h3>
-                        <p>${certi.issuer}</p>
-                        <p class="mb-2">Issued ${certi.issueDate}</p>
-                        <a class="my-4 h-8 px-4 hover:bg-[#F76C6C] duration-300 border-2 border-[#F76C6C]" target='_blank' href="${certi.url}">Show Credential</a>
+                        <h3 class="text-lg sm:text-2xl font-bold">${certi.certificateName}</h3>
+                        <p class="text-sm sm:text-lg">${certi.issuer}</p>
+                        <p class="mb-2 text-sm sm:text-lg">Issued ${certi.issueDate}</p>
+                        <a class="my-4 h-8 px-4 text-sm sm:text-lg hover:bg-[#F76C6C] duration-300 border-2 border-[#F76C6C]" target='_blank' href="${certi.url}">Show Credential</a>
                     </div>
                 `;
 			}
@@ -279,7 +279,7 @@ function openModal(id) {
 
 				project.media.forEach((media) => {
 					projectMedia.className =
-						"flex flex-wrap items-center gap-12";
+						"flex flex-wrap items-center gap-4 sm:gap-12";
 
 					const list = document.createElement("a");
 					list.className =
