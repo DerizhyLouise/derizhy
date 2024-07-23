@@ -47,17 +47,17 @@
     },
     {
         "id": 7,
-        "title": "Portfolio",
+        "title": "Personal Website",
         "img": "../assets/image/project/portfolio.png",
         "media": [
             {
                 "title": "Source Code",
-                "url": "https://github.com/DerizhyLouise/profile",
+                "url": "https://github.com/DerizhyLouise/derizhy",
                 "type": "Github",
                 "typeSymbol": "fa-brands fa-github"
             },
             {
-                "title": "Portfolio Website",
+                "title": "Personal Website",
                 "url": "https://derizhy.xyz",
                 "type": "Web",
                 "typeSymbol": "fa-solid fa-browser"
@@ -65,7 +65,7 @@
         ],
         "time": "Dec 2023 - Present",
         "description": [
-            "My portfolio website deployed with Github Pages. This website built with pure HTML, CSS, and JavaScript without any framework."
+            "My personal website deployed with Github Pages. This website built with HTML, Tailwind CSS, and JavaScript without any framework."
         ]
     },
     {

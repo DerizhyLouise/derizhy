@@ -256,7 +256,7 @@ function openModal(id) {
 
 			if (project) {
 				content.innerHTML += `
-                    <h3 class="text-4xl max-md:text-3xl text-white">${
+                    <h3 class="text-4xl max-md:text-3xl text-white font-bold">${
 						project.title
 					}</h3>
                     <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-[#F76C6C]">Description</h3>

@@ -126,6 +126,10 @@
 	content: "\f2fd";
 }
 
+.fa-node-js:before {
+	content: "\f3d3";
+}
+
 @font-face {
 	font-family: "Font Awesome 6 Pro";
 	font-style: normal;
