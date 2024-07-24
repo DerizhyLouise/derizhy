@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" type="text/css" />
     <link rel="stylesheet" href="../style/fa.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/theme.css">
@@ -184,7 +183,7 @@
                     proficient in
                     <span class="font-semibold">JavaScript</span> and <span class="font-semibold">TypeScript</span>, and
                     skilled in creating <span class="font-semibold">back-end
-                    servers</span> using <span class="font-semibold">Java Spring Boot</span>.
+                        servers</span> using <span class="font-semibold">Java Spring Boot</span>.
                     Additionally, I have strong <span class="font-semibold">SQL</span> skills, especially with <span
                         class="font-semibold">PostgreSQL</span>,
                     and can utilize <span class="font-semibold">Python</span> for
@@ -254,8 +253,8 @@
         <section id="organizations"
             class="px-10 xl:px-40 2xl:px-80 h-full w-full text-[#24305E] bg-[#374785] bg-[url('../assets/svg/bg-4.svg')] bg-cover bg-blend-multiply">
             <div class="pt-40 pb-40">
-                <h2 class="text-4xl sm:text-6xl font-semibold text-center uppercase text-[#F8E9A1]"
-                    data-aos="fade-up" data-aos-duration="2000">Organizations</h2>
+                <h2 class="text-4xl sm:text-6xl font-semibold text-center uppercase text-[#F8E9A1]" data-aos="fade-up"
+                    data-aos-duration="2000">Organizations</h2>
                 <div class="resume-listing-content">
                     <ol id="resume-organization" style="--length: 0"></ol>
                 </div>
@@ -369,13 +368,13 @@
     <script>
         AOS.init();
 
-        $(document).keydown(function (event) {
-            if (event.keyCode == 123) {
-                return false;
+        document.addEventListener('keydown', function (event) {
+            if (event.keyCode === 123) {
+                event.preventDefault();
             }
 
-            if ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.keyCode == 67 || event.keyCode == 73)) {
-                return false;
+            if ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.keyCode === 67 || event.keyCode === 73)) {
+                event.preventDefault();
             }
         });
     </script>

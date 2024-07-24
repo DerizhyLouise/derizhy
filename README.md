@@ -9,7 +9,6 @@
 | Font Awesome           | [Font Awesome](https://fontawesome.com/)|
 | Animated on Scroll     | [AOS](https://michalsnik.github.io/aos) |
 | Flowbite               | [Flowbite](https://flowbite.com/)       |
-| daisyUI                | [daisyUI](https://daisyui.com/)         |
 
 #### Inspiration
 
