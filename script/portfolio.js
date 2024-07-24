@@ -4,11 +4,7 @@ fetch("../json/skills.json")
 		const skillsContainer = document.getElementById("skills-container");
 
 		data.forEach((skill) => {
-			const item = document.createElement("a");
-			item.className =
-				"w-40 h-40 p-4 bg-[#F76C6C] flex flex-col justify-center items-center gap-2 shadow-lg shadow-[#24305E] hover:scale-125 hover:duration-300 transition";
-			item.setAttribute("href", skill.link);
-			item.setAttribute("target", "_blank");
+			const item = document.createElement("div");
 			item.setAttribute("data-aos", "fade-up");
 			item.setAttribute("data-aos-duration", "2000");
 
@@ -25,11 +21,13 @@ fetch("../json/skills.json")
 			}
 
 			item.innerHTML = `
-            ${iconElement.outerHTML}
-            <h4 class="font-semibold text-center">
-                ${skill.skill}
-            </h4>
-        `;
+				<a href="${skill.link}" target="_blank" class="w-40 h-40 p-4 bg-[#F76C6C] flex flex-col justify-center items-center gap-2 shadow-lg shadow-[#24305E] hover:scale-125 hover:duration-300 transition">
+					${iconElement.outerHTML}
+					<h4 class="font-semibold text-center">
+						${skill.skill}
+					</h4>
+				</a>
+			`;
 
 			skillsContainer.appendChild(item);
 		});
@@ -199,7 +197,7 @@ fetch("../json/reviews.json")
                         <p class="text-sm">${review.role}</p>
                     </div>
                 </div>
-                <q class="mt-2 text-center flex justify-center">${review.desc}</q>
+                <q class="mt-2 text-center flex justify-center italic">${review.desc}</q>
             `;
 
 			reviewContainer.appendChild(listItem);
