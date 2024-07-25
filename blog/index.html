@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Louise Derizhy">
+    <meta name="keywords"
+        content="louise, louis, derizhy, derizh, deriz, derizheese, engineer, software engineer, html, css, java, javascript, js, sql, database, analytics, programmer, developer, frontend, backend, fullstack, svelte, tailwindcss, tailwind">
+    <meta name="description" content="Portfolio of Louise Derizhy, a Software Engineer">
+    <meta name="google-site-verification" content="TPqfPlfZzFnMuO_qkHXqtXeG3T1hviV74rQVJvj3XoQ" />
+    <meta name="msvalidate.01" content="839E33E156A87D36BB5B0C63DC07965F" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="../style/fa.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/theme.css">
+    <link rel="icon" href="../assets/svg/favicon.svg" type="image/svg+xml">
+    <title>Louise Derizhy - Blog</title>
+</head>
+
+<body class="select-none bg-[url('../assets/svg/bg-3.svg')] bg-fixed bg-cover bg-slate-200 bg-blend-multiply">
+    <header
+        class="fixed w-full h-28 bg-darkblue flex items-center justify-between px-10 md:px-20 xl:px-40 2xl:px-60 py-2 fixed z-30 text-white">
+        <div class="w-full">
+            <a href="../" class="flex items-center gap-4">
+                <img class="h-24" src="../assets/svg/logo.svg" alt="logo">
+                <h1 class="text-4xl gradient-text">Louise Derizhy</h1>
+            </a>
+        </div>
+        <nav class="font-semibold text-xl justify-self-end w-[768px] hidden lg:block">
+            <ul class="flex justify-end gap-4 lg:gap-16">
+                <li
+                    class="flex items-center border-b-2 border-yellow border-opacity-0 transition ease-in-out hover:scale-125 hover:border-opacity-100 hover:duration-300 cursor-pointer">
+                    <button id="dropdownHome" data-dropdown-toggle="dropdownHome2">
+                        Home <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </li>
+                <li
+                    class="flex items-center border-b-2 border-yellow border-opacity-0 transition ease-in-out hover:scale-125 hover:border-opacity-100 hover:duration-300 cursor-pointer">
+                    <button id="dropdownPort" data-dropdown-toggle="dropdownPort2">
+                        Portfolio <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </li>
+                <li
+                    class="text-yellow flex items-center border-b-2 border-yellow border-opacity-0 transition ease-in-out hover:scale-125 hover:border-opacity-100 hover:duration-300 cursor-pointer">
+                    <a href="#">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="flex justify-end w-6/12 lg:hidden">
+            <button class="text-3xl hover:duration-300 hover:scale-150 transition" type="button"
+                data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+                data-drawer-placement="right" aria-controls="drawer-navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="dropdownHome2" class="z-10 hidden bg-darkblue border-2 border-yellow rounded-lg shadow w-28">
+            <ul class="py-2 text-sm">
+                <li>
+                    <a href="../#home" class="block w-full text-left px-4 py-2 hover:bg-red">Home</a>
+                </li>
+                <li>
+                    <a href="../#about" class="block w-full text-left px-4 py-2 hover:bg-red">About Me</a>
+                </li>
+                <li>
+                    <a href="../#know-more" class="block w-full text-left px-4 py-2 hover:bg-red">What I Do?</a>
+                </li>
+            </ul>
+        </div>
+        <div id="dropdownPort2" class="z-10 hidden bg-darkblue border-2 border-yellow rounded-lg shadow w-36">
+            <ul class="py-2 text-sm">
+                <li>
+                    <a href="../portfolio/#profile" class="block w-full text-left px-4 py-2 hover:bg-red">Profile</a>
+                </li>
+                <li>
+                    <a href="../portfolio/#skills" class="block w-full text-left px-4 py-2 hover:bg-red">Skills</a>
+                </li>
+                <li>
+                    <a href="../portfolio/#experiences"
+                        class="block w-full text-left px-4 py-2 hover:bg-red">Experiences</a>
+                </li>
+                <li>
+                    <a href="../portfolio/#educations"
+                        class="block w-full text-left px-4 py-2 hover:bg-red">Educations</a>
+                </li>
+                <li>
+                    <a href="../portfolio/#organizations"
+                        class="block w-full text-left px-4 py-2 hover:bg-red">Organizations</a>
+                </li>
+                <li>
+                    <a href="../portfolio/#projects" class="block w-full text-left px-4 py-2 hover:bg-red">Projects</a>
+                </li>
+                <li>
+                    <a href="../portfolio/#certifications"
+                        class="block w-full text-left px-4 py-2 hover:bg-red">Certifications</a>
+                </li>
+                <li>
+                    <a href="../portfolio/#reviews" class="block w-full text-left px-4 py-2 hover:bg-red">Reviews</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <aside>
+        <div id="drawer-navigation"
+            class="fixed top-0 right-0 z-40 h-screen p-8 overflow-y-auto transition-transform translate-x-full bg-blue w-96"
+            tabindex="-1" aria-labelledby="drawer-navigation-label">
+            <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+                class="text-white bg-transparent hover:bg-red rounded-lg text-lg w-12 h-12 absolute top-2.5 end-2.5 inline-flex items-center justify-center group">
+                <span class="fa-solid fa-xmark group-hover:rotate-180 group-hover:duration-500 transition"></span>
+            </button>
+            <div class="py-4 flex flex-col gap-4">
+                <div>
+                    <h4 class="text-3xl font-semibold text-yellow mb-2">Home</h4>
+                    <div class="flex text-white flex-col text-xl">
+                        <a href="../#home" class="hover:bg-red pl-4 p-2 rounded-lg">Home</a>
+                        <a href="../#about" class="hover:bg-red pl-4 p-2 rounded-lg">About Me</a>
+                        <a href="../#know-more" class="hover:bg-red pl-4 p-2 rounded-lg">What I Do?</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-3xl font-semibold text-yellow mb-2">Portfolio</h4>
+                    <div class="flex text-white flex-col text-xl">
+                        <a href="../portfolio/#profile" class="hover:bg-red pl-4 p-2 rounded-lg">Profile</a>
+                        <a href="../portfolio/#skills" class="hover:bg-red pl-4 p-2 rounded-lg">Skills</a>
+                        <a href="../portfolio/#experiences" class="hover:bg-red pl-4 p-2 rounded-lg">Experiences</a>
+                        <a href="../portfolio/#educations" class="hover:bg-red pl-4 p-2 rounded-lg">Educations</a>
+                        <a href="../portfolio/#organizations" class="hover:bg-red pl-4 p-2 rounded-lg">Organizations</a>
+                        <a href="../portfolio/#projects" class="hover:bg-red pl-4 p-2 rounded-lg">Projects</a>
+                        <a href="../portfolio/#certifications"
+                            class="hover:bg-red pl-4 p-2 rounded-lg">Certifications</a>
+                        <a href="../portfolio/#reviews" class="hover:bg-red pl-4 p-2 rounded-lg">Reviews</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-3xl font-semibold text-yellow mb-2">Blog</h4>
+                    <div class="flex text-white flex-col text-xl">
+                        <a href="#" class="hover:bg-red pl-4 p-2 rounded-lg">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div id="container">
+        <section id="experiences"
+            class="h-full min-h-screen w-full text-darkblue bg-softblue">
+            <div class="flex items-center justify-center h-screen">
+                <h2 class="text-4xl sm:text-6xl font-semibold text-center uppercase" data-aos="fade-up"
+                    data-aos-duration="2000">Page Under Construction</h2>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-darkblue py-2">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Portfolio</h4>
+                    <ul>
+                        <li><a href="../portfolio/#profile" target="">Profile</a></li>
+                        <li><a href="../portfolio/#skills" target="">Skills</a></li>
+                        <li><a href="../portfolio/#experiences" target="">Experiences</a></li>
+                        <li><a href="../portfolio/#educations" target="">Educations</a></li>
+                        <li><a href="../portfolio/#organizations" target="">Organizations</a></li>
+                        <li><a href="../portfolio/#projects" target="">Projects</a></li>
+                        <li><a href="../portfolio/#certifications" target="">Certifications</a></li>
+                        <li><a href="../portfolio/#reviews" target="">Review</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More About Me</h4>
+                    <ul>
+                        <li><a href="https://www.worldcubeassociation.org/persons/2018DERI01"
+                                target="_blank">Speedcubing</a></li>
+                        <li><a href="https://www.16personalities.com/profiles/39b4ed81dddba"
+                                target="_blank">Myers-Briggs Type Indicator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Me</h4>
+                    <ul>
+                        <li><a href="https://wa.me/6282367319569" target="_blank">Whatsapp</a></li>
+                        <li><a href="mailto:louise.derizhy@gmail.com" target="_blank">Email</a></li>
+                        <li><a href="https://t.me/derizhylouise" target="_blank">Telegram</a></li>
+                        <li><a href="https://line.me/R/ti/p/eo96yTt8Ix" target="_blank">LINE</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Find Me</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/derizheese" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/derizhylouise" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/louisederizhy/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/DerizhyLouise" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.tiktok.com/@derizheese" target="_blank"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://discordapp.com/users/668451566277099521" target="_blank"><i
+                                class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="../script/main.js"></script>
+</body>
+
+</html>
