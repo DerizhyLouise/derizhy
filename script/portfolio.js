@@ -1,4 +1,4 @@
-fetch("../json/skills.json")
+fetch("../assets/json/skills.json")
 	.then((response) => response.json())
 	.then((data) => {
 		const skillsContainer = document.getElementById("skills-container");
@@ -36,7 +36,7 @@ fetch("../json/skills.json")
 		console.error("Error fetching or processing JSON data:", error);
 	});
 
-fetch("../json/experiences.json")
+fetch("../assets/json/experiences.json")
 	.then((response) => response.json())
 	.then((data) => {
 		const experienceContainer =
@@ -68,7 +68,7 @@ fetch("../json/experiences.json")
 		console.error("Error fetching or processing JSON data:", error);
 	});
 
-fetch("../json/educations.json")
+fetch("../assets/json/educations.json")
 	.then((response) => response.json())
 	.then((data) => {
 		const educationContainer = document.getElementById("resume-education");
@@ -100,7 +100,7 @@ fetch("../json/educations.json")
 		console.error("Error fetching or processing JSON data:", error);
 	});
 
-fetch("../json/organizations.json")
+fetch("../assets/json/organizations.json")
 	.then((response) => response.json())
 	.then((data) => {
 		const organizationContainer = document.getElementById(
@@ -129,7 +129,7 @@ fetch("../json/organizations.json")
 		console.error("Error fetching or processing JSON data:", error);
 	});
 
-fetch("../json/certifications.json")
+fetch("../assets/json/certifications.json")
 	.then((response) => response.json())
 	.then((data) => {
 		const certiContainer = document.getElementById(
@@ -175,7 +175,7 @@ fetch("../json/certifications.json")
 		console.error("Error fetching or processing JSON data:", error);
 	});
 
-fetch("../json/reviews.json")
+fetch("../assets/json/reviews.json")
 	.then((response) => response.json())
 	.then((data) => {
 		const reviewContainer = document.getElementById("review-container");
@@ -207,7 +207,7 @@ fetch("../json/reviews.json")
 		console.error("Error fetching or processing JSON data:", error);
 	});
 
-fetch("../json/projects.json")
+fetch("../assets/json/projects.json")
 	.then((response) => response.json())
 	.then((data) => {
 		const projectsContainer = document.getElementById("project-container");
@@ -246,7 +246,7 @@ function openModal(id) {
 		return;
 	}
 
-	fetch("../json/projects.json")
+	fetch("../assets/json/projects.json")
 		.then((response) => response.json())
 		.then((data) => {
 			const project = data.find((item) => item.id === parseInt(id));
