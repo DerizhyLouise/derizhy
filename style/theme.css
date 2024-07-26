@@ -60,3 +60,13 @@ body {
 		background-position: 200% center;
 	}
 }
+
+.landing-bg {
+	background-position: bottom;
+}
+
+@media (max-height: 800px) {
+	.landing-bg {
+		background-position: center 800px;
+	}
+}
