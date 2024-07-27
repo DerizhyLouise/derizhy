@@ -130,6 +130,18 @@
 	content: "\f3d3";
 }
 
+.fa-cheese-swiss:before {
+	content: "\1f9c0";
+}
+
+.fa-gamepad-modern:before {
+	content: "\1f3ae";
+}
+
+.fa-message-quote:before {
+	content: "\e1e4";
+}
+
 @font-face {
 	font-family: "Font Awesome 6 Pro";
 	font-style: normal;
