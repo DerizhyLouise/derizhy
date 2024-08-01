@@ -21,7 +21,7 @@ fetch("../assets/json/skills.json")
 			}
 
 			item.innerHTML = `
-				<a href="${skill.link}" target="_blank" class="w-40 h-40 p-4 bg-red flex flex-col justify-center items-center gap-2 shadow-lg shadow-darkblue hover:scale-125 hover:duration-300 transition">
+				<a href="${skill.link}" target="_blank" class="w-40 h-40 p-4 bg-red flex flex-col justify-center items-center gap-2 shadow-lg shadow-gray hover:scale-125 hover:duration-300 transition">
 					${iconElement.outerHTML}
 					<h4 class="font-semibold text-center">
 						${skill.skill}
@@ -139,7 +139,7 @@ fetch("../assets/json/certifications.json")
 		data.reverse();
 		data.forEach((certi) => {
 			const certiList = document.createElement("div");
-			certiList.className = `flex group mx-2 border-b-2 border-darkblue last:border-0`;
+			certiList.className = `flex group mx-2 border-b-2 border-gray last:border-0`;
 
 			if (certi.credentialId) {
 				certiList.innerHTML = `
@@ -215,7 +215,7 @@ fetch("../assets/json/projects.json")
 		data.forEach((project) => {
 			const item = document.createElement("button");
 			item.className =
-				"relative group shadow-2xl h-96 w-96 overflow-hidden border-2 border-darkblue bg-yellow";
+				"relative group shadow-2xl h-96 w-96 overflow-hidden border-2 border-gray bg-yellow";
 			item.onclick = function () {
 				openModal(project.id);
 			};
@@ -227,7 +227,7 @@ fetch("../assets/json/projects.json")
                     class="group-hover:-translate-y-full flex justify-center items-center duration-300 ease-in-out w-full h-full bg-yellow">
                     <img src="${project.img}" class="h-full w-full object-cover" alt="${project.title} Image">
                 </div>
-                <div class="bg-darkblue p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
+                <div class="bg-gray p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
                     <h2 class="text-4xl font-semibold text-center">${project.title}</h2>
                 </div>
             `;
@@ -281,19 +281,19 @@ function openModal(id) {
 
 					const list = document.createElement("a");
 					list.className =
-						"relative group shadow-2xl h-60 w-60 overflow-hidden border-2 border-darkblue bg-yellow";
+						"relative group shadow-2xl h-60 w-60 overflow-hidden border-2 border-gray bg-yellow";
 					list.setAttribute("href", media.url);
 					list.setAttribute("target", "_blank");
 
 					list.innerHTML = `
                         <div
-                            class="group-hover:-translate-y-full text-darkblue flex justify-center items-center duration-300 ease-in-out w-full h-full bg-yellow">
+                            class="group-hover:-translate-y-full text-gray flex justify-center items-center duration-300 ease-in-out w-full h-full bg-yellow">
                             <div class="flex flex-col items-center justify-center">
                                 <span class="${media.typeSymbol} text-6xl"></span>
                                 <h2 class="text-2xl font-semibold text-center">${media.type}</h2>
                             </div>
                         </div>
-                        <div class="bg-red text-darkblue p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
+                        <div class="bg-red text-gray p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
                             <h2 class="text-2xl font-semibold text-center">${media.title}</h2>
                         </div>
                     `;

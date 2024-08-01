@@ -2,9 +2,9 @@ tailwind.config = {
 	theme: {
 		extend: {
 			colors: {
-				darkblue: "#24305E",
-				blue: "#374785",
-				softblue: "#A8D0E6",
+				gray: "#2B303B",
+				lightgray: "#373D49",
+				green: "#6CF7B2",
 				red: "#F76C6C",
 				yellow: "#F8E9A1",
 			},
@@ -15,14 +15,14 @@ tailwind.config = {
 AOS.init();
 
 document.addEventListener("keydown", function (event) {
-	if (event.keyCode === 123) {
+	if (event.key == "F12") {
 		event.preventDefault();
 	}
 
 	if (
 		(event.ctrlKey || event.metaKey) &&
 		event.shiftKey &&
-		(event.keyCode === 67 || event.keyCode === 73)
+		(event.key == "C" || event.key == "I")
 	) {
 		event.preventDefault();
 	}

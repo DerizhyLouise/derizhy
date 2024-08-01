@@ -30,7 +30,7 @@
         "link": "https://www.postgresql.org/"
     },
     {
-        "skill": "Redis",
+        "skill": "redis",
         "icon": "../assets/svg/redis.svg",
         "link": "https://redis.io/"
     },
