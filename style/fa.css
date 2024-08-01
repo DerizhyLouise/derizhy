@@ -142,6 +142,10 @@
 	content: "\e1e4";
 }
 
+.fa-music:before {
+	content: "\1f3b5";
+}
+
 @font-face {
 	font-family: "Font Awesome 6 Pro";
 	font-style: normal;
