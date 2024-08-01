@@ -13,7 +13,6 @@
 .resume-listing-content ol {
 	list-style: none;
 	counter-reset: list;
-	padding: 0 1rem;
 }
 
 .resume-listing-content li {
