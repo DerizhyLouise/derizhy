@@ -5,7 +5,7 @@ tailwind.config = {
 				gray: "#2B303B",
 				lightgray: "#373D49",
 				green: "#6CF7B2",
-				red: "#F76C6C",
+				red: "#B72946",
 				yellow: "#F8E9A1",
 			},
 		},

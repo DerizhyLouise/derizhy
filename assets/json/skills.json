@@ -65,11 +65,6 @@
         "link": "https://nodejs.org/en"
     },
     {
-        "skill": "Pandas",
-        "icon": "../assets/svg/pandas.svg",
-        "link": "https://pandas.pydata.org/"
-    },
-    {
         "skill": "Figma",
         "icon": "fa-brands fa-figma",
         "link": "https://www.figma.com/"
