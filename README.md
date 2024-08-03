@@ -11,7 +11,6 @@
 | Flowbite               | [Flowbite](https://flowbite.com/)       |
 
 #### Inspiration
-
 | Author             | Link                                                           |
 |--------------------|----------------------------------------------------------------|
 | @animationbro      | [AnimationBro](https://codepen.io/animationbro/pen/OJQEVEj)    |
