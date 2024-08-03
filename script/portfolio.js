@@ -21,7 +21,7 @@ fetch("../assets/json/skills.json")
 			}
 
 			item.innerHTML = `
-				<a href="${skill.link}" target="_blank" class="w-40 h-40 p-4 bg-red flex flex-col justify-center items-center gap-2 shadow-lg shadow-gray hover:scale-125 hover:duration-300 transition">
+				<a href="${skill.link}" target="_blank" class="w-40 h-40 p-4 bg-yellow flex flex-col justify-center items-center gap-2 shadow-lg shadow-gray hover:scale-110 sm:hover:scale-125 hover:duration-300 transition">
 					${iconElement.outerHTML}
 					<h4 class="font-semibold text-center">
 						${skill.skill}
@@ -190,7 +190,7 @@ fetch("../assets/json/reviews.json")
 			listItem.target = "_blank";
 
 			listItem.innerHTML = `
-                <div class="flex justify-start items-center pb-2 border-b-2 border-[#E91E63]">
+                <div class="flex justify-start items-center pb-2 border-b-2 border-red">
                     <img class="rounded-full h-20 w-20" src="${review.img}" alt="${review.name}'s Pic">
                     <div class="pl-2">
                         <h3 class="text-2xl font-semibold">${review.name}</h3>

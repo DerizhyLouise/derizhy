@@ -27,3 +27,12 @@ document.addEventListener("keydown", function (event) {
 		event.preventDefault();
 	}
 });
+
+document.querySelectorAll("#drawer-navigation a").forEach((anchor) => {
+	anchor.addEventListener("click", () => {
+		const button = document.getElementById("drawer-close-btn");
+		if (button) {
+			button.click();
+		}
+	});
+});

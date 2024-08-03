@@ -41,27 +41,10 @@ body {
 .gradient-text {
 	background-image: linear-gradient(
 		-225deg,
-		#f8e9a1 0%,
-		#B72946 20%,
-		#a8d0e6 40%,
-		#a8d0e6 60%,
-		#B72946 80%,
-		#f8e9a1 100%
-	);
-	background-size: 200% auto;
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: textclip 3s linear infinite;
-}
-
-.gradient-text-yellow {
-	background-image: linear-gradient(
-		-225deg,
-		#f8e9a1 0%,
-		#f8e9a1 70%,
-		#fff 90%,
-		#f8e9a1 100%
+		#F8E9A1 0%,
+		#B72946 33%,
+		#6CF7B2 66%,
+		#F8E9A1 100%
 	);
 	background-size: 200% auto;
 	background-clip: text;
