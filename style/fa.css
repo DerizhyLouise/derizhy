@@ -30,22 +30,6 @@
 	content: "\f841";
 }
 
-.fa-whatsapp:before {
-	content: "\f232";
-}
-
-.fa-envelope:before {
-	content: "\2709";
-}
-
-.fa-telegram:before {
-	content: "\f2c6";
-}
-
-.fa-line:before {
-	content: "\f3c0";
-}
-
 .fa-instagram:before {
 	content: "\f16d";
 }
@@ -64,10 +48,6 @@
 
 .fa-tiktok:before {
 	content: "\e07b";
-}
-
-.fa-discord:before {
-	content: "\f392";
 }
 
 .fa-chevron-down:before {
@@ -144,6 +124,10 @@
 
 .fa-music:before {
 	content: "\1f3b5";
+}
+
+.fa-paint-roller:before {
+	content: "\f5aa";
 }
 
 @font-face {
