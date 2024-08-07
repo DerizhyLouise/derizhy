@@ -74,16 +74,16 @@
 	content: "\f3c5";
 }
 
-.fa-signature:before {
-	content: "\f5b7";
+.fa-user:before {
+	content: "\1f464";
 }
 
 .fa-square-terminal:before {
 	content: "\e32a";
 }
 
-.fa-user-group::before {
-	content: "\f500";
+.fa-users:before {
+	content: "\f0c0";
 }
 
 .fa-microphone::before {
@@ -128,6 +128,14 @@
 
 .fa-paint-roller:before {
 	content: "\f5aa";
+}
+
+.fa-cup-straw-swoosh:before {
+	content: "\e364";
+}
+
+.fa-cat:before {
+	content: "\1f408";
 }
 
 @font-face {
