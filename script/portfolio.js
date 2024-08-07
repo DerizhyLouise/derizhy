@@ -151,7 +151,7 @@ fetch("../assets/json/certifications.json")
                         <p class="text-sm sm:text-lg">${certi.issuer}</p>
                         <p class="text-sm sm:text-lg">Issued ${certi.issueDate}</p>
                         <p class="mb-2 text-sm sm:text-lg">Credential ID ${certi.credentialId}</p>
-                        <a class="my-4 h-8 px-4 text-sm sm:text-lg hover:bg-red duration-300 border-2 border-red" target='_blank' href="${certi.url}">Show Credential</a>
+                        <a class="my-4 h-8 px-4 text-sm sm:text-lg hover:bg-maroon duration-300 border-2 border-maroon" target='_blank' href="${certi.url}">Show Credential</a>
                     </div>
                 `;
 			} else {
@@ -163,7 +163,7 @@ fetch("../assets/json/certifications.json")
                         <h3 class="text-lg sm:text-2xl font-bold">${certi.certificateName}</h3>
                         <p class="text-sm sm:text-lg">${certi.issuer}</p>
                         <p class="mb-2 text-sm sm:text-lg">Issued ${certi.issueDate}</p>
-                        <a class="my-4 h-8 px-4 text-sm sm:text-lg hover:bg-red duration-300 border-2 border-red" target='_blank' href="${certi.url}">Show Credential</a>
+                        <a class="my-4 h-8 px-4 text-sm sm:text-lg hover:bg-maroon duration-300 border-2 border-maroon" target='_blank' href="${certi.url}">Show Credential</a>
                     </div>
                 `;
 			}
@@ -190,7 +190,7 @@ fetch("../assets/json/reviews.json")
 			listItem.target = "_blank";
 
 			listItem.innerHTML = `
-                <div class="flex justify-start items-center pb-2 border-b-2 border-red">
+                <div class="flex justify-start items-center pb-2 border-b-2 border-maroon">
                     <img class="rounded-full h-20 w-20" src="${review.img}" alt="${review.name}'s Pic">
                     <div class="pl-2">
                         <h3 class="text-2xl font-semibold">${review.name}</h3>
@@ -257,12 +257,12 @@ function openModal(id) {
                     <h3 class="text-4xl max-md:text-3xl text-white font-bold">${
 						project.title
 					}</h3>
-                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-red">Description</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-maroon">Description</h3>
                     <p class="text-base mb-5 max-md:text-sm">${project.time}</p>
                     <p class="text-base mb-5 max-md:text-sm">${project.description.join(
 						""
 					)}</p>
-                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-red">Project's Media</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-maroon">Project's Media</h3>
                 `;
 
 				const projectMedia = document.createElement("div");
@@ -293,7 +293,7 @@ function openModal(id) {
                                 <h2 class="text-2xl font-semibold text-center">${media.type}</h2>
                             </div>
                         </div>
-                        <div class="bg-red text-gray p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
+                        <div class="bg-maroon text-gray p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
                             <h2 class="text-2xl font-semibold text-center">${media.title}</h2>
                         </div>
                     `;
@@ -337,7 +337,7 @@ function closeModal() {
 		<div class="p-12 w-full">
 			<div class="absolute right-20 top-5 z-50">
 				<button
-					class="text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed group hover:bg-red rounded-lg"
+					class="text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed group hover:bg-maroon rounded-lg"
 					title="Close" onClick="closeModal()">
 					<i class="fa-solid fa-xmark text-2xl group-hover:rotate-180 group-hover:duration-500 transition"></i>
 				</button>
