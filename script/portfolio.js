@@ -68,67 +68,6 @@ fetch("../assets/json/experiences.json")
 		console.error("Error fetching or processing JSON data:", error);
 	});
 
-fetch("../assets/json/educations.json")
-	.then((response) => response.json())
-	.then((data) => {
-		const educationContainer = document.getElementById("resume-education");
-		educationContainer.style.setProperty("--length", data.length);
-
-		data.forEach((education, index) => {
-			const listItem = document.createElement("li");
-			listItem.style.setProperty("--i", index + 1);
-			listItem.style.setProperty("--col", education.theme);
-			listItem.setAttribute("data-aos", "fade-up");
-			listItem.setAttribute("data-aos-duration", "1500");
-
-			listItem.innerHTML = `
-            <div class="resume-list-title">
-                <img src="${education.logo}" alt="${
-				education.institute
-			}"s Logo" class="rounded-full w-16 h-16">
-                <h3>${education.institute} - ${education.major} (${
-				education.time
-			})</h3>
-            </div>
-            <p>${education.description.replace(/\n/g, "<br/>")}</p>
-        `;
-
-			educationContainer.appendChild(listItem);
-		});
-	})
-	.catch((error) => {
-		console.error("Error fetching or processing JSON data:", error);
-	});
-
-fetch("../assets/json/organizations.json")
-	.then((response) => response.json())
-	.then((data) => {
-		const organizationContainer = document.getElementById(
-			"resume-organization"
-		);
-		organizationContainer.style.setProperty("--length", data.length);
-
-		data.forEach((organization, index) => {
-			const listItem = document.createElement("li");
-			listItem.style.setProperty("--i", index + 1);
-			listItem.style.setProperty("--col", organization.theme);
-			listItem.setAttribute("data-aos", "fade-up");
-			listItem.setAttribute("data-aos-duration", "1500");
-			listItem.innerHTML = `
-            <div class="resume-list-title">
-                <img src="${organization.logo}" alt="${organization.organization}"s Logo" class="rounded-full w-16 h-16">
-                <h3>${organization.organization}</h3>
-            </div>
-            <p>${organization.detail}</p>
-        `;
-
-			organizationContainer.appendChild(listItem);
-		});
-	})
-	.catch((error) => {
-		console.error("Error fetching or processing JSON data:", error);
-	});
-
 fetch("../assets/json/certifications.json")
 	.then((response) => response.json())
 	.then((data) => {
