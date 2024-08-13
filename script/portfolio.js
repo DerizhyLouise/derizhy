@@ -58,7 +58,7 @@ fetch("../assets/json/experiences.json")
 				experience.time
 			})</h3>
             </div>
-            <p>${experience.description.replace(/\n/g, "<br/>")}</p>
+            <p>${experience.description.replace(/\n/g, "<br>")}</p>
         `;
 
 			experienceContainer.appendChild(listItem);
@@ -209,7 +209,7 @@ function openModal(id) {
 				if (project.media.length === 0) {
 					const empty = document.createElement("p");
 					empty.innerHTML =
-						"No media available in this project.<br/>I will upload the media soon after the project has done.";
+						"No media available in this project.<br>I will upload the media soon after the project has done.";
 					empty.className = "mt-2";
 					projectMedia.append(empty);
 				}

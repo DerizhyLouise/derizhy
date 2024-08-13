@@ -19,13 +19,13 @@
         ],
         "time": "March 2024 - Present (ongoing process)",
         "description": [
-            "This is final project for Mikroskil University - Informatics Engineering's Bachelor Degree.<br/>",
-            "This is an UI for a Stunting web based app.<br/><br/>",
-            "Account for testing purpose: <br/>",
-            "- email 1: user@mail.com <br/>",
-            "- email 2: nakes@mail.com <br/>",
-            "- email 3: admin@mail.com <br/>",
-            "- Pass: 123<br/>"
+            "This is final project for Mikroskil University - Informatics Engineering's Bachelor Degree.<br>",
+            "This is an UI for a Stunting web based app.<br><br>",
+            "Account for testing purpose: <br>",
+            "- email 1: user@mail.com <br>",
+            "- email 2: nakes@mail.com <br>",
+            "- email 3: admin@mail.com <br>",
+            "- Pass: 123<br>"
         ]
     },
     {
@@ -35,14 +35,14 @@
         "media": [],
         "time": "Jan 2024 - Present (ongoing process)",
         "description": [
-            "MTHIS (Murni Teguh Hospital Information System) is an information system digital platform that manages and integrates medical, administrative, and financial functions within a healthcare facility to streamline operations and improve patient care.<br/><br/>",
-            "This project is related to my position as a Software Developer in PT Murni Sadar Tbk.<br/><br/>",
-            "-- Tech --<br/>",
-            "Frontend: Constructed with the Svelte framework and shadcn-svelte for a sleek and user-friendly interface.<br/>",
-            "Backend: Implemented using Java with a microservices architecture, ensuring scalability and agility.<br/>",
-            "Database: Powered by PostgreSQL for robust and secure data management.<br/>",
-            "Middleware: Leveraging Kafka for efficient data streaming and communication.<br/>",
-            "Design: Styled with Tailwind CSS to achieve modern aesthetics and responsiveness.<br/>"
+            "MTHIS (Murni Teguh Hospital Information System) is an information system digital platform that manages and integrates medical, administrative, and financial functions within a healthcare facility to streamline operations and improve patient care.<br><br>",
+            "This project is related to my position as a Software Developer in PT Murni Sadar Tbk.<br><br>",
+            "-- Tech --<br>",
+            "Frontend: Constructed with the Svelte framework and shadcn-svelte for a sleek and user-friendly interface.<br>",
+            "Backend: Implemented using Java with a microservices architecture, ensuring scalability and agility.<br>",
+            "Database: Powered by PostgreSQL for robust and secure data management.<br>",
+            "Middleware: Leveraging Kafka for efficient data streaming and communication.<br>",
+            "Design: Styled with Tailwind CSS to achieve modern aesthetics and responsiveness.<br>"
         ]
     },
     {
@@ -94,25 +94,25 @@
         ],
         "time": "Oct 2023 - Dec 2023",
         "description": [
-            "This is Kampus Merdeka Batch 5 - RevoU's Data Analytics Capstone Project.<br/><br/>",
-            "This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the best group in Shopping Cart's category.<br/><br/>",
-            "Background : From August to December, there was a 24% decrease in revenue.<br/><br/>",
-            "Potential analytics direction : How can we increase revenue by 10-15% in two months?<br/><br/>",
-            "RCA : <a href='https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa'>https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa</a><br/><br/>",
-            "Business Question :<br/>",
-            "1. What is the percentage of customers who have become inactive over the last three months?<br/>",
-            "2. What is the average delivery time for customers to receive their orders or products from past 3 months?<br/>",
-            "3. Which product category generates the most revenue?<br/><br/>",
-            "Scope :<br/>",
-            "- Australia territory<br/>",
-            "- Time range Jan 2021 - Dec 2021<br/>",
-            "- Sample size from 1000 to 5000 data<br/><br/>",
-            "Hypothesis : The effect of price, more promotion, fast and charge of delivery can affected to customer for purchase more items.<br/><br/>",
-            "Metrics :<br/>",
-            "- Monthly revenue<br/>",
-            "- Total sold product<br/>",
-            "- Product price<br/>",
-            "- Time range<br/><br/>",
+            "This is Kampus Merdeka Batch 5 - RevoU's Data Analytics Capstone Project.<br><br>",
+            "This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the best group in Shopping Cart's category.<br><br>",
+            "Background : From August to December, there was a 24% decrease in revenue.<br><br>",
+            "Potential analytics direction : How can we increase revenue by 10-15% in two months?<br><br>",
+            "RCA : <a href='https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa'>https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa</a><br><br>",
+            "Business Question :<br>",
+            "1. What is the percentage of customers who have become inactive over the last three months?<br>",
+            "2. What is the average delivery time for customers to receive their orders or products from past 3 months?<br>",
+            "3. Which product category generates the most revenue?<br><br>",
+            "Scope :<br>",
+            "- Australia territory<br>",
+            "- Time range Jan 2021 - Dec 2021<br>",
+            "- Sample size from 1000 to 5000 data<br><br>",
+            "Hypothesis : The effect of price, more promotion, fast and charge of delivery can affected to customer for purchase more items.<br><br>",
+            "Metrics :<br>",
+            "- Monthly revenue<br>",
+            "- Total sold product<br>",
+            "- Product price<br>",
+            "- Time range<br><br>",
             "Data Source : <a href='https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv'>https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv</a>"
         ]
     },
@@ -148,7 +148,7 @@
         ],
         "time": "Aug 2023 - Oct 2023",
         "description": [
-            "This is Kampus Merdeka Batch 5 - RevoU's Software Engineering Capstone Project.<br/><br/>",
+            "This is Kampus Merdeka Batch 5 - RevoU's Software Engineering Capstone Project.<br><br>",
             "In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Our primary objective is the development of an e-commerce website called 'Clo', with a specific focus on clothing retail. The project workflow began with the design and creation of a prototype using Figma, followed by the implementation of the front-end using HTML, CSS, and JavaScript. Subsequently, we constructed the back-end, utilizing Node.js with Express and Prisma. We also designed a relational database named 'clo_db' for efficient data storage, employing PostgreSQL. We are using Github Page for Front-End deployment, Railway for Back-End deployment, and Supabase for database deployment."
         ]
     },
@@ -166,7 +166,7 @@
         ],
         "time": "Sep 2023 - Sep 2023",
         "description": [
-            "Dicoding - Belajar Analisis Data dengan Python Project.<br/><br/>",
+            "Dicoding - Belajar Analisis Data dengan Python Project.<br><br>",
             "This project is submission for Last Project in Dicoding's Python Data Analytics Course. I use Bike Sharing Dataset to deal with this project. This project include of Data Wrangling, Exploratory Data Analysis, Data Visualization, and Making Dashboard with Streamlit."
         ]
     },
@@ -184,14 +184,14 @@
         ],
         "time": "Apr 2023 - Jul 2023",
         "description": [
-            "Mikroskil University - Cryptography Project.<br/><br/>",
-            "This project is an assignment from lecturer in my Cryptography Lecture.<br/><br/>",
-            "This project contain some cryptographic algorithms such as:<br/>",
-            "- Digital Signature Algorithm (DSA)<br/>",
-            "- Elgamal<br/>",
-            "- Steganography with Least Significant Bit (LSB)<br/>",
-            "- RSA<br/>",
-            "- SHA-256<br/>",
+            "Mikroskil University - Cryptography Project.<br><br>",
+            "This project is an assignment from lecturer in my Cryptography Lecture.<br><br>",
+            "This project contain some cryptographic algorithms such as:<br>",
+            "- Digital Signature Algorithm (DSA)<br>",
+            "- Elgamal<br>",
+            "- Steganography with Least Significant Bit (LSB)<br>",
+            "- RSA<br>",
+            "- SHA-256<br>",
             "- Schnorr"
         ]
     },
@@ -209,15 +209,15 @@
         ],
         "time": "Apr 2023 - Jul 2023",
         "description": [
-            "Mikroskil University - Computer Vision Project.<br/><br/>",
-            "This project is an assignment from lecturer in my Computer Vision Lecture.<br/><br/>",
-            "This project contain some methods / algorithms such as:<br/>",
-            "- Harris Corner Detection<br/>",
-            "- K-Means<br/>",
-            "- Oriented Fast and Rotated BRIEF (ORB)<br/>",
-            "- Prewitt Sobel<br/>",
-            "- Scale Invariant Feature Transform (SIFT)<br/>",
-            "- Convolutional Neural Network (CNN)<br/>",
+            "Mikroskil University - Computer Vision Project.<br><br>",
+            "This project is an assignment from lecturer in my Computer Vision Lecture.<br><br>",
+            "This project contain some methods / algorithms such as:<br>",
+            "- Harris Corner Detection<br>",
+            "- K-Means<br>",
+            "- Oriented Fast and Rotated BRIEF (ORB)<br>",
+            "- Prewitt Sobel<br>",
+            "- Scale Invariant Feature Transform (SIFT)<br>",
+            "- Convolutional Neural Network (CNN)<br>",
             "- Histogram of Oriented Gradients (HOG)"
         ]
     },
@@ -235,7 +235,7 @@
         ],
         "time": "Apr 2023 - Jul 2023",
         "description": [
-            "Mikroskil University - Digital Start Up Project.<br/><br/>",
+            "Mikroskil University - Digital Start Up Project.<br><br>",
             "This is a project from Digital Start Up Lecture where I built a prototype of an application called 'Help Me'. The concept of this application is to provide services to connect peoples who called 'Requester' whom requesting for helps and create tasks and peoples who called 'Helper' whom will take the tasks and solve them to get rewards."
         ]
     }
