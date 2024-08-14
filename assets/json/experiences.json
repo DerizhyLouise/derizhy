@@ -5,7 +5,7 @@
         "time": "2022-Present",
         "theme": "#117BA9",
         "logo": "../assets/image/logo/mt.jpg",
-        "description": "I have gained experience by designing, developing, maintaining, and deploying healthcare software.<br><br>Technologies I Use &gt;<li><ul><strong>Svelte</strong> for building reactive and modern user interfaces</ul><ul><strong>Typescript</strong> for ensuring type safety and enhancing code quality.</ul><ul><strong>Tailwind CSS</strong> for efficient and customizable styling.</ul><ul><strong>Redis</strong> for fast caching and improving application performance.</ul><ul><strong>Spring Boot</strong> for robust back-end development.</ul><ul><strong>PostgreSQL</strong> for reliable database management.</ul></li>"
+        "description": "I have gained experience by designing, developing, maintaining, and deploying healthcare software.<br><br>Technologies I Use &gt;<br>- <strong>Svelte</strong> for building reactive and modern user interfaces<br>- <strong>Typescript</strong> for ensuring type safety and enhancing code quality.<br>- <strong>Tailwind CSS</strong> for efficient and customizable styling.<br>- <strong>Redis</strong> for fast caching and improving application performance.<br>- <strong>Spring Boot</strong> for robust back-end development.<br>- <strong>PostgreSQL</strong> for reliable database management."
     },
     {
         "position": "Project Leader",

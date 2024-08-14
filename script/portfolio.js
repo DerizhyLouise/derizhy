@@ -164,10 +164,10 @@ fetch("../assets/json/projects.json")
 			item.innerHTML = `
                 <div
                     class="group-hover:-translate-y-full flex justify-center items-center duration-300 ease-in-out w-full h-full bg-yellow">
-                    <img src="${project.img}" class="h-full w-full object-cover" alt="${project.title} Image">
-                </div>
-                <div class="bg-gray p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
-                    <h2 class="text-4xl font-semibold text-center">${project.title}</h2>
+					<h2 class="text-4xl font-semibold text-center text-gray">${project.title}</h2>
+				</div>
+				<div class="bg-gray p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
+					<h2 class="text-4xl font-semibold text-center">${project.type}</h2>
                 </div>
             `;
 

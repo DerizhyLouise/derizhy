@@ -2,7 +2,7 @@
     {
         "id": 9,
         "title": "Peduli Anak",
-        "img": "../assets/image/project/peduliAnak.jpg",
+        "type": "Stunting Web Based App",
         "media": [
             {
                 "title": "Source Code",
@@ -31,7 +31,7 @@
     {
         "id": 8,
         "title": "MTHIS 2.0",
-        "img": "../assets/image/project/mthis.jpg",
+        "type": "Murni Teguh Hospital Information System",
         "media": [],
         "time": "Jan 2024 - Present (ongoing process)",
         "description": [
@@ -48,7 +48,7 @@
     {
         "id": 7,
         "title": "Personal Website",
-        "img": "../assets/image/project/portfolio.png",
+        "type": "My Personal Website for Fun",
         "media": [
             {
                 "title": "Source Code",
@@ -71,7 +71,7 @@
     {
         "id": 6,
         "title": "Shopping Cart Database Analysis",
-        "img": "../assets/image/project/revouDa.png",
+        "type": "Data Analytics Project",
         "media": [
             {
                 "title": "Presentation",
@@ -118,8 +118,8 @@
     },
     {
         "id": 5,
-        "title": "Clo - E-Commerce Website",
-        "img": "../assets/image/project/clo.png",
+        "title": "Clo",
+        "type": "E-Commerce Web",
         "media": [
             {
                 "title": "Presentation",
@@ -155,7 +155,7 @@
     {
         "id": 4,
         "title": "Bike Rental - Data Analytics",
-        "img": "../assets/image/project/da.jpg",
+        "type": "Data Analytics Project",
         "media": [
             {
                 "title": "Analysis Process",
@@ -173,7 +173,7 @@
     {
         "id": 3,
         "title": "Cryptography",
-        "img": "../assets/image/project/crypto.jpg",
+        "type": "Cryptography Algorithm Source Code",
         "media": [
             {
                 "title": "Source Code",
@@ -198,7 +198,7 @@
     {
         "id": 2,
         "title": "Image Processing",
-        "img": "../assets/image/project/imageProcessing.jpg",
+        "type": "Image Processing Algorithm Source Code",
         "media": [
             {
                 "title": "Source Code",
@@ -224,7 +224,7 @@
     {
         "id": 1,
         "title": "Help Me",
-        "img": "../assets/image/project/helpMe.png",
+        "type": "UI Design of Mobile App",
         "media": [
             {
                 "title": "Prototype",
