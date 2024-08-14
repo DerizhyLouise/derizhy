@@ -37,18 +37,19 @@
         "description": [
             "MTHIS (Murni Teguh Hospital Information System) is an information system digital platform that manages and integrates medical, administrative, and financial functions within a healthcare facility to streamline operations and improve patient care.<br><br>",
             "This project is related to my position as a Software Developer in PT Murni Sadar Tbk.<br><br>",
-            "-- Tech --<br>",
-            "Frontend: Constructed with the Svelte framework and shadcn-svelte for a sleek and user-friendly interface.<br>",
-            "Backend: Implemented using Java with a microservices architecture, ensuring scalability and agility.<br>",
-            "Database: Powered by PostgreSQL for robust and secure data management.<br>",
-            "Middleware: Leveraging Kafka for efficient data streaming and communication.<br>",
-            "Design: Styled with Tailwind CSS to achieve modern aesthetics and responsiveness.<br>"
+            "Technologies I Use :<br>", 
+            "- <strong>Svelte</strong> for building reactive and modern user interfaces<br>", 
+            "- <strong>Typescript</strong> for ensuring type safety and enhancing code quality.<br>", 
+            "- <strong>Tailwind CSS</strong> for efficient and customizable styling.<br>",
+            "- <strong>Redis</strong> for fast caching and improving application performance.<br>",
+            "- <strong>Spring Boot</strong> for robust back-end development.<br>",
+            "- <strong>PostgreSQL</strong> for reliable database management."
         ]
     },
     {
         "id": 7,
-        "title": "Personal Website",
-        "type": "My Personal Website for Fun",
+        "title": "derizhy.xyz",
+        "type": "Personal Website",
         "media": [
             {
                 "title": "Source Code",
@@ -70,7 +71,7 @@
     },
     {
         "id": 6,
-        "title": "Shopping Cart Database Analysis",
+        "title": "Shopping Cart Database",
         "type": "Data Analytics Project",
         "media": [
             {
@@ -95,7 +96,7 @@
         "time": "Oct 2023 - Dec 2023",
         "description": [
             "This is Kampus Merdeka Batch 5 - RevoU's Data Analytics Capstone Project.<br><br>",
-            "This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the best group in Shopping Cart's category.<br><br>",
+            "This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the <strong>best group</strong> in Shopping Cart's category.<br><br>",
             "Background : From August to December, there was a 24% decrease in revenue.<br><br>",
             "Potential analytics direction : How can we increase revenue by 10-15% in two months?<br><br>",
             "RCA : <a href='https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa'>https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa</a><br><br>",
@@ -113,7 +114,12 @@
             "- Total sold product<br>",
             "- Product price<br>",
             "- Time range<br><br>",
-            "Data Source : <a href='https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv'>https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv</a>"
+            "Data Source : <a href='https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv'>https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv</a><br><br>",
+            "Technologies I Use :<br>", 
+            "- <strong>Python</strong> for data analysis and scripting.<br>", 
+            "- <strong>Pandas</strong> for data manipulation and transformation.<br>",
+            "- <strong>Matplotlib</strong> for data visualization through detailed charts and graphs.<br>",
+            "- <strong>Looker Studio</strong> for data visualization and reporting."
         ]
     },
     {
@@ -149,12 +155,21 @@
         "time": "Aug 2023 - Oct 2023",
         "description": [
             "This is Kampus Merdeka Batch 5 - RevoU's Software Engineering Capstone Project.<br><br>",
-            "In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Our primary objective is the development of an e-commerce website called 'Clo', with a specific focus on clothing retail. The project workflow began with the design and creation of a prototype using Figma, followed by the implementation of the front-end using HTML, CSS, and JavaScript. Subsequently, we constructed the back-end, utilizing Node.js with Express and Prisma. We also designed a relational database named 'clo_db' for efficient data storage, employing PostgreSQL. We are using Github Page for Front-End deployment, Railway for Back-End deployment, and Supabase for database deployment."
+            "In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Our primary objective is the development of an e-commerce website called 'Clo', with a specific focus on clothing retail.<br><br>",
+            "Technologies I Use :<br>", 
+            "- <strong>Figma</strong> for UI/UX design and prototyping.<br>", 
+            "- <strong>HTML, CSS, and JavaScript</strong> for front-end development.<br>",
+            "- <strong>Node.js</strong> for server-side scripting and back-end development.<br>",
+            "- <strong>Express.js</strong> for building RESTful APIs and handling server-side logic.<br>",
+            "- <strong>Prisma</strong> for ORM and database management.<br>",
+            "- <strong>PostgreSQL</strong> for managing relational databases.<br>",
+            "- <strong>Supabase</strong> for database deployment<br>",
+            "- <strong>Railway</strong> for back-end deployment."
         ]
     },
     {
         "id": 4,
-        "title": "Bike Rental - Data Analytics",
+        "title": "Bike Rental",
         "type": "Data Analytics Project",
         "media": [
             {

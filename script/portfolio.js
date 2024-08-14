@@ -154,7 +154,7 @@ fetch("../assets/json/projects.json")
 		data.forEach((project) => {
 			const item = document.createElement("button");
 			item.className =
-				"relative group shadow-2xl h-96 w-96 overflow-hidden border-2 border-gray bg-yellow";
+				"relative group shadow-2xl h-96 w-96 overflow-hidden shadow-lg shadow-gray bg-yellow";
 			item.onclick = function () {
 				openModal(project.id);
 			};
