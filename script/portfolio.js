@@ -233,7 +233,7 @@ function openModal(id) {
                             </div>
                         </div>
                         <div class="bg-maroon text-gray p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
-                            <h2 class="text-2xl font-semibold text-center">${media.title}</h2>
+                            <h2 class="text-2xl font-semibold text-center text-yellow">${media.title}</h2>
                         </div>
                     `;
 
@@ -252,10 +252,10 @@ function openModal(id) {
 			const sideBar = document.getElementsByTagName("aside")[0];
 			const footer = document.getElementsByTagName("footer")[0];
 
-			header.style.filter = "blur(20px)";
-			main.style.filter = "blur(20px)";
-			sideBar.style.filter = "blur(20px)";
-			footer.style.filter = "blur(20px)";
+			header.style.filter = "brightness(.5)";
+			main.style.filter = "brightness(.5)";
+			sideBar.style.filter = "brightness(.5)";
+			footer.style.filter = "brightness(.5)";
 
 			isOpen = true;
 			modal.style.display = "block";
