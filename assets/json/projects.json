@@ -1,5 +1,28 @@
 [
     {
+        "id": 10,
+        "title": "Web Builder",
+        "type": "GrapesJs Web Builder",
+        "media": [
+            {
+                "title": "Source Code",
+                "url": "https://github.com/DerizhyLouise/nextjs-web-builder",
+                "type": "Github",
+                "typeSymbol": "fa-brands fa-github"
+            }
+        ],
+        "time": "August 2024",
+        "description": [
+            "This is a web builder project<br><br>",
+            "Technologies I Use :<br>",
+            "- <strong>NextJs</strong> for server-side rendering and building React applications.<br>",
+            "- <strong>GrapesJs</strong> for creating dynamic page editors and web builders.<br>",
+            "- <strong>CodeMirror</strong> for implementing code editors within web applications.<br>",
+            "- <strong>MongoDB</strong> for managing and storing data in a NoSQL database.<br>",
+            "- <strong>Tailwind CSS</strong> for utility-first, responsive styling.<br>"
+        ]
+    },
+    {
         "id": 9,
         "title": "Peduli Anak",
         "type": "Stunting Web Based App",
