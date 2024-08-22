@@ -1,77 +1,152 @@
 [
     {
         "skill": "TypeScript",
+        "category": "language",
         "icon": "../assets/svg/typescript.svg",
         "link": "https://www.typescriptlang.org/"
     },
     {
         "skill": "SQL",
+        "category": "language",
         "icon": "fa-light fa-database",
         "link": "https://en.wikipedia.org/wiki/SQL"
     },
     {
-        "skill": "Tailwind CSS",
-        "icon": "../assets/svg/tailwind.svg",
-        "link": "https://tailwindcss.com/"
-    },
-    {
-        "skill": "Svelte",
-        "icon": "../assets/svg/svelte.svg",
-        "link": "https://svelte.dev/"
-    },
-    {
         "skill": "Java",
+        "category": "language",
         "icon": "fa-brands fa-java",
         "link": "https://www.java.com/en/"
     },
     {
-        "skill": "PostgreSQL",
-        "icon": "../assets/svg/postgresql.svg",
-        "link": "https://www.postgresql.org/"
-    },
-    {
-        "skill": "redis",
-        "icon": "../assets/svg/redis.svg",
-        "link": "https://redis.io/"
-    },
-    {
         "skill": "JavaScript",
+        "category": "language",
         "icon": "fa-brands fa-js",
         "link": "https://www.javascript.com/"
     },
     {
         "skill": "Python",
+        "category": "language",
         "icon": "fa-brands fa-python",
         "link": "https://www.python.org/"
     },
     {
+        "skill": "Svelte",
+        "category": "framework",
+        "icon": "../assets/svg/svelte.svg",
+        "link": "https://svelte.dev/"
+    },
+    {
         "skill": "Spring Boot",
+        "category": "framework",
         "icon": "../assets/svg/springboot.svg",
         "link": "https://spring.io/"
     },
     {
+        "skill": "Node Js",
+        "category": "framework",
+        "icon": "fa-brands fa-node-js",
+        "link": "https://nodejs.org/en"
+    },
+    {
+        "skill": "Node Js",
+        "category": "framework",
+        "icon": "fa-brands fa-node-js",
+        "link": "https://expressjs.com/"
+    },
+    {
+        "skill": "PostgreSQL",
+        "category": "database",
+        "icon": "../assets/svg/postgresql.svg",
+        "link": "https://www.postgresql.org/"
+    },
+    {
+        "skill": "redis",
+        "category": "database",
+        "icon": "../assets/svg/redis.svg",
+        "link": "https://redis.io/"
+    },
+    {
+        "skill": "MongoDB",
+        "category": "database",
+        "icon": "../assets/svg/mongodb.svg",
+        "link": "https://www.mongodb.com/"
+    },
+    {
+        "skill": "MySQL",
+        "category": "database",
+        "icon": "../assets/svg/mysql.svg",
+        "link": "https://www.mysql.com/"
+    },
+    {
+        "skill": "Tailwind CSS",
+        "category": "frontend",
+        "icon": "../assets/svg/tailwind.svg",
+        "link": "https://tailwindcss.com/"
+    },
+    {
         "skill": "HTML",
+        "category": "frontend",
         "icon": "fa-brands fa-html5",
         "link": "https://en.wikipedia.org/wiki/HTML"
     },
     {
         "skill": "CSS",
+        "category": "frontend",
         "icon": "fa-brands fa-css3-alt",
         "link": "https://en.wikipedia.org/wiki/CSS"
     },
     {
-        "skill": "Node Js",
-        "icon": "fa-brands fa-node-js",
-        "link": "https://nodejs.org/en"
+        "skill": "shadcn-svelte",
+        "category": "frontend",
+        "icon": "../assets/svg/shadcn.svg",
+        "link": "https://www.shadcn-svelte.com/"
+    },
+    {
+        "skill": "jQuery",
+        "category": "frontend",
+        "icon": "../assets/svg/jquery.svg",
+        "link": "https://jquery.com/"
+    },
+    {
+        "skill": "Chat GPT",
+        "category": "tool",
+        "icon": "../assets/svg/openai.svg",
+        "link": "https://openai.com/index/chatgpt/"
+    },
+    {
+        "skill": "VS Code",
+        "category": "tool",
+        "icon": "../assets/svg/vscode.svg",
+        "link": "https://code.visualstudio.com/"
+    },
+    {
+        "skill": "Git",
+        "category": "tool",
+        "icon": "fa-brands fa-git-alt",
+        "link": "https://git-scm.com/"
+    },
+    {
+        "skill": "pnpm",
+        "category": "tool",
+        "icon": "../assets/svg/pnpm.svg",
+        "link": "https://pnpm.io/"
+    },
+    {
+        "skill": "npm",
+        "category": "tool",
+        "icon": "fa-brands fa-npm",
+        "link": "https://www.npmjs.com/"
     },
     {
         "skill": "Figma",
+        "category": "tool",
         "icon": "fa-brands fa-figma",
         "link": "https://www.figma.com/"
     },
     {
-        "skill": "Git",
-        "icon": "fa-brands fa-git-alt",
-        "link": "https://git-scm.com/"
+        "skill": "draw.io",
+        "category": "tool",
+        "icon": "../assets/svg/drawio.svg",
+        "link": "https://www.drawio.com/"
     }
 ]

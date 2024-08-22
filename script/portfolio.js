@@ -1,7 +1,11 @@
 fetch("../assets/json/skills.json")
 	.then((response) => response.json())
 	.then((data) => {
-		const skillsContainer = document.getElementById("skills-container");
+		const langContainer = document.getElementById("skills-container-lang");
+		const frameContainer = document.getElementById("skills-container-frame");
+		const dbContainer = document.getElementById("skills-container-db");
+		const feContainer = document.getElementById("skills-container-fe");
+		const toolContainer = document.getElementById("skills-container-tool");
 
 		data.forEach((skill) => {
 			const item = document.createElement("div");
@@ -29,7 +33,11 @@ fetch("../assets/json/skills.json")
 				</a>
 			`;
 
-			skillsContainer.appendChild(item);
+			if (skill.category == "language") langContainer.appendChild(item);
+			if (skill.category == "framework") frameContainer.appendChild(item);
+			if (skill.category == "database") dbContainer.appendChild(item);
+			if (skill.category == "frontend") feContainer.appendChild(item);
+			if (skill.category == "tool") toolContainer.appendChild(item);
 		});
 	})
 	.catch((error) => {

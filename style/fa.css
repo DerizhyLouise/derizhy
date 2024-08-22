@@ -138,6 +138,22 @@
 	content: "\1f408";
 }
 
+.fa-globe:before {
+	content: "\1f310";
+}
+
+.fa-object-group:before {
+	content: "\f247";
+}
+
+.fa-pen-ruler:before {
+	content: "\f5ae";
+}
+
+.fa-npm:before {
+	content: "\f3d4";
+}
+
 @font-face {
 	font-family: "Font Awesome 6 Pro";
 	font-style: normal;
