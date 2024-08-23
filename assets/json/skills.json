@@ -42,15 +42,15 @@
         "link": "https://spring.io/"
     },
     {
-        "skill": "Node Js",
+        "skill": "Node.js",
         "category": "framework",
         "icon": "fa-brands fa-node-js",
         "link": "https://nodejs.org/en"
     },
     {
-        "skill": "Node Js",
+        "skill": "Express.js",
         "category": "framework",
-        "icon": "fa-brands fa-node-js",
+        "icon": "../assets/svg/express.svg",
         "link": "https://expressjs.com/"
     },
     {
@@ -60,7 +60,7 @@
         "link": "https://www.postgresql.org/"
     },
     {
-        "skill": "redis",
+        "skill": "Redis",
         "category": "database",
         "icon": "../assets/svg/redis.svg",
         "link": "https://redis.io/"
@@ -108,7 +108,7 @@
         "link": "https://jquery.com/"
     },
     {
-        "skill": "Chat GPT",
+        "skill": "ChatGPT",
         "category": "tool",
         "icon": "../assets/svg/openai.svg",
         "link": "https://openai.com/index/chatgpt/"
