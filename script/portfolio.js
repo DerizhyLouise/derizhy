@@ -2,7 +2,9 @@ fetch("../assets/json/skills.json")
 	.then((response) => response.json())
 	.then((data) => {
 		const langContainer = document.getElementById("skills-container-lang");
-		const frameContainer = document.getElementById("skills-container-frame");
+		const frameContainer = document.getElementById(
+			"skills-container-frame"
+		);
 		const dbContainer = document.getElementById("skills-container-db");
 		const feContainer = document.getElementById("skills-container-fe");
 		const toolContainer = document.getElementById("skills-container-tool");
@@ -70,52 +72,6 @@ fetch("../assets/json/experiences.json")
         `;
 
 			experienceContainer.appendChild(listItem);
-		});
-	})
-	.catch((error) => {
-		console.error("Error fetching or processing JSON data:", error);
-	});
-
-fetch("../assets/json/certifications.json")
-	.then((response) => response.json())
-	.then((data) => {
-		const certiContainer = document.getElementById(
-			"certification-container"
-		);
-
-		data.reverse();
-		data.forEach((certi) => {
-			const certiList = document.createElement("div");
-			certiList.className = `flex group mx-2 border-b-2 border-gray last:border-0`;
-
-			if (certi.credentialId) {
-				certiList.innerHTML = `
-                    <div class="flex items-center w-20 mr-4 sm:mr-2 ml-4">
-                        <img src="${certi.logo}" class="w-14 h-14" alt="${certi.issuer}'s Logo">
-                    </div>
-                    <div class="flex-initial w-full mr-4 my-4">
-                        <h3 class="text-lg sm:text-2xl font-bold m-0">${certi.certificateName}</h3>
-                        <p class="text-sm sm:text-lg">${certi.issuer}</p>
-                        <p class="text-sm sm:text-lg">Issued ${certi.issueDate}</p>
-                        <p class="mb-2 text-sm sm:text-lg">Credential ID ${certi.credentialId}</p>
-                        <a class="my-4 h-8 px-4 text-sm sm:text-lg hover:bg-maroon duration-300 border-2 border-maroon" target='_blank' href="${certi.url}">Show Credential</a>
-                    </div>
-                `;
-			} else {
-				certiList.innerHTML = `
-                    <div class="flex items-center w-20 mr-4 sm:mr-2 ml-4">
-                        <img src="${certi.logo}" class="w-14 h-14" alt="${certi.issuer}'s Logo">
-                    </div>
-                    <div class="flex-initial w-full mr-4 my-4 m-0">
-                        <h3 class="text-lg sm:text-2xl font-bold">${certi.certificateName}</h3>
-                        <p class="text-sm sm:text-lg">${certi.issuer}</p>
-                        <p class="mb-2 text-sm sm:text-lg">Issued ${certi.issueDate}</p>
-                        <a class="my-4 h-8 px-4 text-sm sm:text-lg hover:bg-maroon duration-300 border-2 border-maroon" target='_blank' href="${certi.url}">Show Credential</a>
-                    </div>
-                `;
-			}
-
-			certiContainer.appendChild(certiList);
 		});
 	})
 	.catch((error) => {
@@ -200,6 +156,12 @@ function openModal(id) {
 			const content = document.querySelector(".project-modal-info");
 
 			if (project) {
+				const techDiv = document.createElement("div");
+				techDiv.className = "flex items-end flex-wrap text-gray gap-2";
+				project.techs.forEach((tech) => {
+					techDiv.appendChild(badge(tech));
+				})
+
 				content.innerHTML += `
                     <h3 class="text-4xl max-md:text-3xl text-white font-bold">${
 						project.title
@@ -209,6 +171,8 @@ function openModal(id) {
                     <p class="text-base mb-5 max-md:text-sm">${project.description.join(
 						""
 					)}</p>
+					<h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-maroon">Techs</h3>
+					${techDiv.outerHTML}
                     <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-maroon">Project's Media</h3>
                 `;
 
@@ -277,7 +241,24 @@ function openModal(id) {
 		});
 }
 
-function closeModal() {
+const badge = (item) => {
+	const div = document.createElement("div");
+	if (item.pic.startsWith("fa-")) {
+		div.className = "py-2 px-4 bg-yellow transition-colors rounded-full hover:bg-yellow duration-300 cursor-pointer";
+		div.innerHTML = `
+			<span class="${item.pic}"></span> ${item.name}
+		`;
+	} else {
+		div.className = "py-2 px-4 bg-yellow transition-colors rounded-full hover:bg-yellow duration-300 cursor-pointer flex items-center";
+		div.innerHTML = `
+			<img src="${item.pic}" class="h-4 mr-1 text-gray group-hover:text-white"></img>${item.name}
+		`;
+	}
+
+	return div;
+}
+
+const closeModal = () => {
 	const modal = document.getElementById("project-modal");
 	modal.style.display = "none";
 	modal.innerHTML = `

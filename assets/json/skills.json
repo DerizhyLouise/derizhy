@@ -8,7 +8,7 @@
     {
         "skill": "SQL",
         "category": "language",
-        "icon": "fa-light fa-database",
+        "icon": "fa-regular fa-database",
         "link": "https://en.wikipedia.org/wiki/SQL"
     },
     {

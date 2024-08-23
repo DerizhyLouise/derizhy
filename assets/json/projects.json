@@ -13,13 +13,38 @@
         ],
         "time": "August 2024",
         "description": [
-            "This is a web builder project<br><br>",
-            "Technologies I Use :<br>",
-            "- <strong>NextJs</strong> for server-side rendering and building React applications.<br>",
-            "- <strong>GrapesJs</strong> for creating dynamic page editors and web builders.<br>",
-            "- <strong>CodeMirror</strong> for implementing code editors within web applications.<br>",
-            "- <strong>MongoDB</strong> for managing and storing data in a NoSQL database.<br>",
-            "- <strong>Tailwind CSS</strong> for utility-first, responsive styling.<br>"
+            "This is a web builder project.<br>",
+            "We can design and build our own web with no code!"
+        ],
+        "techs": [
+            {
+                "name": "Next.js",
+                "pic": "../assets/svg/nextjs.svg"
+            },
+            {
+                "name": "Tailwind CSS",
+                "pic": "../assets/svg/tailwind.svg"
+            },
+            {
+                "name": "GrapesJs",
+                "pic": "../assets/svg/grapesjs.svg"
+            },
+            {
+                "name": "MongoDB",
+                "pic": "../assets/svg/mongodb.svg"
+            },
+            {
+                "name": "CodeMirror",
+                "pic": "../assets/svg/codemirror.svg"
+            },
+            {
+                "name": "Git",
+                "pic": "fa-brands fa-git-alt"
+            },
+            {
+                "name": "VS Code",
+                "pic": "../assets/svg/vscode.svg"
+            }
         ]
     },
     {
@@ -49,6 +74,28 @@
             "- email 2: nakes@mail.com <br>",
             "- email 3: admin@mail.com <br>",
             "- Pass: 123<br>"
+        ],
+        "techs": [
+            {
+                "name": "Tailwind CSS",
+                "pic": "../assets/svg/tailwind.svg"
+            },
+            {
+                "name": "HTML",
+                "pic": "fa-brands fa-html5"
+            },
+            {
+                "name": "JavaScript",
+                "pic": "fa-brands fa-js"
+            },
+            {
+                "name": "Git",
+                "pic": "fa-brands fa-git-alt"
+            },
+            {
+                "name": "VS Code",
+                "pic": "../assets/svg/vscode.svg"
+            }
         ]
     },
     {
@@ -59,14 +106,57 @@
         "time": "Jan 2024 - Present (ongoing process)",
         "description": [
             "MTHIS (Murni Teguh Hospital Information System) is an information system digital platform that manages and integrates medical, administrative, and financial functions within a healthcare facility to streamline operations and improve patient care.<br><br>",
-            "This project is related to my position as a Software Developer in PT Murni Sadar Tbk.<br><br>",
-            "Technologies I Use :<br>", 
-            "- <strong>Svelte</strong> for building reactive and modern user interfaces<br>", 
-            "- <strong>Typescript</strong> for ensuring type safety and enhancing code quality.<br>", 
-            "- <strong>Tailwind CSS</strong> for efficient and customizable styling.<br>",
-            "- <strong>Redis</strong> for fast caching and improving application performance.<br>",
-            "- <strong>Spring Boot</strong> for robust back-end development.<br>",
-            "- <strong>PostgreSQL</strong> for reliable database management."
+            "This project is related to my position as a Software Developer in PT Murni Sadar Tbk.<br><br>"
+        ],
+        "techs": [
+            {
+                "name": "Svelte",
+                "pic": "../assets/svg/svelte.svg"
+            },
+            {
+                "name": "TypeScript",
+                "pic": "../assets/svg/typescript.svg"
+            },
+            {
+                "name": "Java",
+                "pic": "fa-brands fa-java"
+            },
+            {
+                "name": "Tailwind CSS",
+                "pic": "../assets/svg/tailwind.svg"
+            },
+            {
+                "name": "SQL",
+                "pic": "fa-regular fa-database"
+            },
+            {
+                "name": "Redis",
+                "pic": "../assets/svg/redis.svg"
+            },
+            {
+                "name": "Spring Boot",
+                "pic": "../assets/svg/springboot.svg"
+            },
+            {
+                "name": "PostgreSQL",
+                "pic": "../assets/svg/postgresql.svg"
+            },
+            {
+                "name": "MongoDB",
+                "pic": "../assets/svg/mongodb.svg"
+            },
+            {
+                "name": "shadcn-svelte",
+                "pic": "../assets/svg/shadcn.svg"
+            },
+            {
+                "name": "pnpm",
+                "pic": "../assets/svg/pnpm.svg"
+            },
+            {
+                "name": "VS Code",
+                "pic": "../assets/svg/vscode.svg"
+            }
         ]
     },
     {
@@ -90,6 +180,32 @@
         "time": "Dec 2023 - Present",
         "description": [
             "My personal website deployed with Github Pages. This website built with HTML, Tailwind CSS, and JavaScript without any framework."
+        ],
+        "techs": [
+            {
+                "name": "Tailwind CSS",
+                "pic": "../assets/svg/tailwind.svg"
+            },
+            {
+                "name": "JavaScript",
+                "pic": "fa-brands fa-js"
+            },
+            {
+                "name": "HTML",
+                "pic": "fa-brands fa-html5"
+            },
+            {
+                "name": "CSS",
+                "pic": "fa-brands fa-css3-alt"
+            },
+            {
+                "name": "Git",
+                "pic": "fa-brands fa-git-alt"
+            },
+            {
+                "name": "VS Code",
+                "pic": "../assets/svg/vscode.svg"
+            }
         ]
     },
     {
@@ -114,6 +230,10 @@
                 "url": "https://github.com/DerizhyLouise/RevoU-Data-Analytics-Capstone-Project",
                 "type": "Github",
                 "typeSymbol": "fa-brands fa-github"
+            },
+            {
+                "name": "VS Code",
+                "pic": "../assets/svg/vscode.svg"
             }
         ],
         "time": "Oct 2023 - Dec 2023",
@@ -137,12 +257,29 @@
             "- Total sold product<br>",
             "- Product price<br>",
             "- Time range<br><br>",
-            "Data Source : <a href='https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv'>https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv</a><br><br>",
-            "Technologies I Use :<br>", 
-            "- <strong>Python</strong> for data analysis and scripting.<br>", 
-            "- <strong>Pandas</strong> for data manipulation and transformation.<br>",
-            "- <strong>Matplotlib</strong> for data visualization through detailed charts and graphs.<br>",
-            "- <strong>Looker Studio</strong> for data visualization and reporting."
+            "Data Source : <a href='https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv'>https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv</a><br><br>"
+        ],
+        "techs": [
+            {
+                "name": "Python",
+                "pic": "fa-brands fa-python"
+            },
+            {
+                "name": "SQL",
+                "pic": "fa-regular fa-database"
+            },
+            {
+                "name": "Pandas",
+                "pic": "../assets/svg/pandas.svg"
+            },
+            {
+                "name": "Git",
+                "pic": "fa-brands fa-git-alt"
+            },
+            {
+                "name": "VS Code",
+                "pic": "../assets/svg/vscode.svg"
+            }
         ]
     },
     {
@@ -178,16 +315,57 @@
         "time": "Aug 2023 - Oct 2023",
         "description": [
             "This is Kampus Merdeka Batch 5 - RevoU's Software Engineering Capstone Project.<br><br>",
-            "In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Our primary objective is the development of an e-commerce website called 'Clo', with a specific focus on clothing retail.<br><br>",
-            "Technologies I Use :<br>", 
-            "- <strong>Figma</strong> for UI/UX design and prototyping.<br>", 
-            "- <strong>HTML, CSS, and JavaScript</strong> for front-end development.<br>",
-            "- <strong>Node.js</strong> for server-side scripting and back-end development.<br>",
-            "- <strong>Express.js</strong> for building RESTful APIs and handling server-side logic.<br>",
-            "- <strong>Prisma</strong> for ORM and database management.<br>",
-            "- <strong>PostgreSQL</strong> for managing relational databases.<br>",
-            "- <strong>Supabase</strong> for database deployment<br>",
-            "- <strong>Railway</strong> for back-end deployment."
+            "In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Our primary objective is the development of an e-commerce website called 'Clo', with a specific focus on clothing retail.<br><br>"
+        ],
+        "techs": [
+            {
+                "name": "JavaScript",
+                "pic": "fa-brands fa-js"
+            },
+            {
+                "name": "HTML",
+                "pic": "fa-brands fa-html5"
+            },
+            {
+                "name": "CSS",
+                "pic": "fa-brands fa-css3-alt"
+            },
+            {
+                "name": "Figma",
+                "pic": "fa-brands fa-figma"
+            },
+            {
+                "name": "Node.js",
+                "pic": "fa-brands fa-node-js"
+            },
+            {
+                "name": "Express.js",
+                "pic": "../assets/svg/express.svg"
+            },
+            {
+                "name": "Prisma",
+                "pic": "../assets/svg/prisma.svg"
+            },
+            {
+                "name": "PostgreSQL",
+                "pic": "../assets/svg/postgresql.svg"
+            },
+            {
+                "name": "Supabase",
+                "pic": "../assets/svg/supabase.svg"
+            },
+            {
+                "name": "Railway",
+                "pic": "../assets/svg/railway.svg"
+            },
+            {
+                "name": "Git",
+                "pic": "fa-brands fa-git-alt"
+            },
+            {
+                "name": "VS Code",
+                "pic": "../assets/svg/vscode.svg"
+            }
         ]
     },
     {
@@ -206,6 +384,20 @@
         "description": [
             "Dicoding - Belajar Analisis Data dengan Python Project.<br><br>",
             "This project is submission for Last Project in Dicoding's Python Data Analytics Course. I use Bike Sharing Dataset to deal with this project. This project include of Data Wrangling, Exploratory Data Analysis, Data Visualization, and Making Dashboard with Streamlit."
+        ],
+        "techs": [
+            {
+                "name": "Python",
+                "pic": "fa-brands fa-python"
+            },
+            {
+                "name": "Pandas",
+                "pic": "../assets/svg/pandas.svg"
+            },
+            {
+                "name": "VS Code",
+                "pic": "../assets/svg/vscode.svg"
+            }
         ]
     },
     {
@@ -231,6 +423,16 @@
             "- RSA<br>",
             "- SHA-256<br>",
             "- Schnorr"
+        ],
+        "techs": [
+            {
+                "name": "Python",
+                "pic": "fa-brands fa-python"
+            },
+            {
+                "name": "VS Code",
+                "pic": "../assets/svg/vscode.svg"
+            }
         ]
     },
     {
@@ -257,6 +459,16 @@
             "- Scale Invariant Feature Transform (SIFT)<br>",
             "- Convolutional Neural Network (CNN)<br>",
             "- Histogram of Oriented Gradients (HOG)"
+        ],
+        "techs": [
+            {
+                "name": "Python",
+                "pic": "fa-brands fa-python"
+            },
+            {
+                "name": "VS Code",
+                "pic": "../assets/svg/vscode.svg"
+            }
         ]
     },
     {
@@ -275,6 +487,12 @@
         "description": [
             "Mikroskil University - Digital Start Up Project.<br><br>",
             "This is a project from Digital Start Up Lecture where I built a prototype of an application called 'Help Me'. The concept of this application is to provide services to connect peoples who called 'Requester' whom requesting for helps and create tasks and peoples who called 'Helper' whom will take the tasks and solve them to get rewards."
+        ],
+        "techs": [
+            {
+                "name": "Figma",
+                "pic": "fa-brands fa-figma"
+            }
         ]
     }
 ]
