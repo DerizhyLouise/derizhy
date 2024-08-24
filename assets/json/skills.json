@@ -142,11 +142,5 @@
         "category": "tool",
         "icon": "fa-brands fa-figma",
         "link": "https://www.figma.com/"
-    },
-    {
-        "skill": "draw.io",
-        "category": "tool",
-        "icon": "../assets/svg/drawio.svg",
-        "link": "https://www.drawio.com/"
     }
 ]

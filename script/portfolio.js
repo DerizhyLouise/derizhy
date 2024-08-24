@@ -57,7 +57,7 @@ fetch("../assets/json/experiences.json")
 			const techDiv = document.createElement("div");
 			techDiv.className = "flex items-end flex-wrap text-gray gap-2 mt-4";
 			experience.techs.forEach((tech) => {
-				techDiv.appendChild(badge(tech, "maroon"));
+				techDiv.appendChild(badge(tech, "green"));
 			});
 
 			const listItem = document.createElement("li");
@@ -249,12 +249,12 @@ function openModal(id) {
 const badge = (item, color) => {
 	const div = document.createElement("div");
 	if (item.pic.startsWith("fa-")) {
-		div.className = `py-2 px-4 bg-yellow transition-colors rounded-full border-2 border-${color} duration-300 cursor-pointer`;
+		div.className = `py-2 px-4 bg-${color} transition-colors rounded-full duration-300 cursor-pointer`;
 		div.innerHTML = `
 			<span class="${item.pic}"></span> ${item.name}
 		`;
 	} else {
-		div.className = `py-2 px-4 bg-yellow transition-colors rounded-full border-2 border-${color} duration-300 cursor-pointer flex items-center`;
+		div.className = `py-2 px-4 bg-${color} transition-colors rounded-full duration-300 cursor-pointer flex items-center`;
 		div.innerHTML = `
 			<img src="${item.pic}" class="h-4 mr-1 text-gray group-hover:text-white"></img>${item.name}
 		`;
