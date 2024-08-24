@@ -54,22 +54,27 @@ fetch("../assets/json/experiences.json")
 		experienceContainer.style.setProperty("--length", data.length);
 
 		data.forEach((experience, index) => {
+			const techDiv = document.createElement("div");
+			techDiv.className = "flex items-end flex-wrap text-gray gap-2 mt-4";
+			experience.techs.forEach((tech) => {
+				techDiv.appendChild(badge(tech, "maroon"));
+			});
+
 			const listItem = document.createElement("li");
 			listItem.style.setProperty("--i", index + 1);
 			listItem.style.setProperty("--col", experience.theme);
 			listItem.setAttribute("data-aos", "fade-up");
 			listItem.setAttribute("data-aos-duration", "1500");
 			listItem.innerHTML = `
-            <div class="resume-list-title">
-                <img src="${experience.logo}" alt="${
+				<div class="resume-list-title">
+					<img src="${experience.logo}" alt="${
 				experience.company
 			}"s Logo" class="rounded-full w-16 h-16">
-                <h3>${experience.position} - ${experience.company} (${
-				experience.time
-			})</h3>
-            </div>
-            <p>${experience.description.replace(/\n/g, "<br>")}</p>
-        `;
+					<h3>${experience.position} - ${experience.company} (${experience.time})</h3>
+				</div>
+            	<p>${experience.description.replace(/\n/g, "<br>")}</p>
+				${techDiv.outerHTML}
+        	`;
 
 			experienceContainer.appendChild(listItem);
 		});
@@ -159,8 +164,8 @@ function openModal(id) {
 				const techDiv = document.createElement("div");
 				techDiv.className = "flex items-end flex-wrap text-gray gap-2";
 				project.techs.forEach((tech) => {
-					techDiv.appendChild(badge(tech));
-				})
+					techDiv.appendChild(badge(tech, "yellow"));
+				});
 
 				content.innerHTML += `
                     <h3 class="text-4xl max-md:text-3xl text-white font-bold">${
@@ -188,7 +193,7 @@ function openModal(id) {
 
 				project.media.forEach((media) => {
 					projectMedia.className =
-						"flex flex-wrap items-center gap-4 sm:gap-12";
+						"flex flex-wrap items-center gap-4 sm:gap-6";
 
 					const list = document.createElement("a");
 					list.className =
@@ -241,22 +246,22 @@ function openModal(id) {
 		});
 }
 
-const badge = (item) => {
+const badge = (item, color) => {
 	const div = document.createElement("div");
 	if (item.pic.startsWith("fa-")) {
-		div.className = "py-2 px-4 bg-yellow transition-colors rounded-full hover:bg-yellow duration-300 cursor-pointer";
+		div.className = `py-2 px-4 bg-yellow transition-colors rounded-full border-2 border-${color} duration-300 cursor-pointer`;
 		div.innerHTML = `
 			<span class="${item.pic}"></span> ${item.name}
 		`;
 	} else {
-		div.className = "py-2 px-4 bg-yellow transition-colors rounded-full hover:bg-yellow duration-300 cursor-pointer flex items-center";
+		div.className = `py-2 px-4 bg-yellow transition-colors rounded-full border-2 border-${color} duration-300 cursor-pointer flex items-center`;
 		div.innerHTML = `
 			<img src="${item.pic}" class="h-4 mr-1 text-gray group-hover:text-white"></img>${item.name}
 		`;
 	}
 
 	return div;
-}
+};
 
 const closeModal = () => {
 	const modal = document.getElementById("project-modal");
@@ -286,6 +291,6 @@ const closeModal = () => {
 
 	isOpen = false;
 	modal.onclick = null;
-}
+};
 
 let isOpen = false;

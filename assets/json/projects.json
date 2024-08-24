@@ -230,10 +230,6 @@
                 "url": "https://github.com/DerizhyLouise/RevoU-Data-Analytics-Capstone-Project",
                 "type": "Github",
                 "typeSymbol": "fa-brands fa-github"
-            },
-            {
-                "name": "VS Code",
-                "pic": "../assets/svg/vscode.svg"
             }
         ],
         "time": "Oct 2023 - Dec 2023",
@@ -271,6 +267,10 @@
             {
                 "name": "Pandas",
                 "pic": "../assets/svg/pandas.svg"
+            },
+            {
+                "name": "Looker Studio",
+                "pic": "../assets/svg/looker.svg"
             },
             {
                 "name": "Git",
