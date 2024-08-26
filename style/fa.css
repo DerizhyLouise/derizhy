@@ -1,53 +1,16 @@
-.fa-python:before {
-	content: "\f3e2";
+.fa-bars:before {
+	content: "\f0c9";
+}
+.fa-browser:before {
+	content: "\1f5d4";
 }
 
-.fa-database:before {
-	content: "\f1c0";
+.fa-cat:before {
+	content: "\1f408";
 }
 
-.fa-html5:before {
-	content: "\f13b";
-}
-
-.fa-css3-alt:before {
-	content: "\f38b";
-}
-
-.fa-js:before {
-	content: "\f3b8";
-}
-
-.fa-java:before {
-	content: "\f4e4";
-}
-
-.fa-figma:before {
-	content: "\f799";
-}
-
-.fa-git-alt:before {
-	content: "\f841";
-}
-
-.fa-instagram:before {
-	content: "\f16d";
-}
-
-.fa-facebook-f:before {
-	content: "\f39e";
-}
-
-.fa-linkedin-in:before {
-	content: "\f0e1";
-}
-
-.fa-github:before {
-	content: "\f09b";
-}
-
-.fa-tiktok:before {
-	content: "\e07b";
+.fa-cheese-swiss:before {
+	content: "\1f9c0";
 }
 
 .fa-chevron-down:before {
@@ -58,100 +21,136 @@
 	content: "\f077";
 }
 
-.fa-xmark:before {
-	content: "\d7";
-}
-
-.fa-bars:before {
-	content: "\f0c9";
-}
-
-.fa-dharmachakra:before {
-	content: "\2638";
-}
-
-.fa-location-dot:before {
-	content: "\f3c5";
-}
-
-.fa-user:before {
-	content: "\1f464";
-}
-
-.fa-square-terminal:before {
-	content: "\e32a";
-}
-
-.fa-users:before {
-	content: "\f0c0";
-}
-
-.fa-microphone::before {
-	content: "\f130";
-}
-
-.fa-display-code:before {
-	content: "\e165";
-}
-
-.fa-browser:before {
-	content: "\1f5d4";
-}
-
-.fa-file-pdf:before {
-	content: "\f1c1";
-}
-
-.fa-square-question:before {
-	content: "\f2fd";
-}
-
-.fa-node-js:before {
-	content: "\f3d3";
-}
-
-.fa-cheese-swiss:before {
-	content: "\1f9c0";
-}
-
-.fa-gamepad-modern:before {
-	content: "\1f3ae";
-}
-
-.fa-message-quote:before {
-	content: "\e1e4";
-}
-
-.fa-music:before {
-	content: "\1f3b5";
-}
-
-.fa-paint-roller:before {
-	content: "\f5aa";
+.fa-css3-alt:before {
+	content: "\f38b";
 }
 
 .fa-cup-straw-swoosh:before {
 	content: "\e364";
 }
 
-.fa-cat:before {
-	content: "\1f408";
+.fa-database:before {
+	content: "\f1c0";
+}
+
+.fa-dharmachakra:before {
+	content: "\2638";
+}
+
+.fa-display-code:before {
+	content: "\e165";
+}
+
+.fa-facebook-f:before {
+	content: "\f39e";
+}
+
+.fa-figma:before {
+	content: "\f799";
+}
+
+.fa-file-pdf:before {
+	content: "\f1c1";
+}
+
+.fa-gamepad-modern:before {
+	content: "\1f3ae";
+}
+
+.fa-git-alt:before {
+	content: "\f841";
+}
+
+.fa-github:before {
+	content: "\f09b";
 }
 
 .fa-globe:before {
 	content: "\1f310";
 }
 
+.fa-html5:before {
+	content: "\f13b";
+}
+
+.fa-instagram:before {
+	content: "\f16d";
+}
+
+.fa-java:before {
+	content: "\f4e4";
+}
+
+.fa-js:before {
+	content: "\f3b8";
+}
+
+.fa-linkedin-in:before {
+	content: "\f0e1";
+}
+
+.fa-location-dot:before {
+	content: "\f3c5";
+}
+
+.fa-message-quote:before {
+	content: "\e1e4";
+}
+
+.fa-microphone::before {
+	content: "\f130";
+}
+
+.fa-music:before {
+	content: "\1f3b5";
+}
+
+.fa-node-js:before {
+	content: "\f3d3";
+}
+
+.fa-npm:before {
+	content: "\f3d4";
+}
+
 .fa-object-group:before {
 	content: "\f247";
+}
+
+.fa-paint-roller:before {
+	content: "\f5aa";
 }
 
 .fa-pen-ruler:before {
 	content: "\f5ae";
 }
 
-.fa-npm:before {
-	content: "\f3d4";
+.fa-python:before {
+	content: "\f3e2";
+}
+
+.fa-square-question:before {
+	content: "\f2fd";
+}
+
+.fa-square-terminal:before {
+	content: "\e32a";
+}
+
+.fa-tiktok:before {
+	content: "\e07b";
+}
+
+.fa-user:before {
+	content: "\1f464";
+}
+
+.fa-users:before {
+	content: "\f0c0";
+}
+
+.fa-xmark:before {
+	content: "\d7";
 }
 
 @font-face {
@@ -182,12 +181,12 @@
 	font-weight: 300;
 }
 
-.fa-solid {
-	font-weight: 900;
-}
-
 .fa-regular {
 	font-weight: 400;
+}
+
+.fa-solid {
+	font-weight: 900;
 }
 
 .fa {
