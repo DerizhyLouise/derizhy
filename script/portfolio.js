@@ -171,14 +171,14 @@ function openModal(id) {
                     <h3 class="text-4xl max-md:text-3xl text-white font-bold">${
 						project.title
 					}</h3>
+                    <p class="text-base mt-2 max-md:text-sm">${project.time}</p>
                     <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-maroon">Description</h3>
-                    <p class="text-base mb-5 max-md:text-sm">${project.time}</p>
-                    <p class="text-base mb-5 max-md:text-sm">${project.description.join(
+                    <p class="text-base mb-4 max-md:text-sm">${project.description.join(
 						""
 					)}</p>
 					<h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-maroon">Techs</h3>
 					${techDiv.outerHTML}
-                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-maroon">Project's Media</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-maroon">Media</h3>
                 `;
 
 				const projectMedia = document.createElement("div");
@@ -249,12 +249,12 @@ function openModal(id) {
 const badge = (item, color) => {
 	const div = document.createElement("div");
 	if (item.pic.startsWith("fa-")) {
-		div.className = `py-2 px-4 bg-${color} transition-colors rounded-full duration-300 cursor-pointer`;
+		div.className = `py-2 px-4 bg-${color} rounded-full duration-300 hover:brightness-75 cursor-pointer`;
 		div.innerHTML = `
 			<span class="${item.pic}"></span> ${item.name}
 		`;
 	} else {
-		div.className = `py-2 px-4 bg-${color} transition-colors rounded-full duration-300 cursor-pointer flex items-center`;
+		div.className = `py-2 px-4 bg-${color} rounded-full duration-300 hover:brightness-75 cursor-pointer flex items-center`;
 		div.innerHTML = `
 			<img src="${item.pic}" class="h-4 mr-1 text-gray group-hover:text-white"></img>${item.name}
 		`;
