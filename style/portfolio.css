@@ -30,7 +30,7 @@
 	padding: 2rem 1rem 1rem;
 	box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
 	overflow: hidden;
-	background-color: #F8E9A1;
+	background-color: #f8e9a1;
 }
 
 .resume-listing-content li::before {
