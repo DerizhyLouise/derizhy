@@ -1,21 +1,25 @@
 <svg width="1920" height="934" viewBox="0 0 1920 934" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1_2)">
-<rect width="1920" height="934" fill="white"/>
-<g clip-path="url(#clip1_1_2)">
-<path opacity="0.43" d="M0 422.686C0 422.686 468 262.5 607.402 464.548C878 819 1271 27.5 1920 534C1920 669.81 1920 934 1920 934H0V422.686Z" fill="#A8D0E6"/>
-<path d="M1920 586.827C1920 586.827 1538 814 1064.06 512C533 173.6 0 601.596 0 601.596V934H1920V586.827Z" fill="url(#paint0_linear_1_2)"/>
-</g>
-</g>
-<defs>
-<linearGradient id="paint0_linear_1_2" x1="1580.14" y1="934.82" x2="1435.51" y2="401.384" gradientUnits="userSpaceOnUse">
-<stop stop-color="#A8D0E6" stop-opacity="0.22"/>
-<stop offset="1" stop-color="#AEE4FD" stop-opacity="0.31"/>
-</linearGradient>
-<clipPath id="clip0_1_2">
-<rect width="1920" height="934" fill="white"/>
-</clipPath>
-<clipPath id="clip1_1_2">
-<rect width="1920" height="577" fill="white" transform="translate(0 357)"/>
-</clipPath>
-</defs>
+    <g clip-path="url(#clip0_1_2)">
+        <rect width="1920" height="934" fill="white" />
+        <g clip-path="url(#clip1_1_2)">
+            <path opacity="0.43"
+                d="M0 422.686C0 422.686 468 262.5 607.402 464.548C878 819 1271 27.5 1920 534C1920 669.81 1920 934 1920 934H0V422.686Z"
+                fill="#A8D0E6" />
+            <path d="M1920 586.827C1920 586.827 1538 814 1064.06 512C533 173.6 0 601.596 0 601.596V934H1920V586.827Z"
+                fill="url(#paint0_linear_1_2)" />
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="paint0_linear_1_2" x1="1580.14" y1="934.82" x2="1435.51" y2="401.384"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#A8D0E6" stop-opacity="0.22" />
+            <stop offset="1" stop-color="#AEE4FD" stop-opacity="0.31" />
+        </linearGradient>
+        <clipPath id="clip0_1_2">
+            <rect width="1920" height="934" fill="white" />
+        </clipPath>
+        <clipPath id="clip1_1_2">
+            <rect width="1920" height="577" fill="white" transform="translate(0 357)" />
+        </clipPath>
+    </defs>
 </svg>
