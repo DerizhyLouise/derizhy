@@ -62,7 +62,7 @@
                 "title": "Peduli Anak Website",
                 "url": "https://peduli-anak.derizhy.xyz",
                 "type": "Web",
-                "typeSymbol": "fa-solid fa-browser"
+                "typeSymbol": "fa-regular fa-browser"
             }
         ],
         "time": "March 2024 - August 2024",
@@ -174,7 +174,7 @@
                 "title": "Personal Website",
                 "url": "https://derizhy.xyz",
                 "type": "Web",
-                "typeSymbol": "fa-solid fa-browser"
+                "typeSymbol": "fa-regular fa-browser"
             }
         ],
         "time": "December 2023 - Now",
@@ -217,7 +217,7 @@
                 "title": "Presentation",
                 "url": "https://drive.google.com/file/d/1IApQxj4iHTQDTRybVrOtbfcbCe0bmvoc/view?usp=drive_link",
                 "type": "PDF",
-                "typeSymbol": "fa-solid fa-file-pdf"
+                "typeSymbol": "fa-regular fa-file-pdf"
             },
             {
                 "title": "Dashboard",
@@ -291,7 +291,7 @@
                 "title": "Presentation",
                 "url": "https://drive.google.com/file/d/169NUNmykmGugSSSLY031DE7DgjflnXar/view?usp=drive_link",
                 "type": "PDF",
-                "typeSymbol": "fa-solid fa-file-pdf"
+                "typeSymbol": "fa-regular fa-file-pdf"
             },
             {
                 "title": "Clo - Prototype",
