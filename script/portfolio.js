@@ -272,7 +272,7 @@ const closeModal = () => {
 				<button
 					class="text-white w-14 h-14 max-md:w-12 max-md:h-12 fixed group hover:bg-maroon rounded-lg"
 					title="Close" onClick="closeModal()">
-					<i class="fa-regular fa-xmark text-2xl group-hover:rotate-180 group-hover:duration-500 transition"></i>
+					<i class="fa-solid fa-xmark text-2xl group-hover:rotate-180 group-hover:duration-500 transition"></i>
 				</button>
 			</div>
 			<div class="project-modal-info"></div>
