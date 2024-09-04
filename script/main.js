@@ -4,7 +4,7 @@ tailwind.config = {
 			colors: {
 				gray: "#2B303B",
 				lightgray: "#373D49",
-				green: "#6CF7B2",
+				green: "#5CECC6",
 				maroon: "#C32148",
 				yellow: "#F8E9A1",
 			},
