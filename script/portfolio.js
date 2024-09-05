@@ -27,7 +27,7 @@ fetch("../assets/json/skills.json")
 			}
 
 			item.innerHTML = `
-				<a href="${skill.link}" target="_blank" class="w-40 h-40 p-4 bg-yellow flex flex-col justify-center items-center gap-2 shadow-lg shadow-gray hover:scale-110 sm:hover:scale-125 hover:duration-300 transition">
+				<a href="${skill.link}" target="_blank" class="w-40 h-40 p-4 bg-gray flex flex-col justify-center items-center gap-2 shadow-lg shadow-gray hover:scale-110 sm:hover:scale-125 hover:duration-300 transition">
 					${iconElement.outerHTML}
 					<h4 class="font-semibold text-center">
 						${skill.skill}
@@ -49,34 +49,44 @@ fetch("../assets/json/skills.json")
 fetch("../assets/json/experiences.json")
 	.then((response) => response.json())
 	.then((data) => {
-		const experienceContainer =
-			document.getElementById("resume-experience");
-		experienceContainer.style.setProperty("--length", data.length);
+		const experienceContainer = document.getElementById(
+			"experience-container"
+		);
 
-		data.forEach((experience, index) => {
+		data.forEach((experience) => {
 			const techDiv = document.createElement("div");
 			techDiv.className = "flex items-end flex-wrap text-gray gap-2 mt-4";
 			experience.techs.forEach((tech) => {
-				techDiv.appendChild(badge(tech, "green"));
+				techDiv.appendChild(badge(tech));
 			});
 
-			const listItem = document.createElement("li");
-			listItem.style.setProperty("--i", index + 1);
-			listItem.style.setProperty("--col", experience.theme);
-			listItem.setAttribute("data-aos", "fade-up");
-			listItem.setAttribute("data-aos-duration", "1500");
-			listItem.innerHTML = `
-				<div class="resume-list-title">
+			const itemContainer = document.createElement("div");
+			itemContainer.setAttribute("data-aos", "fade-up");
+			itemContainer.setAttribute("data-aos-duration", "1500");
+			itemContainer.className =
+				"bg-gray w-full p-8 shadow-lg shadow-gray rounded-sm";
+			itemContainer.innerHTML = `
+				<div class="flex max-[480px]:flex-col max-[480px]:items-center">
 					<img src="${experience.logo}" alt="${
 				experience.company
-			}"s Logo" class="rounded-full w-16 h-16">
-					<h3>${experience.position} - ${experience.company} (${experience.time})</h3>
+			}"s Logo" class="rounded-full w-20 h-20">
+					<div class="ml-4 flex flex-col justify-center max-[480px]:items-center max-[480px]:mt-2">
+						<h3 class="text-2xl md:text-4xl font-semibold">${
+							experience.position
+						}<span class="text-lg font-semibold max-[480px]:hidden"> (${
+				experience.time
+			})</span></h3>
+						<h3 class="text-xl md:text-2xl">${experience.company}</h3>
+						<h4 class="text-lg hidden max-[480px]:block">${experience.time}</h4>
+					</div>
 				</div>
-            	<p>${experience.description.replace(/\n/g, "<br>")}</p>
+				<div class="my-4">
+            		<p>${experience.description.replace(/\n/g, "<br>")}</p>
+				</div>
 				${techDiv.outerHTML}
         	`;
 
-			experienceContainer.appendChild(listItem);
+			experienceContainer.appendChild(itemContainer);
 		});
 	})
 	.catch((error) => {
@@ -91,14 +101,14 @@ fetch("../assets/json/reviews.json")
 		data.forEach((review) => {
 			const listItem = document.createElement("a");
 			listItem.className =
-				"h-[416px] w-[416px] max-sm:h-full bg-yellow no-underline flex flex-col p-4 rounded shadow-2xl";
+				"h-[416px] w-[416px] max-sm:h-full bg-gray no-underline flex flex-col p-4 rounded shadow-2xl";
 			listItem.setAttribute("data-aos", "fade-up");
 			listItem.setAttribute("data-aos-duration", "2000");
 			listItem.href = review.url;
 			listItem.target = "_blank";
 
 			listItem.innerHTML = `
-                <div class="flex justify-start items-center pb-2 border-b-2 border-maroon">
+                <div class="flex justify-start items-center pb-2 border-b-2 border-green">
                     <img class="rounded-full h-20 w-20" src="${review.img}" alt="${review.name}'s Pic">
                     <div class="pl-2">
                         <h3 class="text-2xl font-semibold">${review.name}</h3>
@@ -123,7 +133,7 @@ fetch("../assets/json/projects.json")
 		data.forEach((project) => {
 			const item = document.createElement("button");
 			item.className =
-				"relative group shadow-2xl h-96 w-96 overflow-hidden shadow-lg shadow-gray bg-yellow";
+				"relative group shadow-2xl h-96 w-96 overflow-hidden shadow-lg shadow-gray";
 			item.onclick = function () {
 				openModal(project.id);
 			};
@@ -132,11 +142,11 @@ fetch("../assets/json/projects.json")
 
 			item.innerHTML = `
                 <div
-                    class="group-hover:-translate-y-full flex justify-center items-center duration-300 ease-in-out w-full h-full bg-yellow">
-					<h2 class="text-4xl font-semibold text-center text-gray">${project.title}</h2>
+                    class="group-hover:-translate-y-full flex justify-center items-center duration-300 ease-in-out w-full h-full bg-gray">
+					<h2 class="text-4xl font-semibold text-center">${project.title}</h2>
 				</div>
-				<div class="bg-gray p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
-					<h2 class="text-4xl font-semibold text-center">${project.type}</h2>
+				<div class="bg-yellow p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
+					<h2 class="text-4xl font-semibold text-center text-gray">${project.type}</h2>
                 </div>
             `;
 
@@ -162,9 +172,9 @@ function openModal(id) {
 
 			if (project) {
 				const techDiv = document.createElement("div");
-				techDiv.className = "flex items-end flex-wrap text-gray gap-2";
+				techDiv.className = "flex items-end flex-wrap gap-2";
 				project.techs.forEach((tech) => {
-					techDiv.appendChild(badge(tech, "yellow"));
+					techDiv.appendChild(badge(tech));
 				});
 
 				content.innerHTML += `
@@ -172,13 +182,13 @@ function openModal(id) {
 						project.title
 					}</h3>
                     <p class="text-base mt-2 max-md:text-sm">${project.time}</p>
-                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-maroon">Description</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-green">Description</h3>
                     <p class="text-base mb-4 max-md:text-sm">${project.description.join(
 						""
 					)}</p>
-					<h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-maroon">Techs</h3>
+					<h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-green">Techs</h3>
 					${techDiv.outerHTML}
-                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-maroon">Media</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-green">Media</h3>
                 `;
 
 				const projectMedia = document.createElement("div");
@@ -197,20 +207,20 @@ function openModal(id) {
 
 					const list = document.createElement("a");
 					list.className =
-						"relative group shadow-2xl h-60 w-60 overflow-hidden border-2 border-gray bg-yellow";
+						"relative group shadow-2xl h-60 w-60 overflow-hidden";
 					list.setAttribute("href", media.url);
 					list.setAttribute("target", "_blank");
 
 					list.innerHTML = `
                         <div
-                            class="group-hover:-translate-y-full text-gray flex justify-center items-center duration-300 ease-in-out w-full h-full bg-yellow">
+                            class="group-hover:-translate-y-full flex justify-center items-center duration-300 ease-in-out w-full h-full bg-lightgray">
                             <div class="flex flex-col items-center justify-center">
                                 <span class="${media.typeSymbol} text-6xl"></span>
                                 <h2 class="text-2xl font-semibold text-center">${media.type}</h2>
                             </div>
                         </div>
-                        <div class="bg-maroon text-gray p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
-                            <h2 class="text-2xl font-semibold text-center text-yellow">${media.title}</h2>
+                        <div class="bg-yellow text-gray p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
+                            <h2 class="text-2xl font-semibold text-center">${media.title}</h2>
                         </div>
                     `;
 
@@ -246,17 +256,17 @@ function openModal(id) {
 		});
 }
 
-const badge = (item, color) => {
+const badge = (item) => {
 	const div = document.createElement("div");
 	if (item.pic.startsWith("fa-")) {
-		div.className = `py-2 px-4 bg-${color} rounded-full duration-300 hover:brightness-75 cursor-pointer`;
+		div.className = `py-2 px-4 bg-lightgray rounded-full duration-300 text-white hover:brightness-150 cursor-pointer`;
 		div.innerHTML = `
 			<span class="${item.pic}"></span> ${item.name}
 		`;
 	} else {
-		div.className = `py-2 px-4 bg-${color} rounded-full duration-300 hover:brightness-75 cursor-pointer flex items-center`;
+		div.className = `py-2 px-4 bg-lightgray rounded-full duration-300 text-white hover:brightness-150 cursor-pointer flex items-center`;
 		div.innerHTML = `
-			<img src="${item.pic}" class="h-4 mr-1 text-gray group-hover:text-white"></img>${item.name}
+			<img src="${item.pic}" class="h-4 mr-1 text-gray"></img>${item.name}
 		`;
 	}
 
