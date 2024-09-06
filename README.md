@@ -14,4 +14,3 @@
 | Author             | Link                                                           |
 |--------------------|----------------------------------------------------------------|
 | @animationbro      | [AnimationBro](https://codepen.io/animationbro/pen/OJQEVEj)    |
-| @michellebarker    | [Michellebarker](https://codepen.io/michellebarker/pen/poLoeRq)|
