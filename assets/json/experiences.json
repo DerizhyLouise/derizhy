@@ -3,9 +3,8 @@
         "position": "Software Developer",
         "company": "PT Murni Sadar Tbk",
         "time": "Oct 2022 - Present",
-        "theme": "#117BA9",
         "logo": "../assets/image/logo/mt.jpg",
-        "description": "I am experienced by designing, developing, maintaining, and deploying healthcare software.<br><br>I am part of the core team that building a <strong>Hospital Information System</strong> called <strong>MTHIS 2.0</strong>. I dispatched to create <strong>front-end's components</strong> in <strong>Svelte</strong> environtment. I also handled application <strong>Authentication</strong> and <strong>Authorization</strong> system for secure user access. I participated in <strong>databases design</strong> to ensure efficient and scalable data management. I <strong>explored</strong> and <strong>implemented</strong> the necessary technologies to support and enhance project features",
+        "description": "Experienced in designing, developing, maintaining, and deploying healthcare software.<br><br>I am part of the core team that building a <strong>Hospital Information System</strong> called <strong>MTHIS 2.0</strong>. I dispatched to create <strong>front-end's components</strong> in <strong>Svelte</strong> environtment. I also handled application <strong>Authentication</strong> and <strong>Authorization</strong> system for secure user access. I participated in <strong>databases design</strong> to ensure efficient and scalable data management. I <strong>explored</strong> and <strong>implemented</strong> the necessary technologies to support and enhance project features",
         "techs": [
             {
                 "name": "Svelte",
@@ -73,7 +72,6 @@
         "position": "Project Leader",
         "company": "RevoU",
         "time": "Aug 2023 - Dec 2023",
-        "theme": "#FEDE3E",
         "logo": "../assets/image/logo/revou.png",
         "description": "Project Leader of Group 6 Balikpapan Section on Studi Independen - Kampus Merdeka program by Ministry of Education.<br><br>There are two projects I led, <strong>Clo</strong> an E-Commerce Website Project and <strong>Shopping Cart Database Analysis</strong> a Data Analytics Project.",
         "techs": [

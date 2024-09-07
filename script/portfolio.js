@@ -64,7 +64,7 @@ fetch("../assets/json/experiences.json")
 			itemContainer.setAttribute("data-aos", "fade-up");
 			itemContainer.setAttribute("data-aos-duration", "1500");
 			itemContainer.className =
-				"bg-gray w-full p-8 shadow-lg shadow-gray rounded-sm";
+				"bg-gray w-full p-8 shadow-xl shadow-gray rounded-sm";
 			itemContainer.innerHTML = `
 				<div class="flex max-[480px]:flex-col max-[480px]:items-center">
 					<img src="${experience.logo}" alt="${
