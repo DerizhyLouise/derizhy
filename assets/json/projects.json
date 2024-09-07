@@ -1,17 +1,10 @@
 [
     {
         "id": 10,
-        "title": "Web Builder",
+        "title": "Assessment Builder",
         "type": "GrapesJs Web Builder",
-        "media": [
-            {
-                "title": "Source Code",
-                "url": "https://github.com/DerizhyLouise/nextjs-web-builder",
-                "type": "Github",
-                "typeSymbol": "fa-brands fa-github"
-            }
-        ],
-        "time": "August 2024",
+        "media": [],
+        "time": "August 2024 - Now",
         "description": [
             "This is side projects of MTHIS 2.0's Project.<br><br>",
             "The project aims to fulfill the hospital's requirement for a self-build assessment tool that is functional, allowing data storage in a database.",
@@ -19,8 +12,8 @@
         ],
         "techs": [
             {
-                "name": "Next.js",
-                "pic": "../assets/svg/nextjs.svg"
+                "name": "Svelte",
+                "pic": "../assets/svg/svelte.svg"
             },
             {
                 "name": "Tailwind CSS",
