@@ -5,7 +5,7 @@
         "subtitle": "GrapesJs Web Builder",
         "media": [],
         "time": "August 2024 - Now",
-        "type": "Fullstack Web",
+        "type": "Full-Stack Web",
         "description": [
             "This is side projects of MTHIS 2.0's Project.<br><br>",
             "The project aims to fulfill the hospital's requirement for a self-build assessment tool that is functional, allowing data storage in a database.",
@@ -46,7 +46,7 @@
         "id": 9,
         "title": "Peduli Anak",
         "subtitle": "Stunting Web Based App",
-        "type": "Frontend Web",
+        "type": "Front-End Web",
         "media": [
             {
                 "title": "Source Code",
@@ -98,7 +98,7 @@
         "id": 8,
         "title": "MTHIS 2.0",
         "subtitle": "Murni Teguh Hospital Information System",
-        "type": "Fullstack Web",
+        "type": "Full-Stack Web",
         "media": [],
         "time": "January 2024 - Now",
         "description": [
@@ -160,7 +160,7 @@
         "id": 7,
         "title": "derizhy.xyz",
         "subtitle": "Personal Website",
-        "type": "Frontend Web",
+        "type": "Front-End Web",
         "media": [
             {
                 "title": "Source Code",
@@ -285,7 +285,7 @@
         "id": 5,
         "title": "Clo",
         "subtitle": "E-Commerce Web",
-        "type": "Fullstack Web",
+        "type": "Full-Stack Web",
         "media": [
             {
                 "title": "Presentation",
