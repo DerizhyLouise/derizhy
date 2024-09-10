@@ -14,3 +14,4 @@
 | Author             | Link                                                           |
 |--------------------|----------------------------------------------------------------|
 | @animationbro      | [AnimationBro](https://codepen.io/animationbro/pen/OJQEVEj)    |
+| @Paulie-D          | [Paulie-D](https://codepen.io/Paulie-D/pen/gpgYvZ)             |

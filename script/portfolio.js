@@ -141,12 +141,15 @@ fetch("../assets/json/projects.json")
 			item.setAttribute("data-aos-duration", "2000");
 
 			item.innerHTML = `
+				<div class="absolute z-10 px-2 py-4 text-center font-semibold bg-green text-gray top-0 right-0 translate-x-1/3 rotate-45 origin-top-left before:absolute before:top-0 before:w-full before:h-full before:bg-green before:right-full before:-mx-1 after:-mx-1 after:left-full after:absolute after:top-0 after:w-full after:h-full after:bg-green">
+					${project.type}
+				</div>
                 <div
                     class="group-hover:-translate-y-full flex justify-center items-center duration-300 ease-in-out w-full h-full bg-gray">
 					<h2 class="text-4xl font-semibold text-center">${project.title}</h2>
 				</div>
 				<div class="bg-yellow p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
-					<h2 class="text-4xl font-semibold text-center text-gray">${project.type}</h2>
+					<h2 class="text-4xl font-semibold text-center text-gray">${project.subtitle}</h2>
                 </div>
             `;
 
