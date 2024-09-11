@@ -101,7 +101,7 @@ fetch("../assets/json/reviews.json")
 		data.forEach((review) => {
 			const listItem = document.createElement("a");
 			listItem.className =
-				"h-[416px] w-[416px] max-sm:h-full bg-gray no-underline flex flex-col p-4 rounded shadow-2xl";
+				"h-[416px] w-[416px] max-sm:h-full bg-gray no-underline flex flex-col p-4 shadow-2xl shadow-gray";
 			listItem.setAttribute("data-aos", "fade-up");
 			listItem.setAttribute("data-aos-duration", "2000");
 			listItem.href = review.url;
@@ -133,7 +133,7 @@ fetch("../assets/json/projects.json")
 		data.forEach((project) => {
 			const item = document.createElement("button");
 			item.className =
-				"relative group shadow-2xl h-96 w-96 overflow-hidden shadow-lg shadow-gray";
+				"relative group shadow-2xl h-96 w-96 overflow-hidden shadow-2xl shadow-gray";
 			item.onclick = function () {
 				openModal(project.id);
 			};
@@ -210,7 +210,7 @@ function openModal(id) {
 
 					const list = document.createElement("a");
 					list.className =
-						"relative group shadow-2xl h-60 w-60 overflow-hidden";
+						"relative group shadow-2xl shadow-black h-60 w-60 overflow-hidden";
 					list.setAttribute("href", media.url);
 					list.setAttribute("target", "_blank");
 
@@ -262,14 +262,14 @@ function openModal(id) {
 const badge = (item) => {
 	const div = document.createElement("div");
 	if (item.pic.startsWith("fa-")) {
-		div.className = `py-2 px-4 bg-lightgray rounded-full duration-300 text-white hover:brightness-150 cursor-pointer`;
+		div.className = `py-2 px-4 bg-lightgray border border-white rounded-full duration-300 text-white hover:brightness-150 cursor-pointer`;
 		div.innerHTML = `
 			<span class="${item.pic}"></span> ${item.name}
 		`;
 	} else {
-		div.className = `py-2 px-4 bg-lightgray rounded-full duration-300 text-white hover:brightness-150 cursor-pointer flex items-center`;
+		div.className = `py-2 px-4 bg-lightgray border border-white rounded-full duration-300 text-white hover:brightness-150 cursor-pointer flex items-center`;
 		div.innerHTML = `
-			<img src="${item.pic}" class="h-4 mr-1 text-gray"></img>${item.name}
+			<img src="${item.pic}" class="h-4 mr-1 text-gray" alt="${item.name}"></img>${item.name}
 		`;
 	}
 
