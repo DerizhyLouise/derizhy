@@ -146,10 +146,10 @@ fetch("../assets/json/projects.json")
 				</div>
                 <div
                     class="group-hover:-translate-y-full flex justify-center items-center duration-300 ease-in-out w-full h-full bg-gray">
-					<h2 class="text-4xl font-semibold text-center">${project.title}</h2>
+					<h2 class="text-4xl text-center">${project.title}</h2>
 				</div>
 				<div class="bg-yellow p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
-					<h2 class="text-4xl font-semibold text-center text-gray">${project.subtitle}</h2>
+					<h2 class="text-4xl text-center text-gray">${project.subtitle}</h2>
                 </div>
             `;
 
@@ -219,11 +219,11 @@ function openModal(id) {
                             class="group-hover:-translate-y-full flex justify-center items-center duration-300 ease-in-out w-full h-full bg-lightgray">
                             <div class="flex flex-col items-center justify-center">
                                 <span class="${media.typeSymbol} text-6xl"></span>
-                                <h2 class="text-2xl font-semibold text-center">${media.type}</h2>
+                                <h2 class="text-2xl text-center">${media.type}</h2>
                             </div>
                         </div>
                         <div class="bg-yellow text-gray p-4 w-full h-full flex justify-center items-center group-hover:-translate-y-full duration-300 ease-in-out">
-                            <h2 class="text-2xl font-semibold text-center">${media.title}</h2>
+                            <h2 class="text-2xl text-center">${media.title}</h2>
                         </div>
                     `;
 
