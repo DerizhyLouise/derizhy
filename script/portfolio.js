@@ -70,7 +70,7 @@ fetch("../assets/json/experiences.json")
 					<img src="${experience.logo}" alt="${
 				experience.company
 			}"s Logo" class="rounded-full w-20 h-20">
-					<div class="ml-4 flex flex-col justify-center max-[480px]:items-center max-[480px]:mt-2">
+					<div class="min-[480px]:ml-4 flex flex-col justify-center max-[480px]:items-center max-[480px]:mt-2">
 						<h3 class="text-2xl md:text-4xl font-semibold">${
 							experience.position
 						}<span class="text-lg font-semibold max-[480px]:hidden"> (${
@@ -80,7 +80,7 @@ fetch("../assets/json/experiences.json")
 						<h4 class="text-lg hidden max-[480px]:block">${experience.time}</h4>
 					</div>
 				</div>
-				<div class="my-4">
+				<div class="my-4 text-justify">
             		<p>${experience.description.replace(/\n/g, "<br>")}</p>
 				</div>
 				${techDiv.outerHTML}
@@ -186,7 +186,7 @@ function openModal(id) {
 					}</h3>
                     <p class="text-base mt-2 max-md:text-sm">${project.time}</p>
                     <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-green">Description</h3>
-                    <p class="text-base mb-4 max-md:text-sm">${project.description.join(
+                    <p class="text-base mb-4 max-md:text-sm text-justify">${project.description.join(
 						""
 					)}</p>
 					<h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-green">Techs</h3>
