@@ -8,7 +8,7 @@
         "type": "Full-Stack Web",
         "description": [
             "This is side projects of MTHIS 2.0's Project.<br><br>",
-            "The project aims to fulfill the hospital's requirement for a self-build assessment tool that is functional, allowing data storage in a database.",
+            "The project aims to fulfill the hospital's requirement for a self-build assessment tool that is functional, allowing data storage in a database. ",
             "I've been entrusted with leading the Assessment Builder project. Users can create their own assessments by designing custom templates using GrapesJS and adding custom JavaScript code to enhance functionality.<br>"
         ],
         "techs": [
