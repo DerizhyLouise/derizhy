@@ -80,7 +80,7 @@ fetch("../assets/json/experiences.json")
 						<h4 class="text-lg hidden max-[480px]:block">${experience.time}</h4>
 					</div>
 				</div>
-				<div class="my-4 text-justify">
+				<div class="my-4 sm:text-justify">
             		<p>${experience.description.replace(/\n/g, "<br>")}</p>
 				</div>
 				${techDiv.outerHTML}
@@ -186,7 +186,7 @@ function openModal(id) {
 					}</h3>
                     <p class="text-base mt-2 max-md:text-sm">${project.time}</p>
                     <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-green">Description</h3>
-                    <p class="text-base mb-4 max-md:text-sm text-justify">${project.description.join(
+                    <p class="text-base mb-4 max-md:text-sm sm:text-justify">${project.description.join(
 						""
 					)}</p>
 					<h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-green">Techs</h3>
