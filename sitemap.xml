@@ -2,22 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://derizhy.com/</loc>
-    <lastmod>2025-02-10T09:55:05+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://derizhy.com/blog/</loc>
-    <lastmod>2025-02-10T09:55:05+00:00</lastmod>
-    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://derizhy.com/portfolio/</loc>
-    <lastmod>2025-02-10T09:55:05+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://derizhy.com/assets/pdf/cv.pdf</loc>
-    <lastmod>2025-02-10T09:55:05+00:00</lastmod>
-    <priority>0.64</priority>
   </url>
 </urlset>
