@@ -129,6 +129,10 @@
 	content: "\f3e2";
 }
 
+.fa-react:before {
+	content: "\f41b";
+}
+
 .fa-square-question:before {
 	content: "\f2fd";
 }
