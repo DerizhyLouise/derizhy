@@ -108,7 +108,7 @@ fetch("../assets/json/reviews.json")
 			listItem.target = "_blank";
 
 			listItem.innerHTML = `
-                <div class="flex justify-start items-center pb-2 border-b-2 border-green">
+                <div class="flex justify-start items-center pb-2 border-b-2 border-yellow">
                     <img class="rounded-full h-20 w-20" src="${review.img}" alt="${review.name}'s Pic">
                     <div class="pl-2">
                         <h3 class="text-2xl font-semibold">${review.name}</h3>
@@ -141,7 +141,7 @@ fetch("../assets/json/projects.json")
 			item.setAttribute("data-aos-duration", "2000");
 
 			item.innerHTML = `
-				<div class="absolute z-10 px-2 py-4 text-center font-semibold bg-green text-gray top-0 right-0 translate-x-1/3 rotate-45 origin-top-left before:absolute before:top-0 before:w-full before:h-full before:bg-green before:right-full before:-mx-1 after:-mx-1 after:left-full after:absolute after:top-0 after:w-full after:h-full after:bg-green">
+				<div class="absolute z-10 px-2 py-4 text-center font-semibold bg-maroon top-0 right-0 translate-x-1/3 rotate-45 origin-top-left before:absolute before:top-0 before:w-full before:h-full before:bg-maroon before:right-full before:-mx-1 after:-mx-1 after:left-full after:absolute after:top-0 after:w-full after:h-full after:bg-maroon text-white">
 					${project.type}
 				</div>
                 <div
@@ -185,13 +185,13 @@ function openModal(id) {
 						project.title
 					}</h3>
                     <p class="text-base mt-2 max-md:text-sm">${project.time}</p>
-                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-green">Description</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-yellow">Description</h3>
                     <p class="text-base mb-4 max-md:text-sm sm:text-justify">${project.description.join(
 						""
 					)}</p>
-					<h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-green">Techs</h3>
+					<h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-yellow">Techs</h3>
 					${techDiv.outerHTML}
-                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-green">Media</h3>
+                    <h3 class="mt-4 mb-4 pt-4 font-semibold text-2xl max-md:text-xl border-t-2 border-yellow">Media</h3>
                 `;
 
 				const projectMedia = document.createElement("div");
