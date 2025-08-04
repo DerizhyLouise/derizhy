@@ -33,19 +33,19 @@
         <nav class="font-semibold text-xl justify-self-end w-[768px] hidden lg:block">
             <ul class="flex justify-end gap-4 lg:gap-16">
                 <li
-                    class="text-green flex items-center border-b-2 border-green border-opacity-0 transition ease-in-out hover:border-opacity-100 hover:duration-300 cursor-pointer">
+                    class="text-yellow flex items-center border-b-2 border-yellow border-opacity-0 transition ease-in-out hover:border-opacity-100 hover:duration-300 cursor-pointer">
                     <button id="dropdownHome" data-dropdown-toggle="dropdownHome2">
                         Home <i class="fa-solid fa-chevron-down"></i>
                     </button>
                 </li>
                 <li
-                    class="flex items-center border-b-2 border-green border-opacity-0 transition ease-in-out hover:border-opacity-100 hover:text-green hover:duration-300 cursor-pointer">
+                    class="flex items-center border-b-2 border-yellow border-opacity-0 transition ease-in-out hover:border-opacity-100 hover:text-yellow hover:duration-300 cursor-pointer">
                     <button id="dropdownPort" data-dropdown-toggle="dropdownPort2">
                         Portfolio <i class="fa-solid fa-chevron-down"></i>
                     </button>
                 </li>
                 <li
-                    class="flex items-center border-b-2 border-green border-opacity-0 transition ease-in-out hover:border-opacity-100 hover:text-green hover:duration-300 cursor-pointer">
+                    class="flex items-center border-b-2 border-yellow border-opacity-0 transition ease-in-out hover:border-opacity-100 hover:text-yellow hover:duration-300 cursor-pointer">
                     <a href="./blog/">
                         Blog
                     </a>
@@ -59,45 +59,45 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
-        <div id="dropdownHome2" class="z-10 hidden bg-gray border-2 border-green rounded-lg shadow w-28">
+        <div id="dropdownHome2" class="z-10 hidden bg-gray border-2 border-yellow rounded-lg shadow w-28">
             <ul class="py-2 text-sm">
                 <li>
                     <a href="#home"
-                        class="block w-full text-left px-4 py-2 hover:bg-green hover:text-gray duration-300">Home</a>
+                        class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300">Home</a>
                 </li>
                 <li>
                     <a href="#about"
-                        class="block w-full text-left px-4 py-2 hover:bg-green hover:text-gray duration-300">About
+                        class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300">About
                         Me</a>
                 </li>
                 <li>
                     <a href="#know-more"
-                        class="block w-full text-left px-4 py-2 hover:bg-green hover:text-gray duration-300">What I
+                        class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300">What I
                         Do?</a>
                 </li>
             </ul>
         </div>
-        <div id="dropdownPort2" class="z-10 hidden bg-gray border-2 border-green rounded-lg shadow w-36">
+        <div id="dropdownPort2" class="z-10 hidden bg-gray border-2 border-yellow rounded-lg shadow w-36">
             <ul class="py-2 text-sm">
                 <li>
                     <a href="./portfolio#profile"
-                        class="block w-full text-left px-4 py-2 hover:bg-green hover:text-gray duration-300">Profile</a>
+                        class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300">Profile</a>
                 </li>
                 <li>
                     <a href="./portfolio#skills"
-                        class="block w-full text-left px-4 py-2 hover:bg-green hover:text-gray duration-300">Skills</a>
+                        class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300">Skills</a>
                 </li>
                 <li>
                     <a href="./portfolio#experiences"
-                        class="block w-full text-left px-4 py-2 hover:bg-green hover:text-gray duration-300">Experiences</a>
+                        class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300">Experiences</a>
                 </li>
                 <li>
                     <a href="./portfolio#projects"
-                        class="block w-full text-left px-4 py-2 hover:bg-green hover:text-gray duration-300">Projects</a>
+                        class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300">Projects</a>
                 </li>
                 <li>
                     <a href="./portfolio#reviews"
-                        class="block w-full text-left px-4 py-2 hover:bg-green hover:text-gray duration-300">Reviews</a>
+                        class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300">Reviews</a>
                 </li>
             </ul>
         </div>
@@ -141,9 +141,9 @@
         </div>
     </aside>
 
-    <div>
+    <div class="bg-[url('./assets/svg/bg-1.svg')] bg-cover bg-top">
         <section id="home"
-            class="px-4 sm:px-20 md:px-40 lg:px-60 flex items-center pt-40 pb-20 sm:pt-32 h-full min-h-screen w-full bg-[url('./assets/image/profile/bg-prof.jpeg')] landing-bg bg-fixed bg-black/70 bg-blend-multiply text-yellow">
+            class="px-4 sm:px-20 md:px-40 lg:px-60 flex items-center pt-40 pb-20 sm:pt-32 h-full min-h-screen w-full bg-[url('./assets/image/profile/bg-prof.jpeg')] landing-bg bg-fixed bg-black/70 bg-blend-multiply text-white">
             <div data-aos="fade-up" data-aos-duration="2000" class="h-full w-full flex items-center gap-12">
                 <div class="w-full flex flex-col max-md:items-center">
                     <p class="text-4xl text-center md:text-left">Hey there! I'm</p>
@@ -168,8 +168,7 @@
             </div>
         </section>
 
-        <section id="about"
-            class="px-10 xl:px-40 2xl:px-80 h-full w-full bg-yellow/90 bg-[url('./assets/svg/bg-2.svg')] bg-cover bg-top bg-blend-multiply text-white">
+        <section id="about" class="px-10 xl:px-40 2xl:px-80 h-full w-full text-white">
             <div class="h-full w-full py-40">
                 <h2 class="uppercase text-6xl text-center font-semibold mb-10 text-gray" data-aos="fade-up"
                     data-aos-duration="2000">About Me</h2>
@@ -366,7 +365,7 @@
         </section>
 
         <section id="know-more"
-            class="px-4 min-[540px]:px-20 sm:px-40 xl:px-20 min-[1720px]:px-40 max-xl:py-40 h-full xl:h-screen w-full bg-maroon/90 bg-[url('./assets/svg/bg-2.svg')] bg-cover bg-top bg-blend-multiply text-gray">
+            class="px-4 min-[540px]:px-20 sm:px-40 xl:px-20 min-[1720px]:px-40 max-xl:py-40 h-full xl:h-screen w-full text-gray">
             <div class="h-full w-full">
                 <h2 class="uppercase text-6xl text-center font-semibold pb-10 pt-40" data-aos="fade-up"
                     data-aos-duration="2000">What I Do?</h2>
