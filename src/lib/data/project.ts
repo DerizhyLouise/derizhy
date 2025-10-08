@@ -1,3 +1,4 @@
+import { imageRender } from "$lib/image-render";
 import type { Project } from "$lib/type/data-type";
 
 export const project: Project[] = [
@@ -10,35 +11,35 @@ export const project: Project[] = [
 				title: "Preview",
 				url: "https://derizhy.com/assets/pdf/mtprinter.pdf",
 				type: "PDF",
-				typeSymbol: "fa-regular fa-file-pdf",
+				typeSymbol: { src: "fa-regular fa-pdf", type: "fa" },
 			},
 		],
 		time: "April - July 2025",
 		type: "Desktop App",
-		description: `
-			This is side projects of MTHIS 2.0's Project.
-			MT-Printer is a desktop application that acts as a bridge between MTHIS 2.0 and a local printer. When a user clicks the 'Print' button on the web, the web app sends a request to MT-Printer, which then automatically prints the received file using pre-configured printer settings.
-		`,
+		description: [
+			"This is side projects of MTHIS 2.0's Project.",
+			"MT-Printer is a desktop application that acts as a bridge between MTHIS 2.0 and a local printer. When a user clicks the 'Print' button on the web, the web app sends a request to MT-Printer, which then automatically prints the received file using pre-configured printer settings."
+		],
 		techs: [
 			{
 				name: "React",
-				pic: "fa-brands fa-react",
+				pic: { src: "fa-brands fa-react", type: "fa" },
 			},
 			{
 				name: "Electron",
-				pic: "../assets/svg/electron.svg",
+				pic: { src: imageRender.electronIcon, type: "svg" },
 			},
 			{
 				name: "Tailwind CSS",
-				pic: "../assets/svg/tailwind.svg",
+				pic: { src: imageRender.tailwindIcon, type: "svg" },
 			},
 			{
 				name: "Git",
-				pic: "fa-brands fa-git-alt",
+				pic: { src: "fa-brands fa-git-alt", type: "fa" },
 			},
 			{
 				name: "VS Code",
-				pic: "../assets/svg/vscode.svg",
+				pic: { src: imageRender.vscodeIcon, type: "svg" },
 			},
 		],
 	},
@@ -49,38 +50,38 @@ export const project: Project[] = [
 		media: [],
 		time: "August 2024 - Now",
 		type: "Full-Stack Web",
-		description: `
-			his is side projects of MTHIS 2.0's Project.
-			his project was initiated to meet a hospital's need for a custom-built, functional assessment tool with integrated database storage. was entrusted with leading the development of the <strong>Assessment Builder</strong>, a web-based solution that empowers users to design and manage their own assessment templates. Built with <strong>GrapesJS</strong>, the tool allows users to create dynamic templates and extend functionality through custom JavaScript code, enabling a high degree of flexibility and control.
-		`,
+		description: [
+			"his is side projects of MTHIS 2.0's Project.",
+			"his project was initiated to meet a hospital's need for a custom-built, functional assessment tool with integrated database storage. was entrusted with leading the development of the <strong>Assessment Builder</strong>, a web-based solution that empowers users to design and manage their own assessment templates. Built with <strong>GrapesJS</strong>, the tool allows users to create dynamic templates and extend functionality through custom JavaScript code, enabling a high degree of flexibility and control."
+		],
 		techs: [
 			{
 				name: "Svelte",
-				pic: "../assets/svg/svelte.svg",
+				pic: { src: imageRender.svelteIcon, type: "svg" },
 			},
 			{
 				name: "Tailwind CSS",
-				pic: "../assets/svg/tailwind.svg",
+				pic: { src: imageRender.tailwindIcon, type: "svg" },
 			},
 			{
 				name: "GrapesJs",
-				pic: "../assets/svg/grapesjs.svg",
+				pic: { src: imageRender.grapesjsIcon, type: "svg" },
 			},
 			{
 				name: "MongoDB",
-				pic: "../assets/svg/mongodb.svg",
+				pic: { src: imageRender.mongodbIcon, type: "svg" },
 			},
 			{
 				name: "CodeMirror",
-				pic: "../assets/svg/codemirror.svg",
+				pic: { src: imageRender.codemirrorIcon, type: "svg" },
 			},
 			{
 				name: "Git",
-				pic: "fa-brands fa-git-alt",
+				pic: { src: "fa-brands fa-git-alt", type: "fa" },
 			},
 			{
 				name: "VS Code",
-				pic: "../assets/svg/vscode.svg",
+				pic: { src: imageRender.vscodeIcon, type: "svg" },
 			},
 		],
 	},
@@ -94,17 +95,17 @@ export const project: Project[] = [
 				title: "Source Code",
 				url: "https://github.com/DerizhyLouise/peduli-anak",
 				type: "Github",
-				typeSymbol: "fa-brands fa-github",
+				typeSymbol: { src: "fa-brands fa-github", type: "fa" },
 			},
 			{
 				title: "Peduli Anak Website",
 				url: "https://peduli-anak.derizhy.com",
 				type: "Web",
-				typeSymbol: "fa-regular fa-browser",
+				typeSymbol: { src: "fa-brands fa-browser", type: "fa" },
 			},
 		],
 		time: "March - August 2024",
-		description: `
+		description: [
 			"This is final project for Mikroskil University - Informatics Engineering's Bachelor Degree.",
 			"This is an UI for a Stunting web based app.",
 			"Account for testing purpose: ",
@@ -112,27 +113,27 @@ export const project: Project[] = [
 			"- email 2: nakes@mail.com ",
 			"- email 3: admin@mail.com ",
 			"- Pass: 123",
-		`,
+		],
 		techs: [
 			{
 				name: "Tailwind CSS",
-				pic: "../assets/svg/tailwind.svg",
+				pic: { src: imageRender.tailwindIcon, type: "svg" },
 			},
 			{
 				name: "HTML",
-				pic: "fa-brands fa-html5",
+				pic: { src: "fa-brands fa-html5", type: "fa" },
 			},
 			{
 				name: "JavaScript",
-				pic: "fa-brands fa-js",
+				pic: { src: "fa-brands fa-js", type: "fa" },
 			},
 			{
 				name: "Git",
-				pic: "fa-brands fa-git-alt",
+				pic: { src: "fa-brands fa-git-alt", type: "fa" },
 			},
 			{
 				name: "VS Code",
-				pic: "../assets/svg/vscode.svg",
+				pic: { src: imageRender.vscodeIcon, type: "svg" },
 			},
 		],
 	},
@@ -143,58 +144,58 @@ export const project: Project[] = [
 		type: "Full-Stack Web",
 		media: [],
 		time: "January 2024 - Now",
-		description: `
+		description: [
 			"MTHIS (Murni Teguh Hospital Information System) is an information system digital platform that manages and integrates medical, administrative, and financial functions within a healthcare facility to streamline operations and improve patient care.",
 			"This project is related to my position as a Software Developer in PT Murni Sadar Tbk.",
-		`,
+		],
 		techs: [
 			{
 				name: "Svelte",
-				pic: "../assets/svg/svelte.svg",
+				pic: { src: imageRender.svelteIcon, type: "svg" },
 			},
 			{
 				name: "TypeScript",
-				pic: "../assets/svg/typescript.svg",
+				pic: { src: imageRender.typescriptIcon, type: "svg" },
 			},
 			{
 				name: "Java",
-				pic: "fa-brands fa-java",
+				pic: { src: "fa-brands fa-java", type: "fa" },
 			},
 			{
 				name: "Tailwind CSS",
-				pic: "../assets/svg/tailwind.svg",
+				pic: { src: imageRender.tailwindIcon, type: "svg" },
 			},
 			{
 				name: "SQL",
-				pic: "fa-regular fa-database",
+				pic: { src: "fa-regular fa-database", type: "fa" },
 			},
 			{
 				name: "Redis",
-				pic: "../assets/svg/redis.svg",
+				pic: { src: imageRender.redisIcon, type: "svg" },
 			},
 			{
 				name: "Spring Boot",
-				pic: "../assets/svg/springboot.svg",
+				pic: { src: imageRender.springbootIcon, type: "svg" },
 			},
 			{
 				name: "PostgreSQL",
-				pic: "../assets/svg/postgresql.svg",
+				pic: { src: imageRender.postgresqlIcon, type: "svg" },
 			},
 			{
 				name: "MongoDB",
-				pic: "../assets/svg/mongodb.svg",
+				pic: { src: imageRender.mongodbIcon, type: "svg" },
 			},
 			{
 				name: "shadcn-svelte",
-				pic: "../assets/svg/shadcn.svg",
+				pic: { src: imageRender.shadcnIcon, type: "svg" },
 			},
 			{
 				name: "pnpm",
-				pic: "../assets/svg/pnpm.svg",
+				pic: { src: imageRender.pnpmIcon, type: "svg" },
 			},
 			{
 				name: "VS Code",
-				pic: "../assets/svg/vscode.svg",
+				pic: { src: imageRender.vscodeIcon, type: "svg" },
 			},
 		],
 	},
@@ -208,43 +209,43 @@ export const project: Project[] = [
 				title: "Source Code",
 				url: "https://github.com/DerizhyLouise/derizhy",
 				type: "Github",
-				typeSymbol: "fa-brands fa-github",
+				typeSymbol: { src: "fa-brands fa-github", type: "fa" },
 			},
 			{
 				title: "Personal Website",
 				url: "https://derizhy.com",
 				type: "Web",
-				typeSymbol: "fa-regular fa-browser",
+				typeSymbol: { src: "fa-brands fa-browser", type: "fa" },
 			},
 		],
 		time: "December 2023 - Now",
-		description: `
+		description: [
 			"My personal website deployed with Github Pages. This website built with HTML, Tailwind CSS, and JavaScript without any framework.",
-		`,
+		],
 		techs: [
 			{
 				name: "Tailwind CSS",
-				pic: "../assets/svg/tailwind.svg",
+				pic: { src: imageRender.tailwindIcon, type: "svg" },
 			},
 			{
 				name: "JavaScript",
-				pic: "fa-brands fa-js",
+				pic: { src: "fa-brands fa-js", type: "fa" },
 			},
 			{
 				name: "HTML",
-				pic: "fa-brands fa-html5",
+				pic: { src: "fa-brands fa-html5", type: "fa" },
 			},
 			{
 				name: "CSS",
-				pic: "fa-brands fa-css3-alt",
+				pic: { src: "fa-brands fa-css3-alt", type: "fa" },
 			},
 			{
 				name: "Git",
-				pic: "fa-brands fa-git-alt",
+				pic: { src: "fa-brands fa-git-alt", type: "fa" },
 			},
 			{
 				name: "VS Code",
-				pic: "../assets/svg/vscode.svg",
+				pic: { src: imageRender.vscodeIcon, type: "svg" },
 			},
 		],
 	},
@@ -258,23 +259,23 @@ export const project: Project[] = [
 				title: "Presentation",
 				url: "https://drive.google.com/file/d/1IApQxj4iHTQDTRybVrOtbfcbCe0bmvoc/view?usp=drive_link",
 				type: "PDF",
-				typeSymbol: "fa-regular fa-file-pdf",
+				typeSymbol: { src: "fa-regular fa-pdf", type: "fa" },
 			},
 			{
 				title: "Dashboard",
 				url: "https://lookerstudio.google.com/reporting/948d021d-22ff-4e25-948d-c1b320b163ef",
 				type: "Looker Studio",
-				typeSymbol: "fa-regular fa-square-question",
+				typeSymbol: { src: "fa-regular fa-square-question", type: "fa" },
 			},
 			{
 				title: "Analysis Process",
 				url: "https://github.com/DerizhyLouise/RevoU-Data-Analytics-Capstone-Project",
 				type: "Github",
-				typeSymbol: "fa-brands fa-github",
+				typeSymbol: { src: "fa-brands fa-github", type: "fa" },
 			},
 		],
 		time: "October - December 2023",
-		description: `
+		description: [
 			"This is Kampus Merdeka Batch 5 - RevoU's Data Analytics Capstone Project.",
 			"This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the <strong>best group</strong> in Shopping Cart's category.",
 			"Background : From August to December, there was a 24% decrease in revenue.",
@@ -295,31 +296,31 @@ export const project: Project[] = [
 			"- Product price",
 			"- Time range",
 			"Data Source : <a href='https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv'>https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv</a>",
-		`,
+		],
 		techs: [
 			{
 				name: "Python",
-				pic: "fa-brands fa-python",
+				pic: { src: "fa-brands fa-python", type: "fa" },
 			},
 			{
 				name: "SQL",
-				pic: "fa-regular fa-database",
+				pic: { src: "fa-regular fa-database", type: "fa" },
 			},
 			{
 				name: "Pandas",
-				pic: "../assets/svg/pandas.svg",
+				pic: { src: imageRender.pandasIcon, type: "svg" },
 			},
 			{
 				name: "Looker Studio",
-				pic: "../assets/svg/looker.svg",
+				pic: { src: imageRender.lookerIcon, type: "svg" },
 			},
 			{
 				name: "Git",
-				pic: "fa-brands fa-git-alt",
+				pic: { src: "fa-brands fa-git-alt", type: "fa" },
 			},
 			{
 				name: "VS Code",
-				pic: "../assets/svg/vscode.svg",
+				pic: { src: imageRender.vscodeIcon, type: "svg" },
 			},
 		],
 	},
@@ -333,80 +334,80 @@ export const project: Project[] = [
 				title: "Presentation",
 				url: "https://drive.google.com/file/d/169NUNmykmGugSSSLY031DE7DgjflnXar/view?usp=drive_link",
 				type: "PDF",
-				typeSymbol: "fa-regular fa-file-pdf",
+				typeSymbol: { src: "fa-regular fa-pdf", type: "fa" },
 			},
 			{
 				title: "Clo - Prototype",
 				url: "https://www.figma.com/file/hpcYi1s67YbdTRZomSKrgV/RevoU-Group6-team-library?type=design&node-id=0-1&mode=design&t=rZgGG7FrgtWLBMtF-0",
 				type: "Figma",
-				typeSymbol: "fa-brands fa-figma",
+				typeSymbol: { src: "fa-brands fa-figma", type: "fa" },
 			},
 			{
 				title: "Clo - Front-End",
 				url: "https://github.com/Kampus-Merdeka-Software-Engineering/FE-Balikpapan-6",
 				type: "Github",
-				typeSymbol: "fa-brands fa-github",
+				typeSymbol: { src: "fa-brands fa-github", type: "fa" },
 			},
 			{
 				title: "Clo - Back-End",
 				url: "https://github.com/Kampus-Merdeka-Software-Engineering/BE-Balikpapan-6",
 				type: "Github",
-				typeSymbol: "fa-brands fa-github",
+				typeSymbol: { src: "fa-brands fa-github", type: "fa" },
 			},
 		],
 		time: "August - October 2023",
-		description: `
+		description: [
 			"This is Kampus Merdeka Batch 5 - RevoU's Software Engineering Capstone Project.",
 			"In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Our primary objective is the development of an e-commerce website called 'Clo', with a specific focus on clothing retail.",
-		`,
+		],
 		techs: [
 			{
 				name: "JavaScript",
-				pic: "fa-brands fa-js",
+				pic: { src: "fa-brands fa-js", type: "fa" },
 			},
 			{
 				name: "HTML",
-				pic: "fa-brands fa-html5",
+				pic: { src: "fa-brands fa-html5", type: "fa" },
 			},
 			{
 				name: "CSS",
-				pic: "fa-brands fa-css3-alt",
+				pic: { src: "fa-brands fa-css3-alt", type: "fa" },
 			},
 			{
 				name: "Figma",
-				pic: "fa-brands fa-figma",
+				pic: { src: "fa-brands fa-figma", type: "fa" },
 			},
 			{
 				name: "Node.js",
-				pic: "fa-brands fa-node-js",
+				pic: { src: "fa-brands fa-node-js", type: "fa" },
 			},
 			{
 				name: "Express.js",
-				pic: "../assets/svg/express.svg",
+				pic: { src: imageRender.expressIcon, type: "svg" },
 			},
 			{
 				name: "Prisma",
-				pic: "../assets/svg/prisma.svg",
+				pic: { src: imageRender.prismaIcon, type: "svg" },
 			},
 			{
 				name: "PostgreSQL",
-				pic: "../assets/svg/postgresql.svg",
+				pic: { src: imageRender.postgresqlIcon, type: "svg" },
 			},
 			{
 				name: "Supabase",
-				pic: "../assets/svg/supabase.svg",
+				pic: { src: imageRender.supabaseIcon, type: "svg" },
 			},
 			{
 				name: "Railway",
-				pic: "../assets/svg/railway.svg",
+				pic: { src: imageRender.railwayIcon, type: "svg" },
 			},
 			{
 				name: "Git",
-				pic: "fa-brands fa-git-alt",
+				pic: { src: "fa-brands fa-git-alt", type: "fa" },
 			},
 			{
 				name: "VS Code",
-				pic: "../assets/svg/vscode.svg",
+				pic: { src: imageRender.vscodeIcon, type: "svg" },
 			},
 		],
 	},
@@ -420,26 +421,26 @@ export const project: Project[] = [
 				title: "Analysis Process",
 				url: "https://github.com/DerizhyLouise/Bike-Rental-Data-Analysis-Project",
 				type: "Github",
-				typeSymbol: "fa-brands fa-github",
+				typeSymbol: { src: "fa-brands fa-github", type: "fa" },
 			},
 		],
 		time: "September 2023",
-		description: `
+		description: [
 			"Dicoding - Belajar Analisis Data dengan Python Project.",
 			"This project is submission for Last Project in Dicoding's Python Data Analytics Course. I use Bike Sharing Dataset to deal with this project. This project include of Data Wrangling, Exploratory Data Analysis, Data Visualization, and Making Dashboard with Streamlit.",
-		`,
+		],
 		techs: [
 			{
 				name: "Python",
-				pic: "fa-brands fa-python",
+				pic: { src: "fa-brands fa-python", type: "fa" },
 			},
 			{
 				name: "Pandas",
-				pic: "../assets/svg/pandas.svg",
+				pic: { src: imageRender.pandasIcon, type: "svg" },
 			},
 			{
 				name: "VS Code",
-				pic: "../assets/svg/vscode.svg",
+				pic: { src: imageRender.vscodeIcon, type: "svg" },
 			},
 		],
 	},
@@ -453,11 +454,11 @@ export const project: Project[] = [
 				title: "Source Code",
 				url: "https://github.com/DerizhyLouise/Cryptography-Project",
 				type: "Github",
-				typeSymbol: "fa-brands fa-github",
+				typeSymbol: { src: "fa-brands fa-github", type: "fa" },
 			},
 		],
 		time: "April - July 2023",
-		description: `
+		description: [
 			"Mikroskil University - Cryptography Project.",
 			"This project is an assignment from lecturer in my Cryptography Lecture.",
 			"This project contain some cryptographic algorithms such as:",
@@ -467,15 +468,15 @@ export const project: Project[] = [
 			"- RSA",
 			"- SHA-256",
 			"- Schnorr",
-		`,
+		],
 		techs: [
 			{
 				name: "Python",
-				pic: "fa-brands fa-python",
+				pic: { src: "fa-brands fa-python", type: "fa" },
 			},
 			{
 				name: "VS Code",
-				pic: "../assets/svg/vscode.svg",
+				pic: { src: imageRender.vscodeIcon, type: "svg" },
 			},
 		],
 	},
@@ -489,11 +490,11 @@ export const project: Project[] = [
 				title: "Source Code",
 				url: "https://github.com/DerizhyLouise/Image-Processing-PythonProject",
 				type: "Github",
-				typeSymbol: "fa-brands fa-github",
+				typeSymbol: { src: "fa-brands fa-github", type: "fa" },
 			},
 		],
 		time: "April - July 2023",
-		description: `
+		description: [
 			"Mikroskil University - Computer Vision Project.",
 			"This project is an assignment from lecturer in my Computer Vision Lecture.",
 			"This project contain some methods / algorithms such as:",
@@ -504,15 +505,15 @@ export const project: Project[] = [
 			"- Scale Invariant Feature Transform (SIFT)",
 			"- Convolutional Neural Network (CNN)",
 			"- Histogram of Oriented Gradients (HOG)",
-		`,
+		],
 		techs: [
 			{
 				name: "Python",
-				pic: "fa-brands fa-python",
+				pic: { src: "fa-brands fa-python", type: "fa" },
 			},
 			{
 				name: "VS Code",
-				pic: "../assets/svg/vscode.svg",
+				pic: { src: imageRender.vscodeIcon, type: "svg" },
 			},
 		],
 	},
@@ -526,18 +527,18 @@ export const project: Project[] = [
 				title: "Prototype",
 				url: "https://www.figma.com/proto/mEWc3Po2FCXFfyuSgQGrwR/Help-Me?type=design&node-id=1-418&t=mXhQibhWYwIFbFPJ-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A418",
 				type: "Figma",
-				typeSymbol: "fa-brands fa-figma",
+				typeSymbol: { src: "fa-brands fa-figma", type: "fa" },
 			},
 		],
 		time: "April - July 2023",
-		description: `
+		description: [
 			"Mikroskil University - Digital Start Up Project.",
 			"This is a project from Digital Start Up Lecture where I built a prototype of an application called 'Help Me'. The concept of this application is to provide services to connect peoples who called 'Requester' whom requesting for helps and create tasks and peoples who called 'Helper' whom will take the tasks and solve them to get rewards.",
-		`,
+		],
 		techs: [
 			{
 				name: "Figma",
-				pic: "fa-brands fa-figma",
+				pic: { src: "fa-brands fa-figma", type: "fa" },
 			},
 		],
 	},

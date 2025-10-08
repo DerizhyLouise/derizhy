@@ -1,122 +1,163 @@
 <script lang="ts">
-	import logo from "$lib/assets/svg/logo.svg";
-	import { menu } from "$lib/data/menu";
+    import { browser } from "$app/environment";
+    import { page } from "$app/state";
+    import logo from "$lib/assets/svg/logo.svg";
+    import { menu } from "$lib/data/menu";
+    import { onDestroy, onMount } from "svelte";
 
-	type HeaderProps = {
-		currentUrl: URL;
-	};
+    let openDropdown: string | null = $state(null);
+    let isDrawerOpen = $state(false);
 
-	let { currentUrl }: HeaderProps = $props();
+    function toggleDropdown(title: string) {
+        openDropdown = openDropdown === title ? null : title;
+    }
+
+    function toggleDrawer() {
+        isDrawerOpen = !isDrawerOpen;
+    }
+
+    function closeDrawer() {
+        isDrawerOpen = false;
+    }
+
+    function handleClickOutside(event: MouseEvent) {
+        const dropdowns = document.querySelectorAll("[data-dropdown]");
+        let clickedInside = false;
+
+        dropdowns.forEach((dropdown) => {
+            if (dropdown.contains(event.target as Node)) {
+                clickedInside = true;
+            }
+        });
+
+        if (!clickedInside) {
+            openDropdown = null;
+        }
+    }
+
+    onMount(() => {
+        if (browser) {
+            document.addEventListener("mousedown", handleClickOutside);
+        }
+    });
+
+    onDestroy(() => {
+        if (browser) {
+            document.removeEventListener("mousedown", handleClickOutside);
+        }
+    });
+
+    function getLink(baseLink: string, subLink: string): string {
+        if (page.url.pathname === baseLink) {
+            return subLink;
+        } else {
+            return baseLink + subLink;
+        }
+    }
 </script>
 
 <header
-	class="fixed w-full h-28 bg-gray flex items-center justify-between px-10 md:px-20 xl:px-40 2xl:px-60 py-2 z-30 text-white"
+    class="bg-gray fixed z-30 flex h-28 w-full items-center justify-between px-10 py-2 text-white md:px-20 xl:px-40 2xl:px-60"
 >
-	<div class="w-full">
-		<a href="#home" class="flex items-center gap-4">
-			<img class="h-24" src={logo} alt="logo" />
-			<h1 class="text-4xl">Louise Derizhy</h1>
-		</a>
-	</div>
-	<nav
-		class="font-semibold text-xl justify-self-end w-[768px] hidden lg:block"
-	>
-		<ul class="flex justify-end gap-4 lg:gap-16">
-			{#each menu as item (item.title)}
-				<li
-					class="text-yellow flex items-center border-b-2 border-yellow border-opacity-0 transition ease-in-out hover:border-opacity-100 hover:duration-300 cursor-pointer"
-				>
-					<button
-						id="dropdownHome"
-						data-dropdown-toggle="dropdownHome2"
-					>
-						Home
-						<i class="fa-solid fa-chevron-down"></i>
-					</button>
-				</li>
-			{/each}
-		</ul>
-	</nav>
-	<div class="flex justify-end w-6/12 lg:hidden">
-		<button
-			class="text-3xl hover:duration-300 hover:scale-150 transition"
-			type="button"
-			data-drawer-target="drawer-navigation"
-			data-drawer-show="drawer-navigation"
-			data-drawer-placement="right"
-			aria-controls="drawer-navigation"
-		>
-			<i class="fa-solid fa-bars"></i>
-		</button>
-	</div>
-	<div
-		id="dropdownHome2"
-		class="z-10 hidden bg-gray border-2 border-yellow rounded-lg shadow w-28"
-	>
-		<ul class="py-2 text-sm">
-			<li>
-				<a
-					href="#home"
-					class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300"
-					>Home</a
-				>
-			</li>
-			<li>
-				<a
-					href="#about"
-					class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300"
-					>About Me</a
-				>
-			</li>
-			<li>
-				<a
-					href="#know-more"
-					class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300"
-					>What I Do?</a
-				>
-			</li>
-		</ul>
-	</div>
-	<div
-		id="dropdownPort2"
-		class="z-10 hidden bg-gray border-2 border-yellow rounded-lg shadow w-36"
-	>
-		<ul class="py-2 text-sm">
-			<li>
-				<a
-					href="./portfolio#profile"
-					class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300"
-					>Profile</a
-				>
-			</li>
-			<li>
-				<a
-					href="./portfolio#skills"
-					class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300"
-					>Skills</a
-				>
-			</li>
-			<li>
-				<a
-					href="./portfolio#experiences"
-					class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300"
-					>Experiences</a
-				>
-			</li>
-			<li>
-				<a
-					href="./portfolio#projects"
-					class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300"
-					>Projects</a
-				>
-			</li>
-			<li>
-				<a
-					href="./portfolio#reviews"
-					class="block w-full text-left px-4 py-2 hover:bg-yellow hover:text-gray duration-300"
-					>Reviews</a
-				>
-			</li>
-		</ul>
-	</div>
+    <!-- LOGO -->
+    <div class="w-full">
+        <a href="#home" class="flex items-center gap-4">
+            <img class="h-24" src={logo} alt="logo" />
+            <h1 class="text-4xl font-semibold">Louise Derizhy</h1>
+        </a>
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <nav class="hidden justify-self-end text-xl font-semibold lg:block">
+        <ul class="flex justify-end gap-6 xl:gap-10">
+            {#each menu as item (item.title)}
+                <li class="group relative" data-dropdown>
+                    <button
+                        onclick={() => toggleDropdown(item.title)}
+                        class="text-yellow after:bg-yellow relative flex cursor-pointer items-center
+							   gap-2 after:absolute after:bottom-[-4px] after:left-0
+							   after:h-[2px] after:w-0 after:transition-all
+							   after:duration-300 after:content-[''] hover:after:w-full"
+                    >
+                        {item.title}
+                        <i class="fa-solid fa-chevron-down text-sm"></i>
+                    </button>
+
+                    {#if openDropdown === item.title && item.subMenu}
+                        <div
+                            class="border-yellow bg-gray absolute left-0 z-40 mt-2 w-40 rounded-lg border-2 shadow"
+                        >
+                            <ul class="py-2 text-sm">
+                                {#each item.subMenu as subItem (subItem.title)}
+                                    <li>
+                                        <a
+                                            href={getLink(
+                                                item.link,
+                                                subItem.link,
+                                            )}
+                                            class="hover:bg-yellow hover:text-gray block w-full px-4 py-2 text-left text-white duration-300"
+                                        >
+                                            {subItem.title}
+                                        </a>
+                                    </li>
+                                {/each}
+                            </ul>
+                        </div>
+                    {/if}
+                </li>
+            {/each}
+        </ul>
+    </nav>
+
+    <!-- MOBILE BUTTON -->
+    <div class="flex w-6/12 justify-end lg:hidden">
+        <button
+            class="text-3xl transition hover:scale-150 hover:duration-300"
+            type="button"
+            aria-label="Open navigation menu"
+            onclick={toggleDrawer}
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
 </header>
+
+<aside
+    class={`bg-lightgray fixed top-0 right-0 z-40 h-screen w-80 transform transition-transform duration-500 ${
+        isDrawerOpen ? "translate-x-0" : "translate-x-full"
+    }`}
+>
+    <button
+        type="button"
+        onclick={closeDrawer}
+        class="hover:bg-maroon group absolute end-2.5 top-2.5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-transparent text-lg text-white"
+        aria-label="Close sidebar"
+    >
+        <span
+            class="fa-solid fa-xmark transition group-hover:rotate-180 group-hover:duration-500"
+        ></span>
+    </button>
+
+    <div class="flex flex-col gap-4 px-8 py-16">
+        {#each menu as item (item.title)}
+            <div>
+                <h4 class="text-yellow mb-2 text-3xl font-semibold">
+                    {item.title}
+                </h4>
+                <div class="flex flex-col text-xl text-white">
+                    {#if item.subMenu}
+                        {#each item.subMenu as subItem (subItem.title)}
+                            <a
+                                href={getLink(item.link, subItem.link)}
+                                onclick={closeDrawer}
+                                class="hover:bg-maroon rounded-lg p-2 pl-4 transition-all duration-300"
+                            >
+                                {subItem.title}
+                            </a>
+                        {/each}
+                    {/if}
+                </div>
+            </div>
+        {/each}
+    </div>
+</aside>

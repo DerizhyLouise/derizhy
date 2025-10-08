@@ -1,23 +1,29 @@
-export type Menu = {
-	title: string;
-	link: string;
-	subMenu?: Menu[];
-};
-
 export type subMenu = {
 	title: string;
 	link: string;
 };
 
+export type Menu = {
+	title: string;
+	link: string;
+	subMenu?: subMenu[];
+};
+
+export type IconImage = {
+	src: string;
+	type: "svg" | "fa" | "img";
+};
+
 export type Experience = {
+	id: number;
 	position: string;
 	company: string;
 	time: string;
-	logo: string;
-	description: string;
+	logo: IconImage;
+	description: string[];
 	techs: {
 		name: string;
-		pic: string;
+		icon: IconImage;
 	}[];
 };
 
@@ -31,8 +37,7 @@ export type Review = {
 
 export type Skill = {
 	skill: string;
-	category: string;
-	icon: string;
+	icon: IconImage;
 	link: string;
 };
 
@@ -44,13 +49,36 @@ export type Project = {
 		title: string;
 		url: string;
 		type: string;
-		typeSymbol: string;
+		typeSymbol: IconImage;
 	}[];
 	time: string;
 	type: string;
-	description: string;
+	description: string[];
 	techs: {
 		name: string;
-		pic: string;
+		pic: IconImage;
 	}[];
+};
+
+export type FooterLink = {
+	title: string;
+	href: string;
+	target?: string;
+};
+
+export type SocialLink = {
+	label: string;
+	icon: string;
+	href: string;
+	target?: string;
+};
+
+export type FooterSection = {
+	title: string;
+	links: FooterLink[];
+};
+
+export type FooterData = {
+	sections: FooterSection[];
+	social: SocialLink[];
 };

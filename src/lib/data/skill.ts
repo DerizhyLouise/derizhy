@@ -1,148 +1,137 @@
+import { imageRender } from "$lib/image-render";
 import type { Skill } from "$lib/type/data-type";
 
-export const skill: Skill[] = [
+export const languageSkill: Skill[] = [
 	{
 		skill: "TypeScript",
-		category: "language",
-		icon: "../assets/svg/typescript.svg",
+		icon: { src: imageRender.typescriptIcon, type: "svg" },
 		link: "https://www.typescriptlang.org/",
 	},
 	{
 		skill: "SQL",
-		category: "language",
-		icon: "fa-regular fa-database",
+		icon: { src: "fa-regular fa-database", type: "fa" },
 		link: "https://en.wikipedia.org/wiki/SQL",
 	},
 	{
 		skill: "Java",
-		category: "language",
-		icon: "fa-brands fa-java",
+		icon: { src: "fa-brands fa-java", type: "fa" },
 		link: "https://www.java.com/en/",
 	},
 	{
 		skill: "JavaScript",
-		category: "language",
-		icon: "fa-brands fa-js",
+		icon: { src: "fa-brands fa-js", type: "fa" },
 		link: "https://www.javascript.com/",
 	},
 	{
 		skill: "Python",
-		category: "language",
-		icon: "fa-brands fa-python",
+		icon: { src: "fa-brands fa-python", type: "fa" },
 		link: "https://www.python.org/",
 	},
+];
+
+export const frameworkSkill: Skill[] = [
 	{
 		skill: "Svelte",
-		category: "framework",
-		icon: "../assets/svg/svelte.svg",
+		icon: { src: imageRender.svelteIcon, type: "svg" },
 		link: "https://svelte.dev/",
 	},
 	{
 		skill: "Spring Boot",
-		category: "framework",
-		icon: "../assets/svg/springboot.svg",
+		icon: { src: imageRender.springbootIcon, type: "svg" },
 		link: "https://spring.io/",
 	},
 	{
 		skill: "Node.js",
-		category: "framework",
-		icon: "fa-brands fa-node-js",
+		icon: { src: "fa-brands fa-node-js", type: "fa" },
 		link: "https://nodejs.org/en",
 	},
 	{
 		skill: "Express.js",
-		category: "framework",
-		icon: "../assets/svg/express.svg",
+		icon: { src: imageRender.expressIcon, type: "svg" },
 		link: "https://expressjs.com/",
 	},
-	{
-		skill: "PostgreSQL",
-		category: "database",
-		icon: "../assets/svg/postgresql.svg",
-		link: "https://www.postgresql.org/",
-	},
-	{
-		skill: "Redis",
-		category: "database",
-		icon: "../assets/svg/redis.svg",
-		link: "https://redis.io/",
-	},
-	{
-		skill: "MongoDB",
-		category: "database",
-		icon: "../assets/svg/mongodb.svg",
-		link: "https://www.mongodb.com/",
-	},
-	{
-		skill: "MySQL",
-		category: "database",
-		icon: "../assets/svg/mysql.svg",
-		link: "https://www.mysql.com/",
-	},
+];
+
+export const frontendSkill: Skill[] = [
 	{
 		skill: "Tailwind CSS",
-		category: "frontend",
-		icon: "../assets/svg/tailwind.svg",
+		icon: { src: imageRender.tailwindIcon, type: "svg" },
 		link: "https://tailwindcss.com/",
 	},
 	{
 		skill: "HTML",
-		category: "frontend",
-		icon: "fa-brands fa-html5",
+		icon: { src: "fa-brands fa-html5", type: "fa" },
 		link: "https://en.wikipedia.org/wiki/HTML",
 	},
 	{
 		skill: "CSS",
-		category: "frontend",
-		icon: "fa-brands fa-css3-alt",
+		icon: { src: "fa-brands fa-css3-alt", type: "fa" },
 		link: "https://en.wikipedia.org/wiki/CSS",
 	},
 	{
 		skill: "shadcn-svelte",
-		category: "frontend",
-		icon: "../assets/svg/shadcn.svg",
+		icon: { src: imageRender.shadcnIcon, type: "svg" },
 		link: "https://www.shadcn-svelte.com/",
 	},
 	{
 		skill: "jQuery",
-		category: "frontend",
-		icon: "../assets/svg/jquery.svg",
+		icon: { src: imageRender.jqueryIcon, type: "svg" },
 		link: "https://jquery.com/",
 	},
+];
+
+export const databaseSkill: Skill[] = [
+	{
+		skill: "PostgreSQL",
+		icon: { src: imageRender.postgresqlIcon, type: "svg" },
+		link: "https://www.postgresql.org/",
+	},
+	{
+		skill: "Redis",
+		icon: { src: imageRender.redisIcon, type: "svg" },
+		link: "https://redis.io/",
+	},
+	{
+		skill: "MongoDB",
+		icon: { src: imageRender.mongodbIcon, type: "svg" },
+		link: "https://www.mongodb.com/",
+	},
+	{
+		skill: "MySQL",
+		icon: { src: imageRender.mysqlIcon, type: "svg" },
+		link: "https://www.mysql.com/",
+	},
+];
+
+export const toolSkill: Skill[] = [
 	{
 		skill: "ChatGPT",
-		category: "tool",
-		icon: "../assets/svg/openai.svg",
+		icon: { src: imageRender.openaiIcon, type: "svg" },
 		link: "https://openai.com/index/chatgpt/",
 	},
 	{
 		skill: "VS Code",
-		category: "tool",
-		icon: "../assets/svg/vscode.svg",
+		icon: { src: imageRender.vscodeIcon, type: "svg" },
 		link: "https://code.visualstudio.com/",
 	},
 	{
 		skill: "Git",
-		category: "tool",
-		icon: "fa-brands fa-git-alt",
+		icon: { src: "fa-brands fa-git-alt", type: "fa" },
 		link: "https://git-scm.com/",
 	},
 	{
 		skill: "pnpm",
-		category: "tool",
-		icon: "../assets/svg/pnpm.svg",
+		icon: { src: imageRender.pnpmIcon, type: "svg" },
 		link: "https://pnpm.io/",
 	},
 	{
 		skill: "npm",
-		category: "tool",
-		icon: "fa-brands fa-npm",
+		icon: { src: "fa-brands fa-npm", type: "fa" },
 		link: "https://www.npmjs.com/",
 	},
 	{
 		skill: "Figma",
-		category: "tool",
-		icon: "fa-brands fa-figma",
+		icon: { src: "fa-brands fa-figma", type: "fa" },
 		link: "https://www.figma.com/",
 	},
 ];

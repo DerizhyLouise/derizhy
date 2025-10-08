@@ -1,15 +1,18 @@
 <script lang="ts">
-	import { page } from "$app/state";
-	import favicon from "$lib/assets/svg/favicon.svg";
-	import Header from "$lib/custom-components/header.svelte";
-	import "../app.css";
+    import favicon from "$lib/assets/svg/favicon.svg";
+    import Footer from "$lib/custom-components/footer.svelte";
+    import Header from "$lib/custom-components/header.svelte";
+    import "../app.css";
 
-	let { children } = $props();
+    let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+    <link rel="icon" href={favicon} />
 </svelte:head>
 
-<Header currentUrl={page.url}></Header>
+<Header></Header>
+
 {@render children?.()}
+
+<Footer></Footer>
