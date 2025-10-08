@@ -1,0 +1,383 @@
+@import "tailwindcss";
+
+@layer base {
+}
+
+@layer components {
+	.gradient-text {
+		background-image: linear-gradient(
+			-225deg,
+			#f8e9a1 0%,
+			#b72946 33%,
+			#6cf7b2 66%,
+			#f8e9a1 100%
+		);
+		background-size: 200% auto;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textclip 3s linear infinite;
+	}
+
+	@keyframes textclip {
+		to {
+			background-position: 200% center;
+		}
+	}
+
+	.landing-bg {
+		background-position: bottom;
+	}
+
+	@media (max-height: 800px) {
+		.landing-bg {
+			background-position: center 800px;
+		}
+	}
+
+	/* Footer */
+	footer {
+		height: 100%;
+		position: relative;
+		z-index: 2;
+		user-select: none;
+	}
+
+	.footer-container {
+		max-width: 1170px;
+		margin: 50px auto;
+	}
+
+	.footer-row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.footer-container ul {
+		list-style: none;
+	}
+
+	.footer-col {
+		width: 25%;
+		padding: 0 15px;
+	}
+
+	.footer-col h4 {
+		font-size: 18px;
+		color: #ffffff;
+		text-transform: capitalize;
+		margin-bottom: 35px;
+		font-weight: 500;
+		position: relative;
+	}
+
+	.footer-col h4::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -10px;
+		background-color: #f8e9a1;
+		height: 2px;
+		box-sizing: border-box;
+		width: 50px;
+	}
+
+	.footer-col ul li:not(:last-child) {
+		margin-bottom: 10px;
+	}
+
+	.footer-col ul li a {
+		font-size: 16px;
+		text-transform: capitalize;
+		color: #ffffff;
+		text-decoration: none;
+		font-weight: 300;
+		display: block;
+		transition: all 0.3s ease;
+	}
+
+	.footer-col ul li a:hover {
+		color: #ffffff;
+		padding-left: 8px;
+	}
+
+	.footer-col .social-links a {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		background-color: rgba(255, 255, 255, 0.2);
+		margin: 0 10px 10px 0;
+		text-align: center;
+		line-height: 40px;
+		border-radius: 50%;
+		color: #ffffff;
+		transition: all 0.5s ease;
+	}
+
+	.footer-col .social-links a i {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		background-color: rgba(255, 255, 255, 0.2);
+		margin: 0 10px 10px 0;
+		text-align: center;
+		line-height: 40px;
+		border-radius: 50%;
+		color: #ffffff;
+		transition: all 0.5s ease;
+	}
+
+	.footer-col .social-links a:hover {
+		color: #24262b;
+		background-color: #ffffff;
+	}
+
+	.footer-col .social-links a:hover i {
+		color: #24262b;
+		background-color: #ffffff;
+	}
+
+	@media (max-width: 767px) {
+		.footer-col {
+			width: 50%;
+			margin-bottom: 30px;
+		}
+	}
+
+	@media (max-width: 574px) {
+		.footer-col {
+			width: 100%;
+		}
+	}
+
+	/* ICONS */
+
+	.fa-bars:before {
+		content: "\f0c9";
+	}
+	.fa-browser:before {
+		content: "\1f5d4";
+	}
+
+	.fa-cat:before {
+		content: "\1f408";
+	}
+
+	.fa-cheese-swiss:before {
+		content: "\1f9c0";
+	}
+
+	.fa-chevron-down:before {
+		content: "\f078";
+	}
+
+	.fa-chevron-up:before {
+		content: "\f077";
+	}
+
+	.fa-css3-alt:before {
+		content: "\f38b";
+	}
+
+	.fa-cup-straw-swoosh:before {
+		content: "\e364";
+	}
+
+	.fa-database:before {
+		content: "\f1c0";
+	}
+
+	.fa-dharmachakra:before {
+		content: "\2638";
+	}
+
+	.fa-display-code:before {
+		content: "\e165";
+	}
+
+	.fa-facebook-f:before {
+		content: "\f39e";
+	}
+
+	.fa-figma:before {
+		content: "\f799";
+	}
+
+	.fa-file-pdf:before {
+		content: "\f1c1";
+	}
+
+	.fa-gamepad-modern:before {
+		content: "\1f3ae";
+	}
+
+	.fa-git-alt:before {
+		content: "\f841";
+	}
+
+	.fa-github:before {
+		content: "\f09b";
+	}
+
+	.fa-globe:before {
+		content: "\1f310";
+	}
+
+	.fa-html5:before {
+		content: "\f13b";
+	}
+
+	.fa-instagram:before {
+		content: "\f16d";
+	}
+
+	.fa-java:before {
+		content: "\f4e4";
+	}
+
+	.fa-js:before {
+		content: "\f3b8";
+	}
+
+	.fa-linkedin-in:before {
+		content: "\f0e1";
+	}
+
+	.fa-location-dot:before {
+		content: "\f3c5";
+	}
+
+	.fa-message-quote:before {
+		content: "\e1e4";
+	}
+
+	.fa-microphone::before {
+		content: "\f130";
+	}
+
+	.fa-music:before {
+		content: "\1f3b5";
+	}
+
+	.fa-node-js:before {
+		content: "\f3d3";
+	}
+
+	.fa-npm:before {
+		content: "\f3d4";
+	}
+
+	.fa-object-group:before {
+		content: "\f247";
+	}
+
+	.fa-paint-roller:before {
+		content: "\f5aa";
+	}
+
+	.fa-pen-ruler:before {
+		content: "\f5ae";
+	}
+
+	.fa-python:before {
+		content: "\f3e2";
+	}
+
+	.fa-react:before {
+		content: "\f41b";
+	}
+
+	.fa-square-question:before {
+		content: "\f2fd";
+	}
+
+	.fa-square-terminal:before {
+		content: "\e32a";
+	}
+
+	.fa-tiktok:before {
+		content: "\e07b";
+	}
+
+	.fa-user:before {
+		content: "\1f464";
+	}
+
+	.fa-users:before {
+		content: "\f0c0";
+	}
+
+	.fa-xmark:before {
+		content: "\d7";
+	}
+
+	.fa-light {
+		font-weight: 300;
+	}
+
+	.fa-regular {
+		font-weight: 400;
+	}
+
+	.fa-solid {
+		font-weight: 900;
+	}
+
+	@font-face {
+		font-family: "Font Awesome 6 Pro";
+		font-style: normal;
+		font-weight: 300;
+		font-display: block;
+		src: url(/src/lib/assets/font/fa-light-300.woff2) format("woff2");
+	}
+
+	@font-face {
+		font-family: "Font Awesome 6 Pro";
+		font-style: normal;
+		font-weight: 900;
+		font-display: block;
+		src: url(src/lib/assets/font/fa-solid-900.woff2) format("woff2");
+	}
+
+	@font-face {
+		font-family: "Font Awesome 6 Brands";
+		font-style: normal;
+		font-weight: 400;
+		font-display: block;
+		src: url(src/lib/assets/font/fa-brands-400.woff2) format("woff2");
+	}
+
+	.fa {
+		font-family: "Font Awesome 6 Pro";
+		font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+		font-weight: 900;
+		font-weight: var(--fa-style, 900);
+	}
+
+	.fa,
+	.fa-brands,
+	.fa-light,
+	.fa-solid,
+	.fab {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		display: inline-block;
+		display: var(--fa-display, inline-block);
+		font-style: normal;
+		font-variant: normal;
+		line-height: 1;
+		text-rendering: auto;
+	}
+
+	.fa-brands,
+	.fab {
+		font-family: "Font Awesome 6 Brands";
+		font-weight: 400;
+	}
+
+	.fa-solid,
+	.fa-light,
+	.fa-regular {
+		font-family: "Font Awesome 6 Pro";
+	}
+}
