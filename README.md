@@ -2,13 +2,17 @@
 
 ### Credit to:
 
+#### Framework
+| Library                | Link                                    |
+|------------------------|-----------------------------------------|
+| Svelte                 | [Svelte](https://svelte.dev/)|
+| Tailwind CSS           | [Tailwind CSS](https://tailwindcss.com/)|
+
 #### Library
 | Library                | Link                                    |
 |------------------------|-----------------------------------------|
-| Tailwind CSS           | [Tailwind CSS](https://tailwindcss.com/)|
 | Font Awesome           | [Font Awesome](https://fontawesome.com/)|
 | Animated on Scroll     | [AOS](https://michalsnik.github.io/aos) |
-| Flowbite               | [Flowbite](https://flowbite.com/)       |
 
 #### Inspiration
 | Author             | Link                                                           |
