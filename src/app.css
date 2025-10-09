@@ -15,13 +15,14 @@
 		margin: 0px;
 		padding: 0px;
 		box-sizing: border-box;
-		font-family: "Poppins";
+		font-family: "Poppins", sans-serif;
 		scrollbar-color: #c32148 #f8e9a1;
 		scrollbar-width: thin;
 	}
 
 	html {
 		scroll-behavior: smooth;
+		overflow-x: hidden;
 	}
 
 	h1,
