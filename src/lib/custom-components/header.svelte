@@ -33,6 +33,8 @@
         if (!clickedInside) {
             openDropdown = null;
         }
+
+        closeDrawer();
     }
 
     onMount(() => {
@@ -72,20 +74,32 @@
         <ul class="flex justify-end gap-6 xl:gap-10">
             {#each menu as item (item.title)}
                 <li class="group relative" data-dropdown>
-                    <button
-                        onclick={() => toggleDropdown(item.title)}
-                        class="text-yellow after:bg-yellow relative flex cursor-pointer items-center
+                    {#if item.subMenu}
+                        <button
+                            onclick={() => toggleDropdown(item.title)}
+                            class="text-yellow after:bg-yellow relative flex cursor-pointer items-center
 							   gap-2 after:absolute after:bottom-[-4px] after:left-0
 							   after:h-[2px] after:w-0 after:transition-all
 							   after:duration-300 after:content-[''] hover:after:w-full"
-                    >
-                        {item.title}
-                        <i class="fa-solid fa-chevron-down text-sm"></i>
-                    </button>
+                        >
+                            {item.title}
+                            <i class="fa-solid fa-chevron-down text-sm"></i>
+                        </button>
+                    {:else}
+                        <a
+                            href={item.link}
+                            class="text-yellow after:bg-yellow relative flex cursor-pointer items-center
+							   gap-2 after:absolute after:bottom-[-4px] after:left-0
+							   after:h-[2px] after:w-0 after:transition-all
+							   after:duration-300 after:content-[''] hover:after:w-full"
+                        >
+                            {item.title}
+                        </a>
+                    {/if}
 
                     {#if openDropdown === item.title && item.subMenu}
                         <div
-                            class="border-yellow bg-gray absolute left-0 z-40 mt-2 w-40 rounded-lg border-2 shadow"
+                            class="border-yellow bg-gray absolute left-0 z-40 mt-2 w-30 rounded-lg border-2 shadow"
                         >
                             <ul class="py-2 text-sm">
                                 {#each item.subMenu as subItem (subItem.title)}
@@ -141,9 +155,12 @@
     <div class="flex flex-col gap-4 px-8 py-16">
         {#each menu as item (item.title)}
             <div>
-                <h4 class="text-yellow mb-2 text-3xl font-semibold">
+                <a
+                    class="text-yellow mb-2 text-3xl font-semibold"
+                    href={getLink(item.link, "")}
+                >
                     {item.title}
-                </h4>
+                </a>
                 <div class="flex flex-col text-xl text-white">
                     {#if item.subMenu}
                         {#each item.subMenu as subItem (subItem.title)}

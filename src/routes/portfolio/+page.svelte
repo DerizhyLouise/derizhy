@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { browser } from "$app/environment";
     import cv from "$lib/assets/pdf/cv.pdf";
     import ImgRenderer from "$lib/custom-components/img-renderer.svelte";
     import SkillBadge from "$lib/custom-components/skill-badge.svelte";
@@ -13,6 +14,7 @@
         toolSkill,
     } from "$lib/data/skill";
     import type { Project } from "$lib/type/data-type";
+    import { onDestroy, onMount } from "svelte";
 
     let projectModalItem: Project | undefined = $state();
 
@@ -23,6 +25,35 @@
     function closeModal() {
         projectModalItem = undefined;
     }
+
+    function handleOutsideClick(event: MouseEvent) {
+        if (projectModalItem) {
+            const modal = document.getElementById("project-modal");
+            if (modal && !modal.contains(event.target as Node)) {
+                closeModal();
+            }
+        }
+    }
+
+    function handleEscapeKey(event: KeyboardEvent) {
+        if (projectModalItem && event.key === "Escape") {
+            closeModal();
+        }
+    }
+
+    onMount(() => {
+        if (browser) {
+            document.addEventListener("mousedown", handleOutsideClick);
+            document.addEventListener("keydown", handleEscapeKey);
+        }
+    });
+
+    onDestroy(() => {
+        if (browser) {
+            document.removeEventListener("mousedown", handleOutsideClick);
+            document.addEventListener("keydown", handleEscapeKey);
+        }
+    });
 </script>
 
 <div id="container">
@@ -539,11 +570,13 @@
     </div>
 </div>
 
+<!-- Project Modal -->
 {#if projectModalItem}
     <div class="fixed inset-0 z-[998] bg-black/50 brightness-50"></div>
 
     <div class="fixed inset-0 z-[999] flex items-center justify-center p-4">
         <div
+            id="project-modal"
             class="bg-gray relative max-h-[90vh] w-3/6 overflow-y-auto rounded text-white shadow-2xl max-xl:w-5/6 max-md:w-full max-md:rounded-none"
         >
             <button
@@ -569,8 +602,8 @@
                     Description
                 </h3>
                 <p class="mb-4 text-base max-md:text-sm sm:text-justify">
-                    {#each projectModalItem.description as desc (desc)}
-                        {desc}
+                    {#each projectModalItem.description as desc, i (i)}
+                        {desc}<br />
                     {/each}
                 </p>
 
@@ -604,9 +637,11 @@
                                     <div
                                         class="flex flex-col items-center justify-center"
                                     >
-                                        <span
-                                            class="fa-brands fa-github text-6xl"
-                                        ></span>
+                                        <ImgRenderer
+                                            name={media.title}
+                                            icon={media.typeSymbol}
+                                            iconClassName="text-6xl"
+                                        ></ImgRenderer>
                                         <h2 class="text-center text-2xl">
                                             {media.type}
                                         </h2>

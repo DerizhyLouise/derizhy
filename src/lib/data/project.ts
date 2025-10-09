@@ -1,3 +1,5 @@
+import helpMeProposal from "$lib/assets/pdf/helpMeProposal.pdf";
+import mtPrinter from "$lib/assets/pdf/mtprinter.pdf";
 import { imageRender } from "$lib/image-render";
 import type { Project } from "$lib/type/data-type";
 
@@ -9,9 +11,9 @@ export const project: Project[] = [
 		media: [
 			{
 				title: "Preview",
-				url: "https://derizhy.com/assets/pdf/mtprinter.pdf",
+				url: mtPrinter,
 				type: "PDF",
-				typeSymbol: { src: "fa-regular fa-pdf", type: "fa" },
+				typeSymbol: { src: "fa-regular fa-file-pdf", type: "fa" },
 			},
 		],
 		time: "April - July 2025",
@@ -51,8 +53,9 @@ export const project: Project[] = [
 		time: "August 2024 - Now",
 		type: "Full-Stack Web",
 		description: [
-			"his is side projects of MTHIS 2.0's Project.",
-			"his project was initiated to meet a hospital's need for a custom-built, functional assessment tool with integrated database storage. was entrusted with leading the development of the <strong>Assessment Builder</strong>, a web-based solution that empowers users to design and manage their own assessment templates. Built with <strong>GrapesJS</strong>, the tool allows users to create dynamic templates and extend functionality through custom JavaScript code, enabling a high degree of flexibility and control."
+			"This is side projects of MTHIS 2.0's Project.",
+			"",
+			"This project was initiated to meet a hospital's need for a custom-built, functional assessment tool with integrated database storage. was entrusted with leading the development of the Assessment Builder, a web-based solution that empowers users to design and manage their own assessment templates. Built with GrapesJS, the tool allows users to create dynamic templates and extend functionality through custom JavaScript code, enabling a high degree of flexibility and control."
 		],
 		techs: [
 			{
@@ -107,6 +110,7 @@ export const project: Project[] = [
 		time: "March - August 2024",
 		description: [
 			"This is final project for Mikroskil University - Informatics Engineering's Bachelor Degree.",
+			"",
 			"This is an UI for a Stunting web based app.",
 			"Account for testing purpose: ",
 			"- email 1: user@mail.com ",
@@ -146,6 +150,7 @@ export const project: Project[] = [
 		time: "January 2024 - Now",
 		description: [
 			"MTHIS (Murni Teguh Hospital Information System) is an information system digital platform that manages and integrates medical, administrative, and financial functions within a healthcare facility to streamline operations and improve patient care.",
+			"",
 			"This project is related to my position as a Software Developer in PT Murni Sadar Tbk.",
 		],
 		techs: [
@@ -259,7 +264,7 @@ export const project: Project[] = [
 				title: "Presentation",
 				url: "https://drive.google.com/file/d/1IApQxj4iHTQDTRybVrOtbfcbCe0bmvoc/view?usp=drive_link",
 				type: "PDF",
-				typeSymbol: { src: "fa-regular fa-pdf", type: "fa" },
+				typeSymbol: { src: "fa-regular fa-file-pdf", type: "fa" },
 			},
 			{
 				title: "Dashboard",
@@ -277,25 +282,8 @@ export const project: Project[] = [
 		time: "October - December 2023",
 		description: [
 			"This is Kampus Merdeka Batch 5 - RevoU's Data Analytics Capstone Project.",
-			"This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the <strong>best group</strong> in Shopping Cart's category.",
-			"Background : From August to December, there was a 24% decrease in revenue.",
-			"Potential analytics direction : How can we increase revenue by 10-15% in two months?",
-			"RCA : <a href='https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa'>https://whimsical.com/revou-s-captsone-project-data-analytics-shopping-cart-database-PJ4mAePDiDp8LQ9mzvsqEa</a>",
-			"Business Question :",
-			"1. What is the percentage of customers who have become inactive over the last three months?",
-			"2. What is the average delivery time for customers to receive their orders or products from past 3 months?",
-			"3. Which product category generates the most revenue?",
-			"Scope :",
-			"- Australia territory",
-			"- Time range January 2021 - December 2021",
-			"- Sample size from 1000 to 5000 data",
-			"Hypothesis : The effect of price, more promotion, fast and charge of delivery can affected to customer for purchase more items.",
-			"Metrics :",
-			"- Monthly revenue",
-			"- Total sold product",
-			"- Product price",
-			"- Time range",
-			"Data Source : <a href='https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv'>https://www.kaggle.com/datasets/ruchi798/shopping-cart-database?select=sales.csv</a>",
+			"",
+			"This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the best group in Shopping Cart's category.",
 		],
 		techs: [
 			{
@@ -334,7 +322,7 @@ export const project: Project[] = [
 				title: "Presentation",
 				url: "https://drive.google.com/file/d/169NUNmykmGugSSSLY031DE7DgjflnXar/view?usp=drive_link",
 				type: "PDF",
-				typeSymbol: { src: "fa-regular fa-pdf", type: "fa" },
+				typeSymbol: { src: "fa-regular fa-file-pdf", type: "fa" },
 			},
 			{
 				title: "Clo - Prototype",
@@ -358,6 +346,7 @@ export const project: Project[] = [
 		time: "August - October 2023",
 		description: [
 			"This is Kampus Merdeka Batch 5 - RevoU's Software Engineering Capstone Project.",
+			"",
 			"In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Our primary objective is the development of an e-commerce website called 'Clo', with a specific focus on clothing retail.",
 		],
 		techs: [
@@ -427,6 +416,7 @@ export const project: Project[] = [
 		time: "September 2023",
 		description: [
 			"Dicoding - Belajar Analisis Data dengan Python Project.",
+			"",
 			"This project is submission for Last Project in Dicoding's Python Data Analytics Course. I use Bike Sharing Dataset to deal with this project. This project include of Data Wrangling, Exploratory Data Analysis, Data Visualization, and Making Dashboard with Streamlit.",
 		],
 		techs: [
@@ -460,6 +450,7 @@ export const project: Project[] = [
 		time: "April - July 2023",
 		description: [
 			"Mikroskil University - Cryptography Project.",
+			"",
 			"This project is an assignment from lecturer in my Cryptography Lecture.",
 			"This project contain some cryptographic algorithms such as:",
 			"- Digital Signature Algorithm (DSA)",
@@ -496,6 +487,7 @@ export const project: Project[] = [
 		time: "April - July 2023",
 		description: [
 			"Mikroskil University - Computer Vision Project.",
+			"",
 			"This project is an assignment from lecturer in my Computer Vision Lecture.",
 			"This project contain some methods / algorithms such as:",
 			"- Harris Corner Detection",
@@ -529,10 +521,17 @@ export const project: Project[] = [
 				type: "Figma",
 				typeSymbol: { src: "fa-brands fa-figma", type: "fa" },
 			},
+			{
+				title: "Proposal",
+				url: helpMeProposal,
+				type: "PDF",
+				typeSymbol: { src: "fa-regular fa-file-pdf", type: "fa" },
+			},
 		],
 		time: "April - July 2023",
 		description: [
 			"Mikroskil University - Digital Start Up Project.",
+			"",
 			"This is a project from Digital Start Up Lecture where I built a prototype of an application called 'Help Me'. The concept of this application is to provide services to connect peoples who called 'Requester' whom requesting for helps and create tasks and peoples who called 'Helper' whom will take the tasks and solve them to get rewards.",
 		],
 		techs: [

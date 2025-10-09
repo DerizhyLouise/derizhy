@@ -24,6 +24,5 @@ export const menu: Menu[] = [
 	{
 		title: "Blog",
 		link: "/blog",
-		subMenu: [{ title: "Blog", link: "#" }],
 	},
 ];
