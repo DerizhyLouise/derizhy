@@ -3,7 +3,7 @@ name: Deploy SvelteKit to GitHub Pages
 on:
   push:
     tags:
-      - 'v*
+      - 'v*'
   workflow_dispatch:
 
 permissions:
