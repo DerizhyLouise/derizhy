@@ -1,9 +1,9 @@
-# Workflow untuk build & deploy SvelteKit (static) ke GitHub Pages
 name: Deploy SvelteKit to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    tags:
+      - 'v*
   workflow_dispatch:
 
 permissions:
