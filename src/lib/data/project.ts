@@ -225,24 +225,24 @@ export const project: Project[] = [
 		],
 		time: "December 2023 - Now",
 		description: [
-			"My personal website deployed with Github Pages. This website built with HTML, Tailwind CSS, and JavaScript without any framework.",
+			"My personal dan portfolio website that basesd SvelteKit, Tailwind CSS, TypeScript and deployed with Github Pages.",
 		],
 		techs: [
+			{
+				name: "Svelte",
+				pic: { src: imageRender.svelteIcon, type: "svg" },
+			},
 			{
 				name: "Tailwind CSS",
 				pic: { src: imageRender.tailwindIcon, type: "svg" },
 			},
 			{
-				name: "JavaScript",
-				pic: { src: "fa-brands fa-js", type: "fa" },
+				name: "TypeScript",
+				pic: { src: imageRender.typescriptIcon, type: "svg" },
 			},
 			{
 				name: "HTML",
 				pic: { src: "fa-brands fa-html5", type: "fa" },
-			},
-			{
-				name: "CSS",
-				pic: { src: "fa-brands fa-css3-alt", type: "fa" },
 			},
 			{
 				name: "Git",
