@@ -14,7 +14,7 @@ const config = {
 			strict: true,
 		}),
 		paths: {
-            base: '',
+            base: '/derizhy',
         },
 		prerender: {
 			handleMissingId: "ignore"
