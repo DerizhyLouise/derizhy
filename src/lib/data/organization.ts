@@ -84,7 +84,7 @@ export const organizationExperience: OrganizationBlog[] = [
     {
         name: "Big Family of Informatics Students Mikroskil (BITSMIKRO)",
         location: "Universitas Mikroskil, Medan",
-        time: "2020 - 2021",
+        time: "2020 - 2024",
         description: [
             "A Student Association of Informatics Engineering in Mikroskil University.",
         ],
