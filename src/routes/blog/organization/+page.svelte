@@ -33,7 +33,7 @@
                 </h3>
                 <div class="flex flex-col gap-6">
                     {#each organizationExperience as item (item.name)}
-                        <a class="mt-2" href="./cetiya-manggala-utama">
+                        <a class="mt-2" href="">
                             <div
                                 class="flex items-center gap-2 max-[540px]:mb-2 max-[540px]:flex-col"
                             >
