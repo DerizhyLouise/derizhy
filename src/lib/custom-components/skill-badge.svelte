@@ -13,7 +13,6 @@
 <div
     class="bg-lightgray flex cursor-pointer items-center rounded-full border border-white px-4 py-2 text-white duration-300 hover:brightness-150"
 >
-    <ImgRenderer {icon} {name} imgClassName="mr-1 h-4" iconClassName="mr-2"
-    ></ImgRenderer>
+    <ImgRenderer {icon} {name} imgClassName="mr-1 h-4" iconClassName="mr-2" />
     {name}
 </div>

@@ -239,7 +239,7 @@
                                             <ImgRenderer
                                                 name={item.skill}
                                                 icon={item.icon}
-                                            ></ImgRenderer>
+                                            />
                                         </div>
                                         <h4 class="text-center font-semibold">
                                             {item.skill}
@@ -276,7 +276,7 @@
                                             <ImgRenderer
                                                 name={item.skill}
                                                 icon={item.icon}
-                                            ></ImgRenderer>
+                                            />
                                         </div>
                                         <h4 class="text-center font-semibold">
                                             {item.skill}
@@ -314,7 +314,7 @@
                                             <ImgRenderer
                                                 name={item.skill}
                                                 icon={item.icon}
-                                            ></ImgRenderer>
+                                            />
                                         </div>
                                         <h4 class="text-center font-semibold">
                                             {item.skill}
@@ -352,7 +352,7 @@
                                             <ImgRenderer
                                                 name={item.skill}
                                                 icon={item.icon}
-                                            ></ImgRenderer>
+                                            />
                                         </div>
                                         <h4 class="text-center font-semibold">
                                             {item.skill}
@@ -390,7 +390,7 @@
                                             <ImgRenderer
                                                 name={item.skill}
                                                 icon={item.icon}
-                                            ></ImgRenderer>
+                                            />
                                         </div>
                                         <h4 class="text-center font-semibold">
                                             {item.skill}
@@ -430,7 +430,7 @@
                                     name={item.company}
                                     icon={item.logo}
                                     imgClassName="h-20 w-20 rounded-full"
-                                ></ImgRenderer>
+                                />
                                 <div
                                     class="flex flex-col justify-center max-[480px]:mt-2 max-[480px]:items-center min-[480px]:ml-4"
                                 >
@@ -466,7 +466,7 @@
                                     <SkillBadge
                                         name={tech.name}
                                         icon={tech.icon}
-                                    ></SkillBadge>
+                                    />
                                 {/each}
                             </div>
                         </div>
@@ -641,7 +641,7 @@
                                             name={media.title}
                                             icon={media.typeSymbol}
                                             iconClassName="text-6xl"
-                                        ></ImgRenderer>
+                                        />
                                         <h2 class="text-center text-2xl">
                                             {media.type}
                                         </h2>

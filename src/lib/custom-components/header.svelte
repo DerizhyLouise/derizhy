@@ -1,7 +1,7 @@
 <script lang="ts">
     import { browser } from "$app/environment";
-    import { page } from "$app/state";
     import logo from "$lib/assets/svg/logo.svg";
+    import { getLink } from "$lib/assets/utils";
     import { menu } from "$lib/data/menu";
     import { onDestroy, onMount } from "svelte";
 
@@ -20,7 +20,7 @@
         isDrawerOpen = false;
     }
 
-    function handleClickOutside(event: MouseEvent) {
+    function handleDrawerClickOutside(event: MouseEvent) {
         const dropdowns = document.querySelectorAll("[data-dropdown]");
         let clickedInside = false;
 
@@ -33,29 +33,37 @@
         if (!clickedInside) {
             openDropdown = null;
         }
+    }
 
-        closeDrawer();
+    function handleSidebarClickOutside(event: MouseEvent) {
+        const sidebar = document.querySelector("aside");
+        let clickedInside = false;
+
+        if (sidebar === (event.target as Node)) {
+            clickedInside = true;
+        }
+
+        if (!clickedInside) {
+            closeDrawer();
+        }
     }
 
     onMount(() => {
         if (browser) {
-            document.addEventListener("mousedown", handleClickOutside);
+            document.addEventListener("mousedown", handleDrawerClickOutside);
+            document.addEventListener("mousedown", handleSidebarClickOutside);
         }
     });
 
     onDestroy(() => {
         if (browser) {
-            document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("mousedown", handleDrawerClickOutside);
+            document.removeEventListener(
+                "mousedown",
+                handleSidebarClickOutside,
+            );
         }
     });
-
-    function getLink(baseLink: string, subLink: string): string {
-        if (page.url.pathname === baseLink) {
-            return subLink;
-        } else {
-            return baseLink + subLink;
-        }
-    }
 </script>
 
 <header
@@ -63,7 +71,7 @@
 >
     <!-- LOGO -->
     <div class="w-full">
-        <a href="#home" class="flex items-center gap-4">
+        <a href="/" class="flex items-center gap-4">
             <img class="h-24" src={logo} alt="logo" />
             <h1 class="text-4xl font-semibold">Louise Derizhy</h1>
         </a>
@@ -77,9 +85,9 @@
                     {#if item.subMenu}
                         <button
                             onclick={() => toggleDropdown(item.title)}
-                            class="text-yellow after:bg-yellow relative flex cursor-pointer items-center
-							   gap-2 after:absolute after:bottom-[-4px] after:left-0
-							   after:h-[2px] after:w-0 after:transition-all
+                            class="relative flex cursor-pointer items-center gap-2 text-white
+							   after:absolute after:bottom-[-4px] after:left-0 after:h-[2px]
+							   after:w-0 after:bg-white after:transition-all
 							   after:duration-300 after:content-[''] hover:after:w-full"
                         >
                             {item.title}
@@ -88,9 +96,9 @@
                     {:else}
                         <a
                             href={item.link}
-                            class="text-yellow after:bg-yellow relative flex cursor-pointer items-center
-							   gap-2 after:absolute after:bottom-[-4px] after:left-0
-							   after:h-[2px] after:w-0 after:transition-all
+                            class="relative flex cursor-pointer items-center gap-2 text-white
+							   after:absolute after:bottom-[-4px] after:left-0 after:h-[2px]
+							   after:w-0 after:bg-white after:transition-all
 							   after:duration-300 after:content-[''] hover:after:w-full"
                         >
                             {item.title}
