@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { afterNavigate } from "$app/navigation";
     import { page } from "$app/state";
     import favicon from "$lib/assets/svg/favicon.svg";
     import Footer from "$lib/custom-components/footer.svelte";
@@ -14,12 +13,6 @@
 
     onMount(() => {
         AOS.init();
-    });
-
-    onMount(() => {
-        afterNavigate(() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
     });
 </script>
 

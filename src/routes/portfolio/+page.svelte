@@ -61,11 +61,7 @@
         id="profile"
         class="landing-bg flex h-full min-h-screen w-full flex-col items-center justify-center bg-black/70 bg-[url('$lib/assets/image/profile/bg-prof.jpeg')] bg-fixed px-10 pt-32 pb-20 text-white bg-blend-multiply min-[892px]:pb-40 min-[1408px]:px-40 min-[1664px]:px-80"
     >
-        <div
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            class="aos-init aos-animate"
-        >
+        <div data-aos="fade-up" data-aos-duration="2000">
             <h2
                 class="text-center text-5xl font-extrabold tracking-wide uppercase sm:text-7xl"
             >
@@ -162,7 +158,7 @@
             </div>
         </div>
         <div
-            class="aos-init aos-animate mt-4 w-full max-w-3xl rounded-lg bg-white/90 p-6 text-gray-900 shadow-lg backdrop-blur-sm"
+            class="mt-4 w-full max-w-3xl rounded-lg bg-white/90 p-6 text-gray-900 shadow-lg backdrop-blur-sm"
             data-aos="fade-up"
             data-aos-duration="2000"
         >
@@ -204,7 +200,7 @@
         >
             <div class="py-40">
                 <h2
-                    class="text-gray aos-init mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
+                    class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
@@ -213,7 +209,7 @@
                 <div class="flex flex-col gap-4">
                     <div class="h-full">
                         <h3
-                            class="text-gray aos-init text-center text-2xl font-semibold uppercase sm:text-4xl"
+                            class="text-gray text-center text-2xl font-semibold uppercase sm:text-4xl"
                             data-aos="fade-up"
                             data-aos-duration="2000"
                         >
@@ -228,7 +224,6 @@
                                 <div
                                     data-aos="fade-up"
                                     data-aos-duration="2000"
-                                    class="aos-init"
                                 >
                                     <a
                                         href={item.link}
@@ -251,7 +246,7 @@
                     </div>
                     <div class="h-full">
                         <h3
-                            class="text-gray aos-init text-center text-2xl font-semibold uppercase sm:text-4xl"
+                            class="text-gray text-center text-2xl font-semibold uppercase sm:text-4xl"
                             data-aos="fade-up"
                             data-aos-duration="2000"
                         >
@@ -265,7 +260,6 @@
                                 <div
                                     data-aos="fade-up"
                                     data-aos-duration="2000"
-                                    class="aos-init"
                                 >
                                     <a
                                         href={item.link}
@@ -288,7 +282,7 @@
                     </div>
                     <div class="h-full">
                         <h3
-                            class="text-gray aos-init text-center text-2xl font-semibold uppercase sm:text-4xl"
+                            class="text-gray text-center text-2xl font-semibold uppercase sm:text-4xl"
                             data-aos="fade-up"
                             data-aos-duration="2000"
                         >
@@ -303,7 +297,6 @@
                                 <div
                                     data-aos="fade-up"
                                     data-aos-duration="2000"
-                                    class="aos-init"
                                 >
                                     <a
                                         href={item.link}
@@ -326,7 +319,7 @@
                     </div>
                     <div class="h-full">
                         <h3
-                            class="text-gray aos-init text-center text-2xl font-semibold uppercase sm:text-4xl"
+                            class="text-gray text-center text-2xl font-semibold uppercase sm:text-4xl"
                             data-aos="fade-up"
                             data-aos-duration="2000"
                         >
@@ -341,7 +334,6 @@
                                 <div
                                     data-aos="fade-up"
                                     data-aos-duration="2000"
-                                    class="aos-init"
                                 >
                                     <a
                                         href={item.link}
@@ -364,7 +356,7 @@
                     </div>
                     <div class="h-full">
                         <h3
-                            class="text-gray aos-init text-center text-2xl font-semibold uppercase sm:text-4xl"
+                            class="text-gray text-center text-2xl font-semibold uppercase sm:text-4xl"
                             data-aos="fade-up"
                             data-aos-duration="2000"
                         >
@@ -379,7 +371,6 @@
                                 <div
                                     data-aos="fade-up"
                                     data-aos-duration="2000"
-                                    class="aos-init"
                                 >
                                     <a
                                         href={item.link}
@@ -410,7 +401,7 @@
         >
             <div class="pt-40 pb-40">
                 <h2
-                    class="text-gray aos-init mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
+                    class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
@@ -421,7 +412,7 @@
                         <div
                             data-aos="fade-up"
                             data-aos-duration="1500"
-                            class="bg-gray shadow-gray aos-init w-full rounded-sm p-8 shadow-xl"
+                            class="bg-gray shadow-gray w-full rounded-sm p-8 shadow-xl"
                         >
                             <div
                                 class="flex max-[480px]:flex-col max-[480px]:items-center"
@@ -478,7 +469,7 @@
         <section id="projects" class="h-full w-full px-4 xl:px-20">
             <div class="pt-40 pb-40">
                 <h2
-                    class="text-gray aos-init mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
+                    class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
@@ -489,7 +480,7 @@
                 >
                     {#each project as item (item.id)}
                         <button
-                            class="group shadow-gray aos-init relative h-96 w-96 overflow-hidden shadow-2xl"
+                            class="group shadow-gray relative h-96 w-96 overflow-hidden shadow-2xl"
                             data-aos="fade-up"
                             data-aos-duration="2000"
                             onclick={() => openModal(item.id)}
@@ -525,7 +516,7 @@
         >
             <div class="pt-40 pb-40">
                 <h2
-                    class="text-gray aos-init mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
+                    class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
@@ -534,7 +525,7 @@
                 <div class="flex flex-wrap justify-center gap-12">
                     {#each review as item (item.name)}
                         <a
-                            class="bg-gray shadow-gray aos-init flex h-[416px] w-[416px] flex-col p-4 no-underline shadow-2xl max-sm:h-full"
+                            class="bg-gray shadow-gray flex h-[416px] w-[416px] flex-col p-4 no-underline shadow-2xl max-sm:h-full"
                             data-aos="fade-up"
                             data-aos-duration="2000"
                             href={item.url}

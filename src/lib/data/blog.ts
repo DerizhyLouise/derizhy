@@ -7,6 +7,6 @@ export const blogMenu: BlogMenu[] = [
         link: "/blog/organization",
         description:
             "I don't want to have an ordinary life, so i found a memorable life journey.",
-        icon: { src: imageRender.temp, type: "img" },
+        icon: { src: imageRender.organization, type: "img" },
     },
 ];

@@ -21,6 +21,7 @@ import tailwindIcon from "$lib/assets/svg/tailwind.svg";
 import typescriptIcon from "$lib/assets/svg/typescript.svg";
 import vscodeIcon from "$lib/assets/svg/vscode.svg";
 
+import organization from "$lib/assets/image/blog/organization.jpg";
 import bitsmikroLogo from "$lib/assets/image/logo/bitsmikro.jpg";
 import cmuLogo from "$lib/assets/image/logo/cmu.jpg";
 import mtLogo from "$lib/assets/image/logo/mt.jpg";
@@ -29,7 +30,6 @@ import revouLogo from "$lib/assets/image/logo/revou.png";
 import sekberLogo from "$lib/assets/image/logo/sekber.png";
 import smrajaLogo from "$lib/assets/image/logo/smraja.jpg";
 import kamil from "$lib/assets/image/profile/kamil.jpg";
-import temp from "$lib/assets/image/temp.jpg";
 
 export const imageRender = {
     // Icons
@@ -67,5 +67,5 @@ export const imageRender = {
 
     // Image
     kamil,
-    temp,
+    organization,
 };
