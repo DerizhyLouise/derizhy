@@ -58,9 +58,9 @@
 
     <!-- DESKTOP NAV -->
     <nav class="hidden justify-self-end text-xl font-semibold lg:block">
-        <ul class="flex justify-end gap-6 xl:gap-10">
+        <ul class="flex justify-end gap-2 xl:gap-6">
             {#each portfolioMenu.subMenu as item (item.title)}
-                <li class="group relative" data-dropdown>
+                <li class="group relative">
                     <a
                         href={getLink(portfolioMenu.link, item.link)}
                         class="relative flex cursor-pointer items-center gap-2 text-white

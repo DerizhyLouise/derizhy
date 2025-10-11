@@ -120,7 +120,7 @@ export const organizationExperience: OrganizationJournal[] = [
         ],
         logo: {
             src: imageRender.sekberLogo,
-            type: "img",
+            type: "png",
         },
         experience: [
             {

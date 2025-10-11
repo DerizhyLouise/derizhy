@@ -166,6 +166,7 @@
                 <a
                     class="text-yellow mb-2 text-3xl font-semibold"
                     href={getLink(item.link, "")}
+                    target="_blank"
                 >
                     {item.title}
                 </a>

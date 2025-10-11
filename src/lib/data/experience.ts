@@ -35,7 +35,7 @@ export const experience: Experience[] = [
 		position: "Project Leader",
 		company: "RevoU",
 		time: "Aug 2023 - Dec 2023",
-		logo: { src: imageRender.revouLogo, type: "img" },
+		logo: { src: imageRender.revouLogo, type: "png" },
 		description: [
 			"Led Group 6 Balikpapan Section in the Studi Independen - Kampus Merdeka program by the Ministry of Education",
 			"",

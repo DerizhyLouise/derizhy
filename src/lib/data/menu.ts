@@ -15,10 +15,11 @@ export const menu: Menu[] = [
         link: "/portfolio",
         subMenu: [
             { title: "Profile", link: "#profile" },
-            { title: "Skills", link: "#skills" },
-            { title: "Experiences", link: "#experiences" },
-            { title: "Projects", link: "#projects" },
-            { title: "Reviews", link: "#reviews" },
+            { title: "Skill", link: "#skill" },
+            { title: "Experience", link: "#experience" },
+            { title: "Project", link: "#project" },
+            { title: "Education", link: "#education" },
+            { title: "Review", link: "#review" },
         ],
     },
     {

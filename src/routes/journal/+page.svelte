@@ -21,7 +21,7 @@
                             <img
                                 alt={item.title}
                                 src={item.icon.src}
-                                class="h-40 w-full rounded-sm bg-contain"
+                                class="h-40 w-full rounded-sm bg-auto"
                             />
                         </div>
                         <div class="text-lg font-semibold md:text-xl">

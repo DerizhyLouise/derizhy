@@ -3,13 +3,13 @@
     import cv from "$lib/assets/pdf/cv.pdf";
     import ImgRenderer from "$lib/custom-components/img-renderer.svelte";
     import SkillBadge from "$lib/custom-components/skill-badge.svelte";
+    import { education } from "$lib/data/education";
     import { experience } from "$lib/data/experience";
     import { project } from "$lib/data/project";
     import { review } from "$lib/data/review";
     import {
         databaseSkill,
         frameworkSkill,
-        frontendSkill,
         languageSkill,
         toolSkill,
     } from "$lib/data/skill";
@@ -195,7 +195,7 @@
 
     <div class="bg-[url('$lib/assets/svg/bg-1.svg')] bg-repeat">
         <section
-            id="skills"
+            id="skill"
             class="h-full min-h-screen w-full text-white sm:px-10 2xl:px-40"
         >
             <div class="py-40">
@@ -250,7 +250,8 @@
                             data-aos="fade-up"
                             data-aos-duration="2000"
                         >
-                            <span class="fa-regular fa-globe"></span> Frameworks
+                            <span class="fa-regular fa-globe"></span>
+                            Frameworks & Libraries
                             <span class="fa-regular fa-globe"></span>
                         </h3>
                         <div
@@ -323,44 +324,8 @@
                             data-aos="fade-up"
                             data-aos-duration="2000"
                         >
-                            <span class="fa-regular fa-object-group"></span>
-                            Frontend Techs
-                            <span class="fa-regular fa-object-group"></span>
-                        </h3>
-                        <div
-                            class="flex flex-wrap items-center justify-center gap-4 overflow-hidden pt-6 pb-12 group-open:max-h-screen sm:gap-8"
-                        >
-                            {#each frontendSkill as item (item.skill)}
-                                <div
-                                    data-aos="fade-up"
-                                    data-aos-duration="2000"
-                                >
-                                    <a
-                                        href={item.link}
-                                        target="_blank"
-                                        class="bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
-                                    >
-                                        <div class="text-center text-5xl">
-                                            <ImgRenderer
-                                                name={item.skill}
-                                                icon={item.icon}
-                                            />
-                                        </div>
-                                        <h4 class="text-center font-semibold">
-                                            {item.skill}
-                                        </h4>
-                                    </a>
-                                </div>
-                            {/each}
-                        </div>
-                    </div>
-                    <div class="h-full">
-                        <h3
-                            class="text-gray text-center text-2xl font-semibold uppercase sm:text-4xl"
-                            data-aos="fade-up"
-                            data-aos-duration="2000"
-                        >
-                            <span class="fa-regular fa-pen-ruler"></span> Tools
+                            <span class="fa-regular fa-pen-ruler"></span>
+                            Tools
                             <span class="fa-regular fa-pen-ruler"></span>
                         </h3>
                         <div
@@ -396,7 +361,7 @@
         </section>
 
         <section
-            id="experiences"
+            id="experience"
             class="h-full w-full px-4 text-white xl:px-40 2xl:px-80"
         >
             <div class="pt-40 pb-40">
@@ -466,7 +431,7 @@
             </div>
         </section>
 
-        <section id="projects" class="h-full w-full px-4 xl:px-20">
+        <section id="project" class="h-full w-full px-4 xl:px-20">
             <div class="pt-40 pb-40">
                 <h2
                     class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
@@ -511,7 +476,64 @@
         </section>
 
         <section
-            id="reviews"
+            id="education"
+            class="h-full w-full px-4 text-white xl:px-40 2xl:px-80"
+        >
+            <div class="pt-40 pb-40">
+                <h2
+                    class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                >
+                    Educations
+                </h2>
+                <div class="grid place-items-center gap-8 md:grid-cols-2">
+                    {#each education as item (item.id)}
+                        <a
+                            href={item.link}
+                            target="_blank"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                            class="bg-gray shadow-gray h-72 w-full max-w-[440px] rounded-sm p-8 shadow-xl"
+                        >
+                            <div
+                                class="flex h-full items-center justify-center"
+                            >
+                                <div
+                                    class="flex flex-col items-center text-center"
+                                >
+                                    <ImgRenderer
+                                        name={item.institute}
+                                        icon={item.logo}
+                                        imgClassName="h-20 w-20 rounded-full"
+                                    />
+                                    <div class="flex flex-col items-center">
+                                        <h3
+                                            class="text-xl font-semibold md:text-2xl"
+                                        >
+                                            {item.institute}
+                                        </h3>
+                                        <div class="text-lg md:text-xl">
+                                            {item.subject}
+                                            <br />
+                                            {item.time}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-4 sm:text-justify">
+                                    {#each item.description as p (p)}
+                                        {p}
+                                    {/each}
+                                </div>
+                            </div>
+                        </a>
+                    {/each}
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="review"
             class="h-full min-h-screen w-full px-4 text-white xl:px-40 2xl:px-80"
         >
             <div class="pt-40 pb-40">

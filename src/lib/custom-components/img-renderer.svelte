@@ -12,11 +12,11 @@
         $props();
 </script>
 
-{#if icon.type === "svg" || icon.type === "img"}
+{#if icon.type === "svg" || icon.type === "img" || icon.type === "png"}
     <img
         src={icon.src}
         alt={name}
-        class={imgClassName ? imgClassName : "mx-auto h-12 w-12"}
+        class={`${icon.type === "png" ? "bg-white" : ""} ${imgClassName ? imgClassName : "mx-auto h-12 w-12"} `}
     />
 {:else}
     <span class={`${icon.src} ${iconClassName ? iconClassName : ""}`}></span>

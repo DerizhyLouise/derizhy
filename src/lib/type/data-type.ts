@@ -11,7 +11,7 @@ export type Menu = {
 
 export type IconImage = {
     src: string;
-    type: "svg" | "fa" | "img";
+    type: "svg" | "fa" | "img" | "png";
 };
 
 export type Experience = {
@@ -25,6 +25,16 @@ export type Experience = {
         name: string;
         icon: IconImage;
     }[];
+};
+
+export type Education = {
+    id: number;
+    institute: string;
+    subject: string;
+    time: string;
+    logo: IconImage;
+    link: string;
+    description: string[];
 };
 
 export type Review = {

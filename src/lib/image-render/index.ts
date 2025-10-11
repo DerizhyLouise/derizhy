@@ -24,6 +24,7 @@ import vscodeIcon from "$lib/assets/svg/vscode.svg";
 import organization from "$lib/assets/image/journal/organization.jpg";
 import bitsmikroLogo from "$lib/assets/image/logo/bitsmikro.jpg";
 import cmuLogo from "$lib/assets/image/logo/cmu.jpg";
+import mikroskilLogo from "$lib/assets/image/logo/mikroskil.png";
 import mtLogo from "$lib/assets/image/logo/mt.jpg";
 import pmvtrLogo from "$lib/assets/image/logo/pmvtr.jpg";
 import revouLogo from "$lib/assets/image/logo/revou.png";
@@ -64,6 +65,7 @@ export const imageRender = {
     smrajaLogo,
     bitsmikroLogo,
     sekberLogo,
+    mikroskilLogo,
 
     // Image
     kamil,
