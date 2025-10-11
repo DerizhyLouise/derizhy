@@ -2,16 +2,23 @@
     import { footerData } from "$lib/data/footer";
 </script>
 
-<footer class="bg-gray py-2 text-white">
-    <div class="footer-container">
-        <div class="footer-row">
+<footer class="bg-gray relative z-20 h-full py-2 text-white select-none">
+    <div class="mx-auto my-12.5 max-w-[1170px]">
+        <div class="flex flex-wrap">
             {#each footerData.sections as section (section.title)}
-                <div class="footer-col">
-                    <h4>{section.title}</h4>
-                    <ul>
+                <div
+                    class="mb-8 w-full px-4 min-[576px]:mb-0 min-[576px]:w-1/2 md:w-1/4"
+                >
+                    <h4
+                        class="before:bg-yellow relative mb-9 text-lg font-medium text-white content-[''] before:absolute before:-bottom-2.5 before:left-0 before:box-border before:h-0.5 before:w-12.5"
+                    >
+                        {section.title}
+                    </h4>
+                    <ul class="list-none">
                         {#each section.links as link (link.title)}
-                            <li>
+                            <li class="not-last:mb-2.5">
                                 <a
+                                    class="block text-base font-light text-white transition-all duration-300 ease-in-out hover:pl-2"
                                     href={link.href}
                                     target={link.target ?? "_self"}
                                 >
@@ -22,140 +29,33 @@
                     </ul>
                 </div>
             {/each}
-            <div class="footer-col">
-                <h4>Find Me</h4>
+            <div
+                class="mb-8 w-full px-4 max-[576px]:mb-0 min-[576px]:w-1/2 md:w-1/4"
+            >
+                <h4
+                    class="before:bg-yellow relative mb-9 text-lg font-medium text-white content-[''] before:absolute before:-bottom-2.5 before:left-0 before:box-border before:h-0.5 before:w-12.5"
+                >
+                    Find Me
+                </h4>
                 <div class="social-links">
                     {#each footerData.social as social (social.href)}
                         {#if social.href}
                             <a
+                                class="ease mr-2.5 mb-2.5 inline-block h-10 w-10 rounded-full bg-white/20 text-center leading-10 text-white transition-all duration-500 hover:bg-white hover:text-[#24262b]"
                                 href={social.href}
                                 target={social.target ?? "_self"}
                                 aria-label={social.label ?? social.icon}
                                 title={social.label ?? social.icon}
                             >
-                                <i class={social.icon}></i>
+                                <i
+                                    class={`${social.icon} ease mr-2.5 mb-2.5 inline-block h-full w-full rounded-full bg-white/20 text-center leading-10 text-white transition-all duration-500 hover:bg-white hover:text-[#24262b]`}
+                                ></i>
                             </a>
                         {/if}
                     {/each}
                 </div>
             </div>
         </div>
-        <h2 class="mx-auto my-2 text-center">© 2025 Louise Derizhy</h2>
+        <h2 class="mx-auto my-4 text-center">© 2025 Louise Derizhy</h2>
     </div>
 </footer>
-
-<style>
-    footer {
-        height: 100%;
-        position: relative;
-        z-index: 2;
-        user-select: none;
-    }
-
-    .footer-container {
-        max-width: 1170px;
-        margin: 50px auto;
-    }
-
-    .footer-row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .footer-container ul {
-        list-style: none;
-    }
-
-    .footer-col {
-        width: 25%;
-        padding: 0 15px;
-    }
-
-    .footer-col h4 {
-        font-size: 18px;
-        color: #ffffff;
-        text-transform: capitalize;
-        margin-bottom: 35px;
-        font-weight: 500;
-        position: relative;
-    }
-
-    .footer-col h4::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-        background-color: #f8e9a1;
-        height: 2px;
-        box-sizing: border-box;
-        width: 50px;
-    }
-
-    .footer-col ul li:not(:last-child) {
-        margin-bottom: 10px;
-    }
-
-    .footer-col ul li a {
-        font-size: 16px;
-        text-transform: capitalize;
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 300;
-        display: block;
-        transition: all 0.3s ease;
-    }
-
-    .footer-col ul li a:hover {
-        color: #ffffff;
-        padding-left: 8px;
-    }
-
-    .footer-col .social-links a {
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        background-color: rgba(255, 255, 255, 0.2);
-        margin: 0 10px 10px 0;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        color: #ffffff;
-        transition: all 0.5s ease;
-    }
-
-    .footer-col .social-links a i {
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        background-color: rgba(255, 255, 255, 0.2);
-        margin: 0 10px 10px 0;
-        text-align: center;
-        line-height: 40px;
-        border-radius: 50%;
-        color: #ffffff;
-        transition: all 0.5s ease;
-    }
-
-    .footer-col .social-links a:hover {
-        color: #24262b;
-        background-color: #ffffff;
-    }
-
-    .footer-col .social-links a:hover i {
-        color: #24262b;
-        background-color: #ffffff;
-    }
-
-    @media (max-width: 767px) {
-        .footer-col {
-            width: 50%;
-            margin-bottom: 30px;
-        }
-    }
-
-    @media (max-width: 574px) {
-        .footer-col {
-            width: 100%;
-        }
-    }
-</style>

@@ -21,7 +21,7 @@ import tailwindIcon from "$lib/assets/svg/tailwind.svg";
 import typescriptIcon from "$lib/assets/svg/typescript.svg";
 import vscodeIcon from "$lib/assets/svg/vscode.svg";
 
-import organization from "$lib/assets/image/blog/organization.jpg";
+import organization from "$lib/assets/image/journal/organization.jpg";
 import bitsmikroLogo from "$lib/assets/image/logo/bitsmikro.jpg";
 import cmuLogo from "$lib/assets/image/logo/cmu.jpg";
 import mtLogo from "$lib/assets/image/logo/mt.jpg";

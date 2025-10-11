@@ -78,11 +78,5 @@ export const footerData: FooterData = {
             href: "https://github.com/DerizhyLouise",
             target: "_blank",
         },
-        {
-            label: "Tiktok",
-            icon: "fa-brands fa-tiktok",
-            href: "https://www.tiktok.com/@derizheese",
-            target: "_blank",
-        },
     ],
 };

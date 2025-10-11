@@ -1,8 +1,8 @@
 import { imageRender } from "$lib/image-render";
-import type { BlogData, OrganizationBlog } from "$lib/type/data-type";
+import type { JournalData, OrganizationJournal } from "$lib/type/data-type";
 
-export const organizationIntro: BlogData = {
-    title: "My Organizations Life",
+export const organizationIntro: JournalData = {
+    title: "Introduction",
     paragraph: [
         "Back in 2014, when I was in middle school, my religion teacher, Mr. Dwi Susanto, invited me to visit a cetiya (a smaller version of a temple) called Cetiya Manggala Utama. That day, they were holding an election for the youth group leader. I didn't really understand anything about organizations back then. I just sat there watching the whole process.",
         "After the event, we were invited to join the youth group. And that's where my journey in organizational life began.",
@@ -10,7 +10,7 @@ export const organizationIntro: BlogData = {
     ],
 };
 
-export const organizationExperience: OrganizationBlog[] = [
+export const organizationExperience: OrganizationJournal[] = [
     {
         name: "Muda-mudi Cetiya Manggala Utama",
         location: "Cetiya Manggala Utama, Batam",

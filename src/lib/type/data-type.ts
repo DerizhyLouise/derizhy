@@ -83,12 +83,12 @@ export type FooterData = {
     social: SocialLink[];
 };
 
-export type BlogData = {
+export type JournalData = {
     title: string;
     paragraph: string[];
 };
 
-export type BlogMenu = {
+export type JournalMenu = {
     title: string;
     link: string;
     description: string;
@@ -100,7 +100,7 @@ export type OrganizationExperience = {
     time: string;
 };
 
-export type OrganizationBlog = {
+export type OrganizationJournal = {
     name: string;
     location: string;
     time: string;

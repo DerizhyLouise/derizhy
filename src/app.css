@@ -24,7 +24,8 @@
 		scroll-behavior: smooth;
 	}
 
-	html, body {
+	html,
+	body {
 		overflow-x: hidden;
 		width: 100%;
 	}
@@ -236,10 +237,6 @@
 
 	.fa-square-terminal:before {
 		content: "\e32a";
-	}
-
-	.fa-tiktok:before {
-		content: "\e07b";
 	}
 
 	.fa-user:before {

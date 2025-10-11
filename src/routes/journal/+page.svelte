@@ -1,5 +1,5 @@
 <script>
-    import { blogMenu } from "$lib/data/blog";
+    import { journalMenu } from "$lib/data/journal";
 </script>
 
 <div class="bg-[url('$lib/assets/svg/bg-1.svg')] bg-repeat">
@@ -15,13 +15,13 @@
                 </h2>
             </div>
             <div class="mt-6 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-                {#each blogMenu as item (item.title)}
+                {#each journalMenu as item (item.title)}
                     <a class="h-full w-full" href={item.link}>
                         <div class="mb-2">
                             <img
                                 alt={item.title}
                                 src={item.icon.src}
-                                class="rounded-sm"
+                                class="h-40 w-full rounded-sm bg-contain"
                             />
                         </div>
                         <div class="text-lg font-semibold md:text-xl">

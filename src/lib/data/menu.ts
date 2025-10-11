@@ -22,7 +22,7 @@ export const menu: Menu[] = [
         ],
     },
     {
-        title: "Blog",
-        link: "/blog",
+        title: "Journal",
+        link: "/journal",
     },
 ];

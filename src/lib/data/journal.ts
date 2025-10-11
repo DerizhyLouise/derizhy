@@ -1,10 +1,10 @@
 import { imageRender } from "$lib/image-render";
-import type { BlogMenu } from "$lib/type/data-type";
+import type { JournalMenu } from "$lib/type/data-type";
 
-export const blogMenu: BlogMenu[] = [
+export const journalMenu: JournalMenu[] = [
     {
         title: "My Organization Life",
-        link: "/blog/organization",
+        link: "/journal/organization",
         description:
             "I don't want to have an ordinary life, so i found a memorable life journey.",
         icon: { src: imageRender.organization, type: "img" },
