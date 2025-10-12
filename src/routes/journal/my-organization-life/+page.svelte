@@ -23,7 +23,7 @@
                 </h3>
                 <div>
                     {#each organizationIntro.paragraph as p, i (i)}
-                        <p class="mb-4">
+                        <p class="mb-4 text-justify">
                             {p}
                         </p>
                     {/each}

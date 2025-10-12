@@ -139,7 +139,7 @@
                                     <a
                                         href={item.link}
                                         target="_blank"
-                                        class="bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
+                                        class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                                     >
                                         <div class="text-center text-5xl">
                                             <ImgRenderer
@@ -176,7 +176,7 @@
                                     <a
                                         href={item.link}
                                         target="_blank"
-                                        class="bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
+                                        class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                                     >
                                         <div class="text-center text-5xl">
                                             <ImgRenderer
@@ -213,7 +213,7 @@
                                     <a
                                         href={item.link}
                                         target="_blank"
-                                        class="bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
+                                        class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                                     >
                                         <div class="text-center text-5xl">
                                             <ImgRenderer
@@ -240,7 +240,6 @@
                             <span class="fa-regular fa-pen-ruler"></span>
                         </h3>
                         <div
-                            id="skills-container-tool"
                             class="flex flex-wrap items-center justify-center gap-4 overflow-hidden pt-6 pb-12 group-open:max-h-screen sm:gap-8"
                         >
                             {#each toolSkill as item (item.skill)}
@@ -251,7 +250,7 @@
                                     <a
                                         href={item.link}
                                         target="_blank"
-                                        class="bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
+                                        class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                                     >
                                         <div class="text-center text-5xl">
                                             <ImgRenderer
@@ -398,14 +397,16 @@
                 >
                     Educations
                 </h2>
-                <div class="grid place-items-center gap-8 md:grid-cols-2">
+                <div
+                    class="grid place-items-center gap-8 md:grid-cols-2"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                >
                     {#each education as item (item.id)}
                         <a
                             href={item.link}
                             target="_blank"
-                            data-aos="fade-up"
-                            data-aos-duration="1500"
-                            class="bg-gray shadow-gray h-72 w-full max-w-[440px] rounded-sm p-8 shadow-xl"
+                            class="group bg-gray shadow-gray h-72 w-full max-w-[440px] rounded-sm p-8 shadow-xl transition hover:scale-110 hover:duration-300"
                         >
                             <div
                                 class="flex h-full items-center justify-center"
@@ -416,7 +417,7 @@
                                     <ImgRenderer
                                         name={item.institute}
                                         icon={item.logo}
-                                        imgClassName="h-20 w-20 rounded-full"
+                                        imgClassName="h-20 w-20 rounded-full transition-transform duration-500 group-hover:rotate-360"
                                     />
                                     <div class="flex flex-col items-center">
                                         <h3
