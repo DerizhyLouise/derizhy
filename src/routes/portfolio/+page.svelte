@@ -67,95 +67,6 @@
             >
                 Louise Derizhy
             </h2>
-            <div class="max-[940px]:hidden">
-                <div class="mt-2 flex justify-center gap-6 pb-2">
-                    <a
-                        href="https://wa.me/6282367319569"
-                        target="_blank"
-                        class="text-lg font-semibold transition hover:scale-110 hover:duration-300"
-                        >+62 823-6731-9569</a
-                    >
-                    <p>|</p>
-                    <a
-                        href="mailto:louise.derizhy@gmail.com"
-                        target="_blank"
-                        class="text-lg font-semibold transition hover:scale-110 hover:duration-300"
-                        >louise.derizhy@gmail.com</a
-                    >
-                    <p>|</p>
-                    <a
-                        href="https://derizhy.com"
-                        target="_blank"
-                        class="text-lg font-semibold transition hover:scale-110 hover:duration-300"
-                        >derizhy.com</a
-                    >
-                    <p>|</p>
-                    <a
-                        href="https://en.wikipedia.org/wiki/Medan"
-                        target="_blank"
-                        class="text-lg font-semibold transition hover:scale-110 hover:duration-300"
-                        >Medan, Indonesia</a
-                    >
-                </div>
-            </div>
-            <div class="max-sm:hidden min-[940px]:hidden">
-                <div class="mt-2 grid grid-cols-2 justify-center gap-6">
-                    <a
-                        href="https://wa.me/6282367319569"
-                        target="_blank"
-                        class="text-lg font-semibold transition odd:text-right hover:scale-110 hover:duration-300"
-                        >+62 823-6731-9569</a
-                    >
-                    <a
-                        href="mailto:louise.derizhy@gmail.com"
-                        target="_blank"
-                        class="text-lg font-semibold transition odd:text-right hover:scale-110 hover:duration-300"
-                        >louise.derizhy@gmail.com</a
-                    >
-                </div>
-                <div class="grid grid-cols-2 justify-center gap-6 pb-2">
-                    <a
-                        href="https://derizhy.com"
-                        target="_blank"
-                        class="text-lg font-semibold transition odd:text-right hover:scale-110 hover:duration-300"
-                        >derizhy.com</a
-                    >
-                    <a
-                        href="https://en.wikipedia.org/wiki/Medan"
-                        target="_blank"
-                        class="text-lg font-semibold transition odd:text-right hover:scale-110 hover:duration-300"
-                        >Medan, Indonesia</a
-                    >
-                </div>
-            </div>
-            <div class="sm:hidden">
-                <div class="mt-2 flex flex-col">
-                    <a
-                        href="https://wa.me/6282367319569"
-                        target="_blank"
-                        class="text-center text-lg font-semibold transition hover:scale-110 hover:duration-300"
-                        >+62 823-6731-9569</a
-                    >
-                    <a
-                        href="mailto:louise.derizhy@gmail.com"
-                        target="_blank"
-                        class="text-center text-lg font-semibold transition hover:scale-110 hover:duration-300"
-                        >louise.derizhy@gmail.com</a
-                    >
-                    <a
-                        href="https://derizhy.com"
-                        target="_blank"
-                        class="text-center text-lg font-semibold transition hover:scale-110 hover:duration-300"
-                        >derizhy.com</a
-                    >
-                    <a
-                        href="https://en.wikipedia.org/wiki/Medan"
-                        target="_blank"
-                        class="text-center text-lg font-semibold transition hover:scale-110 hover:duration-300"
-                        >Medan, Indonesia</a
-                    >
-                </div>
-            </div>
         </div>
         <div
             class="mt-4 w-full max-w-3xl rounded-lg bg-white/90 p-6 text-gray-900 shadow-lg backdrop-blur-sm"
@@ -198,7 +109,7 @@
             id="skill"
             class="h-full min-h-screen w-full text-white sm:px-10 2xl:px-40"
         >
-            <div class="py-40">
+            <div class="pt-40">
                 <h2
                     class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
                     data-aos="fade-up"
@@ -364,7 +275,7 @@
             id="experience"
             class="h-full w-full px-4 text-white xl:px-40 2xl:px-80"
         >
-            <div class="pt-40 pb-40">
+            <div class="pt-40">
                 <h2
                     class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
                     data-aos="fade-up"
@@ -432,7 +343,7 @@
         </section>
 
         <section id="project" class="h-full w-full px-4 xl:px-20">
-            <div class="pt-40 pb-40">
+            <div class="pt-40">
                 <h2
                     class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
                     data-aos="fade-up"
@@ -445,7 +356,7 @@
                 >
                     {#each project as item (item.id)}
                         <button
-                            class="group shadow-gray relative h-96 w-96 overflow-hidden shadow-2xl"
+                            class="group shadow-gray relative h-96 w-96 cursor-pointer overflow-hidden shadow-2xl"
                             data-aos="fade-up"
                             data-aos-duration="2000"
                             onclick={() => openModal(item.id)}
@@ -479,7 +390,7 @@
             id="education"
             class="h-full w-full px-4 text-white xl:px-40 2xl:px-80"
         >
-            <div class="pt-40 pb-40">
+            <div class="pt-40">
                 <h2
                     class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
                     data-aos="fade-up"
@@ -536,7 +447,7 @@
             id="review"
             class="h-full min-h-screen w-full px-4 text-white xl:px-40 2xl:px-80"
         >
-            <div class="pt-40 pb-40">
+            <div class="py-40">
                 <h2
                     class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
                     data-aos="fade-up"

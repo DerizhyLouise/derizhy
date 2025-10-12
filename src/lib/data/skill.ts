@@ -28,11 +28,6 @@ export const languageSkill: Skill[] = [
 		link: "https://en.wikipedia.org/wiki/SQL",
 	},
 	{
-		skill: "HTML",
-		icon: { src: "fa-brands fa-html5", type: "fa" },
-		link: "https://en.wikipedia.org/wiki/HTML",
-	},
-	{
 		skill: "CSS",
 		icon: { src: "fa-brands fa-css3-alt", type: "fa" },
 		link: "https://en.wikipedia.org/wiki/CSS",

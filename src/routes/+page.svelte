@@ -20,11 +20,9 @@
                     Louise Derizhy
                 </h2>
                 <ul class="pt-4 text-2xl md:list-disc md:pl-6">
-                    <li class="text-center md:text-left">
-                        a Software Engineer
-                    </li>
-                    <li class="text-center md:text-left">a Public Speaker</li>
-                    <li class="text-center md:text-left">a Speedcuber</li>
+                    <li class="text-center md:text-left">Software Engineer</li>
+                    <li class="text-center md:text-left">Public Speaker</li>
+                    <li class="text-center md:text-left">Speedcuber</li>
                 </ul>
                 <div class="mt-4 flex flex-wrap gap-4 max-md:justify-center">
                     <a
@@ -48,7 +46,7 @@
         id="about"
         class="h-full w-full px-10 text-white xl:px-40 2xl:px-80"
     >
-        <div class="h-full w-full py-40">
+        <div class="h-full w-full pt-40">
             <h2
                 class="text-gray mb-10 text-center text-6xl font-semibold uppercase"
                 data-aos="fade-up"

@@ -16,7 +16,7 @@ export const education: Education[] = [
 	{
 		id: 3,
 		institute: "Universitas Mikroskil",
-		subject: "Bachelor of Computer Science",
+		subject: "Bachelor of Informatics Engineering",
 		time: "2020 - 2024",
 		logo: { src: imageRender.mikroskilLogo, type: "png" },
 		link: "https://mikroskil.ac.id",

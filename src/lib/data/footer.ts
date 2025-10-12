@@ -6,10 +6,11 @@ export const footerData: FooterData = {
             title: "Portfolio",
             links: [
                 { title: "Profile", href: "/portfolio#profile" },
-                { title: "Skills", href: "/portfolio#skills" },
-                { title: "Experiences", href: "/portfolio#experiences" },
-                { title: "Projects", href: "/portfolio#projects" },
-                { title: "Review", href: "/portfolio#reviews" },
+                { title: "Skill", href: "/portfolio#skills" },
+                { title: "Experience", href: "/portfolio#experience" },
+                { title: "Project", href: "/portfolio#project" },
+                { title: "Education", href: "/portfolio#education" },
+                { title: "Review", href: "/portfolio#review" },
             ],
         },
         {
