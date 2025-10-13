@@ -14,21 +14,34 @@
                     The Writing of Myself
                 </h2>
             </div>
-            <div class="mt-6 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <div
+                class="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+            >
                 {#each journalMenu as item (item.title)}
-                    <a class="h-full w-full" href={item.link}>
-                        <div class="mb-2">
+                    <a
+                        href={item.link}
+                        class="group flex flex-col overflow-hidden transition duration-300 hover:scale-105"
+                    >
+                        <div class="overflow-hidden">
                             <img
                                 alt={item.title}
                                 src={item.icon.src}
-                                class="h-40 w-full rounded-sm bg-auto"
+                                class="aspect-[16/10] w-full object-cover"
                             />
                         </div>
-                        <div class="text-lg font-semibold md:text-xl">
-                            {item.title}
-                        </div>
-                        <div>
-                            {item.description}
+                        <div class="flex flex-col justify-between pt-2">
+                            <div>
+                                <h3
+                                    class="line-clamp-2 text-lg font-semibold md:text-xl"
+                                >
+                                    {item.title}
+                                </h3>
+                                <p
+                                    class="mt-2 line-clamp-3 text-sm md:text-base"
+                                >
+                                    {item.description}
+                                </p>
+                            </div>
                         </div>
                     </a>
                 {/each}
