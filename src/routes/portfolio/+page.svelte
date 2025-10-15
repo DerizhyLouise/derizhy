@@ -398,7 +398,7 @@
                     Educations
                 </h2>
                 <div
-                    class="grid place-items-center gap-8 md:grid-cols-2"
+                    class="flex flex-wrap items-center justify-center gap-8"
                     data-aos="fade-up"
                     data-aos-duration="1500"
                 >
