@@ -22,11 +22,11 @@
                         href={item.link}
                         class="group flex flex-col overflow-hidden transition duration-300 hover:scale-105"
                     >
-                        <div class="overflow-hidden">
+                        <div class="overflow-hidden shadow-md">
                             <img
                                 alt={item.title}
                                 src={item.icon.src}
-                                class="aspect-[16/10] w-full object-cover"
+                                class="aspect-[16/10] w-full rounded-sm object-cover"
                             />
                         </div>
                         <div class="flex flex-col justify-between pt-2">

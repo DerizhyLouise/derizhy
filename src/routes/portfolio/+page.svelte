@@ -74,32 +74,21 @@
             data-aos-duration="2000"
         >
             <p class="sm:text-justify">
-                I am a <span class="font-semibold">Software Engineer</span> with
-                expertise in
-                <span class="font-semibold">full stack development</span>,
-                particularly with the <span class="font-semibold">Svelte</span>
-                framework and <span class="font-semibold">Tailwind CSS</span>
-                library. I excel in <span class="font-semibold">analyzing</span>
-                and <span class="font-semibold">problem-solving</span>,
-                proficient in
-                <span class="font-semibold">JavaScript</span> and
-                <span class="font-semibold">TypeScript</span>, and skilled in
-                creating <span class="font-semibold">back-end servers</span>
-                using <span class="font-semibold">Java Spring Boot</span>.
-                Additionally, I have strong
-                <span class="font-semibold">SQL</span>
-                skills, especially with
-                <span class="font-semibold">PostgreSQL</span>, and can utilize
-                <span class="font-semibold">Python</span>
-                for various purposes.<br />
+                A <span class="font-semibold">Software Engineer</span>
+                specializing in building
+                <span class="font-semibold">full-stack web applications</span>
+                using <span class="font-semibold">Svelte</span>,
+                <span class="font-semibold">TypeScript</span>, and
+                <span class="font-semibold">Tailwind CSS</span>.
             </p>
             <p class="mt-2 text-right">
                 <a
                     href={cv}
                     target="_blank"
                     class="hover:bg-gray border-gray place-content-end border-2 px-2 font-semibold duration-700 hover:text-white"
-                    >Download CV</a
                 >
+                    Download CV
+                </a>
             </p>
         </div>
     </section>
