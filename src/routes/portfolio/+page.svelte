@@ -398,10 +398,7 @@
         </div>
     </section>
 
-    <section
-        id="education"
-        class="h-full w-full px-4 text-white xl:px-40 2xl:px-80"
-    >
+    <section id="education" class="h-full w-full px-4 text-white md:px-20">
         <div class="pt-40">
             <h2
                 class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
