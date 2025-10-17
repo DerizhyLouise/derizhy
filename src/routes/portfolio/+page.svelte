@@ -91,7 +91,7 @@
             <img
                 src={Avatar}
                 alt="Louise Derizhy"
-                class="h-40 w-40 rounded-full transition-transform duration-300 hover:scale-125"
+                class="h-40 w-40 rounded-full transition-transform duration-300 hover:scale-125 hover:sm:scale-150"
             />
         </div>
         <div class="text-gray flex flex-wrap justify-center gap-6 text-2xl">
@@ -368,33 +368,26 @@
                     </button>
                 {/each}
             </div>
-            {#if !showAll && project.length > visibleCount}
-                <div
-                    class="mt-12 flex justify-center"
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
+
+            <div
+                class="mt-12 flex justify-center"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+            >
+                <button
+                    class="bg-maroon hover:bg-yellow hover:text-gray cursor-pointer px-8 py-3 text-xl font-semibold text-white duration-300"
+                    onclick={() => {
+                        loadMore();
+                        window.location.href = "#project";
+                    }}
                 >
-                    <button
-                        class="bg-maroon hover:bg-yellow hover:text-gray cursor-pointer px-8 py-3 text-xl font-semibold text-white duration-300"
-                        onclick={loadMore}
-                    >
+                    {#if !showAll}
                         Load More
-                    </button>
-                </div>
-            {:else}
-                <div
-                    class="mt-12 flex justify-center"
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                >
-                    <button
-                        class="bg-maroon hover:bg-yellow hover:text-gray cursor-pointer px-8 py-3 text-xl font-semibold text-white duration-300"
-                        onclick={loadMore}
-                    >
+                    {:else}
                         Hide
-                    </button>
-                </div>
-            {/if}
+                    {/if}
+                </button>
+            </div>
         </div>
     </section>
 

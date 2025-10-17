@@ -27,7 +27,7 @@
             <img
                 src={Avatar}
                 alt="Louise Derizhy"
-                class="h-40 w-40 rounded-full transition-transform duration-300 hover:scale-125"
+                class="h-40 w-40 rounded-full transition-transform duration-300 hover:scale-125 hover:sm:scale-150"
             />
         </div>
         <div class="text-gray flex flex-wrap justify-center gap-6 text-2xl">
@@ -204,10 +204,11 @@
                         <h3
                             class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
                         >
-                            <span class="font-semibold">Speedcubing </span>is My
-                            Hobby, My Current Personal Record of
-                            <span class="font-semibold">3x3x3 </span>is
-                            <span class="font-semibold">6.06 sec</span>
+                            <span class="font-semibold">Speedcubing</span>
+                            is My Hobby, My Current Personal Record of
+                            <span class="font-semibold">3x3x3</span>
+                            is
+                            <span class="font-semibold"> 6.06 sec</span>
                         </h3>
                     </a>
                 </div>
