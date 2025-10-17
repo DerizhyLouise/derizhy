@@ -374,80 +374,92 @@
         </div>
     </section>
 
-    <section
-        id="know-more"
-        class="text-gray h-full w-full px-4 max-xl:py-40 min-[540px]:px-20 min-[1720px]:px-40 sm:px-40 xl:h-screen xl:px-20"
-    >
-        <div class="h-full w-full">
-            <h2
-                class="pb-10 text-center text-6xl font-semibold uppercase min-xl:pt-40"
+    <section id="know-more" class="text-gray h-full min-h-screen w-full px-10">
+        <h2
+            class="pt-40 pb-10 text-center text-6xl font-semibold uppercase"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+        >
+            What I Do?
+        </h2>
+        <div
+            class="mb-20 flex flex-col flex-wrap items-center justify-center gap-10 sm:flex-row"
+        >
+            <div
                 data-aos="fade-up"
                 data-aos-duration="2000"
+                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden shadow-2xl"
             >
-                What I Do?
-            </h2>
+                <div
+                    class="bg-gray flex h-full w-full items-center text-center text-8xl text-white duration-300 ease-in-out group-hover:-translate-y-full"
+                >
+                    <span class="fa-regular fa-square-terminal w-full scale-150"
+                    ></span>
+                </div>
+                <a
+                    href="./portfolio#"
+                    class="bg-yellow flex h-full w-full items-center justify-center p-4 duration-300 ease-in-out group-hover:-translate-y-full"
+                >
+                    <h2 class="text-gray text-center text-4xl">Coding</h2>
+                </a>
+            </div>
             <div
-                class="h-full w-full gap-12 max-xl:flex max-xl:flex-col xl:grid xl:grid-cols-3 xl:gap-6"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden shadow-2xl"
             >
                 <div
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    class="group shadow-gray relative mx-auto h-96 w-full overflow-hidden shadow-2xl xl:w-96"
+                    class="bg-gray flex h-full w-full items-center text-center text-8xl text-white duration-300 ease-in-out group-hover:-translate-y-full"
                 >
-                    <div
-                        class="bg-gray flex h-full w-full items-center text-center text-8xl text-white duration-300 ease-in-out group-hover:-translate-y-full"
-                    >
-                        <span
-                            class="fa-regular fa-square-terminal w-full scale-150"
-                        ></span>
-                    </div>
-                    <a
-                        href="./portfolio#"
-                        class="bg-yellow flex h-full w-full items-center justify-center p-4 duration-300 ease-in-out group-hover:-translate-y-full"
-                    >
-                        <h2 class="text-gray text-center text-5xl">Coding</h2>
-                    </a>
+                    <span class="fa-regular fa-microphone w-full scale-150"
+                    ></span>
                 </div>
+                <a
+                    href="#about"
+                    class="bg-yellow flex h-full w-full items-center justify-center p-4 duration-300 ease-in-out group-hover:-translate-y-full"
+                >
+                    <h2 class="text-gray text-center text-4xl">
+                        Public Speaking
+                    </h2>
+                </a>
+            </div>
+            <div
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden shadow-2xl"
+            >
                 <div
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    class="group shadow-gray relative mx-auto h-96 w-full overflow-hidden shadow-2xl xl:w-96"
+                    class="bg-gray flex h-full w-full items-center text-center text-8xl text-white duration-300 ease-in-out group-hover:-translate-y-full"
                 >
-                    <div
-                        class="bg-gray flex h-full w-full items-center text-center text-8xl text-white duration-300 ease-in-out group-hover:-translate-y-full"
-                    >
-                        <span class="fa-regular fa-microphone w-full scale-150"
-                        ></span>
-                    </div>
-                    <a
-                        href="#about"
-                        class="bg-yellow flex h-full w-full items-center justify-center p-4 duration-300 ease-in-out group-hover:-translate-y-full"
-                    >
-                        <h2 class="text-gray text-center text-5xl">
-                            Public Speaking
-                        </h2>
-                    </a>
+                    <span class="fa-regular fa-users w-full scale-150"></span>
                 </div>
+                <a
+                    href="./journal/my-organization-life"
+                    target=""
+                    class="bg-yellow flex h-full w-full items-center justify-center p-4 duration-300 ease-in-out group-hover:-translate-y-full"
+                >
+                    <h2 class="text-gray text-center text-4xl">
+                        Organizational
+                    </h2>
+                </a>
+            </div>
+            <div
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden shadow-2xl"
+            >
                 <div
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    class="group shadow-gray relative mx-auto h-96 w-full overflow-hidden shadow-2xl xl:w-96"
+                    class="bg-gray flex h-full w-full items-center justify-center duration-300 ease-in-out group-hover:-translate-y-full"
                 >
-                    <div
-                        class="bg-gray flex h-full w-full items-center justify-center duration-300 ease-in-out group-hover:-translate-y-full"
-                    >
-                        <img src={cubeSVG} class="h-48 w-48" alt="cube" />
-                    </div>
-                    <a
-                        href="https://www.worldcubeassociation.org/persons/2018DERI01"
-                        target="_blank"
-                        class="bg-yellow flex h-full w-full items-center justify-center p-4 duration-300 ease-in-out group-hover:-translate-y-full"
-                    >
-                        <h2 class="text-gray text-center text-5xl">
-                            Speedcubing
-                        </h2>
-                    </a>
+                    <img src={cubeSVG} class="h-48 w-48" alt="cube" />
                 </div>
+                <a
+                    href="https://www.worldcubeassociation.org/persons/2018DERI01"
+                    target="_blank"
+                    class="bg-yellow flex h-full w-full items-center justify-center p-4 duration-300 ease-in-out group-hover:-translate-y-full"
+                >
+                    <h2 class="text-gray text-center text-4xl">Speedcubing</h2>
+                </a>
             </div>
         </div>
     </section>
