@@ -1,323 +1,322 @@
 @import "tailwindcss";
 
-
 @theme {
-	--color-gray: #2B303B;
-	--color-lightgray: #373D49;
-	--color-green: #5CECC6;
-	--color-maroon: #C32148;
-	--color-yellow: #F8E9A1;
-	--color-navy: #0D192B;
+    --color-gray: #2b303b;
+    --color-lightgray: #373d49;
+    --color-green: #5cecc6;
+    --color-maroon: #c32148;
+    --color-yellow: #f8e9a1;
+    --color-navy: #0d192b;
 }
 
 @layer base {
-	* {
-		margin: 0px;
-		padding: 0px;
-		box-sizing: border-box;
-		font-family: "Poppins", sans-serif;
-		scrollbar-color: #c32148 #f8e9a1;
-		scrollbar-width: thin;
-	}
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        scrollbar-color: #c32148 #f8e9a1;
+        scrollbar-width: thin;
+    }
 
-	html {
-		scroll-behavior: smooth;
-	}
+    html {
+        scroll-behavior: smooth;
+    }
 
-	html,
-	body {
-		overflow-x: hidden;
-		width: 100%;
-	}
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p,
-	table,
-	li {
-		user-select: none;
-	}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    table,
+    li {
+        user-select: none;
+    }
 
-	.ellipsis-text {
-		display: -webkit-box;
-		-webkit-line-clamp: 1;
-		line-clamp: 1;
-		-webkit-box-orient: horizontal;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: normal;
-	}
+    .ellipsis-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        -webkit-box-orient: horizontal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
 }
 
 @layer utilities {
-	.border-opacity-0 {
-		--tw-border-opacity: 0;
-	}
+    .border-opacity-0 {
+        --tw-border-opacity: 0;
+    }
 
-	.border-opacity-100 {
-		--tw-border-opacity: 1;
-	}
+    .border-opacity-100 {
+        --tw-border-opacity: 1;
+    }
 }
 
 @layer components {
-	.gradient-text {
-		background-image: linear-gradient(-225deg,
-				#f8e9a1 0%,
-				#b72946 33%,
-				#6cf7b2 66%,
-				#f8e9a1 100%);
-		background-size: 200% auto;
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		animation: textclip 3s linear infinite;
-	}
+    .gradient-text {
+        background-image: linear-gradient(
+            -225deg,
+            #f8e9a1 0%,
+            #b72946 33%,
+            #6cf7b2 66%,
+            #f8e9a1 100%
+        );
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 3s linear infinite;
+    }
 
-	@keyframes textclip {
-		to {
-			background-position: 200% center;
-		}
-	}
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
+    }
 
-	.landing-bg {
-		background-position: bottom;
-	}
+    /* ICONS */
 
-	@media (max-height: 800px) {
-		.landing-bg {
-			background-position: center 800px;
-		}
-	}
+    .fa-bars:before {
+        content: "\f0c9";
+    }
 
-	/* ICONS */
+    .fa-browser:before {
+        content: "\1f5d4";
+    }
 
-	.fa-bars:before {
-		content: "\f0c9";
-	}
+    .fa-cat:before {
+        content: "\1f408";
+    }
 
-	.fa-browser:before {
-		content: "\1f5d4";
-	}
+    .fa-cheese-swiss:before {
+        content: "\1f9c0";
+    }
 
-	.fa-cat:before {
-		content: "\1f408";
-	}
+    .fa-chevron-down:before {
+        content: "\f078";
+    }
 
-	.fa-cheese-swiss:before {
-		content: "\1f9c0";
-	}
+    .fa-chevron-up:before {
+        content: "\f077";
+    }
 
-	.fa-chevron-down:before {
-		content: "\f078";
-	}
+    .fa-css3-alt:before {
+        content: "\f38b";
+    }
 
-	.fa-chevron-up:before {
-		content: "\f077";
-	}
+    .fa-cup-straw-swoosh:before {
+        content: "\e364";
+    }
 
-	.fa-css3-alt:before {
-		content: "\f38b";
-	}
+    .fa-database:before {
+        content: "\f1c0";
+    }
 
-	.fa-cup-straw-swoosh:before {
-		content: "\e364";
-	}
+    .fa-dharmachakra:before {
+        content: "\2638";
+    }
 
-	.fa-database:before {
-		content: "\f1c0";
-	}
+    .fa-display-code:before {
+        content: "\e165";
+    }
 
-	.fa-dharmachakra:before {
-		content: "\2638";
-	}
+    .fa-envelope::before {
+        content: "\f0e0";
+    }
 
-	.fa-display-code:before {
-		content: "\e165";
-	}
+    .fa-facebook-f:before {
+        content: "\f39e";
+    }
 
-	.fa-facebook-f:before {
-		content: "\f39e";
-	}
+    .fa-figma:before {
+        content: "\f799";
+    }
 
-	.fa-figma:before {
-		content: "\f799";
-	}
+    .fa-file-pdf:before {
+        content: "\f1c1";
+    }
 
-	.fa-file-pdf:before {
-		content: "\f1c1";
-	}
+    .fa-gamepad-modern:before {
+        content: "\1f3ae";
+    }
 
-	.fa-gamepad-modern:before {
-		content: "\1f3ae";
-	}
+    .fa-git-alt:before {
+        content: "\f841";
+    }
 
-	.fa-git-alt:before {
-		content: "\f841";
-	}
+    .fa-github:before {
+        content: "\f09b";
+    }
 
-	.fa-github:before {
-		content: "\f09b";
-	}
+    .fa-globe:before {
+        content: "\1f310";
+    }
 
-	.fa-globe:before {
-		content: "\1f310";
-	}
+    .fa-html5:before {
+        content: "\f13b";
+    }
 
-	.fa-html5:before {
-		content: "\f13b";
-	}
+    .fa-instagram:before {
+        content: "\f16d";
+    }
 
-	.fa-instagram:before {
-		content: "\f16d";
-	}
+    .fa-java:before {
+        content: "\f4e4";
+    }
 
-	.fa-java:before {
-		content: "\f4e4";
-	}
+    .fa-js:before {
+        content: "\f3b8";
+    }
 
-	.fa-js:before {
-		content: "\f3b8";
-	}
+    .fa-linkedin-in:before {
+        content: "\f0e1";
+    }
 
-	.fa-linkedin-in:before {
-		content: "\f0e1";
-	}
+    .fa-location-dot:before {
+        content: "\f3c5";
+    }
 
-	.fa-location-dot:before {
-		content: "\f3c5";
-	}
+    .fa-message-quote:before {
+        content: "\e1e4";
+    }
 
-	.fa-message-quote:before {
-		content: "\e1e4";
-	}
+    .fa-microphone::before {
+        content: "\f130";
+    }
 
-	.fa-microphone::before {
-		content: "\f130";
-	}
+    .fa-music:before {
+        content: "\1f3b5";
+    }
 
-	.fa-music:before {
-		content: "\1f3b5";
-	}
+    .fa-node-js:before {
+        content: "\f3d3";
+    }
 
-	.fa-node-js:before {
-		content: "\f3d3";
-	}
+    .fa-npm:before {
+        content: "\f3d4";
+    }
 
-	.fa-npm:before {
-		content: "\f3d4";
-	}
+    .fa-object-group:before {
+        content: "\f247";
+    }
 
-	.fa-object-group:before {
-		content: "\f247";
-	}
+    .fa-paint-roller:before {
+        content: "\f5aa";
+    }
 
-	.fa-paint-roller:before {
-		content: "\f5aa";
-	}
+    .fa-pen-ruler:before {
+        content: "\f5ae";
+    }
 
-	.fa-pen-ruler:before {
-		content: "\f5ae";
-	}
+    .fa-python:before {
+        content: "\f3e2";
+    }
 
-	.fa-python:before {
-		content: "\f3e2";
-	}
+    .fa-react:before {
+        content: "\f41b";
+    }
 
-	.fa-react:before {
-		content: "\f41b";
-	}
+    .fa-square-question:before {
+        content: "\f2fd";
+    }
 
-	.fa-square-question:before {
-		content: "\f2fd";
-	}
+    .fa-square-terminal:before {
+        content: "\e32a";
+    }
 
-	.fa-square-terminal:before {
-		content: "\e32a";
-	}
+    .fa-user:before {
+        content: "\1f464";
+    }
 
-	.fa-user:before {
-		content: "\1f464";
-	}
+    .fa-users:before {
+        content: "\f0c0";
+    }
 
-	.fa-users:before {
-		content: "\f0c0";
-	}
+    .fa-whatsapp:before {
+        content: "\f232";
+    }
 
-	.fa-xmark:before {
-		content: "\d7";
-	}
+    .fa-xmark:before {
+        content: "\d7";
+    }
 
-	.fa-light {
-		font-weight: 300;
-	}
+    .fa-light {
+        font-weight: 300;
+    }
 
-	.fa-regular {
-		font-weight: 400;
-	}
+    .fa-regular {
+        font-weight: 400;
+    }
 
-	.fa-solid {
-		font-weight: 900;
-	}
+    .fa-solid {
+        font-weight: 900;
+    }
 
-	@font-face {
-		font-family: "Font Awesome 6 Pro";
-		font-style: normal;
-		font-weight: 300;
-		font-display: block;
-		src: url($lib/assets/font/fa-light-300.woff2) format("woff2");
-	}
+    @font-face {
+        font-family: "Font Awesome 6 Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-display: block;
+        src: url($lib/assets/font/fa-light-300.woff2) format("woff2");
+    }
 
-	@font-face {
-		font-family: "Font Awesome 6 Pro";
-		font-style: normal;
-		font-weight: 900;
-		font-display: block;
-		src: url($lib/assets/font/fa-solid-900.woff2) format("woff2");
-	}
+    @font-face {
+        font-family: "Font Awesome 6 Pro";
+        font-style: normal;
+        font-weight: 900;
+        font-display: block;
+        src: url($lib/assets/font/fa-solid-900.woff2) format("woff2");
+    }
 
-	@font-face {
-		font-family: "Font Awesome 6 Brands";
-		font-style: normal;
-		font-weight: 400;
-		font-display: block;
-		src: url($lib/assets/font/fa-brands-400.woff2) format("woff2");
-	}
+    @font-face {
+        font-family: "Font Awesome 6 Brands";
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url($lib/assets/font/fa-brands-400.woff2) format("woff2");
+    }
 
-	.fa {
-		font-family: "Font Awesome 6 Pro";
-		font-family: var(--fa-style-family, "Font Awesome 6 Pro");
-		font-weight: 900;
-		font-weight: var(--fa-style, 900);
-	}
+    .fa {
+        font-family: "Font Awesome 6 Pro";
+        font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+        font-weight: 900;
+        font-weight: var(--fa-style, 900);
+    }
 
-	.fa,
-	.fa-brands,
-	.fa-light,
-	.fa-solid,
-	.fab {
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
-		display: inline-block;
-		display: var(--fa-display, inline-block);
-		font-style: normal;
-		font-variant: normal;
-		line-height: 1;
-		text-rendering: auto;
-	}
+    .fa,
+    .fa-brands,
+    .fa-light,
+    .fa-solid,
+    .fab {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        display: var(--fa-display, inline-block);
+        font-style: normal;
+        font-variant: normal;
+        line-height: 1;
+        text-rendering: auto;
+    }
 
-	.fa-brands,
-	.fab {
-		font-family: "Font Awesome 6 Brands";
-		font-weight: 400;
-	}
+    .fa-brands,
+    .fab {
+        font-family: "Font Awesome 6 Brands";
+        font-weight: 400;
+    }
 
-	.fa-solid,
-	.fa-light,
-	.fa-regular {
-		font-family: "Font Awesome 6 Pro";
-	}
+    .fa-solid,
+    .fa-light,
+    .fa-regular {
+        font-family: "Font Awesome 6 Pro";
+    }
 }

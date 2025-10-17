@@ -118,3 +118,9 @@ export type OrganizationJournal = {
     description: string[];
     experience: OrganizationExperience[];
 };
+
+export type Contact = {
+    icon: string;
+    link: string;
+    label: string;
+};

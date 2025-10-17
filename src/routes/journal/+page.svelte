@@ -18,22 +18,17 @@
                 class="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             >
                 {#each journalMenu as item (item.title)}
-                    <a
-                        href={item.link}
-                        class="group flex flex-col overflow-hidden transition duration-300 hover:scale-105"
-                    >
-                        <div class="overflow-hidden shadow-md">
+                    <a href={item.link} class="flex flex-col overflow-hidden">
+                        <div class="overflow-hidden">
                             <img
                                 alt={item.title}
                                 src={item.icon.src}
-                                class="aspect-[16/10] w-full rounded-sm object-cover"
+                                class="aspect-[16/10] w-full object-cover"
                             />
                         </div>
                         <div class="flex flex-col justify-between pt-2">
                             <div>
-                                <h3
-                                    class="line-clamp-2 text-lg font-semibold md:text-xl"
-                                >
+                                <h3 class="line-clamp-2 text-lg font-semibold">
                                     {item.title}
                                 </h3>
                                 <p

@@ -70,7 +70,7 @@ export const footerData: FooterData = {
         {
             label: "LinkedIn",
             icon: "fab fa-linkedin-in",
-            href: "https://www.linkedin.com/in/louisederizhy/",
+            href: "https://www.linkedin.com/in/louisederizhy",
             target: "_blank",
         },
         {

@@ -1,47 +1,51 @@
 <script lang="ts">
+    import Avatar from "$lib/assets/image/profile/derizhy.webp";
     import chelseaSVG from "$lib/assets/svg/chelsea.svg";
     import cubeSVG from "$lib/assets/svg/cube.svg";
     import tailwindSVG from "$lib/assets/svg/tailwind.svg";
+    import { homeContactData } from "$lib/data/contact";
 </script>
 
-<div class="bg-[url('/src/lib/assets/svg/bg-1.svg')] bg-repeat">
-    <section
-        id="home"
-        class="landing-bg flex h-full min-h-screen w-full items-center bg-black/70 bg-[url('/src/lib/assets/image/profile/bg-prof.jpeg')] bg-fixed px-4 pt-40 pb-20 text-white bg-blend-multiply sm:px-20 sm:pt-32 md:px-40 lg:px-60"
-    >
-        <div
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            class="flex h-full w-full items-center gap-12"
-        >
-            <div class="flex w-full flex-col max-md:items-center">
-                <p class="text-center text-4xl md:text-left">Hey there! I'm</p>
-                <h2 class="text-center text-6xl font-semibold md:text-left">
-                    Louise Derizhy
-                </h2>
-                <ul class="pt-4 text-2xl md:list-disc md:pl-6">
-                    <li class="text-center md:text-left">Software Engineer</li>
-                    <li class="text-center md:text-left">Public Speaker</li>
-                    <li class="text-center md:text-left">Speedcuber</li>
-                </ul>
-                <div class="mt-4 flex flex-wrap gap-4 max-md:justify-center">
-                    <a
-                        class="hover:bg-maroon border-maroon border-2 p-2 font-semibold duration-700"
-                        href="#know-more"
-                    >
-                        Know me more
-                    </a>
-                    <a
-                        class="hover:bg-maroon border-maroon border-2 p-2 font-semibold duration-700"
-                        href="./portfolio"
-                    >
-                        My Portfolio
-                    </a>
-                </div>
-            </div>
+<section
+    id="home"
+    class="bg-gray flex h-full min-h-screen w-full flex-col items-center justify-center px-10 pt-32 pb-20 text-white"
+>
+    <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
+        <h2 class="mb-10 text-4xl font-semibold tracking-wide sm:text-5xl">
+            Hi! I am <span class="text-yellow underline">Louise Derizhy</span>
+        </h2>
+        <p class="text-lg sm:text-xl">
+            By profession, I'm a
+            <span class="font-semibold">Software Engineer</span>.<br />
+            Outside of coding, I'm deeply involved in
+            <span class="font-semibold">Organizations</span>, passionate about
+            <span class="font-semibold">Public Speaking</span>, <br />
+            and love solving Rubik's cubes as a
+            <span class="font-semibold">Speedcuber</span>.
+        </p>
+        <div class="my-10 flex justify-center sm:my-20">
+            <img
+                src={Avatar}
+                alt="Louise Derizhy"
+                class="h-40 w-40 rounded-full transition-transform duration-300 hover:scale-125"
+            />
         </div>
-    </section>
+        <div class="text-gray flex flex-wrap justify-center gap-6 text-2xl">
+            {#each homeContactData as contact (contact.label)}
+                <a
+                    aria-label={contact.label}
+                    href={contact.link}
+                    target="_blank"
+                    class="bg-yellow flex h-16 w-16 cursor-pointer items-center justify-center rounded-full transition-transform duration-700 hover:rotate-360"
+                >
+                    <span class={contact.icon}></span>
+                </a>
+            {/each}
+        </div>
+    </div>
+</section>
 
+<div class="bg-[url('$lib/assets/svg/bg-1.svg')] bg-repeat">
     <section
         id="about"
         class="h-full w-full px-10 text-white xl:px-40 2xl:px-80"
