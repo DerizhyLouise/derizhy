@@ -436,7 +436,6 @@
                 </div>
                 <a
                     href="./journal/my-organization-life"
-                    target=""
                     class="bg-yellow flex h-full w-full items-center justify-center p-4 duration-300 ease-in-out group-hover:-translate-y-full"
                 >
                     <h2 class="text-gray text-center text-4xl">
