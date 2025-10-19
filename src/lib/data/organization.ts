@@ -124,11 +124,11 @@ export const organizationExperience: OrganizationJournal[] = [
         },
         experience: [
             {
-                position: "Staf IV of Secretarial Division",
+                position: "Staf IV of Secretariat Division",
                 time: "2021 - 2024",
             },
             {
-                position: "Head of Secretarial Division",
+                position: "Head of Secretariat Division",
                 time: "2024 - 2027",
             },
         ],
