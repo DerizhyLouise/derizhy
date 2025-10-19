@@ -50,7 +50,7 @@ export const organizationExperience: OrganizationJournal[] = [
                 time: "2017 - 2018",
             },
             {
-                position: "Chairman",
+                position: "President",
                 time: "2018 - 2019",
             },
             {
