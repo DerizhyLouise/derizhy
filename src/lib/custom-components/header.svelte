@@ -81,25 +81,21 @@
     <nav class="hidden justify-self-end text-xl font-semibold lg:block">
         <ul class="flex justify-end gap-6 xl:gap-10">
             {#each menu as item (item.title)}
-                <li class="group relative" data-dropdown>
+                <li class="relative" data-dropdown>
                     {#if item.subMenu}
                         <button
                             onclick={() => toggleDropdown(item.title)}
-                            class="relative flex items-center gap-2 text-white
-							   after:absolute after:bottom-[-4px] after:left-0 after:h-[2px]
-							   after:w-0 after:bg-white after:transition-all
-							   after:duration-300 after:content-[''] hover:after:w-full"
+                            class="hover:text-yellow after:bg-yellow relative flex items-center gap-2 font-medium text-white transition-colors duration-300 after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
                         >
                             {item.title}
-                            <i class="fa-solid fa-chevron-down text-sm"></i>
+                            <i
+                                class={`fa-solid fa-chevron-down text-sm transition-transform duration-300 ${openDropdown === item.title && item.subMenu ? "rotate-180" : ""}`}
+                            ></i>
                         </button>
                     {:else}
                         <a
                             href={item.link}
-                            class="relative flex items-center gap-2 text-white
-							   after:absolute after:bottom-[-4px] after:left-0 after:h-[2px]
-							   after:w-0 after:bg-white after:transition-all
-							   after:duration-300 after:content-[''] hover:after:w-full"
+                            class="hover:text-yellow after:bg-yellow relative flex items-center gap-2 font-medium text-white transition-colors duration-300 after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
                         >
                             {item.title}
                         </a>
@@ -107,9 +103,9 @@
 
                     {#if openDropdown === item.title && item.subMenu}
                         <div
-                            class="border-yellow bg-gray absolute left-0 z-40 mt-2 w-30 rounded-lg border-2 shadow"
+                            class="border-yellow bg-gray animate-fadeInSlide absolute left-0 z-40 mt-3 min-w-[10rem] overflow-hidden rounded-lg border shadow-lg backdrop-blur-md"
                         >
-                            <ul class="py-2 text-sm">
+                            <ul class="py-2 text-base">
                                 {#each item.subMenu as subItem (subItem.title)}
                                     <li>
                                         <a
@@ -117,7 +113,7 @@
                                                 item.link,
                                                 subItem.link,
                                             )}
-                                            class="hover:bg-yellow hover:text-gray block w-full px-4 py-2 text-left text-white duration-300"
+                                            class="hover:bg-yellow hover:text-gray block w-full px-5 py-2 text-left text-white transition-all duration-300"
                                         >
                                             {subItem.title}
                                         </a>
