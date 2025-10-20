@@ -136,7 +136,7 @@
                         <div class="flex w-full justify-between">
                             <div class="flex">
                                 <div
-                                    class="bg-lightgray text-yellow flex h-12 min-h-12 w-12 min-w-12 items-center justify-center rounded-md text-xl"
+                                    class="bg-lightgray text-yellow flex h-12 min-h-12 w-12 min-w-12 items-center justify-center rounded-md text-xl duration-300 hover:scale-125"
                                 >
                                     <span class={item.icon}></span>
                                 </div>
@@ -164,11 +164,13 @@
                             class="mt-4 flex flex-wrap justify-between gap-2 text-xs sm:text-sm"
                         >
                             <div
-                                class="bg-yellow text-gray rounded-full px-4 py-2"
+                                class="bg-yellow text-gray hover:bg-yellow/80 rounded-full px-4 py-2"
                             >
                                 {item.type}
                             </div>
-                            <div class="bg-lightgray rounded-full px-4 py-2">
+                            <div
+                                class="bg-lightgray rounded-full px-4 py-2 hover:brightness-150"
+                            >
                                 {item.time}
                             </div>
                         </div>

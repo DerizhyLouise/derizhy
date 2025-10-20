@@ -94,7 +94,7 @@ export const project: Project[] = [
         id: 9,
         title: "Peduli Anak",
         subtitle: "Stunting Web Based App",
-        icon: "fa-regular fa-user-doctor",
+        icon: "fa-regular fa-stethoscope",
         type: "Front-End Web",
         media: [
             {
@@ -146,7 +146,7 @@ export const project: Project[] = [
         id: 8,
         title: "MTHIS 2.0",
         subtitle: "Murni Teguh Hospital Information System",
-        icon: "fa-regular fa-hospital",
+        icon: "fa-regular fa-stethoscope",
         type: "Full-Stack Web",
         media: [],
         time: "January 2024 - Now",
@@ -437,7 +437,7 @@ export const project: Project[] = [
         id: 3,
         title: "Cryptography",
         subtitle: "Cryptography Algorithm Source Code",
-        icon: "fa-regular fa-code",
+        icon: "fa-regular fa-key",
         type: "Cryptography",
         media: [
             {

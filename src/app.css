@@ -50,6 +50,7 @@
         text-overflow: ellipsis;
         white-space: normal;
     }
+
     button,
     a {
         cursor: pointer;
@@ -68,13 +69,11 @@
 
 @layer components {
     .gradient-text {
-        background-image: linear-gradient(
-            -225deg,
-            #f8e9a1 0%,
-            #b72946 33%,
-            #6cf7b2 66%,
-            #f8e9a1 100%
-        );
+        background-image: linear-gradient(-225deg,
+                #f8e9a1 0%,
+                #b72946 33%,
+                #6cf7b2 66%,
+                #f8e9a1 100%);
         background-size: 200% auto;
         background-clip: text;
         -webkit-background-clip: text;
@@ -93,6 +92,7 @@
             opacity: 0;
             transform: translateY(-10px);
         }
+
         100% {
             opacity: 1;
             transform: translateY(0);
@@ -185,10 +185,6 @@
         content: "\f09b";
     }
 
-    .fa-hospital::before {
-        content: "\f0f8";
-    }
-
     .fa-html5:before {
         content: "\f13b";
     }
@@ -207,6 +203,10 @@
 
     .fa-js:before {
         content: "\f3b8";
+    }
+
+    .fa-key:before {
+        content: "\f084"
     }
 
     .fa-layer-group::before {
@@ -285,12 +285,12 @@
         content: "\e32a";
     }
 
-    .fa-user:before {
-        content: "\1f464";
+    .fa-stethoscope::before {
+        content: "\f0f1";
     }
 
-    .fa-user-doctor::before {
-        content: "\f0f0";
+    .fa-user:before {
+        content: "\1f464";
     }
 
     .fa-users:before {
