@@ -36,7 +36,7 @@
                     aria-label={contact.label}
                     href={contact.link}
                     target="_blank"
-                    class="bg-yellow flex h-16 w-16 cursor-pointer items-center justify-center rounded-full transition-transform duration-700 hover:rotate-360"
+                    class="bg-yellow flex h-16 w-16 items-center justify-center rounded-full transition-transform duration-700 hover:rotate-360"
                 >
                     <span class={contact.icon}></span>
                 </a>
@@ -71,7 +71,7 @@
                             <span class="fa-regular fa-location-dot"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             I Live and Born in
                             <span class="font-semibold">Medan, Indonesia</span>
@@ -88,7 +88,7 @@
                             <span class="fa-regular fa-dharmachakra"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             I am a <span class="font-semibold">Buddhist</span>
                             and <span class="font-semibold">Buddhism </span> is My
@@ -105,7 +105,7 @@
                             <span class="fa-regular fa-user"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             <span class="font-semibold">張家誠</span> is My
                             Chinese Name and<br /><span class="font-semibold"
@@ -123,7 +123,7 @@
                             <span class="fa-regular fa-square-terminal"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             I Love <span class="font-semibold">Physics</span>
                             but I've Chosen
@@ -137,10 +137,10 @@
                         class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
-                            <span class="fa-regular fa-display-code"></span>
+                            <span class="fa-regular fa-code"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             I am a <span class="font-semibold"
                                 >Software Engineer</span
@@ -159,7 +159,7 @@
                             <span class="fa-regular fa-users"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             I Love to Do <span class="font-semibold"
                                 >Organizational</span
@@ -176,7 +176,7 @@
                             <span class="fa-regular fa-microphone"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             I am a <span class="font-semibold"
                                 >Public Speaker</span
@@ -202,7 +202,7 @@
                             />
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             <span class="font-semibold">Speedcubing</span>
                             is My Hobby, My Current Personal Record of
@@ -222,7 +222,7 @@
                             <span class="fa-regular fa-cheese-swiss"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             I Love Everything About <span class="font-semibold"
                                 >Cheeseeeee</span
@@ -246,7 +246,7 @@
                             />
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             <span class="font-semibold">Chelsea FC</span> is My Favorite
                             Football Club.
@@ -262,7 +262,7 @@
                             <span class="fa-regular fa-message-quote"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             <q
                                 >The More <span class="font-semibold"
@@ -288,7 +288,7 @@
                             />
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             My Most Favorite Framework/Library is <span
                                 class="font-semibold">Tailwind CSS</span
@@ -306,7 +306,7 @@
                             <span class="fa-regular fa-music"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             <span class="font-semibold"
                                 >River Flows In You
@@ -327,7 +327,7 @@
                             <span class="fa-regular fa-paint-roller"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             My Favorite Color is
                             <span class="text-maroon font-semibold"
@@ -346,7 +346,7 @@
                             <span class="fa-regular fa-cup-straw-swoosh"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             I Don't Like Coffee, But I Love <span
                                 class="font-semibold">Milk Tea</span
@@ -364,7 +364,7 @@
                             <span class="fa-regular fa-cat"></span>
                         </div>
                         <h3
-                            class="text-md col-span-4 even:text-left sm:col-span-5 sm:text-lg"
+                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
                             I Think <span class="font-semibold">Cat</span> is The
                             Cutest Animal

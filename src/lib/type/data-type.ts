@@ -55,10 +55,10 @@ export type Project = {
     id: number;
     title: string;
     subtitle: string;
+    icon: string;
     media: {
         title: string;
         url: string;
-        type: string;
         typeSymbol: IconImage;
     }[];
     time: string;

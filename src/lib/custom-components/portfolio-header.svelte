@@ -63,7 +63,7 @@
                 <li class="group relative">
                     <a
                         href={getLink(portfolioMenu.link, item.link)}
-                        class="relative flex cursor-pointer items-center gap-2 text-white
+                        class="relative flex items-center gap-2 text-white
 							   after:absolute after:bottom-[-4px] after:left-0 after:h-[2px]
 							   after:w-0 after:bg-white after:transition-all
 							   after:duration-300 after:content-[''] hover:after:w-full"
@@ -78,7 +78,7 @@
     <!-- MOBILE BUTTON -->
     <div class="flex w-6/12 justify-end lg:hidden">
         <button
-            class="cursor-pointer text-3xl transition hover:scale-150 hover:duration-300"
+            class=" text-3xl transition hover:scale-150 hover:duration-300"
             type="button"
             aria-label="Open navigation menu"
             onclick={toggleDrawer}
@@ -96,7 +96,7 @@
     <button
         type="button"
         onclick={closeDrawer}
-        class="hover:bg-maroon group absolute end-2.5 top-2.5 inline-flex h-12 w-12 cursor-pointer items-center justify-center rounded-lg bg-transparent text-lg text-white"
+        class="hover:bg-maroon group absolute end-2.5 top-2.5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-transparent text-lg text-white"
         aria-label="Close sidebar"
     >
         <span

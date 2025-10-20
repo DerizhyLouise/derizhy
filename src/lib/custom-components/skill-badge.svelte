@@ -5,13 +5,14 @@
     type SkillBadgeProps = {
         name: string;
         icon: IconImage;
+        className?: string;
     };
 
-    let { name, icon }: SkillBadgeProps = $props();
+    let { name, icon, className }: SkillBadgeProps = $props();
 </script>
 
 <div
-    class="bg-lightgray flex cursor-pointer items-center rounded-full border border-white px-4 py-2 text-white duration-300 hover:brightness-150"
+    class={`bg-lightgray flex cursor-pointer items-center rounded-full px-4 py-2 text-xs text-white duration-300 hover:brightness-150 ${className}`}
 >
     <ImgRenderer {icon} {name} imgClassName="mr-1 h-4" iconClassName="mr-2" />
     {name}

@@ -50,6 +50,10 @@
         text-overflow: ellipsis;
         white-space: normal;
     }
+    button,
+    a {
+        cursor: pointer;
+    }
 }
 
 @layer utilities {
@@ -106,8 +110,8 @@
         content: "\f078";
     }
 
-    .fa-chevron-up:before {
-        content: "\f077";
+    .fa-code::before {
+        content: "\f121";
     }
 
     .fa-css3-alt:before {
@@ -124,10 +128,6 @@
 
     .fa-dharmachakra:before {
         content: "\2638";
-    }
-
-    .fa-display-code:before {
-        content: "\e165";
     }
 
     .fa-envelope::before {
@@ -158,10 +158,6 @@
         content: "\f09b";
     }
 
-    .fa-globe:before {
-        content: "\1f310";
-    }
-
     .fa-html5:before {
         content: "\f13b";
     }
@@ -178,6 +174,14 @@
         content: "\f3b8";
     }
 
+    .fa-layer-group::before {
+        content: "\f5fd";
+    }
+
+    .fa-link::before {
+        content: "\f0c1";
+    }
+
     .fa-linkedin-in:before {
         content: "\f0e1";
     }
@@ -186,12 +190,20 @@
         content: "\f3c5";
     }
 
+    .fa-magnifying-glass::before {
+        content: "\f002";
+    }
+
     .fa-message-quote:before {
         content: "\e1e4";
     }
 
     .fa-microphone::before {
         content: "\f130";
+    }
+
+    .fa-microscope::before {
+        content: "\f610";
     }
 
     .fa-music:before {
@@ -206,16 +218,20 @@
         content: "\f3d4";
     }
 
-    .fa-object-group:before {
-        content: "\f247";
-    }
-
     .fa-paint-roller:before {
         content: "\f5aa";
     }
 
+    .fa-palette::before {
+        content: "\f53f";
+    }
+
     .fa-pen-ruler:before {
         content: "\f5ae";
+    }
+
+    .fa-print::before {
+        content: "\f02f";
     }
 
     .fa-python:before {
