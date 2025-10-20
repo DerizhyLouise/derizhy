@@ -63,7 +63,7 @@
                     ></span>
                     <input
                         type="text"
-                        placeholder="Search..."
+                        placeholder="Search Projects..."
                         bind:value={search}
                         class="w-full rounded-md bg-white py-3 pr-12 pl-12 text-sm focus:outline-none sm:py-4 sm:pr-14 sm:pl-16 sm:text-base md:py-5"
                     />
