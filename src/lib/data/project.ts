@@ -50,7 +50,7 @@ export const project: Project[] = [
         id: 10,
         title: "Assessment Builder",
         subtitle: "GrapesJs Web Builder",
-        icon: "fa-regular fa-layer-group",
+        icon: "fa-regular fa-file",
         media: [],
         time: "August 2024 - Now",
         type: "Full-Stack Web",
@@ -94,7 +94,7 @@ export const project: Project[] = [
         id: 9,
         title: "Peduli Anak",
         subtitle: "Stunting Web Based App",
-        icon: "fa-regular fa-layer-group",
+        icon: "fa-regular fa-user-doctor",
         type: "Front-End Web",
         media: [
             {
@@ -146,7 +146,7 @@ export const project: Project[] = [
         id: 8,
         title: "MTHIS 2.0",
         subtitle: "Murni Teguh Hospital Information System",
-        icon: "fa-regular fa-layer-group",
+        icon: "fa-regular fa-hospital",
         type: "Full-Stack Web",
         media: [],
         time: "January 2024 - Now",
@@ -259,7 +259,7 @@ export const project: Project[] = [
         id: 6,
         title: "Shopping Cart Database",
         subtitle: "Data Analytics Project",
-        icon: "fa-regular fa-microscope",
+        icon: "fa-regular fa-cart-shopping",
         type: "Data Analytics",
         media: [
             {
@@ -318,7 +318,7 @@ export const project: Project[] = [
         id: 5,
         title: "Clo",
         subtitle: "E-Commerce Web",
-        icon: "fa-regular fa-layer-group",
+        icon: "fa-regular fa-cart-shopping",
         type: "Full-Stack Web",
         media: [
             {
@@ -403,7 +403,7 @@ export const project: Project[] = [
         id: 4,
         title: "Bike Rental",
         subtitle: "Data Analytics Project",
-        icon: "fa-regular fa-microscope",
+        icon: "fa-regular fa-bicycle",
         type: "Data Analytics",
         media: [
             {
@@ -474,7 +474,7 @@ export const project: Project[] = [
         id: 2,
         title: "Image Processing",
         subtitle: "Image Processing Algorithm Source Code",
-        icon: "fa-regular fa-code",
+        icon: "fa-regular fa-image",
         type: "Artificial Intelligence",
         media: [
             {

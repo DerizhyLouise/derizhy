@@ -109,8 +109,16 @@
         content: "\f0c9";
     }
 
+    .fa-bicycle::before {
+        content: "\f206";
+    }
+
     .fa-browser:before {
         content: "\1f5d4";
+    }
+
+    .fa-cart-shopping::before {
+        content: "\f07a";
     }
 
     .fa-cat:before {
@@ -157,6 +165,10 @@
         content: "\f799";
     }
 
+    .fa-file::before {
+        content: "\f15b";
+    }
+
     .fa-file-pdf:before {
         content: "\f1c1";
     }
@@ -173,8 +185,16 @@
         content: "\f09b";
     }
 
+    .fa-hospital::before {
+        content: "\f0f8";
+    }
+
     .fa-html5:before {
         content: "\f13b";
+    }
+
+    .fa-image::before {
+        content: "\f03e";
     }
 
     .fa-instagram:before {
@@ -267,6 +287,10 @@
 
     .fa-user:before {
         content: "\1f464";
+    }
+
+    .fa-user-doctor::before {
+        content: "\f0f0";
     }
 
     .fa-users:before {
