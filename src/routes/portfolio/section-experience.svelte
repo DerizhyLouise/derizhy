@@ -32,7 +32,7 @@
         >
             {#each experience as item (item.id)}
                 <div
-                    class="bg-gray shadow-gray group flex w-full flex-col items-center gap-2 rounded-sm p-6 text-white shadow-xl md:flex-row md:items-start md:gap-6"
+                    class="bg-gray shadow-gray group flex w-full flex-col items-center gap-2 rounded-sm p-6 text-white shadow-lg md:flex-row md:items-start md:gap-6"
                 >
                     <div
                         class="h-24 min-h-24 w-24 min-w-24 duration-300 group-hover:rotate-360"

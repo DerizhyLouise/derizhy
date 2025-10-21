@@ -23,7 +23,7 @@
                 <a
                     href={item.link}
                     target="_blank"
-                    class="group bg-gray shadow-gray h-72 w-full max-w-[440px] rounded-sm p-8 shadow-xl transition hover:scale-110 hover:duration-300"
+                    class="group bg-gray shadow-gray h-72 w-full max-w-[440px] rounded-sm p-8 shadow-lg transition hover:scale-110 hover:duration-300"
                 >
                     <div class="flex h-full items-center justify-center">
                         <div class="flex flex-col items-center text-center">

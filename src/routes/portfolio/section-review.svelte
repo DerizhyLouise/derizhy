@@ -17,7 +17,7 @@
         <div class="flex flex-wrap justify-center gap-12">
             {#each review as item (item.name)}
                 <a
-                    class="bg-gray shadow-gray flex h-[416px] w-[416px] flex-col rounded-sm p-4 no-underline shadow-2xl max-sm:h-full"
+                    class="bg-gray shadow-gray flex h-[416px] w-[416px] flex-col rounded-sm p-4 no-underline shadow-lg max-sm:h-full"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                     href={item.url}

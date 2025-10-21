@@ -79,7 +79,7 @@
         </h2>
         <div>
             <div
-                class="shadow-gray bg-gray relative rounded-sm p-6 shadow-xl sm:p-10 md:p-12"
+                class="shadow-gray bg-gray relative rounded-sm p-6 shadow-lg sm:p-10 md:p-12"
                 data-aos="fade-up"
                 data-aos-duration="2000"
             >
@@ -150,7 +150,7 @@
             >
                 {#each projectData as item (item.id)}
                     <div
-                        class="bg-gray shadow-gray cursor-pointer rounded-sm p-6 text-white shadow-xl"
+                        class="bg-gray shadow-gray cursor-pointer rounded-sm p-6 text-white shadow-lg"
                         role="button"
                         tabindex="0"
                         onclick={() => openDetailFn(item.id)}
