@@ -53,7 +53,7 @@
         </h2>
         <div>
             <div
-                class="shadow-gray bg-gray relative rounded-md p-6 shadow-xl sm:p-10 md:p-12"
+                class="shadow-gray bg-gray relative rounded-sm p-6 shadow-xl sm:p-10 md:p-12"
                 data-aos="fade-up"
                 data-aos-duration="2000"
             >
@@ -65,7 +65,7 @@
                         type="text"
                         placeholder="Search Projects..."
                         bind:value={search}
-                        class="w-full rounded-md bg-white py-3 pr-12 pl-12 text-sm focus:outline-none sm:py-4 sm:pr-14 sm:pl-16 sm:text-base md:py-5"
+                        class="w-full rounded-sm bg-white py-3 pr-12 pl-12 text-sm focus:outline-none sm:py-4 sm:pr-14 sm:pl-16 sm:text-base md:py-5"
                     />
                     <button
                         class="text-gray absolute top-1/2 right-5 -translate-y-1/2 text-lg active:scale-125 sm:right-6 sm:text-xl md:right-7"
@@ -122,7 +122,7 @@
             >
                 {#each projectData as item (item.id)}
                     <div
-                        class="bg-gray shadow-gray cursor-pointer rounded-md p-6 text-white shadow-xl"
+                        class="bg-gray shadow-gray cursor-pointer rounded-sm p-6 text-white shadow-xl"
                         role="button"
                         tabindex="0"
                         onclick={() => openDetailFn(item.id)}
@@ -136,7 +136,7 @@
                         <div class="flex w-full justify-between">
                             <div class="flex">
                                 <div
-                                    class="bg-lightgray text-yellow flex h-12 min-h-12 w-12 min-w-12 items-center justify-center rounded-md text-xl duration-300 hover:scale-125"
+                                    class="bg-lightgray text-yellow flex h-12 min-h-12 w-12 min-w-12 items-center justify-center rounded-sm text-xl duration-300 hover:scale-125"
                                 >
                                     <span class={item.icon}></span>
                                 </div>

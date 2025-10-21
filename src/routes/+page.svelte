@@ -65,7 +65,7 @@
                     <a
                         href="https://en.wikipedia.org/wiki/Medan"
                         target="_blank"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-location-dot"></span>
@@ -82,7 +82,7 @@
                     <a
                         href="https://en.wikipedia.org/wiki/Buddhism"
                         target="_blank"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-dharmachakra"></span>
@@ -99,7 +99,7 @@
                 <div data-aos="fade-up-right" data-aos-duration="2000">
                     <a
                         href="#about"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-user"></span>
@@ -117,7 +117,7 @@
                 <div data-aos="fade-up-left" data-aos-duration="2000">
                     <a
                         href="#about"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-square-terminal"></span>
@@ -134,7 +134,7 @@
                 <div data-aos="fade-up-right" data-aos-duration="2000">
                     <a
                         href="./portfolio#projects"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-code"></span>
@@ -153,7 +153,7 @@
                 <div data-aos="fade-up-left" data-aos-duration="2000">
                     <a
                         href="./portfolio#organizations"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-4xl max-sm:col-span-2">
                             <span class="fa-regular fa-users"></span>
@@ -170,7 +170,7 @@
                 <div data-aos="fade-up-right" data-aos-duration="2000">
                     <a
                         href="#about"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-microphone"></span>
@@ -190,7 +190,7 @@
                     <a
                         href="https://www.worldcubeassociation.org/persons/2018DERI01"
                         target="_blank"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div
                             class="flex items-center justify-center max-sm:col-span-2"
@@ -216,7 +216,7 @@
                     <a
                         href="https://cheese.com"
                         target="_blank"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-cheese-swiss"></span>
@@ -234,7 +234,7 @@
                     <a
                         href="https://www.chelseafc.com/en"
                         target="_blank"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div
                             class="flex items-center justify-center max-sm:col-span-2"
@@ -256,7 +256,7 @@
                 <div data-aos="fade-up-right" data-aos-duration="2000">
                     <a
                         href="#about"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-message-quote"></span>
@@ -276,7 +276,7 @@
                     <a
                         href="https://tailwindcss.com/"
                         target="_blank"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div
                             class="flex items-center justify-center max-sm:col-span-2"
@@ -300,7 +300,7 @@
                     <a
                         href="https://en.wikipedia.org/wiki/Yiruma"
                         target="_blank"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-music"></span>
@@ -321,7 +321,7 @@
                     <a
                         href="#about"
                         target="_blank"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-paint-roller"></span>
@@ -340,7 +340,7 @@
                     <a
                         href="#about"
                         target="_blank"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-cup-straw-swoosh"></span>
@@ -358,7 +358,7 @@
                     <a
                         href="#about"
                         target="_blank"
-                        class="bg-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-lg px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
+                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-2xl duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
                             <span class="fa-regular fa-cat"></span>
@@ -389,7 +389,7 @@
             <div
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden shadow-2xl"
+                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden rounded-sm shadow-2xl"
             >
                 <div
                     class="bg-gray flex h-full w-full items-center text-center text-8xl text-white duration-300 ease-in-out group-hover:-translate-y-full"
@@ -407,7 +407,7 @@
             <div
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden shadow-2xl"
+                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden rounded-sm shadow-2xl"
             >
                 <div
                     class="bg-gray flex h-full w-full items-center text-center text-8xl text-white duration-300 ease-in-out group-hover:-translate-y-full"
@@ -427,7 +427,7 @@
             <div
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden shadow-2xl"
+                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden rounded-sm shadow-2xl"
             >
                 <div
                     class="bg-gray flex h-full w-full items-center text-center text-8xl text-white duration-300 ease-in-out group-hover:-translate-y-full"
@@ -446,7 +446,7 @@
             <div
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden shadow-2xl"
+                class="group shadow-gray relative h-80 w-80 cursor-pointer overflow-hidden rounded-sm shadow-2xl"
             >
                 <div
                     class="bg-gray flex h-full w-full items-center justify-center duration-300 ease-in-out group-hover:-translate-y-full"

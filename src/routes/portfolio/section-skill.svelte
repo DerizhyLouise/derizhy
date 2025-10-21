@@ -39,7 +39,7 @@
                             <a
                                 href={item.link}
                                 target="_blank"
-                                class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
+                                class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-sm p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                             >
                                 <div class="text-center text-5xl">
                                     <ImgRenderer
@@ -73,7 +73,7 @@
                             <a
                                 href={item.link}
                                 target="_blank"
-                                class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
+                                class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-sm p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                             >
                                 <div class="text-center text-5xl">
                                     <ImgRenderer
@@ -107,7 +107,7 @@
                             <a
                                 href={item.link}
                                 target="_blank"
-                                class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
+                                class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-sm p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                             >
                                 <div class="text-center text-5xl">
                                     <ImgRenderer
@@ -141,7 +141,7 @@
                             <a
                                 href={item.link}
                                 target="_blank"
-                                class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
+                                class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-sm p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                             >
                                 <div class="text-center text-5xl">
                                     <ImgRenderer

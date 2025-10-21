@@ -96,7 +96,7 @@
     <button
         type="button"
         onclick={closeDrawer}
-        class="hover:bg-maroon group absolute end-2.5 top-2.5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-transparent text-lg text-white"
+        class="hover:bg-maroon group absolute end-2.5 top-2.5 inline-flex h-12 w-12 items-center justify-center rounded-sm bg-transparent text-lg text-white"
         aria-label="Close sidebar"
     >
         <span
@@ -118,7 +118,7 @@
                         <a
                             href={getLink(portfolioMenu.link, subItem.link)}
                             onclick={closeDrawer}
-                            class="hover:bg-maroon rounded-lg p-2 pl-4 transition-all duration-300"
+                            class="hover:bg-maroon rounded-sm p-2 pl-4 transition-all duration-300"
                         >
                             {subItem.title}
                         </a>
