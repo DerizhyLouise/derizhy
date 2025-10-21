@@ -1,5 +1,6 @@
 <script lang="ts">
     import { browser } from "$app/environment";
+    import { page } from "$app/state";
     import logo from "$lib/assets/svg/logo.svg";
     import { menu } from "$lib/data/menu";
     import { getLink } from "$lib/utils";
@@ -82,7 +83,7 @@
         <ul class="flex justify-end gap-6 xl:gap-10">
             {#each menu as item (item.title)}
                 <li class="relative" data-dropdown>
-                    {#if item.subMenu}
+                    {#if item.subMenu && page.url.pathname.startsWith(item.link)}
                         <button
                             onclick={() => toggleDropdown(item.title)}
                             class="hover:text-yellow after:bg-yellow relative flex items-center gap-2 font-medium text-white transition-colors duration-300 after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:content-[''] hover:after:w-full"

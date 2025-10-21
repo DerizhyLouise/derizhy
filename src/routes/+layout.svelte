@@ -4,12 +4,23 @@
     import Footer from "$lib/custom-components/footer.svelte";
     import Header from "$lib/custom-components/header.svelte";
     import PortfolioHeader from "$lib/custom-components/portfolio-header.svelte";
+    import { menu } from "$lib/data/menu";
     import AOS from "aos";
     import "aos/dist/aos.css";
     import { onMount } from "svelte";
     import "../app.css";
 
     let { children } = $props();
+    let pageName = $derived.by(() => {
+        const pathName = page.url.pathname;
+        let result = menu.find((item) => item.link === pathName)?.title;
+        if (!result) {
+            result = menu.find(
+                (item) => item.link !== "/" && pathName.startsWith(item.link),
+            )?.title;
+        }
+        return result === "Home" ? "" : " - " + result;
+    });
 
     onMount(() => {
         AOS.init();
@@ -18,6 +29,7 @@
 
 <svelte:head>
     <link rel="icon" href={favicon} />
+    <title>Derizhy {pageName}</title>
 </svelte:head>
 
 {#if page.url.pathname.startsWith("/portfolio")}
