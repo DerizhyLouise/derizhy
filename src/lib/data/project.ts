@@ -22,7 +22,7 @@ export const project: Project[] = [
             "",
             "MT-Printer is a desktop application that acts as a bridge between MTHIS 2.0 and a local printer. When a user clicks the 'Print' button on the web, the web app sends a request to MT-Printer, which then automatically prints the received file using pre-configured printer settings.",
         ],
-        techs: ["React", "Electron", "Tailwind CSS", "Git", "VS Code"],
+        techs: ["React", "Electron", "Tailwind CSS", "Git"],
     },
     {
         id: 10,
@@ -43,8 +43,7 @@ export const project: Project[] = [
             "GrapesJs",
             "MongoDB",
             "CodeMirror",
-            "Git",
-            "VS Code",
+            "Git"
         ],
     },
     {
@@ -76,7 +75,7 @@ export const project: Project[] = [
             "- email 3: admin@mail.com ",
             "- Pass: 123",
         ],
-        techs: ["Tailwind CSS", "HTML", "JavaScript", "Git", "VS Code"],
+        techs: ["Tailwind CSS", "HTML", "JavaScript", "Git"],
     },
     {
         id: 8,
@@ -103,7 +102,6 @@ export const project: Project[] = [
             "MongoDB",
             "shadcn-svelte",
             "pnpm",
-            "VS Code",
         ],
     },
     {
@@ -134,7 +132,6 @@ export const project: Project[] = [
             "TypeScript",
             "HTML",
             "Git",
-            "VS Code",
         ],
     },
     {
@@ -169,7 +166,7 @@ export const project: Project[] = [
             "",
             "This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the best group in Shopping Cart's category.",
         ],
-        techs: ["Python", "SQL", "Pandas", "Looker Studio", "Git", "VS Code"],
+        techs: ["Python", "SQL", "Pandas", "Seaborn", "Matplotlib", "Google Colab", "Looker Studio", "Git"],
     },
     {
         id: 5,
@@ -217,7 +214,6 @@ export const project: Project[] = [
             "Supabase",
             "Railway",
             "Git",
-            "VS Code",
         ],
     },
     {
@@ -239,7 +235,7 @@ export const project: Project[] = [
             "",
             "This project is submission for Last Project in Dicoding's Python Data Analytics Course. I use Bike Sharing Dataset to deal with this project. This project include of Data Wrangling, Exploratory Data Analysis, Data Visualization, and Making Dashboard with Streamlit.",
         ],
-        techs: ["Python", "Pandas", "VS Code"],
+        techs: ["Python", "Pandas", "Matplotlib", "Seaborn", "Streamlit"],
     },
     {
         id: 3,
@@ -267,7 +263,7 @@ export const project: Project[] = [
             "- SHA-256",
             "- Schnorr",
         ],
-        techs: ["Python", "VS Code"],
+        techs: ["Python", "Keras", "TensorFlow", "Matplotlib"],
     },
     {
         id: 2,
@@ -296,7 +292,7 @@ export const project: Project[] = [
             "- Convolutional Neural Network (CNN)",
             "- Histogram of Oriented Gradients (HOG)",
         ],
-        techs: ["Python", "VS Code"],
+        techs: ["Python"],
     },
     {
         id: 1,
