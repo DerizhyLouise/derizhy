@@ -69,11 +69,13 @@
 
 @layer components {
     .gradient-text {
-        background-image: linear-gradient(-225deg,
-                #f8e9a1 0%,
-                #b72946 33%,
-                #6cf7b2 66%,
-                #f8e9a1 100%);
+        background-image: linear-gradient(
+            -225deg,
+            #f8e9a1 0%,
+            #b72946 33%,
+            #6cf7b2 66%,
+            #f8e9a1 100%
+        );
         background-size: 200% auto;
         background-clip: text;
         -webkit-background-clip: text;
@@ -105,7 +107,7 @@
 
     /* ICONS */
 
-    .fa-bars:before {
+    .fa-bars::before {
         content: "\f0c9";
     }
 
@@ -113,7 +115,7 @@
         content: "\f206";
     }
 
-    .fa-browser:before {
+    .fa-browser::before {
         content: "\1f5d4";
     }
 
@@ -121,15 +123,15 @@
         content: "\f07a";
     }
 
-    .fa-cat:before {
+    .fa-cat::before {
         content: "\1f408";
     }
 
-    .fa-cheese-swiss:before {
+    .fa-cheese-swiss::before {
         content: "\1f9c0";
     }
 
-    .fa-chevron-down:before {
+    .fa-chevron-down::before {
         content: "\f078";
     }
 
@@ -137,19 +139,19 @@
         content: "\f121";
     }
 
-    .fa-css3-alt:before {
+    .fa-css3-alt::before {
         content: "\f38b";
     }
 
-    .fa-cup-straw-swoosh:before {
+    .fa-cup-straw-swoosh::before {
         content: "\e364";
     }
 
-    .fa-database:before {
+    .fa-database::before {
         content: "\f1c0";
     }
 
-    .fa-dharmachakra:before {
+    .fa-dharmachakra::before {
         content: "\2638";
     }
 
@@ -157,11 +159,11 @@
         content: "\f0e0";
     }
 
-    .fa-facebook-f:before {
+    .fa-facebook-f::before {
         content: "\f39e";
     }
 
-    .fa-figma:before {
+    .fa-figma::before {
         content: "\f799";
     }
 
@@ -169,23 +171,23 @@
         content: "\f15b";
     }
 
-    .fa-file-pdf:before {
+    .fa-file-pdf::before {
         content: "\f1c1";
     }
 
-    .fa-gamepad-modern:before {
+    .fa-gamepad-modern::before {
         content: "\1f3ae";
     }
 
-    .fa-git-alt:before {
+    .fa-git-alt::before {
         content: "\f841";
     }
 
-    .fa-github:before {
+    .fa-github::before {
         content: "\f09b";
     }
 
-    .fa-html5:before {
+    .fa-html5::before {
         content: "\f13b";
     }
 
@@ -193,20 +195,20 @@
         content: "\f03e";
     }
 
-    .fa-instagram:before {
+    .fa-instagram::before {
         content: "\f16d";
     }
 
-    .fa-java:before {
+    .fa-java::before {
         content: "\f4e4";
     }
 
-    .fa-js:before {
+    .fa-js::before {
         content: "\f3b8";
     }
 
-    .fa-key:before {
-        content: "\f084"
+    .fa-key::before {
+        content: "\f084";
     }
 
     .fa-layer-group::before {
@@ -217,11 +219,11 @@
         content: "\f0c1";
     }
 
-    .fa-linkedin-in:before {
+    .fa-linkedin-in::before {
         content: "\f0e1";
     }
 
-    .fa-location-dot:before {
+    .fa-location-dot::before {
         content: "\f3c5";
     }
 
@@ -229,7 +231,7 @@
         content: "\f002";
     }
 
-    .fa-message-quote:before {
+    .fa-message-quote::before {
         content: "\e1e4";
     }
 
@@ -241,19 +243,19 @@
         content: "\f610";
     }
 
-    .fa-music:before {
+    .fa-music::before {
         content: "\1f3b5";
     }
 
-    .fa-node-js:before {
+    .fa-node-js::before {
         content: "\f3d3";
     }
 
-    .fa-npm:before {
+    .fa-npm::before {
         content: "\f3d4";
     }
 
-    .fa-paint-roller:before {
+    .fa-paint-roller::before {
         content: "\f5aa";
     }
 
@@ -261,7 +263,7 @@
         content: "\f53f";
     }
 
-    .fa-pen-ruler:before {
+    .fa-pen-ruler::before {
         content: "\f5ae";
     }
 
@@ -269,19 +271,19 @@
         content: "\f02f";
     }
 
-    .fa-python:before {
+    .fa-python::before {
         content: "\f3e2";
     }
 
-    .fa-react:before {
+    .fa-react::before {
         content: "\f41b";
     }
 
-    .fa-square-question:before {
+    .fa-square-question::before {
         content: "\f2fd";
     }
 
-    .fa-square-terminal:before {
+    .fa-square-terminal::before {
         content: "\e32a";
     }
 
@@ -289,19 +291,19 @@
         content: "\f0f1";
     }
 
-    .fa-user:before {
+    .fa-user::before {
         content: "\1f464";
     }
 
-    .fa-users:before {
+    .fa-users::before {
         content: "\f0c0";
     }
 
-    .fa-whatsapp:before {
+    .fa-whatsapp::before {
         content: "\f232";
     }
 
-    .fa-xmark:before {
+    .fa-xmark::before {
         content: "\d7";
     }
 

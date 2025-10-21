@@ -230,7 +230,6 @@
                                         <SkillBadge
                                             name={tech.name}
                                             icon={tech.pic}
-                                            className="sm:text-sm"
                                         />
                                     {/each}
                                 </div>
@@ -244,7 +243,6 @@
                                     <SkillBadge
                                         name={tech.name}
                                         icon={tech.pic}
-                                        className="sm:text-sm"
                                     />
                                 {/each}
 
