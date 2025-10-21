@@ -10,7 +10,7 @@
 
 <section
     id="skill"
-    class="h-full min-h-screen w-full text-white sm:px-10 2xl:px-40"
+    class="h-full min-h-screen w-full px-4 text-white sm:px-20 xl:px-40 2xl:px-80"
 >
     <div class="pt-40">
         <h2
@@ -23,7 +23,7 @@
         <div class="flex flex-col gap-4">
             <div class="h-full">
                 <h3
-                    class="text-gray text-center text-2xl font-semibold uppercase sm:text-4xl"
+                    class="text-gray text-center text-3xl font-semibold uppercase sm:text-4xl"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
@@ -57,12 +57,12 @@
             </div>
             <div class="h-full">
                 <h3
-                    class="text-gray text-center text-2xl font-semibold uppercase sm:text-4xl"
+                    class="text-gray text-center text-3xl font-semibold uppercase sm:text-4xl"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
                     <span class="fa-regular fa-layer-group"></span>
-                    Frameworks & Libraries
+                    Frameworks
                     <span class="fa-regular fa-layer-group"></span>
                 </h3>
                 <div
@@ -91,7 +91,7 @@
             </div>
             <div class="h-full">
                 <h3
-                    class="text-gray text-center text-2xl font-semibold uppercase sm:text-4xl"
+                    class="text-gray text-center text-3xl font-semibold uppercase sm:text-4xl"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
@@ -125,7 +125,7 @@
             </div>
             <div class="h-full">
                 <h3
-                    class="text-gray text-center text-2xl font-semibold uppercase sm:text-4xl"
+                    class="text-gray text-center text-3xl font-semibold uppercase sm:text-4xl"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >

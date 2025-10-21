@@ -68,7 +68,7 @@
     });
 </script>
 
-<section id="project" class="h-full w-full px-4 sm:px-20 xl:px-60">
+<section id="project" class="h-full w-full px-4 sm:px-20 xl:px-40 2xl:px-80">
     <div class="pt-40">
         <h2
             class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
