@@ -2,17 +2,20 @@
     import SkillBadge from "$lib/custom-components/skill-badge.svelte";
     import { project } from "$lib/data/project";
     import type { Project } from "$lib/type/data-type";
+    import AOS from "aos";
     import { fade, slide } from "svelte/transition";
 
     let search: string = $state("");
-    let selectedType: string = $state("All");
+    let selectedType: string[] = $state(["All"]);
     let openDetail: number[] = $state([]);
 
     let projectData: Project[] = $derived.by(() => {
         let filtered = project;
 
-        if (selectedType !== "All") {
-            filtered = filtered.filter((item) => item.type === selectedType);
+        if (!selectedType.includes("All")) {
+            filtered = filtered.filter((item) =>
+                selectedType.includes(item.type),
+            );
         }
 
         if (search.trim()) {
@@ -33,6 +36,23 @@
 
     let projectType = ["All", ...new Set(project.map((p) => p.type))];
 
+    function toggleType(type: string) {
+        if (type === "All") {
+            selectedType = ["All"];
+            return;
+        }
+
+        if (!selectedType.includes(type)) {
+            selectedType = [...selectedType.filter((t) => t !== "All"), type];
+        } else {
+            selectedType = selectedType.filter((t) => t !== type);
+        }
+
+        if (selectedType.length === 0) {
+            selectedType = ["All"];
+        }
+    }
+
     function openDetailFn(selectedId: number) {
         if (!openDetail.includes(selectedId)) {
             openDetail = [...openDetail, selectedId];
@@ -40,6 +60,12 @@
             openDetail = openDetail.filter((id) => id !== selectedId);
         }
     }
+
+    $effect(() => {
+        if (projectData) {
+            setTimeout(() => AOS.refreshHard(), 100);
+        }
+    });
 </script>
 
 <section id="project" class="h-full w-full px-4 sm:px-20 xl:px-60">
@@ -84,11 +110,11 @@
                     {#each projectType as type (type)}
                         <button
                             class={`hover:bg-yellow/90 flex gap-2 rounded-full px-3 py-1.5 text-sm leading-6 duration-300 sm:px-4 sm:py-2 sm:text-base ${
-                                selectedType === type
+                                selectedType.includes(type)
                                     ? "bg-yellow outline-yellow outline-1 outline-offset-4"
                                     : "bg-white"
                             }`}
-                            onclick={() => (selectedType = type)}
+                            onclick={() => toggleType(type)}
                         >
                             {type}
                             <span
@@ -113,7 +139,9 @@
             >
                 Showing <span class="font-semibold">{projectData.length}</span>
                 project{projectData.length > 1 ? "s" : ""} in
-                <span class="text-maroon font-semibold">{selectedType}</span>
+                <span class="text-maroon font-semibold">
+                    {selectedType.join(", ")}
+                </span>
             </div>
             <div
                 class="grid grid-cols-1 gap-6 md:grid-cols-2"
@@ -226,11 +254,8 @@
                                     class="mt-2 flex flex-wrap gap-2"
                                     transition:fade={{ duration: 300 }}
                                 >
-                                    {#each item.techs as tech (tech.name)}
-                                        <SkillBadge
-                                            name={tech.name}
-                                            icon={tech.pic}
-                                        />
+                                    {#each item.techs as tech (tech)}
+                                        <SkillBadge name={tech} />
                                     {/each}
                                 </div>
                             </div>
@@ -239,19 +264,16 @@
                                 class="mt-4 flex flex-wrap gap-2"
                                 transition:fade={{ duration: 200 }}
                             >
-                                {#each item.techs.slice(0, 4) as tech (tech.name)}
-                                    <SkillBadge
-                                        name={tech.name}
-                                        icon={tech.pic}
-                                    />
+                                {#each item.techs.slice(0, 4) as tech (tech)}
+                                    <SkillBadge name={tech} />
                                 {/each}
 
                                 {#if item.techs.length > 4}
                                     <div
-                                        class="bg-lightgray flex cursor-pointer items-center rounded-full px-4 py-2 text-xs text-white duration-300 hover:brightness-150 sm:text-sm"
+                                        class="bg-yellow text-gray hover:bg-yellow/80 flex cursor-pointer items-center rounded-full px-4 py-2 text-xs duration-300 sm:text-sm"
                                         title={item.techs
                                             .slice(4)
-                                            .map((t) => t.name)
+                                            .map((t) => t)
                                             .join(", ")}
                                     >
                                         +{item.techs.length - 4} more

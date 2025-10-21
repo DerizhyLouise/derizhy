@@ -1,5 +1,4 @@
 <script lang="ts">
-    import ImgRenderer from "$lib/custom-components/img-renderer.svelte";
     import SkillBadge from "$lib/custom-components/skill-badge.svelte";
     import { experience } from "$lib/data/experience";
 </script>
@@ -26,10 +25,10 @@
                     <div
                         class="flex max-[480px]:flex-col max-[480px]:items-center"
                     >
-                        <ImgRenderer
-                            name={item.company}
-                            icon={item.logo}
-                            imgClassName="h-20 w-20 rounded-full"
+                        <img
+                            src={item.logo}
+                            alt={item.company}
+                            class="h-20 w-20 rounded-full bg-white transition-transform duration-500 hover:rotate-360"
                         />
                         <div
                             class="flex flex-col justify-center max-[480px]:mt-2 max-[480px]:items-center min-[480px]:ml-4"
@@ -56,8 +55,8 @@
                         {/each}
                     </div>
                     <div class="text-gray mt-4 flex flex-wrap items-end gap-2">
-                        {#each item.techs as tech (tech.name)}
-                            <SkillBadge name={tech.name} icon={tech.icon} />
+                        {#each item.techs as tech (tech)}
+                            <SkillBadge name={tech} />
                         {/each}
                     </div>
                 </div>

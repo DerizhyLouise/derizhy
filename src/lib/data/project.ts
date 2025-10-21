@@ -1,6 +1,5 @@
 import helpMeProposal from "$lib/assets/pdf/helpMeProposal.pdf";
 import mtPrinter from "$lib/assets/pdf/mtprinter.pdf";
-import { imageRender } from "$lib/image-render";
 import type { Project } from "$lib/type/data-type";
 
 export const project: Project[] = [
@@ -23,28 +22,7 @@ export const project: Project[] = [
             "",
             "MT-Printer is a desktop application that acts as a bridge between MTHIS 2.0 and a local printer. When a user clicks the 'Print' button on the web, the web app sends a request to MT-Printer, which then automatically prints the received file using pre-configured printer settings.",
         ],
-        techs: [
-            {
-                name: "React",
-                pic: { src: "fa-brands fa-react", type: "fa" },
-            },
-            {
-                name: "Electron",
-                pic: { src: imageRender.electronIcon, type: "svg" },
-            },
-            {
-                name: "Tailwind CSS",
-                pic: { src: imageRender.tailwindIcon, type: "svg" },
-            },
-            {
-                name: "Git",
-                pic: { src: "fa-brands fa-git-alt", type: "fa" },
-            },
-            {
-                name: "VS Code",
-                pic: { src: imageRender.vscodeIcon, type: "svg" },
-            },
-        ],
+        techs: ["React", "Electron", "Tailwind CSS", "Git", "VS Code"],
     },
     {
         id: 10,
@@ -60,34 +38,13 @@ export const project: Project[] = [
             "This project was initiated to meet a hospital's need for a custom-built, functional assessment tool with integrated database storage. was entrusted with leading the development of the Assessment Builder, a web-based solution that empowers users to design and manage their own assessment templates. Built with GrapesJS, the tool allows users to create dynamic templates and extend functionality through custom JavaScript code, enabling a high degree of flexibility and control.",
         ],
         techs: [
-            {
-                name: "Svelte",
-                pic: { src: imageRender.svelteIcon, type: "svg" },
-            },
-            {
-                name: "Tailwind CSS",
-                pic: { src: imageRender.tailwindIcon, type: "svg" },
-            },
-            {
-                name: "GrapesJs",
-                pic: { src: imageRender.grapesjsIcon, type: "svg" },
-            },
-            {
-                name: "MongoDB",
-                pic: { src: imageRender.mongodbIcon, type: "svg" },
-            },
-            {
-                name: "CodeMirror",
-                pic: { src: imageRender.codemirrorIcon, type: "svg" },
-            },
-            {
-                name: "Git",
-                pic: { src: "fa-brands fa-git-alt", type: "fa" },
-            },
-            {
-                name: "VS Code",
-                pic: { src: imageRender.vscodeIcon, type: "svg" },
-            },
+            "Svelte",
+            "Tailwind CSS",
+            "GrapesJs",
+            "MongoDB",
+            "CodeMirror",
+            "Git",
+            "VS Code",
         ],
     },
     {
@@ -119,28 +76,7 @@ export const project: Project[] = [
             "- email 3: admin@mail.com ",
             "- Pass: 123",
         ],
-        techs: [
-            {
-                name: "Tailwind CSS",
-                pic: { src: imageRender.tailwindIcon, type: "svg" },
-            },
-            {
-                name: "HTML",
-                pic: { src: "fa-brands fa-html5", type: "fa" },
-            },
-            {
-                name: "JavaScript",
-                pic: { src: "fa-brands fa-js", type: "fa" },
-            },
-            {
-                name: "Git",
-                pic: { src: "fa-brands fa-git-alt", type: "fa" },
-            },
-            {
-                name: "VS Code",
-                pic: { src: imageRender.vscodeIcon, type: "svg" },
-            },
-        ],
+        techs: ["Tailwind CSS", "HTML", "JavaScript", "Git", "VS Code"],
     },
     {
         id: 8,
@@ -156,54 +92,18 @@ export const project: Project[] = [
             "This project is related to my position as a Software Developer in PT Murni Sadar Tbk.",
         ],
         techs: [
-            {
-                name: "Svelte",
-                pic: { src: imageRender.svelteIcon, type: "svg" },
-            },
-            {
-                name: "TypeScript",
-                pic: { src: imageRender.typescriptIcon, type: "svg" },
-            },
-            {
-                name: "Java",
-                pic: { src: "fa-brands fa-java", type: "fa" },
-            },
-            {
-                name: "Tailwind CSS",
-                pic: { src: imageRender.tailwindIcon, type: "svg" },
-            },
-            {
-                name: "SQL",
-                pic: { src: "fa-regular fa-database", type: "fa" },
-            },
-            {
-                name: "Redis",
-                pic: { src: imageRender.redisIcon, type: "svg" },
-            },
-            {
-                name: "Spring Boot",
-                pic: { src: imageRender.springbootIcon, type: "svg" },
-            },
-            {
-                name: "PostgreSQL",
-                pic: { src: imageRender.postgresqlIcon, type: "svg" },
-            },
-            {
-                name: "MongoDB",
-                pic: { src: imageRender.mongodbIcon, type: "svg" },
-            },
-            {
-                name: "shadcn-svelte",
-                pic: { src: imageRender.shadcnIcon, type: "svg" },
-            },
-            {
-                name: "pnpm",
-                pic: { src: imageRender.pnpmIcon, type: "svg" },
-            },
-            {
-                name: "VS Code",
-                pic: { src: imageRender.vscodeIcon, type: "svg" },
-            },
+            "Svelte",
+            "TypeScript",
+            "Java",
+            "Tailwind CSS",
+            "SQL",
+            "Redis",
+            "Spring Boot",
+            "PostgreSQL",
+            "MongoDB",
+            "shadcn-svelte",
+            "pnpm",
+            "VS Code",
         ],
     },
     {
@@ -229,30 +129,12 @@ export const project: Project[] = [
             "My personal dan portfolio website that basesd SvelteKit, Tailwind CSS, TypeScript and deployed with Github Pages.",
         ],
         techs: [
-            {
-                name: "Svelte",
-                pic: { src: imageRender.svelteIcon, type: "svg" },
-            },
-            {
-                name: "Tailwind CSS",
-                pic: { src: imageRender.tailwindIcon, type: "svg" },
-            },
-            {
-                name: "TypeScript",
-                pic: { src: imageRender.typescriptIcon, type: "svg" },
-            },
-            {
-                name: "HTML",
-                pic: { src: "fa-brands fa-html5", type: "fa" },
-            },
-            {
-                name: "Git",
-                pic: { src: "fa-brands fa-git-alt", type: "fa" },
-            },
-            {
-                name: "VS Code",
-                pic: { src: imageRender.vscodeIcon, type: "svg" },
-            },
+            "Svelte",
+            "Tailwind CSS",
+            "TypeScript",
+            "HTML",
+            "Git",
+            "VS Code",
         ],
     },
     {
@@ -287,32 +169,7 @@ export const project: Project[] = [
             "",
             "This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the best group in Shopping Cart's category.",
         ],
-        techs: [
-            {
-                name: "Python",
-                pic: { src: "fa-brands fa-python", type: "fa" },
-            },
-            {
-                name: "SQL",
-                pic: { src: "fa-regular fa-database", type: "fa" },
-            },
-            {
-                name: "Pandas",
-                pic: { src: imageRender.pandasIcon, type: "svg" },
-            },
-            {
-                name: "Looker Studio",
-                pic: { src: imageRender.lookerIcon, type: "svg" },
-            },
-            {
-                name: "Git",
-                pic: { src: "fa-brands fa-git-alt", type: "fa" },
-            },
-            {
-                name: "VS Code",
-                pic: { src: imageRender.vscodeIcon, type: "svg" },
-            },
-        ],
+        techs: ["Python", "SQL", "Pandas", "Looker Studio", "Git", "VS Code"],
     },
     {
         id: 5,
@@ -349,54 +206,18 @@ export const project: Project[] = [
             "In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Our primary objective is the development of an e-commerce website called 'Clo', with a specific focus on clothing retail.",
         ],
         techs: [
-            {
-                name: "JavaScript",
-                pic: { src: "fa-brands fa-js", type: "fa" },
-            },
-            {
-                name: "HTML",
-                pic: { src: "fa-brands fa-html5", type: "fa" },
-            },
-            {
-                name: "CSS",
-                pic: { src: "fa-brands fa-css3-alt", type: "fa" },
-            },
-            {
-                name: "Figma",
-                pic: { src: "fa-brands fa-figma", type: "fa" },
-            },
-            {
-                name: "Node.js",
-                pic: { src: "fa-brands fa-node-js", type: "fa" },
-            },
-            {
-                name: "Express.js",
-                pic: { src: imageRender.expressIcon, type: "svg" },
-            },
-            {
-                name: "Prisma",
-                pic: { src: imageRender.prismaIcon, type: "svg" },
-            },
-            {
-                name: "PostgreSQL",
-                pic: { src: imageRender.postgresqlIcon, type: "svg" },
-            },
-            {
-                name: "Supabase",
-                pic: { src: imageRender.supabaseIcon, type: "svg" },
-            },
-            {
-                name: "Railway",
-                pic: { src: imageRender.railwayIcon, type: "svg" },
-            },
-            {
-                name: "Git",
-                pic: { src: "fa-brands fa-git-alt", type: "fa" },
-            },
-            {
-                name: "VS Code",
-                pic: { src: imageRender.vscodeIcon, type: "svg" },
-            },
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Figma",
+            "Node.js",
+            "Express.js",
+            "Prisma",
+            "PostgreSQL",
+            "Supabase",
+            "Railway",
+            "Git",
+            "VS Code",
         ],
     },
     {
@@ -418,26 +239,13 @@ export const project: Project[] = [
             "",
             "This project is submission for Last Project in Dicoding's Python Data Analytics Course. I use Bike Sharing Dataset to deal with this project. This project include of Data Wrangling, Exploratory Data Analysis, Data Visualization, and Making Dashboard with Streamlit.",
         ],
-        techs: [
-            {
-                name: "Python",
-                pic: { src: "fa-brands fa-python", type: "fa" },
-            },
-            {
-                name: "Pandas",
-                pic: { src: imageRender.pandasIcon, type: "svg" },
-            },
-            {
-                name: "VS Code",
-                pic: { src: imageRender.vscodeIcon, type: "svg" },
-            },
-        ],
+        techs: ["Python", "Pandas", "VS Code"],
     },
     {
         id: 3,
         title: "Cryptography",
         subtitle: "Cryptography Algorithm Source Code",
-        icon: "fa-regular fa-key",
+        icon: "fa-regular fa-code",
         type: "Cryptography",
         media: [
             {
@@ -459,16 +267,7 @@ export const project: Project[] = [
             "- SHA-256",
             "- Schnorr",
         ],
-        techs: [
-            {
-                name: "Python",
-                pic: { src: "fa-brands fa-python", type: "fa" },
-            },
-            {
-                name: "VS Code",
-                pic: { src: imageRender.vscodeIcon, type: "svg" },
-            },
-        ],
+        techs: ["Python", "VS Code"],
     },
     {
         id: 2,
@@ -497,16 +296,7 @@ export const project: Project[] = [
             "- Convolutional Neural Network (CNN)",
             "- Histogram of Oriented Gradients (HOG)",
         ],
-        techs: [
-            {
-                name: "Python",
-                pic: { src: "fa-brands fa-python", type: "fa" },
-            },
-            {
-                name: "VS Code",
-                pic: { src: imageRender.vscodeIcon, type: "svg" },
-            },
-        ],
+        techs: ["Python", "VS Code"],
     },
     {
         id: 1,
@@ -532,11 +322,6 @@ export const project: Project[] = [
             "",
             "This is a project from Digital Start Up Lecture where I built a prototype of an application called 'Help Me'. The concept of this application is to provide services to connect peoples who called 'Requester' whom requesting for helps and create tasks and peoples who called 'Helper' whom will take the tasks and solve them to get rewards.",
         ],
-        techs: [
-            {
-                name: "Figma",
-                pic: { src: "fa-brands fa-figma", type: "fa" },
-            },
-        ],
+        techs: ["Figma"],
     },
 ];

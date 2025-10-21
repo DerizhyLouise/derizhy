@@ -11,12 +11,8 @@
 
 <div class="bg-[url('$lib/assets/svg/bg-1.svg')] bg-repeat">
     <SectionSkill />
-
     <SectionExperience />
-
     <SectionProject />
-
     <SectionEducation />
-
     <SectionReview />
 </div>

@@ -1,5 +1,4 @@
 <script lang="ts">
-    import ImgRenderer from "$lib/custom-components/img-renderer.svelte";
     import { education } from "$lib/data/education";
 </script>
 
@@ -25,10 +24,10 @@
                 >
                     <div class="flex h-full items-center justify-center">
                         <div class="flex flex-col items-center text-center">
-                            <ImgRenderer
-                                name={item.institute}
-                                icon={item.logo}
-                                imgClassName="h-20 w-20 rounded-full transition-transform duration-500 group-hover:rotate-360"
+                            <img
+                                src={item.logo}
+                                alt={item.institute}
+                                class="mx-auto h-20 w-20 rounded-full bg-white transition-transform duration-500 group-hover:rotate-360"
                             />
                             <div class="flex flex-col items-center">
                                 <h3 class="text-xl font-semibold md:text-2xl">

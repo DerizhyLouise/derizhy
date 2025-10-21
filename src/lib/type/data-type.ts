@@ -11,7 +11,7 @@ export type Menu = {
 
 export type IconImage = {
     src: string;
-    type: "svg" | "fa" | "img" | "png";
+    type: "svg" | "fa";
 };
 
 export type Experience = {
@@ -19,12 +19,9 @@ export type Experience = {
     position: string;
     company: string;
     time: string;
-    logo: IconImage;
+    logo: string;
     description: string[];
-    techs: {
-        name: string;
-        icon: IconImage;
-    }[];
+    techs: string[];
 };
 
 export type Education = {
@@ -32,7 +29,7 @@ export type Education = {
     institute: string;
     subject: string;
     time: string;
-    logo: IconImage;
+    logo: string;
     link: string;
     description: string[];
 };
@@ -64,10 +61,7 @@ export type Project = {
     time: string;
     type: string;
     description: string[];
-    techs: {
-        name: string;
-        pic: IconImage;
-    }[];
+    techs: string[];
 };
 
 export type FooterLink = {
