@@ -10,6 +10,7 @@ export const experience: Experience[] = [
         logo: imageRender.mtLogo,
         description: [
             "Experienced in designing, developing, maintaining, and deploying healthcare software.",
+            "",
             "I am part of the core team that builds a Hospital Information System called MTHIS 2.0. I created front-end components in a Svelte environment, handled authentication and authorization, and participated in database design for scalable data management.",
         ],
         techs: [

@@ -1,6 +1,16 @@
 <script lang="ts">
     import SkillBadge from "$lib/custom-components/skill-badge.svelte";
     import { experience } from "$lib/data/experience";
+
+    let showMoreBadge: number[] = $state([]);
+
+    function showMoreBadgeFn(selectedId: number) {
+        if (!showMoreBadge.includes(selectedId)) {
+            showMoreBadge = [...showMoreBadge, selectedId];
+        } else {
+            showMoreBadge = showMoreBadge.filter((id) => id !== selectedId);
+        }
+    }
 </script>
 
 <section
@@ -15,49 +25,79 @@
         >
             Experiences
         </h2>
-        <div class="flex flex-col items-center justify-center gap-8">
+        <div
+            class="flex flex-col items-center justify-center gap-8"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+        >
             {#each experience as item (item.id)}
                 <div
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                    class="bg-gray shadow-gray group w-full rounded-sm p-8 shadow-xl"
+                    class="bg-gray shadow-gray group flex w-full flex-col items-center gap-2 rounded-sm p-6 text-white shadow-xl md:flex-row md:items-start md:gap-6"
                 >
                     <div
-                        class="flex max-[480px]:flex-col max-[480px]:items-center"
+                        class="h-24 min-h-24 w-24 min-w-24 duration-300 group-hover:rotate-360"
                     >
                         <img
                             src={item.logo}
                             alt={item.company}
-                            class="h-20 w-20 rounded-full bg-white transition-transform duration-500 group-hover:rotate-360"
+                            class="rounded-full bg-white"
                         />
-                        <div
-                            class="flex flex-col justify-center max-[480px]:mt-2 max-[480px]:items-center min-[480px]:ml-4"
-                        >
-                            <h3 class="text-2xl font-semibold md:text-4xl">
+                    </div>
+                    <div class="grow">
+                        <div class="text-center md:text-start">
+                            <div class="text-3xl font-semibold sm:text-4xl">
                                 {item.position}
-                                <span
-                                    class="text-lg font-semibold max-[480px]:hidden"
-                                >
-                                    {item.time}
-                                </span>
-                            </h3>
-                            <h3 class="text-xl md:text-2xl">
+                            </div>
+                            <div class="text-xl sm:text-2xl md:mt-1">
                                 {item.company}
-                            </h3>
-                            <h4 class="hidden text-lg max-[480px]:block">
+                            </div>
+                            <div class="text-gray-200">
                                 {item.time}
-                            </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="my-4 sm:text-justify">
-                        {#each item.description as p (p)}
-                            {p}
-                        {/each}
-                    </div>
-                    <div class="text-gray mt-4 flex flex-wrap items-end gap-2">
-                        {#each item.techs as tech (tech)}
-                            <SkillBadge name={tech} />
-                        {/each}
+                        <div class="mt-4 border-t border-white"></div>
+                        <div class="text-sm sm:text-base">
+                            <div class="mt-4 text-gray-200">
+                                {#each item.description as desc, i (i)}
+                                    {desc}<br />
+                                {/each}
+                            </div>
+                            <div class="mt-6 font-semibold">
+                                <span class="fa-solid fa-code text-yellow mr-1"
+                                ></span>
+                                Technologies
+                            </div>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                {#if showMoreBadge.includes(item.id)}
+                                    {#each item.techs as tech (tech)}
+                                        <SkillBadge name={tech} />
+                                    {/each}
+                                    <button
+                                        class="bg-maroon hover:bg-maroon/80 flex cursor-pointer items-center rounded-full px-4 py-2 text-xs text-white duration-300 sm:text-sm"
+                                        onclick={() => showMoreBadgeFn(item.id)}
+                                    >
+                                        - Show Less
+                                    </button>
+                                {:else}
+                                    {#each item.techs.slice(0, 4) as tech (tech)}
+                                        <SkillBadge name={tech} />
+                                    {/each}
+                                    {#if item.techs.length > 4}
+                                        <button
+                                            class="bg-yellow text-gray hover:bg-yellow/80 flex cursor-pointer items-center rounded-full px-4 py-2 text-xs duration-300 sm:text-sm"
+                                            title={item.techs
+                                                .slice(4)
+                                                .map((t) => t)
+                                                .join(", ")}
+                                            onclick={() =>
+                                                showMoreBadgeFn(item.id)}
+                                        >
+                                            +{item.techs.length - 4} more
+                                        </button>
+                                    {/if}
+                                {/if}
+                            </div>
+                        </div>
                     </div>
                 </div>
             {/each}

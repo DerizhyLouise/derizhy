@@ -109,7 +109,7 @@
                 >
                     {#each projectType as type (type)}
                         <button
-                            class={`hover:bg-yellow/90 flex gap-2 rounded-full px-3 py-1.5 text-sm leading-6 duration-300 sm:px-4 sm:py-2 sm:text-base ${
+                            class={`hover:bg-yellow/80 flex gap-2 rounded-full px-3 py-1.5 text-xs leading-6 duration-300 sm:px-4 sm:py-2 sm:text-sm ${
                                 selectedType.includes(type)
                                     ? "bg-yellow outline-yellow outline-1 outline-offset-4"
                                     : "bg-white"
@@ -216,7 +216,7 @@
                                         {desc}<br />
                                     {/each}
                                 </div>
-                                <div class="mt-4 font-semibold">
+                                <div class="mt-6 font-semibold">
                                     <span
                                         class="fa-solid fa-link text-yellow mr-1"
                                     ></span>
@@ -244,7 +244,7 @@
                                         has done.
                                     {/if}
                                 </div>
-                                <div class="mt-4 font-semibold">
+                                <div class="mt-6 font-semibold">
                                     <span
                                         class="fa-solid fa-code text-yellow mr-1"
                                     ></span>

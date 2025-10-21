@@ -26,11 +26,11 @@
             <span class="font-semibold">Java</span> and
             <span class="font-semibold">SQL</span> for backend systems.
         </p>
-        <div class="my-10 flex justify-center sm:my-20">
+        <div class="my-5 flex justify-center sm:my-10">
             <img
                 src={Avatar}
                 alt="Louise Derizhy"
-                class="h-40 w-40 rounded-full transition-transform duration-300 hover:scale-125 hover:sm:scale-150"
+                class="h-40 w-40 rounded-full transition-transform duration-300 hover:scale-110 hover:sm:scale-125"
             />
         </div>
         <div class="text-gray flex flex-wrap justify-center gap-6 text-2xl">
