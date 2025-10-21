@@ -12,72 +12,24 @@ export const organizationIntro: JournalData = {
 
 export const organizationExperience: OrganizationJournal[] = [
     {
-        name: "Muda-mudi Cetiya Manggala Utama",
-        location: "Cetiya Manggala Utama, Batam",
-        time: "2014 - 2017",
+        name: "Sekretariat Bersama Persaudaraan Muda-mudi Vihara-vihara Buddhayana Indonesia (Pemuda Buddhayana) Provinsi Sumatera Utara",
+        location: "Sumatera Utara",
+        time: "2021 - Present",
         description: [
-            "Cetiya Manggala Utama is a cetiya located in Batu Aji District, Batam. There, a youth organization was formed to organize various activities, such as Buddhist festivals and other community events.",
+            "After a fantastic journey with PMVTR, it's time for me to serve all PMV/C (Youth Buddhist Monastery Organization) across North Sumatra.",
         ],
         logo: {
-            src: imageRender.cmuLogo,
-            type: "img",
+            src: imageRender.sekberLogo,
+            type: "png",
         },
         experience: [
             {
-                position: "Member",
-                time: "2014 - 2016",
+                position: "Head of Secretariat Division",
+                time: "2024 - Present",
             },
             {
-                position: "Member of Public Relationship",
-                time: "2016 - 2017",
-            },
-        ],
-    },
-    {
-        name: "Persaudaraan Muda-mudi Vihara Tri Ratna (PMVTR)",
-        location: "Vihara Tri Ratna, Tanjungbalai",
-        time: "2017 - 2020",
-        description: [
-            "It wasn't just an organization where I growed. It was a home — one I nearly broke myself to protect.",
-        ],
-        logo: {
-            src: imageRender.pmvtrLogo,
-            type: "img",
-        },
-        experience: [
-            {
-                position: "Head of Public Relationship Division",
-                time: "2017 - 2018",
-            },
-            {
-                position: "President",
-                time: "2018 - 2019",
-            },
-            {
-                position: "Head of Human Resources Development Division",
-                time: "2019 - 2020",
-            },
-        ],
-    },
-    {
-        name: "Organisasi Siswa Intra Sekolah (OSIS)",
-        location: "SMA Sisingamangaraja, Tanjungbalai",
-        time: "2017 - 2019",
-        description: [
-            "I had always wanted to join them when I was in middle school. Eventually, I proved myself capable enough to become one of them.",
-        ],
-        logo: {
-            src: imageRender.smrajaLogo,
-            type: "img",
-        },
-        experience: [
-            {
-                position: "Member",
-                time: "2017 - 2018",
-            },
-            {
-                position: "Head of Religious Division",
-                time: "2018 - 2019",
+                position: "Staff IV of Secretariat Division",
+                time: "2021 - 2024",
             },
         ],
     },
@@ -94,8 +46,12 @@ export const organizationExperience: OrganizationJournal[] = [
         },
         experience: [
             {
+                position: "Member of Human Resources Development Division",
+                time: "2023 - 2024",
+            },
+            {
                 position: "Member of Student Aspirations Collector",
-                time: "2020 - 2021",
+                time: "2022 - 2023",
             },
             {
                 position: "Vice of Student Aspirations Collector",
@@ -103,33 +59,77 @@ export const organizationExperience: OrganizationJournal[] = [
             },
             {
                 position: "Member of Student Aspirations Collector",
-                time: "2022 - 2023",
-            },
-            {
-                position: "Member of Human Resources Development Division",
-                time: "2023 - 2024",
+                time: "2020 - 2021",
             },
         ],
     },
     {
-        name: "Sekretariat Bersama Persaudaraan Muda-mudi Vihara-vihara Buddhayana Indonesia (Pemuda Buddhayana) Provinsi Sumatera Utara",
-        location: "Sumatera Utara",
-        time: "2021 - Present",
+        name: "Persaudaraan Muda-mudi Vihara Tri Ratna (PMVTR)",
+        location: "Vihara Tri Ratna, Tanjungbalai",
+        time: "2017 - 2020",
         description: [
-            "After a fantastic journey with PMVTR, it's time for me to serve all PMV/C (Youth Buddhist Monastery Organization) across North Sumatra.",
+            "It wasn't just an organization where I growed. It was a home — one I nearly broke myself to protect.",
         ],
         logo: {
-            src: imageRender.sekberLogo,
-            type: "png",
+            src: imageRender.pmvtrLogo,
+            type: "img",
         },
         experience: [
             {
-                position: "Staf IV of Secretariat Division",
-                time: "2021 - 2024",
+                position: "Head of Human Resources Development Division",
+                time: "2019 - 2020",
             },
             {
-                position: "Head of Secretariat Division",
-                time: "2024 - 2027",
+                position: "President",
+                time: "2018 - 2019",
+            },
+            {
+                position: "Head of Public Relationship Division",
+                time: "2017 - 2018",
+            },
+        ],
+    },
+    {
+        name: "Organisasi Siswa Intra Sekolah (OSIS)",
+        location: "SMA Sisingamangaraja, Tanjungbalai",
+        time: "2017 - 2019",
+        description: [
+            "I had always wanted to join them when I was in middle school. Eventually, I proved myself capable enough to become one of them.",
+        ],
+        logo: {
+            src: imageRender.smrajaLogo,
+            type: "img",
+        },
+        experience: [
+            {
+                position: "Head of Religious Affairs Division",
+                time: "2018 - 2019",
+            },
+            {
+                position: "Member of Public Relationship Division",
+                time: "2017 - 2018",
+            },
+        ],
+    },
+    {
+        name: "Muda-mudi Cetiya Manggala Utama",
+        location: "Cetiya Manggala Utama, Batam",
+        time: "2014 - 2017",
+        description: [
+            "Cetiya Manggala Utama is a cetiya located in Batu Aji District, Batam. There, a youth organization was formed to organize various activities, such as Buddhist festivals and other community events.",
+        ],
+        logo: {
+            src: imageRender.cmuLogo,
+            type: "img",
+        },
+        experience: [
+            {
+                position: "Member of Public Relationship Division",
+                time: "2016 - 2017",
+            },
+            {
+                position: "Member",
+                time: "2014 - 2016",
             },
         ],
     },
