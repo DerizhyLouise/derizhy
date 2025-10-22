@@ -133,7 +133,7 @@
                 </div>
                 <div data-aos="fade-up-right" data-aos-duration="2000">
                     <a
-                        href="./portfolio#projects"
+                        href="./portfolio#project"
                         class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-lg duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
@@ -152,7 +152,7 @@
                 </div>
                 <div data-aos="fade-up-left" data-aos-duration="2000">
                     <a
-                        href="./portfolio#organizations"
+                        href="./journal/my-organization-life"
                         class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-lg duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-4xl max-sm:col-span-2">
@@ -253,22 +253,21 @@
                         </h3>
                     </a>
                 </div>
+
                 <div data-aos="fade-up-right" data-aos-duration="2000">
                     <a
                         href="#about"
+                        target="_blank"
                         class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-lg duration-300 even:justify-self-end hover:scale-110"
                     >
                         <div class="text-center text-5xl max-sm:col-span-2">
-                            <span class="fa-regular fa-message-quote"></span>
+                            <span class="fa-regular fa-cat"></span>
                         </div>
                         <h3
                             class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
                         >
-                            <q
-                                >The More <span class="font-semibold"
-                                    >Influential</span
-                                > You Are, The More People Want to Bring You Down</q
-                            >
+                            I Think <span class="font-semibold">Cat</span> is The
+                            Cutest Animal
                         </h3>
                     </a>
                 </div>
@@ -351,23 +350,6 @@
                             I Don't Like Coffee, But I Love <span
                                 class="font-semibold">Milk Tea</span
                             >
-                        </h3>
-                    </a>
-                </div>
-                <div data-aos="fade-up-left" data-aos-duration="2000">
-                    <a
-                        href="#about"
-                        target="_blank"
-                        class="bg-gray shadow-gray mx-auto grid h-40 w-full grid-cols-6 items-center gap-4 rounded-sm px-6 py-4 shadow-lg duration-300 even:justify-self-end hover:scale-110"
-                    >
-                        <div class="text-center text-5xl max-sm:col-span-2">
-                            <span class="fa-regular fa-cat"></span>
-                        </div>
-                        <h3
-                            class="col-span-4 text-base even:text-left sm:col-span-5 sm:text-lg"
-                        >
-                            I Think <span class="font-semibold">Cat</span> is The
-                            Cutest Animal
                         </h3>
                     </a>
                 </div>
