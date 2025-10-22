@@ -16,7 +16,8 @@
             <span class="font-semibold">Software Engineer</span>.<br />
             Outside of coding, I'm deeply involved in
             <span class="font-semibold">Organizations</span>, passionate about
-            <span class="font-semibold">Public Speaking</span>, <br />
+            <span class="font-semibold">Public Speaking</span>,
+            <br class="hidden lg:block" />
             and love solving Rubik's cubes as a
             <span class="font-semibold">Speedcuber</span>.
         </p>

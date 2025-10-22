@@ -149,7 +149,7 @@
     <button
         type="button"
         onclick={closeDrawer}
-        class="hover:bg-maroon group absolute end-2.5 top-2.5 inline-flex h-12 w-12 items-center justify-center rounded-sm bg-transparent text-lg text-white"
+        class="group absolute end-2.5 top-2.5 inline-flex h-12 w-12 items-center justify-center rounded-sm bg-transparent text-lg text-white"
         aria-label="Close sidebar"
     >
         <span

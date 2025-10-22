@@ -8,6 +8,7 @@ export const menuForNav: Menu[] = [
             { title: "Home", link: "#home" },
             { title: "Journal", link: "#journal" },
             { title: "Fun Fact", link: "#fun-fact" },
+            { title: "Contact", link: "#footer" },
         ],
     },
     {

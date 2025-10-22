@@ -147,6 +147,10 @@
         content: "\f121";
     }
 
+    .fa-crown::before {
+        content: "\f521";
+    }
+
     .fa-css::before {
         content: "\e6a2";
     }
@@ -215,10 +219,6 @@
         content: "\f3b8";
     }
 
-    .fa-key::before {
-        content: "\f084";
-    }
-
     .fa-layer-group::before {
         content: "\f5fd";
     }
@@ -237,10 +237,6 @@
 
     .fa-magnifying-glass::before {
         content: "\f002";
-    }
-
-    .fa-message-quote::before {
-        content: "\e1e4";
     }
 
     .fa-microphone::before {
@@ -289,10 +285,6 @@
 
     .fa-square-question::before {
         content: "\f2fd";
-    }
-
-    .fa-square-terminal::before {
-        content: "\e32a";
     }
 
     .fa-stethoscope::before {

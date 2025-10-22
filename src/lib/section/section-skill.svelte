@@ -1,11 +1,11 @@
 <script lang="ts">
-    import ImgRenderer from "$lib/custom-components/img-renderer.svelte";
     import {
         databaseSkill,
         frameworkSkill,
         languageSkill,
         toolSkill,
     } from "$lib/data/skill";
+    import type { IconImage } from "$lib/type/data-type";
 </script>
 
 <section
@@ -42,10 +42,7 @@
                                 class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-sm p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                             >
                                 <div class="text-center text-5xl">
-                                    <ImgRenderer
-                                        name={item.skill}
-                                        icon={item.icon}
-                                    />
+                                    {@render renderIcon(item.skill, item.icon)}
                                 </div>
                                 <h4 class="text-center font-semibold">
                                     {item.skill}
@@ -76,10 +73,7 @@
                                 class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-sm p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                             >
                                 <div class="text-center text-5xl">
-                                    <ImgRenderer
-                                        name={item.skill}
-                                        icon={item.icon}
-                                    />
+                                    {@render renderIcon(item.skill, item.icon)}
                                 </div>
                                 <h4 class="text-center font-semibold">
                                     {item.skill}
@@ -110,10 +104,7 @@
                                 class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-sm p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                             >
                                 <div class="text-center text-5xl">
-                                    <ImgRenderer
-                                        name={item.skill}
-                                        icon={item.icon}
-                                    />
+                                    {@render renderIcon(item.skill, item.icon)}
                                 </div>
                                 <h4 class="text-center font-semibold">
                                     {item.skill}
@@ -144,10 +135,7 @@
                                 class="group bg-gray shadow-gray flex h-40 w-40 flex-col items-center justify-center gap-2 rounded-sm p-4 shadow-lg transition hover:scale-110 hover:duration-300 sm:hover:scale-125"
                             >
                                 <div class="text-center text-5xl">
-                                    <ImgRenderer
-                                        name={item.skill}
-                                        icon={item.icon}
-                                    />
+                                    {@render renderIcon(item.skill, item.icon)}
                                 </div>
                                 <h4 class="text-center font-semibold">
                                     {item.skill}
@@ -160,3 +148,11 @@
         </div>
     </div>
 </section>
+
+{#snippet renderIcon(name: string, icon: IconImage)}
+    {#if icon.type === "svg"}
+        <img src={icon.src} alt={name} class="mx-auto h-12 w-12" />
+    {:else}
+        <span class={icon.src}></span>
+    {/if}
+{/snippet}

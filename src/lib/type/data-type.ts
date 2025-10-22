@@ -119,3 +119,9 @@ export type Contact = {
     link: string;
     label: string;
 };
+
+export type FunFact = {
+    icon: IconImage;
+    link: string;
+    content: string;
+};

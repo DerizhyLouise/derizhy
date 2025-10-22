@@ -2,7 +2,10 @@
     import { footerData } from "$lib/data/footer";
 </script>
 
-<footer class="bg-gray relative z-20 h-full py-2 text-white select-none">
+<footer
+    id="footer"
+    class="bg-gray relative z-20 h-full py-2 text-white select-none"
+>
     <div class="mx-auto my-12.5 max-w-[1170px]">
         <div class="flex flex-wrap">
             {#each footerData.sections as section (section.title)}

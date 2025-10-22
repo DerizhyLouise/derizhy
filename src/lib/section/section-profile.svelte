@@ -21,7 +21,7 @@
             <span class="font-semibold">Svelte</span>,
             <span class="font-semibold">TypeScript</span>, and
             <span class="font-semibold">Tailwind CSS</span>
-            <br />
+            <br class="hidden lg:block" />
             with additional experience in
             <span class="font-semibold">Java</span> and
             <span class="font-semibold">SQL</span> for backend systems.
