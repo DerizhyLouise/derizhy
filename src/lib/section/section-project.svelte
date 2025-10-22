@@ -94,7 +94,7 @@
                         type="text"
                         placeholder="Search Projects..."
                         bind:value={search}
-                        class="w-full rounded-sm bg-white py-3 pr-12 pl-12 text-sm focus:outline-none sm:py-4 sm:pr-14 sm:pl-16 sm:text-base md:py-5"
+                        class="text-gray w-full rounded-sm bg-white py-3 pr-12 pl-12 text-sm focus:outline-none sm:py-4 sm:pr-14 sm:pl-16 sm:text-base md:py-5"
                     />
                     <button
                         class="text-gray absolute top-1/2 right-5 -translate-y-1/2 text-lg active:scale-125 sm:right-6 sm:text-xl md:right-7"
@@ -112,7 +112,7 @@
                 >
                     {#each projectType as type (type)}
                         <button
-                            class={`hover:bg-yellow/80 flex gap-2 rounded-full px-3 py-1.5 text-xs leading-6 duration-300 sm:px-4 sm:py-2 sm:text-sm ${
+                            class={`hover:bg-yellow/80 text-gray flex gap-2 rounded-full px-3 py-1.5 text-xs leading-6 duration-300 sm:px-4 sm:py-2 sm:text-sm ${
                                 selectedType.includes(type)
                                     ? "bg-yellow outline-yellow outline-1 outline-offset-4"
                                     : "bg-white"
@@ -136,7 +136,7 @@
                 </div>
             </div>
             <div
-                class="mt-16 mb-5 ml-2"
+                class="text-gray mt-16 mb-5 ml-2"
                 data-aos="fade-up"
                 data-aos-duration="2000"
             >
