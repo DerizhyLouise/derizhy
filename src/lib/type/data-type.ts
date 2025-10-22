@@ -96,7 +96,8 @@ export type JournalMenu = {
     title: string;
     link: string;
     description: string;
-    icon: IconImage;
+    time: string;
+    icon: string;
 };
 
 export type OrganizationExperience = {

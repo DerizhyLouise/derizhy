@@ -1,13 +1,13 @@
 import type { Menu } from "$lib/type/data-type";
 
-export const menu: Menu[] = [
+export const menuForNav: Menu[] = [
     {
         title: "Home",
         link: "/",
         subMenu: [
             { title: "Home", link: "#home" },
-            { title: "About Me", link: "#about" },
-            { title: "What I Do", link: "#know-more" },
+            { title: "Journal", link: "#journal" },
+            { title: "Fun Fact", link: "#fun-fact" },
         ],
     },
     {
@@ -22,8 +22,19 @@ export const menu: Menu[] = [
             { title: "Review", link: "#review" },
         ],
     },
+];
+
+export const menu: Menu[] = [
     {
-        title: "Journal",
-        link: "/journal",
+        title: "",
+        link: "/",
+    },
+    {
+        title: "Portfolio",
+        link: "/portfolio",
+    },
+    {
+        title: "My Organization Life",
+        link: "/my-organization-life",
     },
 ];

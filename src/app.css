@@ -119,6 +119,10 @@
         content: "\1f5d4";
     }
 
+    .fa-calendar::before {
+        content: "\f133";
+    }
+
     .fa-cart-shopping::before {
         content: "\f07a";
     }
@@ -135,12 +139,16 @@
         content: "\f078";
     }
 
+    .fa-chevron-right::before {
+        content: "\f054";
+    }
+
     .fa-code::before {
         content: "\f121";
     }
 
-    .fa-css3-alt::before {
-        content: "\f38b";
+    .fa-css::before {
+        content: "\e6a2";
     }
 
     .fa-cup-straw-swoosh::before {

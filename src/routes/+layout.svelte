@@ -14,12 +14,7 @@
     let pageName = $derived.by(() => {
         const pathName = page.url.pathname;
         let result = menu.find((item) => item.link === pathName)?.title;
-        if (!result) {
-            result = menu.find(
-                (item) => item.link !== "/" && pathName.startsWith(item.link),
-            )?.title;
-        }
-        return result === "Home" ? "" : " - " + result;
+        return result ? " - " + result : "";
     });
 
     onMount(() => {

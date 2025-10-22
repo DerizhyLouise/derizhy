@@ -6,7 +6,7 @@
     id="review"
     class="h-full min-h-screen w-full px-4 text-white xl:px-40 2xl:px-80"
 >
-    <div class="py-40">
+    <div class="pt-40">
         <h2
             class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
             data-aos="fade-up"

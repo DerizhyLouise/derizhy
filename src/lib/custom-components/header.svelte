@@ -2,7 +2,7 @@
     import { browser } from "$app/environment";
     import { page } from "$app/state";
     import logo from "$lib/assets/svg/logo.svg";
-    import { menu } from "$lib/data/menu";
+    import { menuForNav } from "$lib/data/menu";
     import { getLink } from "$lib/utils";
     import { onDestroy, onMount } from "svelte";
 
@@ -81,7 +81,7 @@
     <!-- DESKTOP NAV -->
     <nav class="hidden justify-self-end text-xl font-semibold lg:block">
         <ul class="flex justify-end gap-6 xl:gap-10">
-            {#each menu as item (item.title)}
+            {#each menuForNav as item (item.title)}
                 <li class="relative" data-dropdown>
                     {#if item.subMenu && page.url.pathname.startsWith(item.link)}
                         <button
@@ -158,7 +158,7 @@
     </button>
 
     <div class="flex flex-col gap-4 px-8 py-16">
-        {#each menu as item (item.title)}
+        {#each menuForNav as item (item.title)}
             <div>
                 <a
                     class="text-yellow mb-2 text-3xl font-semibold"
