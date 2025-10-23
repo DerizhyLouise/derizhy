@@ -86,7 +86,7 @@
                     {#if item.subMenu && page.url.pathname.startsWith(item.link)}
                         <button
                             onclick={() => toggleDropdown(item.title)}
-                            class="hover:text-yellow after:bg-yellow relative flex items-center gap-2 font-medium text-white transition-colors duration-300 after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
+                            class="hover:text-yellow after:bg-yellow relative flex items-center gap-2 text-white transition-colors duration-300 after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
                         >
                             {item.title}
                             <i
@@ -96,7 +96,7 @@
                     {:else}
                         <a
                             href={item.link}
-                            class="hover:text-yellow after:bg-yellow relative flex items-center gap-2 font-medium text-white transition-colors duration-300 after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
+                            class="hover:text-yellow after:bg-yellow relative flex items-center gap-2 text-white transition-colors duration-300 after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
                         >
                             {item.title}
                         </a>
