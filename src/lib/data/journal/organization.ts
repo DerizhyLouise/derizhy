@@ -4,7 +4,7 @@ import type { JournalData, OrganizationJournal } from "$lib/type/data-type";
 export const organizationIntro: JournalData = {
     title: "Introduction",
     paragraph: [
-        "Back in 2014, when I was in middle school, my religion teacher, Mr. Dwi Susanto, invited me to visit a cetiya (a smaller version of a temple) called Cetiya Manggala Utama. That day, they were holding an election for the youth group leader. I didn't really understand anything about organizations back then. I just sat there watching the whole process.",
+        "Back in 2014, when I was in junior high school, my religion teacher, Mr. Dwi Susanto, invited me to visit a cetiya (a smaller version of a temple) called Cetiya Manggala Utama. That day, they were holding an election for the youth group leader. I didn't really understand anything about organizations back then. I just sat there watching the whole process.",
         "After the event, we were invited to join the youth group. And that's where my journey in organizational life began.",
         "From that moment on, my life started to change. I went from being just an ordinary kid to discovering a whole new world, the world of community and leadership. I learned so many things: how to solve problems, speak in public, take responsibility, manage tasks, and grow both spiritually and mentally.",
     ],
