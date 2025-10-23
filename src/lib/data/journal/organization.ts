@@ -18,10 +18,7 @@ export const organizationExperience: OrganizationJournal[] = [
         description: [
             "After a fantastic journey with PMVTR, it's time for me to serve all PMV/C (Youth Buddhist Monastery Organization) across North Sumatra.",
         ],
-        logo: {
-            src: imageRender.sekberLogo,
-            type: "png",
-        },
+        logo: imageRender.sekberLogo,
         experience: [
             {
                 position: "Head of Secretariat Division",
@@ -40,10 +37,7 @@ export const organizationExperience: OrganizationJournal[] = [
         description: [
             "A Student Association of Informatics Engineering in Mikroskil University.",
         ],
-        logo: {
-            src: imageRender.bitsmikroLogo,
-            type: "img",
-        },
+        logo: imageRender.bitsmikroLogo,
         experience: [
             {
                 position: "Member of Human Resources Development Division",
@@ -70,10 +64,7 @@ export const organizationExperience: OrganizationJournal[] = [
         description: [
             "It wasn't just an organization where I growed. It was a home — one I nearly broke myself to protect.",
         ],
-        logo: {
-            src: imageRender.pmvtrLogo,
-            type: "img",
-        },
+        logo: imageRender.pmvtrLogo,
         experience: [
             {
                 position: "Head of Human Resources Development Division",
@@ -96,10 +87,7 @@ export const organizationExperience: OrganizationJournal[] = [
         description: [
             "I had always wanted to join them when I was in middle school. Eventually, I proved myself capable enough to become one of them.",
         ],
-        logo: {
-            src: imageRender.smrajaLogo,
-            type: "img",
-        },
+        logo: imageRender.smrajaLogo,
         experience: [
             {
                 position: "Head of Religious Affairs Division",
@@ -118,10 +106,7 @@ export const organizationExperience: OrganizationJournal[] = [
         description: [
             "Cetiya Manggala Utama is a cetiya located in Batu Aji District, Batam. There, a youth organization was formed to organize various activities, such as Buddhist festivals and other community events.",
         ],
-        logo: {
-            src: imageRender.cmuLogo,
-            type: "img",
-        },
+        logo: imageRender.cmuLogo,
         experience: [
             {
                 position: "Member of Public Relationship Division",

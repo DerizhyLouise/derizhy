@@ -1,6 +1,6 @@
 <script lang="ts">
     import SkillBadge from "$lib/custom-components/skill-badge.svelte";
-    import { experience } from "$lib/data/experience";
+    import { experience } from "$lib/data/portfolio/experience";
 
     let showMoreBadge: number[] = $state([]);
 

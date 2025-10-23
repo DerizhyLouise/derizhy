@@ -38,4 +38,8 @@ export const menu: Menu[] = [
         title: "My Organization Life",
         link: "/my-organization-life",
     },
+    {
+        title: "Speedcubing",
+        link: "/speedcubing",
+    },
 ];

@@ -97,7 +97,7 @@ export type JournalMenu = {
     link: string;
     description: string;
     time: string;
-    icon: string;
+    icon: IconImage;
 };
 
 export type OrganizationExperience = {
@@ -109,7 +109,7 @@ export type OrganizationJournal = {
     name: string;
     location: string;
     time: string;
-    logo: IconImage;
+    logo: string;
     description: string[];
     experience: OrganizationExperience[];
 };

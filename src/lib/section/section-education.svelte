@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { education } from "$lib/data/education";
+    import { education } from "$lib/data/portfolio/education";
 </script>
 
 <section

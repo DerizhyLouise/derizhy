@@ -4,7 +4,7 @@
         frameworkSkill,
         languageSkill,
         toolSkill,
-    } from "$lib/data/skill";
+    } from "$lib/data/portfolio/skill";
     import type { IconImage } from "$lib/type/data-type";
 </script>
 

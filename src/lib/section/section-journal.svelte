@@ -28,7 +28,15 @@
                         <div
                             class="bg-lightgray text-yellow flex h-60 items-center justify-center rounded-t-sm text-8xl"
                         >
-                            <span class={item.icon}></span>
+                            {#if item.icon.type === "svg"}
+                                <img
+                                    src={item.icon.src}
+                                    alt="Icon"
+                                    class="mx-auto h-32 w-32"
+                                />
+                            {:else}
+                                <span class={item.icon.src}></span>
+                            {/if}
                         </div>
                         <div class="flex grow flex-col p-6">
                             <div class="mb-2">

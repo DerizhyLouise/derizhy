@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { review } from "$lib/data/review";
+    import { review } from "$lib/data/portfolio/review";
 </script>
 
 <section
