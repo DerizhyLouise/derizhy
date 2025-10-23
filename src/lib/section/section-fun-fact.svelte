@@ -25,13 +25,13 @@
                         class="bg-gray shadow-gray flex h-40 w-full items-center rounded-sm shadow-lg duration-300 hover:sm:scale-110"
                     >
                         <div
-                            class="bg-lightgray text-yellow flex h-40 w-40 shrink-0 items-center justify-center rounded-l-sm text-5xl"
+                            class="bg-lightgray text-yellow flex h-40 w-40 shrink-0 items-center justify-center rounded-l-sm text-6xl"
                         >
                             {#if item.icon.type === "svg"}
                                 <img
                                     src={item.icon.src}
                                     alt="Icon"
-                                    class="mx-auto h-16 w-16"
+                                    class="mx-auto h-18 w-18"
                                 />
                             {:else}
                                 <span class={item.icon.src}></span>
