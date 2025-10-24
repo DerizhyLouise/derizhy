@@ -1,5 +1,6 @@
 <script lang="ts">
     import { funFact } from "$lib/data/fun-fact";
+    import { parseBoldHTML } from "$lib/utils";
 </script>
 
 <section
@@ -38,7 +39,8 @@
                             {/if}
                         </div>
                         <div class="grow px-4 py-2 text-base text-white">
-                            {item.content}
+                            <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+                            {@html parseBoldHTML(item.content)}
                         </div>
                     </a>
                 </div>

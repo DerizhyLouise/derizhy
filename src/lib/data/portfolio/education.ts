@@ -9,7 +9,6 @@ export const education: Education[] = [
         time: "2025 - Present",
         logo: imageRender.mikroskilLogo,
         link: "https://mikroskil.ac.id",
-        description: [],
     },
     {
         id: 3,
@@ -18,7 +17,6 @@ export const education: Education[] = [
         time: "2020 - 2024",
         logo: imageRender.mikroskilLogo,
         link: "https://mikroskil.ac.id",
-        description: [],
     },
     {
         id: 2,
@@ -27,7 +25,6 @@ export const education: Education[] = [
         time: "2023",
         logo: imageRender.revouLogo,
         link: "https://www.revou.co",
-        description: [],
     },
     {
         id: 1,
@@ -36,6 +33,5 @@ export const education: Education[] = [
         time: "2017 - 2018",
         logo: imageRender.smrajaLogo,
         link: "https://smraja.sch.id/",
-        description: [],
     },
 ];

@@ -20,3 +20,10 @@ export function debounce<T extends (...args: any[]) => void>(
         timer = setTimeout(() => fn(...args), delay);
     };
 }
+
+export function parseBoldHTML(text: string, darkTheme: boolean = true): string {
+    return text.replace(
+        /\*\*(.+?)\*\*/g,
+        `<span class="font-semibold ${darkTheme ? "text-yellow" : ""}">$1</span>`,
+    );
+}

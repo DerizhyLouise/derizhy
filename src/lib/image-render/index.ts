@@ -13,15 +13,14 @@ import tailwindYellowIcon from "$lib/assets/svg/tailwind-yellow.svg";
 import tailwindIcon from "$lib/assets/svg/tailwind.svg";
 import typescriptIcon from "$lib/assets/svg/typescript.svg";
 
-import organization from "$lib/assets/image/journal/organization.jpg";
 import bitsmikroLogo from "$lib/assets/image/logo/bitsmikro.jpg";
 import cmuLogo from "$lib/assets/image/logo/cmu.jpg";
-import mikroskilLogo from "$lib/assets/image/logo/mikroskil.png";
+import mikroskilLogo from "$lib/assets/image/logo/mikroskil.webp";
 import mtLogo from "$lib/assets/image/logo/mt.jpg";
-import pmvtrLogo from "$lib/assets/image/logo/pmvtr.jpg";
+import pmvtrLogo from "$lib/assets/image/logo/pmvtr.webp";
 import revouLogo from "$lib/assets/image/logo/revou.png";
-import sekberLogo from "$lib/assets/image/logo/sekber.png";
-import smrajaLogo from "$lib/assets/image/logo/smraja.jpg";
+import sekberLogo from "$lib/assets/image/logo/sekber.webp";
+import smrajaLogo from "$lib/assets/image/logo/smraja.webp";
 import kamil from "$lib/assets/image/profile/kamil.jpg";
 
 export const imageRender = {
@@ -53,5 +52,4 @@ export const imageRender = {
 
     // Image
     kamil,
-    organization,
 };

@@ -1,6 +1,7 @@
 <script lang="ts">
     import SkillBadge from "$lib/custom-components/skill-badge.svelte";
     import { experience } from "$lib/data/portfolio/experience";
+    import { parseBoldHTML } from "$lib/utils";
 
     let showMoreBadge: number[] = $state([]);
 
@@ -59,7 +60,8 @@
                         <div class="text-sm sm:text-base">
                             <div class="mt-4 text-gray-200">
                                 {#each item.description as desc, i (i)}
-                                    {desc}<br />
+                                    <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+                                    {@html parseBoldHTML(desc)}<br />
                                 {/each}
                             </div>
                             <div class="mt-6 font-semibold">

@@ -2,6 +2,7 @@
     import SkillBadge from "$lib/custom-components/skill-badge.svelte";
     import { project } from "$lib/data/portfolio/project";
     import type { Project } from "$lib/type/data-type";
+    import { parseBoldHTML } from "$lib/utils";
     import AOS from "aos";
     import { fade, slide } from "svelte/transition";
 
@@ -216,7 +217,8 @@
                                     transition:fade={{ duration: 300 }}
                                 >
                                     {#each item.description as desc, i (i)}
-                                        {desc}<br />
+                                        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+                                        {@html parseBoldHTML(desc)}<br />
                                     {/each}
                                 </div>
                                 <div class="mt-6 font-semibold">

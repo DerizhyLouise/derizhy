@@ -1,5 +1,6 @@
 <script lang="ts">
     import { speedcubingIntro } from "$lib/data/journal/speedcubing";
+    import { parseBoldHTML } from "$lib/utils";
 </script>
 
 <section class="text-gray h-full min-h-screen w-full text-sm md:text-lg">
@@ -21,7 +22,8 @@
                 <div>
                     {#each item.paragraph as p, i (i)}
                         <p class="mb-4 text-justify">
-                            {p}
+                            <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+                            {@html parseBoldHTML(p, false)}
                         </p>
                     {/each}
                 </div>

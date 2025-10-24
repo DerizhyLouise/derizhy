@@ -11,7 +11,7 @@ export const experience: Experience[] = [
         description: [
             "Experienced in designing, developing, maintaining, and deploying healthcare software.",
             "",
-            "I am part of the core team that builds a Hospital Information System called MTHIS 2.0. I created front-end components in a Svelte environment, handled authentication and authorization, and participated in database design for scalable data management.",
+            "I am part of the core team that builds a Hospital Information System called **MTHIS 2.0**. I created front-end components in a Svelte environment, handled authentication and authorization, and participated in database design for scalable data management.",
         ],
         techs: [
             "Svelte",
@@ -37,9 +37,9 @@ export const experience: Experience[] = [
         time: "Aug 2023 - Dec 2023",
         logo: imageRender.revouLogo,
         description: [
-            "Led Group 6 Balikpapan Section in the Studi Independen - Kampus Merdeka program by the Ministry of Education",
+            "**Led Group 6 Balikpapan Section** in the Studi Independen - Kampus Merdeka program by the Ministry of Education",
             "",
-            "Oversaw two main projects: Clo (E-Commerce Website) and Shopping Cart Database Analysis (Data Analytics).",
+            "Oversaw two main projects: **Clo (E-Commerce Website)** and **Shopping Cart Database Analysis** (Data Analytics).",
         ],
         techs: [
             "Python",

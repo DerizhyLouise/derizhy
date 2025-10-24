@@ -18,9 +18,9 @@ export const project: Project[] = [
         time: "April - July 2025",
         type: "Desktop App",
         description: [
-            "This is side projects of MTHIS 2.0's Project.",
+            "This is side projects of **MTHIS 2.0's Project**.",
             "",
-            "MT-Printer is a desktop application that acts as a bridge between MTHIS 2.0 and a local printer. When a user clicks the 'Print' button on the web, the web app sends a request to MT-Printer, which then automatically prints the received file using pre-configured printer settings.",
+            "**MT-Printer** is a **desktop application** that acts as a bridge between MTHIS 2.0 and a **local printer**. When a user clicks the 'Print' button on the web, the web app sends a request to MT-Printer, which then automatically prints the received file using pre-configured printer settings.",
         ],
         techs: ["React", "Electron", "Tailwind CSS", "Git"],
     },
@@ -33,9 +33,9 @@ export const project: Project[] = [
         time: "August 2024 - Now",
         type: "Full-Stack Web",
         description: [
-            "This is side projects of MTHIS 2.0's Project.",
+            "This is side projects of **MTHIS 2.0's Project**.",
             "",
-            "This project was initiated to meet a hospital's need for a custom-built, functional assessment tool with integrated database storage. was entrusted with leading the development of the Assessment Builder, a web-based solution that empowers users to design and manage their own assessment templates. Built with GrapesJS, the tool allows users to create dynamic templates and extend functionality through custom JavaScript code, enabling a high degree of flexibility and control.",
+            "This project was initiated to meet a hospital's need for a custom-built, functional assessment tool with integrated database storage. was entrusted with leading the development of the **Assessment Builder**, a web-based solution that empowers users to design and manage their own **assessment templates**. Built with **GrapesJS**, the tool allows users to create dynamic templates and extend functionality through custom JavaScript code, enabling a high degree of **flexibility** and **control**.",
         ],
         techs: [
             "Svelte",
@@ -43,7 +43,7 @@ export const project: Project[] = [
             "GrapesJs",
             "MongoDB",
             "CodeMirror",
-            "Git"
+            "Git",
         ],
     },
     {
@@ -66,9 +66,9 @@ export const project: Project[] = [
         ],
         time: "March - August 2024",
         description: [
-            "This is final project for Mikroskil University - Computer Science's Bachelor Degree.",
+            "This is **final project** for Computer Science's Bachelor Degree.",
             "",
-            "This is an UI for a Stunting web based app.",
+            "This is an UI for a **Stunting** web based app.",
             "Account for testing purpose: ",
             "- email 1: user@mail.com ",
             "- email 2: nakes@mail.com ",
@@ -86,9 +86,9 @@ export const project: Project[] = [
         media: [],
         time: "January 2024 - Now",
         description: [
-            "MTHIS (Murni Teguh Hospital Information System) is an information system digital platform that manages and integrates medical, administrative, and financial functions within a healthcare facility to streamline operations and improve patient care.",
+            "**MTHIS** (Murni Teguh Hospital Information System) is an information system digital platform that manages and integrates medical, administrative, and financial functions within a healthcare facility to streamline operations and improve patient care.",
             "",
-            "This project is related to my position as a Software Developer in PT Murni Sadar Tbk.",
+            "This project is related to my position as a **Software Developer** in PT Murni Sadar Tbk.",
         ],
         techs: [
             "Svelte",
@@ -124,15 +124,9 @@ export const project: Project[] = [
         ],
         time: "December 2023 - Now",
         description: [
-            "My personal dan portfolio website that basesd SvelteKit, Tailwind CSS, TypeScript and deployed with Github Pages.",
+            "My **personal** dan **portfolio website** that basesd SvelteKit, Tailwind CSS, TypeScript and deployed with Github Pages.",
         ],
-        techs: [
-            "Svelte",
-            "Tailwind CSS",
-            "TypeScript",
-            "HTML",
-            "Git",
-        ],
+        techs: ["Svelte", "Tailwind CSS", "TypeScript", "HTML", "Git"],
     },
     {
         id: 6,
@@ -164,9 +158,18 @@ export const project: Project[] = [
         description: [
             "This is Kampus Merdeka Batch 5 - RevoU's Data Analytics Capstone Project.",
             "",
-            "This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Also in addition, we achieved the best group in Shopping Cart's category.",
+            "This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of **Project Leader of Group 6 - Balikpapan Section**. Also in addition, we achieved the **best group** in Shopping Cart's category.",
         ],
-        techs: ["Python", "SQL", "Pandas", "Seaborn", "Matplotlib", "Google Colab", "Looker Studio", "Git"],
+        techs: [
+            "Python",
+            "SQL",
+            "Pandas",
+            "Seaborn",
+            "Matplotlib",
+            "Google Colab",
+            "Looker Studio",
+            "Git",
+        ],
     },
     {
         id: 5,
@@ -200,7 +203,7 @@ export const project: Project[] = [
         description: [
             "This is Kampus Merdeka Batch 5 - RevoU's Software Engineering Capstone Project.",
             "",
-            "In this project I have been chosen to take the role of Project Leader of Group 6 - Balikpapan Section. Our primary objective is the development of an e-commerce website called 'Clo', with a specific focus on clothing retail.",
+            "In this project I have been chosen to take the role of **Project Leader of Group 6 - Balikpapan Section**. Our primary objective is the development of an **e-commerce website** called 'Clo', with a specific focus on clothing retail.",
         ],
         techs: [
             "JavaScript",
@@ -233,7 +236,7 @@ export const project: Project[] = [
         description: [
             "Dicoding - Belajar Analisis Data dengan Python Project.",
             "",
-            "This project is submission for Last Project in Dicoding's Python Data Analytics Course. I use Bike Sharing Dataset to deal with this project. This project include of Data Wrangling, Exploratory Data Analysis, Data Visualization, and Making Dashboard with Streamlit.",
+            "This project is submission for Last Project in Dicoding's Python Data Analytics Course. I use **Bike Sharing Dataset** to deal with this project. This project include of Data Wrangling, Exploratory Data Analysis, Data Visualization, and Making Dashboard with Streamlit.",
         ],
         techs: ["Python", "Pandas", "Matplotlib", "Seaborn", "Streamlit"],
     },
@@ -316,7 +319,7 @@ export const project: Project[] = [
         description: [
             "Mikroskil University - Digital Start Up Project.",
             "",
-            "This is a project from Digital Start Up Lecture where I built a prototype of an application called 'Help Me'. The concept of this application is to provide services to connect peoples who called 'Requester' whom requesting for helps and create tasks and peoples who called 'Helper' whom will take the tasks and solve them to get rewards.",
+            "This is a project from **Digital Start Up** Lecture where I built a prototype of an application called '**Help Me**'. The concept of this application is to provide services to connect peoples who called '**Requester**' whom requesting for helps and create tasks and peoples who called '**Helper**' whom will take the tasks and solve them to get rewards.",
         ],
         techs: ["Figma"],
     },

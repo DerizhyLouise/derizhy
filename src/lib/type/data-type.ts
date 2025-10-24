@@ -31,7 +31,6 @@ export type Education = {
     time: string;
     logo: string;
     link: string;
-    description: string[];
 };
 
 export type Review = {
