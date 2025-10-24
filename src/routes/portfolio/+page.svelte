@@ -3,7 +3,6 @@
     import SectionExperience from "$lib/section/section-experience.svelte";
     import SectionProfile from "$lib/section/section-profile.svelte";
     import SectionProject from "$lib/section/section-project.svelte";
-    import SectionReview from "$lib/section/section-review.svelte";
     import SectionSkill from "$lib/section/section-skill.svelte";
 </script>
 
@@ -14,5 +13,4 @@
     <SectionExperience />
     <SectionProject />
     <SectionEducation />
-    <SectionReview />
 </div>

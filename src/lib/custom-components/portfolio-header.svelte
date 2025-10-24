@@ -58,14 +58,14 @@
 
     <!-- DESKTOP NAV -->
     <nav class="hidden justify-self-end text-xl font-semibold lg:block">
-        <ul class="flex justify-end gap-2 xl:gap-6">
+        <ul class="flex justify-end gap-4 xl:gap-6">
             {#each portfolioMenu.subMenu as item (item.title)}
                 <li class="group relative">
                     <a
                         href={getLink(portfolioMenu.link, item.link)}
-                        class="relative flex items-center gap-2 text-white
+                        class="after:bg-yellow relative flex items-center gap-2 text-white
 							   after:absolute after:bottom-[-4px] after:left-0 after:h-[2px]
-							   after:w-0 after:bg-white after:transition-all
+							   after:w-0 after:transition-all
 							   after:duration-300 after:content-[''] hover:after:w-full"
                     >
                         {item.title}
@@ -78,7 +78,7 @@
     <!-- MOBILE BUTTON -->
     <div class="flex w-6/12 justify-end lg:hidden">
         <button
-            class=" text-3xl transition hover:scale-150 hover:duration-300"
+            class="text-3xl transition hover:scale-150 hover:duration-300"
             type="button"
             aria-label="Open navigation menu"
             onclick={toggleDrawer}

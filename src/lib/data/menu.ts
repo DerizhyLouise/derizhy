@@ -20,7 +20,6 @@ export const menuForNav: Menu[] = [
             { title: "Experience", link: "#experience" },
             { title: "Project", link: "#project" },
             { title: "Education", link: "#education" },
-            { title: "Review", link: "#review" },
         ],
     },
 ];

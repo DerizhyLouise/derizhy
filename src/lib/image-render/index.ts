@@ -21,7 +21,6 @@ import pmvtrLogo from "$lib/assets/image/logo/pmvtr.webp";
 import revouLogo from "$lib/assets/image/logo/revou.png";
 import sekberLogo from "$lib/assets/image/logo/sekber.webp";
 import smrajaLogo from "$lib/assets/image/logo/smraja.webp";
-import kamil from "$lib/assets/image/profile/kamil.jpg";
 
 export const imageRender = {
     // Icons
@@ -49,7 +48,4 @@ export const imageRender = {
     bitsmikroLogo,
     sekberLogo,
     mikroskilLogo,
-
-    // Image
-    kamil,
 };
