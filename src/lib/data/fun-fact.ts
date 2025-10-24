@@ -84,7 +84,7 @@ export const funFact: FunFact[] = [
     {
         link: "#fun-fact",
         icon: { src: "fa-regular fa-cup-straw-swoosh", type: "fa" },
-        content: "I don't like Coffee, but i love Milk Tea",
+        content: "I don't like Coffee, but I love Milk Tea",
     },
     {
         link: "https://www.16personalities.com/profiles/39b4ed81dddba",

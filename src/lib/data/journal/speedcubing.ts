@@ -12,8 +12,8 @@ export const speedcubingIntro: JournalData[] = [
         title: "Decided to Speedcubing",
         paragraph: [
             "The Rubik's Cube trend eventually faded, but one day a friend suddenly brought one to school. Feeling excited, I borrowed it and tried to solve it using whatever I could still remember.",
-            "Then, one of my seniors came over and asked, “How fast can you solve it?” I confidently replied, “Two minutes.” He pulled out his watch and started timing me. But it turned out that the cube was defective — one of the pieces had been put in the wrong place — so I couldn't finish it. He laughed and said I was too much talk because I couldn't solve it.",
-            "I was really upset, and right then I decided to buy my own Rubik's Cube from a toy shop near the school. At first, I practiced by watching my classmates who could solve it in about a minute — which was considered pretty fast at that time.",
+            "Then, one of my seniors came over and asked, “How fast can you solve it?” I confidently replied, “Two minutes.” He pulled out his watch and started timing me. But it turned out that the cube was defective. One of the pieces had been put in the wrong place, so I couldn't finish it. He laughed and said I was too much talk because I couldn't solve it.",
+            "I was really upset, and right then I decided to buy my own Rubik's Cube from a toy shop near the school. At first, I practiced by watching my classmates who could solve it in about a minute which was considered pretty fast at that time.",
             "Later, I started learning the advanced CFOP method, developed by Jessica Fridrich, to improve my speed. Every day, I memorized algorithms for different cases, one by one, determined to get faster and prove myself.",
         ],
     },
@@ -29,7 +29,7 @@ export const speedcubingIntro: JournalData[] = [
         title: "Speedcuber Life",
         paragraph: [
             "When I entered high school, my improvement started to slow down. Even after switching to more expensive cubes, my speed only improved by a second or two. Eventually, I managed to reach an average solve time of around ten seconds.",
-            "As time went on, I had less and less time to practice because of other activities. Still, I decided to join a competition held by the World Cube Association (WCA) after moving to Medan. There, I met incredible cubers — people far faster than me, some even competing at the world championship level. It was both humbling and inspiring to see how much further the limits could be pushed.",
+            "As time went on, I had less and less time to practice because of other activities. Still, I decided to join a competition held by the World Cube Association (WCA) after moving to Medan. There, I met incredible cubers, people far faster than me, some even competing at the world championship level. It was both humbling and inspiring to see how much further the limits could be pushed.",
         ],
     },
 ];
