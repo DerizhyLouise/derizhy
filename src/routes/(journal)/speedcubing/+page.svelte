@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { speedcubingIntro } from "$lib/data/journal/speedcubing";
+    import { speedcubingData } from "$lib/data/journal/speedcubing";
     import { parseBoldHTML } from "$lib/utils";
 </script>
 
@@ -14,7 +14,7 @@
                 Speedcubing
             </h2>
         </div>
-        {#each speedcubingIntro as item (item.title)}
+        {#each speedcubingData as item (item.title)}
             <div>
                 <h3 class="text-xl font-semibold uppercase sm:text-2xl">
                     {item.title}

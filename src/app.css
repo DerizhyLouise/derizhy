@@ -307,6 +307,10 @@
         content: "\d7";
     }
 
+    .fa-yin-yang::before {
+        content: "\f6ad";
+    }
+
     .fa-light {
         font-weight: 300;
     }

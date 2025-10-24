@@ -42,4 +42,8 @@ export const menu: Menu[] = [
         title: "Speedcubing",
         link: "/speedcubing",
     },
+    {
+        title: "The Painful Truth",
+        link: "/the-painful-truth",
+    },
 ];

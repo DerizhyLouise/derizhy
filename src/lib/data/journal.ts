@@ -18,4 +18,12 @@ export const journalMenu: JournalMenu[] = [
         time: "23 October 2025",
         icon: { src: imageRender.cubeIcon, type: "svg" },
     },
+    {
+        title: "The Painful Truth",
+        link: "/the-painful-truth",
+        description:
+            "The moment when I realize that life is beautifully painful",
+        time: "24 October 2025",
+        icon: { src: "fa-solid fa-yin-yang", type: "fa" },
+    },
 ];

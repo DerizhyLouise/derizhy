@@ -1,6 +1,6 @@
 import type { JournalData } from "$lib/type/data-type";
 
-export const speedcubingIntro: JournalData[] = [
+export const speedcubingData: JournalData[] = [
     {
         title: "Everybody Play This",
         paragraph: [
