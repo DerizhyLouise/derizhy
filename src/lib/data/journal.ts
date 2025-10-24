@@ -14,7 +14,7 @@ export const journalMenu: JournalMenu[] = [
         title: "Speedcubing",
         link: "/speedcubing",
         description:
-            "People missunderstood this as a brain game, but this speedcubing is fun",
+            "People missunderstood this as a brain game, but speedcubing is fun",
         time: "23 October 2025",
         icon: { src: imageRender.cubeIcon, type: "svg" },
     },
