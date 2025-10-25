@@ -19,11 +19,11 @@ export const journalMenu: JournalMenu[] = [
         icon: { src: imageRender.cubeIcon, type: "svg" },
     },
     {
-        title: "The Painful Truth",
-        link: "/the-painful-truth",
+        title: "The Way of Life",
+        link: "/the-way-of-life",
         description:
             "The moment when I realize that life is beautifully painful",
-        time: "24 October 2025",
-        icon: { src: "fa-solid fa-yin-yang", type: "fa" },
+        time: "25 October 2025",
+        icon: { src: "fa-regular fa-hand-holding-seeding", type: "fa" },
     },
 ];

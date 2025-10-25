@@ -17,6 +17,7 @@ import bitsmikroLogo from "$lib/assets/image/logo/bitsmikro.jpg";
 import cmuLogo from "$lib/assets/image/logo/cmu.jpg";
 import mikroskilLogo from "$lib/assets/image/logo/mikroskil.webp";
 import mtLogo from "$lib/assets/image/logo/mt.jpg";
+import onemitsLogo from "$lib/assets/image/logo/onemits.jpg";
 import pmvtrLogo from "$lib/assets/image/logo/pmvtr.webp";
 import revouLogo from "$lib/assets/image/logo/revou.png";
 import sekberLogo from "$lib/assets/image/logo/sekber.webp";
@@ -48,4 +49,5 @@ export const imageRender = {
     bitsmikroLogo,
     sekberLogo,
     mikroskilLogo,
+    onemitsLogo,
 };

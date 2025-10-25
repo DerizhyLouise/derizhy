@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { painfulTruthData } from "$lib/data/journal/painful-truth";
+    import { theWayOfLife } from "$lib/data/journal/the-way-of-lfe";
     import { parseBoldHTML } from "$lib/utils";
 </script>
 
@@ -11,10 +11,10 @@
     >
         <div class="border-b-2">
             <h2 class="text-3xl font-semibold uppercase sm:text-4xl">
-                The Painful Truth
+                The Way of Life
             </h2>
         </div>
-        {#each painfulTruthData as item (item.title)}
+        {#each theWayOfLife as item (item.title)}
             <div>
                 <h3 class="text-xl font-semibold uppercase sm:text-2xl">
                     {item.title}

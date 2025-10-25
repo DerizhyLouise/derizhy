@@ -4,7 +4,7 @@
 
 <section
     id="education"
-    class="h-full min-h-screen w-full px-4 text-white sm:px-20 xl:px-40 2xl:px-80"
+    class="h-full min-h-screen w-full px-4 text-white sm:px-20 xl:px-40 min-[1552px]:px-80"
 >
     <div class="pt-40">
         <h2
@@ -42,11 +42,6 @@
                                     {item.time}
                                 </div>
                             </div>
-                        </div>
-                        <div class="my-4 sm:text-justify">
-                            {#each item.description as p (p)}
-                                {p}
-                            {/each}
                         </div>
                     </div>
                 </a>

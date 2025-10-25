@@ -22,7 +22,7 @@ export const organizationExperience: OrganizationJournal[] = [
         experience: [
             {
                 position: "Head of Secretariat Division",
-                time: "2024 - Present",
+                time: "2024 - 2027",
             },
             {
                 position: "Staff IV of Secretariat Division",
@@ -31,11 +31,26 @@ export const organizationExperience: OrganizationJournal[] = [
         ],
     },
     {
+        name: "One - Magister Information Technology Students (OneMITS)",
+        location: "Universitas Mikroskil, Medan",
+        time: "2020 - 2024",
+        description: [
+            "Master of Information Technology Student Association in Mikroskil University.",
+        ],
+        logo: imageRender.onemitsLogo,
+        experience: [
+            {
+                position: "President",
+                time: "2025 - 2026",
+            },
+        ],
+    },
+    {
         name: "Big Family of Informatics Students Mikroskil (BITSMIKRO)",
         location: "Universitas Mikroskil, Medan",
         time: "2020 - 2024",
         description: [
-            "A Student Association of Informatics Engineering in Mikroskil University.",
+            "Informatics Student Association in Mikroskil University.",
         ],
         logo: imageRender.bitsmikroLogo,
         experience: [
