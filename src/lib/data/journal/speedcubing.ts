@@ -32,4 +32,18 @@ export const speedcubingData: JournalData[] = [
             "As time went on, I had less and less time to practice because of other activities. Still, I decided to join a competition held by the **World Cube Association (WCA)** after moving to Medan. There, I met incredible cubers, **people far faster than me**, some even competing at the world championship level. It was both humbling and inspiring to see how much further the limits could be pushed.",
         ],
     },
+    {
+        title: "My Official Stats",
+        paragraph: [
+            `Check out my official WCA record and competition stats <span class="fa-regular fa-chevron-right"></span>
+                <a
+                    target="_blank"
+                    class="text-maroon hover:text-maroon/80 decoration-maroon/70 hover:decoration-maroon inline-flex items-center gap-1 font-medium underline underline-offset-4 transition-colors duration-200"
+                    href="https://www.worldcubeassociation.org/persons/2018DERI01"
+                >
+                    Louise Derizhy (張家誠) | World Cube Association
+                </a>
+            `,
+        ],
+    },
 ];

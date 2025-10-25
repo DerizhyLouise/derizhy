@@ -10,7 +10,6 @@ export const footerData: FooterData = {
                 { title: "Experience", href: "/portfolio#experience" },
                 { title: "Project", href: "/portfolio#project" },
                 { title: "Education", href: "/portfolio#education" },
-                { title: "Review", href: "/portfolio#review" },
             ],
         },
         {

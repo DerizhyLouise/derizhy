@@ -29,23 +29,5 @@
                 </div>
             </div>
         {/each}
-        <div>
-            <h3 class="text-xl font-semibold uppercase sm:text-2xl">
-                My Official Stats
-            </h3>
-            <div>
-                <p class="mb-4 text-justify">
-                    Check out my official WCA record and competition stats
-                    <span class="fa-regular fa-chevron-right"></span>
-                    <a
-                        target="_blank"
-                        class="text-maroon hover:text-maroon/80 decoration-maroon/70 hover:decoration-maroon inline-flex items-center gap-1 font-medium underline underline-offset-4 transition-colors duration-200"
-                        href="https://www.worldcubeassociation.org/persons/2018DERI01"
-                    >
-                        Louise Derizhy (張家誠) | World Cube Association
-                    </a>
-                </p>
-            </div>
-        </div>
     </div>
 </section>
