@@ -30,7 +30,7 @@ export const funFact: FunFact[] = [
         content: "I am a **Software Engineer** and check out my projects here",
     },
     {
-        link: "./my-organization-life",
+        link: "./journal/my-organization-life",
         icon: { src: "fa-regular fa-users", type: "fa" },
         content: "I love to do **organizational** activity",
     },
