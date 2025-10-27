@@ -1,4 +1,5 @@
 import { page } from "$app/state";
+import type { SearchBarTypeCount } from "$lib/type/data-type";
 
 export function getLink(baseLink: string, subLink: string): string {
     if (page.url.pathname === baseLink) {
@@ -27,3 +28,23 @@ export function parseBoldHTML(text: string, darkTheme: boolean = true): string {
         `<span class="font-semibold ${darkTheme ? "text-yellow" : ""}">$1</span>`,
     );
 }
+
+export const typeCount = (data: { type: string[] }[]): SearchBarTypeCount[] => {
+    const typeCountMap: Record<string, number> = {};
+
+    for (const proj of data) {
+        for (const type of proj.type) {
+            typeCountMap[type] = (typeCountMap[type] || 0) + 1;
+        }
+    }
+
+    const result: SearchBarTypeCount[] = [
+        { type: "All", count: data.length },
+        ...Object.entries(typeCountMap).map(([type, count]) => ({
+            type,
+            count,
+        })),
+    ];
+
+    return result;
+};

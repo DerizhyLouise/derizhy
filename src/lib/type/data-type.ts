@@ -58,7 +58,15 @@ export type Project = {
         typeSymbol: IconImage;
     }[];
     time: string;
-    type: string;
+    type: (
+        | "Desktop App"
+        | "Full-Stack Web"
+        | "Front-End Web"
+        | "Data Analytics"
+        | "Cryptography"
+        | "Artificial Intelligence"
+        | "UI & UX"
+    )[];
     description: string[];
     techs: string[];
 };
@@ -97,6 +105,8 @@ export type JournalMenu = {
     description: string;
     time: string;
     icon: IconImage;
+    type: ("Hobbies" | "Organization" | "Spiritual" | "Science")[];
+    keyword: string[];
 };
 
 export type OrganizationExperience = {
@@ -123,4 +133,9 @@ export type FunFact = {
     icon: IconImage;
     link: string;
     content: string;
+};
+
+export type SearchBarTypeCount = {
+    type: string;
+    count: number;
 };

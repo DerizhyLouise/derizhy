@@ -16,7 +16,7 @@ export const project: Project[] = [
             },
         ],
         time: "April - July 2025",
-        type: "Desktop App",
+        type: ["Desktop App"],
         description: [
             "This is side projects of **MTHIS 2.0's Project**.",
             "",
@@ -31,7 +31,7 @@ export const project: Project[] = [
         icon: "fa-regular fa-file",
         media: [],
         time: "August 2024 - Now",
-        type: "Full-Stack Web",
+        type: ["Full-Stack Web"],
         description: [
             "This is side projects of **MTHIS 2.0's Project**.",
             "",
@@ -51,7 +51,7 @@ export const project: Project[] = [
         title: "Peduli Anak",
         subtitle: "Stunting Web Based App",
         icon: "fa-regular fa-stethoscope",
-        type: "Front-End Web",
+        type: ["Front-End Web"],
         media: [
             {
                 title: "Source Code",
@@ -82,7 +82,7 @@ export const project: Project[] = [
         title: "MTHIS 2.0",
         subtitle: "Murni Teguh Hospital Information System",
         icon: "fa-regular fa-stethoscope",
-        type: "Full-Stack Web",
+        type: ["Full-Stack Web"],
         media: [],
         time: "January 2024 - Now",
         description: [
@@ -109,7 +109,7 @@ export const project: Project[] = [
         title: "derizhy.com",
         subtitle: "Personal Website",
         icon: "fa-regular fa-layer-group",
-        type: "Front-End Web",
+        type: ["Front-End Web"],
         media: [
             {
                 title: "Source Code",
@@ -133,7 +133,7 @@ export const project: Project[] = [
         title: "Shopping Cart Database",
         subtitle: "Data Analytics Project",
         icon: "fa-regular fa-cart-shopping",
-        type: "Data Analytics",
+        type: ["Data Analytics"],
         media: [
             {
                 title: "Presentation",
@@ -176,7 +176,7 @@ export const project: Project[] = [
         title: "Clo",
         subtitle: "E-Commerce Web",
         icon: "fa-regular fa-cart-shopping",
-        type: "Full-Stack Web",
+        type: ["Full-Stack Web"],
         media: [
             {
                 title: "Presentation",
@@ -224,7 +224,7 @@ export const project: Project[] = [
         title: "Bike Rental",
         subtitle: "Data Analytics Project",
         icon: "fa-regular fa-bicycle",
-        type: "Data Analytics",
+        type: ["Data Analytics"],
         media: [
             {
                 title: "Source Code",
@@ -245,7 +245,7 @@ export const project: Project[] = [
         title: "Cryptography",
         subtitle: "Cryptography Algorithm Source Code",
         icon: "fa-regular fa-code",
-        type: "Cryptography",
+        type: ["Cryptography"],
         media: [
             {
                 title: "Source Code",
@@ -273,7 +273,7 @@ export const project: Project[] = [
         title: "Image Processing",
         subtitle: "Image Processing Algorithm Source Code",
         icon: "fa-regular fa-image",
-        type: "Artificial Intelligence",
+        type: ["Artificial Intelligence"],
         media: [
             {
                 title: "Source Code",
@@ -302,7 +302,7 @@ export const project: Project[] = [
         title: "Help Me",
         subtitle: "UI Design of Mobile App",
         icon: "fa-regular fa-palette",
-        type: "UI & UX",
+        type: ["UI & UX"],
         media: [
             {
                 title: "Prototype",

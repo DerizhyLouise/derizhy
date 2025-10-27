@@ -22,6 +22,10 @@ export const menuForNav: Menu[] = [
             { title: "Education", link: "#education" },
         ],
     },
+    {
+        title: "Journal",
+        link: "/journal",
+    },
 ];
 
 export const menu: Menu[] = [
@@ -34,15 +38,19 @@ export const menu: Menu[] = [
         link: "/portfolio",
     },
     {
+        title: "Journal",
+        link: "/journal",
+    },
+    {
         title: "My Organization Life",
-        link: "/my-organization-life",
+        link: "/journal/my-organization-life",
     },
     {
         title: "Speedcubing",
-        link: "/speedcubing",
+        link: "/journal/speedcubing",
     },
     {
         title: "The Painful Truth",
-        link: "/the-painful-truth",
+        link: "/journal/the-painful-truth",
     },
 ];

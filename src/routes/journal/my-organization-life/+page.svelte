@@ -8,7 +8,7 @@
 
 <section class="text-gray h-full min-h-screen w-full text-sm md:text-lg">
     <div
-        class="flex flex-col gap-4 px-16 pt-56 pb-40 min-[1536px]:px-[480px] sm:px-36 xl:px-80"
+        class="flex flex-col gap-4 px-16 pt-56 min-[1536px]:px-[480px] sm:px-36 xl:px-80"
         data-aos="fade-right"
         data-aos-duration="2000"
     >
