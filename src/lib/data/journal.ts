@@ -34,7 +34,7 @@ export const journalMenu: JournalMenu[] = [
         title: "The Way of Life",
         link: "/journal/the-way-of-life",
         description:
-            "The moment when I realize that life is beautifully painful",
+            "He was too OG that everyone started thinking he was a god",
         time: "25 October 2025",
         icon: { src: "fa-regular fa-hand-holding-seeding", type: "fa" },
         type: ["Spiritual"],
