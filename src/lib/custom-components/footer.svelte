@@ -13,7 +13,7 @@
                     class="mb-8 w-full px-4 min-[576px]:mb-0 min-[576px]:w-1/2 md:w-1/4"
                 >
                     <h4
-                        class="before:bg-yellow relative mb-9 text-lg font-medium text-white content-[''] before:absolute before:-bottom-2.5 before:left-0 before:box-border before:h-0.5 before:w-12.5"
+                        class="relative mb-9 text-lg font-medium text-white content-[''] before:absolute before:-bottom-2.5 before:left-0 before:box-border before:h-0.5 before:w-12.5 before:bg-white"
                     >
                         {section.title}
                     </h4>
@@ -36,7 +36,7 @@
                 class="mb-8 w-full px-4 max-[576px]:mb-0 min-[576px]:w-1/2 md:w-1/4"
             >
                 <h4
-                    class="before:bg-yellow relative mb-9 text-lg font-medium text-white content-[''] before:absolute before:-bottom-2.5 before:left-0 before:box-border before:h-0.5 before:w-12.5"
+                    class="relative mb-9 text-lg font-medium text-white content-[''] before:absolute before:-bottom-2.5 before:left-0 before:box-border before:h-0.5 before:w-12.5 before:bg-white"
                 >
                     Find Me
                 </h4>

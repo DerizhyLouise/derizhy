@@ -39,7 +39,7 @@ export const experience: Experience[] = [
         description: [
             "**Led Group 6 Balikpapan Section** in the Studi Independen - Kampus Merdeka program by the Ministry of Education",
             "",
-            "Oversaw two main projects: **Clo (E-Commerce Website)** and **Shopping Cart Database Analysis** (Data Analytics).",
+            "Lead two main projects: **Clo (E-Commerce Website)** and **Shopping Cart Database Analysis** (Data Analytics).",
         ],
         techs: [
             "Python",

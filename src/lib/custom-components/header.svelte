@@ -86,7 +86,7 @@
                     {#if item.subMenu && page.url.pathname.startsWith(item.link)}
                         <button
                             onclick={() => toggleDropdown(item.title)}
-                            class="after:bg-yellow relative flex items-center gap-2 text-white transition-colors duration-300 after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
+                            class="relative flex items-center gap-2 text-white transition-colors duration-300 after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
                         >
                             {item.title}
                             <i
@@ -96,7 +96,7 @@
                     {:else}
                         <a
                             href={item.link}
-                            class="after:bg-yellow relative flex items-center gap-2 text-white transition-colors duration-300 after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
+                            class="relative flex items-center gap-2 text-white transition-colors duration-300 after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 after:content-[''] hover:after:w-full"
                         >
                             {item.title}
                         </a>
@@ -114,7 +114,7 @@
                                                 item.link,
                                                 subItem.link,
                                             )}
-                                            class="hover:bg-yellow hover:text-gray block w-full px-5 py-2 text-left text-white transition-all duration-300"
+                                            class="hover:text-gray block w-full px-5 py-2 text-left text-white transition-all duration-300 hover:bg-white"
                                         >
                                             {subItem.title}
                                         </a>

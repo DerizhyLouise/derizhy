@@ -86,7 +86,7 @@
                 </span>
             </div>
             <div
-                class="grid grid-cols-1 gap-6 md:grid-cols-2"
+                class="grid grid-flow-row-dense grid-cols-1 items-start gap-6 md:grid-cols-2"
                 data-aos="fade-up"
                 data-aos-duration="2000"
             >
@@ -134,7 +134,7 @@
                             class="mt-4 flex flex-wrap justify-between gap-2 text-xs sm:text-sm"
                         >
                             <div
-                                class="bg-yellow text-gray hover:bg-yellow/80 rounded-full px-4 py-2"
+                                class="text-gray rounded-full bg-white px-4 py-2 hover:bg-white/80"
                             >
                                 {item.type}
                             </div>
@@ -169,7 +169,7 @@
                                     {#if item.media.length > 0}
                                         {#each item.media as media (media.title)}
                                             <a
-                                                class="bg-yellow text-gray hover:bg-yellow/80 flex items-center rounded-sm px-4 py-2 text-xs duration-300 sm:text-sm"
+                                                class="text-gray flex items-center rounded-sm bg-white px-4 py-2 text-xs duration-300 hover:bg-white/80 sm:text-sm"
                                                 target="_blank"
                                                 href={media.url}
                                             >
@@ -213,7 +213,7 @@
 
                                 {#if item.techs.length > 4}
                                     <div
-                                        class="bg-yellow text-gray hover:bg-yellow/80 flex cursor-pointer items-center rounded-full px-4 py-2 text-xs duration-300 sm:text-sm"
+                                        class="text-gray flex cursor-pointer items-center rounded-full bg-white px-4 py-2 text-xs duration-300 hover:bg-white/80 sm:text-sm"
                                         title={item.techs
                                             .slice(4)
                                             .map((t) => t)

@@ -63,9 +63,9 @@
                 <li class="group relative">
                     <a
                         href={getLink(portfolioMenu.link, item.link)}
-                        class="after:bg-yellow relative flex items-center gap-2 text-white
-							   after:absolute after:bottom-[-4px] after:left-0 after:h-[2px]
-							   after:w-0 after:transition-all
+                        class="relative flex items-center gap-2 text-white after:absolute
+							   after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0
+							   after:bg-white after:transition-all
 							   after:duration-300 after:content-[''] hover:after:w-full"
                     >
                         {item.title}

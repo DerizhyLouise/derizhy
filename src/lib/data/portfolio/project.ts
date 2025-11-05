@@ -76,7 +76,12 @@ export const project: Project[] = [
         description: [
             "This is **final project** for Computer Science's Bachelor Degree.",
             "",
-            "This is an UI for a **Stunting** web based app.",
+            "Problem",
+            "The Indonesian government has set a **national agenda** to **reduce the prevalence of stunting** across the country. In the field of informatics, there is a growing need for a web-based application to support this initiative. However, the two existing government websites currently lack the necessary features and functionality to effectively address the problem.",
+            "",
+            "Solution",
+            "A web-based stunting application was developed, focusing on **audiovisual education**, **public awareness**, **community discussions**, and an **integrated stunting calculator**. The platform aims to make stunting prevention more accessible, interactive, and engaging for both the public and healthcare professionals.",
+            "",
             "Account for testing purpose: ",
             "- email 1: user@mail.com ",
             "- email 2: nakes@mail.com ",
@@ -170,7 +175,10 @@ export const project: Project[] = [
         description: [
             "This is Kampus Merdeka Batch 5 - RevoU's Data Analytics Capstone Project.",
             "",
-            "This is our RevoU's Data Analytics Capstone Project. Our study case is a dataset of Shopping Cart Database. In this project I have been chosen to take the role of **Project Leader of Group 6 - Balikpapan Section**. Also in addition, we achieved the **best group** in Shopping Cart's category.",
+            "This project is our RevoU Data Analytics Capstone Project, based on a **Shopping Cart Database** case study. In this project, I was selected as the **Project Leader** of Group 6 - Balikpapan Section. Additionally, our team was recognized as the **Best Group** in the Shopping Cart category.",
+            "",
+            "Background and Potential Analytics Direction",
+            "From **August to December**, there was a **24% decrease** in revenue. How can we **increase** revenue by **10-15%** in two months?",
         ],
         techs: [
             "Python",
@@ -215,7 +223,7 @@ export const project: Project[] = [
         description: [
             "This is Kampus Merdeka Batch 5 - RevoU's Software Engineering Capstone Project.",
             "",
-            "In this project I have been chosen to take the role of **Project Leader of Group 6 - Balikpapan Section**. Our primary objective is the development of an **e-commerce website** called 'Clo', with a specific focus on clothing retail.",
+            `I served as the **Project Leader** for Group 6 - Balikpapan Section, where our main goal was to build **"Clo"**, an **e-commerce platform** dedicated to **clothing retail**.`,
         ],
         techs: [
             "JavaScript",
