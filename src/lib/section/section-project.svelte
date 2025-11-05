@@ -134,7 +134,7 @@
                             class="mt-4 flex flex-wrap justify-between gap-2 text-xs sm:text-sm"
                         >
                             <div
-                                class="text-gray rounded-full bg-white px-4 py-2 hover:bg-white/80"
+                                class="text-gray bg-yellow hover:bg-yellow/80 rounded-full px-4 py-2"
                             >
                                 {item.type}
                             </div>
@@ -213,7 +213,7 @@
 
                                 {#if item.techs.length > 4}
                                     <div
-                                        class="text-gray flex cursor-pointer items-center rounded-full bg-white px-4 py-2 text-xs duration-300 hover:bg-white/80 sm:text-sm"
+                                        class="text-gray bg-yellow hover:bg-yellow/80 flex cursor-pointer items-center rounded-full px-4 py-2 text-xs duration-300 sm:text-sm"
                                         title={item.techs
                                             .slice(4)
                                             .map((t) => t)
