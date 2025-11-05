@@ -35,7 +35,7 @@ export const portfolioContactData: Contact[] = [
     {
         icon: "before:content-['CV'] font-semibold",
         link: cv,
-        label: "CV",
+        label: "Curriculum Vitae",
     },
 ];
 

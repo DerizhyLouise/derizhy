@@ -34,7 +34,8 @@
                     aria-label={contact.label}
                     href={contact.link}
                     target="_blank"
-                    class="bg-yellow flex h-16 w-16 items-center justify-center rounded-full transition-transform duration-700 hover:rotate-360"
+                    title={contact.label}
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white transition-transform duration-700 hover:rotate-360"
                 >
                     <span class={contact.icon}></span>
                 </a>

@@ -23,7 +23,7 @@
                                 <a
                                     class="block text-base font-light text-white transition-all duration-300 ease-in-out hover:pl-2"
                                     href={link.href}
-                                    target={link.target ?? "_self"}
+                                    target={link.target}
                                 >
                                     {link.title}
                                 </a>
@@ -40,19 +40,17 @@
                 >
                     Find Me
                 </h4>
-                <div class="social-links">
+                <div class="flex gap-2">
                     {#each footerData.social as social (social.href)}
                         {#if social.href}
                             <a
-                                class="ease mr-2.5 mb-2.5 inline-block h-10 w-10 rounded-full bg-white/20 text-center leading-10 text-white transition-all duration-500 hover:bg-white hover:text-[#24262b]"
+                                class="text-gray flex h-8 w-8 items-center justify-center rounded-full bg-white/90 transition-transform duration-700 hover:rotate-360"
                                 href={social.href}
-                                target={social.target ?? "_self"}
-                                aria-label={social.label ?? social.icon}
-                                title={social.label ?? social.icon}
+                                target={social.target}
+                                aria-label={social.label}
+                                title={social.label}
                             >
-                                <i
-                                    class={`${social.icon} ease mr-2.5 mb-2.5 inline-block h-full w-full rounded-full bg-white/20 text-center leading-10 text-white transition-all duration-500 hover:bg-white hover:text-[#24262b]`}
-                                ></i>
+                                <i class={social.icon}></i>
                             </a>
                         {/if}
                     {/each}

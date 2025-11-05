@@ -83,7 +83,7 @@
                     class="bg-gray shadow-gray flex h-auto flex-col rounded-sm text-white shadow-lg"
                 >
                     <div
-                        class="bg-lightgray text-yellow flex h-60 items-center justify-center rounded-t-sm text-8xl"
+                        class="bg-lightgray flex h-60 items-center justify-center rounded-t-sm text-8xl text-white"
                     >
                         {#if item.icon.type === "svg"}
                             <img
@@ -130,7 +130,7 @@
             {#if !isJournalPage}
                 <a
                     href="/journal"
-                    class="bg-maroon rounded-sm px-8 py-4 text-white transition-all duration-300 hover:brightness-125"
+                    class="bg-gray rounded-sm px-8 py-4 text-white transition-all duration-300 hover:brightness-150"
                 >
                     View All Journals
                 </a>

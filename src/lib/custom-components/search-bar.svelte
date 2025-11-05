@@ -63,10 +63,10 @@
     >
         {#each types as item (item)}
             <button
-                class={`hover:bg-yellow/80 text-gray flex gap-2 rounded-full px-3 py-1.5 text-xs leading-6 duration-300 sm:px-4 sm:py-2 sm:text-sm ${
+                class={`text-gray flex gap-2 rounded-full px-3 py-1.5 text-xs leading-6 duration-300 sm:px-4 sm:py-2 sm:text-sm ${
                     selectedType.includes(item.type)
-                        ? "bg-yellow outline-yellow outline-1 outline-offset-4"
-                        : "bg-white"
+                        ? "bg-yellow outline-yellow hover:bg-yellow/80 outline-1 outline-offset-4"
+                        : "bg-white hover:bg-white/80"
                 }`}
                 onclick={() => toggleType(item.type)}
             >

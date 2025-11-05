@@ -86,7 +86,7 @@
                                     {/each}
                                     {#if item.techs.length > 4}
                                         <button
-                                            class="bg-yellow text-gray hover:bg-yellow/80 flex cursor-pointer items-center rounded-full px-4 py-2 text-xs duration-300 sm:text-sm"
+                                            class="text-gray flex cursor-pointer items-center rounded-full bg-white px-4 py-2 text-xs duration-300 hover:bg-white/80 sm:text-sm"
                                             title={item.techs
                                                 .slice(4)
                                                 .map((t) => t)

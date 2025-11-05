@@ -7,9 +7,7 @@ import pnpmIcon from "$lib/assets/svg/pnpm.svg";
 import postgresqlIcon from "$lib/assets/svg/postgresql.svg";
 import redisIcon from "$lib/assets/svg/redis.svg";
 import springbootIcon from "$lib/assets/svg/springboot.svg";
-import svelteYellowIcon from "$lib/assets/svg/svelte-yellow.svg";
 import svelteIcon from "$lib/assets/svg/svelte.svg";
-import tailwindYellowIcon from "$lib/assets/svg/tailwind-yellow.svg";
 import tailwindIcon from "$lib/assets/svg/tailwind.svg";
 import typescriptIcon from "$lib/assets/svg/typescript.svg";
 
@@ -37,8 +35,6 @@ export const imageRender = {
     typescriptIcon,
     cubeIcon,
     chelseaIcon,
-    svelteYellowIcon,
-    tailwindYellowIcon,
 
     // Logo
     mtLogo,

@@ -106,7 +106,7 @@
                         <div class="flex w-full justify-between">
                             <div class="flex">
                                 <div
-                                    class="bg-lightgray text-yellow flex h-12 min-h-12 w-12 min-w-12 items-center justify-center rounded-sm text-xl duration-300 hover:scale-125"
+                                    class="bg-lightgray flex h-12 min-h-12 w-12 min-w-12 items-center justify-center rounded-sm text-xl text-white duration-300 hover:scale-125"
                                 >
                                     <span class={item.icon}></span>
                                 </div>
@@ -134,7 +134,7 @@
                             class="mt-4 flex flex-wrap justify-between gap-2 text-xs sm:text-sm"
                         >
                             <div
-                                class="text-gray bg-yellow hover:bg-yellow/80 rounded-full px-4 py-2"
+                                class="text-gray rounded-full bg-white px-4 py-2 hover:bg-white/80"
                             >
                                 {item.type}
                             </div>
@@ -213,7 +213,7 @@
 
                                 {#if item.techs.length > 4}
                                     <div
-                                        class="text-gray bg-yellow hover:bg-yellow/80 flex cursor-pointer items-center rounded-full px-4 py-2 text-xs duration-300 sm:text-sm"
+                                        class="text-gray flex cursor-pointer items-center rounded-full bg-white px-4 py-2 text-xs duration-300 hover:bg-white/80 sm:text-sm"
                                         title={item.techs
                                             .slice(4)
                                             .map((t) => t)

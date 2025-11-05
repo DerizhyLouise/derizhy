@@ -26,7 +26,7 @@
                         class="bg-gray shadow-gray flex h-40 w-full items-center rounded-sm shadow-lg duration-300 hover:sm:scale-110"
                     >
                         <div
-                            class="bg-lightgray text-yellow flex h-40 w-40 shrink-0 items-center justify-center rounded-l-sm text-6xl"
+                            class="bg-lightgray flex h-40 w-40 shrink-0 items-center justify-center rounded-l-sm text-6xl text-white"
                         >
                             {#if item.icon.type === "svg"}
                                 <img
