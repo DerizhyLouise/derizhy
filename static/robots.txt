@@ -1,5 +1,6 @@
-# allow crawling everything by default
 User-agent: *
-Disallow: /journal/*
-Disallow: /_app/*
+Disallow: /
+Allow: /$
+Allow: /portfolio$
+Allow: /journal$
 Sitemap: https://derizhy.com/sitemap.xml

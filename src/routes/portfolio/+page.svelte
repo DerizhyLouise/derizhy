@@ -6,6 +6,14 @@
     import SectionSkill from "$lib/section/section-skill.svelte";
 </script>
 
+<svelte:head>
+    <link rel="canonical" href="https://derizhy.com/portfolio" />
+    <meta
+        name="description"
+        content="Louise Derizhy — Software Engineer specializing in full stack development with Svelte, Tailwind CSS, and TypeScript."
+    />
+</svelte:head>
+
 <SectionProfile />
 
 <div class="bg-[url('$lib/assets/svg/bg-1.svg')] bg-repeat pb-40">

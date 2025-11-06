@@ -24,12 +24,6 @@
 
 <svelte:head>
     <link rel="icon" href={favicon} />
-    {#if ["/", "/journal", "/portfolio"].includes(page.url.pathname)}
-        <link
-            rel="canonical"
-            href={"https://derizhy.com" + page.url.pathname}
-        />
-    {/if}
     <title>Derizhy {pageName}</title>
 </svelte:head>
 
