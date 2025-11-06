@@ -6,7 +6,7 @@ export const project: Project[] = [
     {
         id: 11,
         title: "MT-PRINTER",
-        subtitle: "An Electron Printing App",
+        subtitle: "Background API-Based Printing App",
         icon: "fa-regular fa-print",
         media: [
             {
@@ -31,7 +31,7 @@ export const project: Project[] = [
     {
         id: 10,
         title: "Assessment Builder",
-        subtitle: "GrapesJs Web Builder",
+        subtitle: "Electronic Medical Record Builder",
         icon: "fa-regular fa-file",
         media: [],
         time: "August 2024 - Now",
@@ -57,7 +57,7 @@ export const project: Project[] = [
     {
         id: 9,
         title: "Peduli Anak",
-        subtitle: "Stunting Web Based App",
+        subtitle: "Stunting Web-Based App",
         icon: "fa-regular fa-stethoscope",
         type: ["Front-End Web"],
         media: [
