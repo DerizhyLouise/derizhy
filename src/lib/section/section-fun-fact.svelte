@@ -22,7 +22,7 @@
                 <div data-aos="fade-up" data-aos-duration="2000">
                     <a
                         href={item.link}
-                        target="_blank"
+                        target={!item.link.startsWith("#") ? "_blank" : ""}
                         class="bg-gray shadow-gray flex h-40 w-full items-center rounded-sm shadow-lg duration-300 hover:sm:scale-110"
                     >
                         <div

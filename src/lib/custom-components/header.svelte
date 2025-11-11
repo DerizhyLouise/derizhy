@@ -114,7 +114,7 @@
                                                 item.link,
                                                 subItem.link,
                                             )}
-                                            class="hover:text-gray block w-full px-5 py-2 text-left text-white transition-all duration-300 hover:bg-white"
+                                            class="hover:text-gray hover:bg-yellow block w-full px-5 py-2 text-left text-white transition-all duration-300"
                                         >
                                             {subItem.title}
                                         </a>
