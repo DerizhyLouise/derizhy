@@ -14,7 +14,7 @@
 >
     <div class="pt-40">
         <h2
-            class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
+            class="text-gray mb-10 text-center text-5xl font-semibold sm:text-7xl"
             data-aos="fade-up"
             data-aos-duration="2000"
         >

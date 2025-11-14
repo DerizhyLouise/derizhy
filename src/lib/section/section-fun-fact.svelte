@@ -9,7 +9,7 @@
 >
     <div class="h-full w-full pt-40">
         <h2
-            class="text-gray mb-10 text-center text-6xl font-semibold uppercase"
+            class="text-gray mb-10 text-center text-6xl font-semibold"
             data-aos="fade-up"
             data-aos-duration="2000"
         >

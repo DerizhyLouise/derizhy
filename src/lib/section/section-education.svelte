@@ -4,11 +4,11 @@
 
 <section
     id="education"
-    class="h-full min-h-screen w-full px-4 text-white sm:px-20 xl:px-40 min-[1552px]:px-80"
+    class="h-full min-h-screen w-full px-4 text-white min-[1552px]:px-80 sm:px-20 xl:px-40"
 >
     <div class="pt-40">
         <h2
-            class="text-gray mb-10 text-center text-5xl font-semibold uppercase sm:text-7xl"
+            class="text-gray mb-10 text-center text-5xl font-semibold sm:text-7xl"
             data-aos="fade-up"
             data-aos-duration="2000"
         >
