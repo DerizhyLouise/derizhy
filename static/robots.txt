@@ -1,6 +1,3 @@
 User-agent: *
-Disallow: /
-Allow: /$
-Allow: /portfolio$
-Allow: /journal$
+Allow: /
 Sitemap: https://derizhy.com/sitemap.xml
