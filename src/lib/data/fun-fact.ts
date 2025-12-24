@@ -72,7 +72,7 @@ export const funFact: FunFact[] = [
         content: "**Svelte** is my most favorite framework",
     },
     {
-        link: "https://en.wikipedia.org/wiki/Yiruma/",
+        link: "https://en.wikipedia.org/wiki/Yiruma",
         icon: { src: "fa-regular fa-music", type: "fa" },
         content:
             "Who don't know **Yiruma**? I like his song '**River Flows In You**' so much",
